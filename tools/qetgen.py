@@ -10,13 +10,21 @@ QET の .qet は XML。手描きした 無題.qet を解析して判明した仕
   ・部品インスタンスは type="embed://import/<ファイル名>" で定義を参照
   ・導体は (element_uuid, terminal_uuid) の組で両端を指定する
   ・端子の向きは n=0 / e=1 / s=2 / w=3
+
+部品名は elements/ のどのサブフォルダにあっても名前だけで解決できる（paths.py）。
+パスで直に指定してもよい。埋め込むときはファイル名だけを使うので、
+どのフォルダの記号から作った .qet でも他PCでそのまま開ける。
 """
 import os
 import re
+import sys
 import uuid as U
 import xml.etree.ElementTree as ET
 
-USERCOL = os.path.join(os.environ["APPDATA"], "qelectrotech", "QElectroTech", "elements")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import paths as P                                          # noqa: E402
+
+USERCOL = P.usercol()          # 後方互換のため残す。探索は P.find() が行う
 ORI = {"n": 0, "e": 1, "s": 2, "w": 3}
 
 # --- 文字の大きさ---
@@ -43,11 +51,10 @@ class Part:
     _cache = {}
 
     def __init__(self, fname):
-        self.fname = fname if fname.endswith(".elmt") else fname + ".elmt"
-        path = os.path.join(USERCOL, self.fname)
-        if not os.path.exists(path):
-            raise FileNotFoundError(path)
-        self.raw = open(path, encoding="utf-8").read()
+        self.path = P.find(fname)
+        # 埋め込み時の参照名はファイル名だけ。フォルダ構成を .qet に持ち込まない
+        self.fname = os.path.basename(self.path)
+        self.raw = open(self.path, encoding="utf-8").read()
         root = ET.fromstring(self.raw)
         self.link_type = root.get("link_type") or "simple"
         self.w = int(root.get("width") or 0)
@@ -73,13 +80,21 @@ class Part:
         return cls._cache[fname]
 
     def term(self, which):
-        """which: 'n','s','e','w' もしくは index"""
+        """which: 'n','s','e','w' もしくは index
+
+        向きで指定したとき、同じ向きの端子が複数あれば黙って先頭を返さずに
+        エラーにする。配線先を取り違えると図面が静かに間違うため。
+        """
         if isinstance(which, int):
             return self.terms[which]
-        for t in self.terms:
-            if t["ori"] == ORI[which]:
-                return t
-        raise KeyError(f"{self.fname} に向き {which} の端子がない")
+        hits = [t for t in self.terms if t["ori"] == ORI[which]]
+        if not hits:
+            raise KeyError(f"{self.fname} に向き {which} の端子がない")
+        if len(hits) > 1:
+            raise KeyError(
+                f"{self.fname} には向き {which} の端子が {len(hits)} 個ある"
+                f"（index {[t['id'] for t in hits]}）。index で指定すること")
+        return hits[0]
 
 
 class Inst:
@@ -118,7 +133,11 @@ class Inst:
                 f'Halignment="AlignLeft" x="{LBL_X}" y="{LBL_Y}" rotation="0" '
                 f'font="Liberation Sans,{LBL_PT},-1,5,50,0,0,0,0,0,Regular" '
                 f'text_width="-1" uuid="{{{U.uuid4()}}}" '
-                f'keep_visual_rotation="false" text_from="{src}" '
+                # 部品を倒しても機器記号は正立のままにする。QET は true のとき
+                # 文字の回転を「基準 − 親の回転」に置いて親の回転を打ち消す
+                # （dynamicelementtextitem.cpp の parentElementRotationChanged）。
+                # false だと文字まで倒れる。属性を省いたときの既定も true。
+                f'keep_visual_rotation="true" text_from="{src}" '
                 'Valignment="AlignTop">'
                 f'\n                        <text>{esc(self.label)}</text>'
                 f'{iname}'

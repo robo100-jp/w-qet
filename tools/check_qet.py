@@ -7,7 +7,11 @@
   ・線番の一覧
   ・埋め込まれた JIS 図記号番号
 
-使い方:  py -3 check_qet.py [..\\制御盤_一式.qet]
+部品定義は **.qet に埋め込まれたものを先に見る**。qetgen.save() は使った .elmt を
+.qet の中に丸ごと入れるので、これだけで検証が完結する（記号のフォルダに依存しない）。
+埋め込みに無いものだけ、paths.py の探索先からディスク上を探す。
+
+使い方:  py -3 tools/check_qet.py 出力.qet
 """
 import os
 import re
@@ -15,33 +19,59 @@ import sys
 import xml.etree.ElementTree as ET
 from collections import defaultdict
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import paths as P                                          # noqa: E402
+
 sys.stdout.reconfigure(encoding="utf-8")
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-QETDIR = os.path.dirname(HERE)
-UC = os.path.join(os.environ["APPDATA"], "qelectrotech", "QElectroTech", "elements")
-DIRS = [os.path.join(QETDIR, "カスタム部品"), os.path.join(QETDIR, "カスタム端子"), UC]
+
+def _box(text):
+    """<definition> の width/height/hotspot を取り出す"""
+    m = re.search(r"<definition[^>]*>", text)
+    if not m:
+        return None
+    g = dict(re.findall(r'(\w+)="([^"]*)"', m.group(0)))
+    try:
+        return (float(g["width"]), float(g["height"]),
+                float(g["hotspot_x"]), float(g["hotspot_y"]))
+    except KeyError:
+        return None
 
 
-def boxes():
-    """部品定義の外形（width, height, hotspot_x, hotspot_y）"""
+def embedded_boxes(root):
+    """.qet に埋め込まれた部品定義の外形
+
+    <collection><category name="import"><element name="○○.elmt"><definition .../>
+    図面上の部品も同じ element というタグ名なので、definition を持つものだけ拾う。
+    """
     b = {}
-    for d in DIRS:
-        if not os.path.isdir(d):
+    for e in root.iter("element"):
+        d = e.find("definition")
+        fn = e.get("name")
+        if d is None or not fn or fn in b:
             continue
-        for fn in os.listdir(d):
-            if not fn.endswith(".elmt") or fn in b:
-                continue
-            t = open(os.path.join(d, fn), encoding="utf-8").read()
-            g = dict(re.findall(r'(\w+)="([^"]*)"', re.search(r"<definition[^>]*>", t).group(0)))
-            b[fn] = (float(g["width"]), float(g["height"]),
-                     float(g["hotspot_x"]), float(g["hotspot_y"]))
+        try:
+            b[fn] = (float(d.get("width")), float(d.get("height")),
+                     float(d.get("hotspot_x")), float(d.get("hotspot_y")))
+        except (TypeError, ValueError):
+            pass
     return b
 
 
+def disk_box(fname, table, cache):
+    """ディスク上の .elmt から外形を読む（見つからなければ None）"""
+    if fname not in cache:
+        p = table.get(fname)
+        cache[fname] = _box(open(p, encoding="utf-8").read()) if p else None
+    return cache[fname]
+
+
 def main(path):
-    box = boxes()
     root = ET.parse(path).getroot()
+    box = embedded_boxes(root)
+    table, cache = P.table(), {}
+    n_embed, n_disk = len(box), 0
+    unknown = defaultdict(int)      # 定義が見つからない部品 → 図面上の個数
     total_bad = 0
     print(f"検証: {path}\n")
     for d in root.findall("diagram"):
@@ -50,10 +80,15 @@ def main(path):
         rects, links, miss = [], 0, 0
         for e in d.findall(".//elements/element"):
             fn = e.get("type").split("/")[-1]
+            # 定義が無くても相互参照は数える（数だけは意味があるので落とさない）
+            links += len(e.findall(".//link_uuid"))
             if fn not in box:
-                print(f"  ✖ 部品定義が見つからない: {fn}")
-                total_bad += 1
-                continue
+                b = disk_box(fn, table, cache)
+                if b is None:
+                    unknown[fn] += 1
+                    continue
+                box[fn] = b
+                n_disk += 1
             x, y = float(e.get("x")), float(e.get("y"))
             w, h, hx, hy = box[fn]
             lab = ""
@@ -62,7 +97,6 @@ def main(path):
                     lab = ei.text or ""
             rects.append((x - hx, y - hy, x - hx + w, y - hy + h,
                           fn.replace(".elmt", ""), lab))
-            links += len(e.findall(".//link_uuid"))
         nums = defaultdict(int)
         for c in d.findall(".//conductor"):
             if not (c.get("element1") and c.get("terminal1")
@@ -87,14 +121,29 @@ def main(path):
             print("     ", x)
         print(f"   線番: {' '.join(sorted(nums, key=lambda s: (len(s), s)))}\n")
         total_bad += len(bad) + miss
+    print(f"部品定義: 埋め込み {n_embed} 種 / ディスク {n_disk} 種")
+    if unknown:
+        # 定義が無いと重なり・はみ出しを一切見られない。素通りさせない
+        total_bad += len(unknown)
+        print(f"  ✖ 定義が見つからない {len(unknown)} 種"
+              f"（この部品は重なり・はみ出しを検証できていない）")
+        for fn, n in sorted(unknown.items()):
+            print(f"      {fn}  図面上 {n} 個")
+        print("    探した場所: " + " / ".join(P.search_dirs()))
+
     t = open(path, encoding="utf-8").read()
     jis = sorted(set(re.findall(r"JIS C 0617 / IEC 60617 ([\d\-]+)", t)))
-    print(f"埋め込まれた JIS 図記号番号 {len(jis)} 種")
+    print(f"JIS 図記号番号 {len(jis)} 種")
     print("  " + " ".join(jis))
     print("\n" + ("問題なし" if total_bad == 0 else f"★ 要確認 {total_bad} 件"))
     return total_bad
 
 
 if __name__ == "__main__":
-    p = sys.argv[1] if len(sys.argv) > 1 else os.path.join(QETDIR, "制御盤_一式.qet")
-    sys.exit(1 if main(p) else 0)
+    if len(sys.argv) < 2:
+        print(__doc__.strip().splitlines()[-1])
+        sys.exit(2)
+    if not os.path.isfile(sys.argv[1]):
+        print(f"ファイルが無い: {sys.argv[1]}")
+        sys.exit(2)
+    sys.exit(1 if main(sys.argv[1]) else 0)
