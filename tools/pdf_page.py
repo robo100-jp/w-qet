@@ -10,7 +10,12 @@
   py -3 tools/pdf_page.py 規格.pdf 42 --dpi 300
   py -3 tools/pdf_page.py 規格.pdf --search "07-02"   # 文字列を含むページを探す
 
-必要: py -3 -m pip install pymupdf
+必要: py -3 -m pip install pypdfium2
+
+  描画には pypdfium2（BSD-3-Clause / Apache-2.0）を使う。
+  PyMuPDF のほうが手軽だが **AGPL-3.0** で、公開リポジトリに置くツールが
+  強い copyleft の義務を負う。このプロジェクトは上流の CC-BY を避けて
+  記号を描き起こしている以上、依存側で義務を拾っては意味がない。
 
 出力先について（重要）
   既定の出力先は **リポジトリの外**（%TEMP%\\w-qet-pdf\\）。
@@ -43,14 +48,23 @@ def pages(spec, n):
     return out
 
 
-def search(doc, needle):
+def page_text(pdf, i):
+    """0始まりのページ番号 i のテキスト"""
+    tp = pdf[i].get_textpage()
+    try:
+        return tp.get_text_range() or ""
+    finally:
+        tp.close()
+
+
+def search(pdf, needle):
     """文字列を含むページを探す。図記号番号から目的のページに当たるため"""
     hits = []
-    for i, pg in enumerate(doc, 1):
-        t = pg.get_text() or ""
+    for i in range(len(pdf)):
+        t = page_text(pdf, i)
         if needle in t:
             line = next((l.strip() for l in t.splitlines() if needle in l), "")
-            hits.append((i, line[:70]))
+            hits.append((i + 1, line[:70]))
     return hits
 
 
@@ -64,17 +78,17 @@ def main():
     a = ap.parse_args()
 
     try:
-        import fitz
+        import pypdfium2 as pdfium
     except ImportError:
-        raise SystemExit("pymupdf が要る:  py -3 -m pip install pymupdf")
+        raise SystemExit("pypdfium2 が要る:  py -3 -m pip install pypdfium2")
 
     if not os.path.isfile(a.pdf):
         raise SystemExit(f"PDF が無い: {a.pdf}")
-    doc = fitz.open(a.pdf)
-    print(f"{os.path.basename(a.pdf)}  {len(doc)} ページ")
+    pdf = pdfium.PdfDocument(a.pdf)
+    print(f"{os.path.basename(a.pdf)}  {len(pdf)} ページ")
 
     if a.search:
-        hits = search(doc, a.search)
+        hits = search(pdf, a.search)
         print(f'"{a.search}" を含むページ {len(hits)} 件')
         for i, line in hits[:40]:
             print(f"  p.{i:<5} {line}")
@@ -84,13 +98,12 @@ def main():
         raise SystemExit("ページ番号か --search を指定すること")
 
     os.makedirs(a.out, exist_ok=True)
-    m = fitz.Matrix(a.dpi / 72, a.dpi / 72)
     stem = os.path.splitext(os.path.basename(a.pdf))[0]
-    for p in pages(a.pages, len(doc)):
-        pix = doc[p - 1].get_pixmap(matrix=m)
+    for p in pages(a.pages, len(pdf)):
+        im = pdf[p - 1].render(scale=a.dpi / 72).to_pil()
         path = os.path.join(a.out, f"{stem}_p{p:04d}.png")
-        pix.save(path)
-        print(f"  p.{p:<5} {pix.width}x{pix.height}  {path}")
+        im.save(path)
+        print(f"  p.{p:<5} {im.width}x{im.height}  {path}")
     return 0
 
 
