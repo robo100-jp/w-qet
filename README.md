@@ -24,12 +24,17 @@ QElectroTech 用の、日本の制御盤向け図記号ライブラリと作図�
 ```
 elements/      .elmt 図記号定義
 tools/         Python ツール
+  paths.py       図記号の在りかを解決する（他の3本が使う）
   qetgen.py      .qet をコードから生成するライブラリ
   render_elmt.py .elmt を PNG に描き出す（目視確認用）
   check_qet.py   .qet を検証する（重なり・はみ出し・端子未指定・相互参照・線番）
+  pdf_page.py    PDF のページを画像に描き出す（規格の図を読む）
 docs/          設計方針・採録状況
 .claude/skills/  Claude Code 用スキル
 ```
+
+- 記号の寸法・端子・ラベルの約束ごと … [docs/寸法基準.md](docs/寸法基準.md)
+- ツールの使い方と `.elmt` の書式 … [docs/ツール.md](docs/ツール.md)
 
 ## なぜ作るか
 
