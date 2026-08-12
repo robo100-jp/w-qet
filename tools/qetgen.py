@@ -27,7 +27,7 @@ import paths as P                                          # noqa: E402
 USERCOL = P.usercol()          # 後方互換のため残す。探索は P.find() が行う
 ORI = {"n": 0, "e": 1, "s": 2, "w": 3}
 
-# --- 文字の大きさ---
+# --- 文字の大きさ ---
 LBL_PT = 14        # 部品ラベル（機器記号）のポイント数
 LBL_X, LBL_Y = 10, -16
 NUM_PT = 11        # 導体の線番のポイント数
