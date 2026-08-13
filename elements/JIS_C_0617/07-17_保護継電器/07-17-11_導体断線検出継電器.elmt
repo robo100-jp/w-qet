@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="60" height="40" hotspot_x="30" hotspot_y="20"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{db864821-ab8e-4283-a913-f439c2bd39e4}"/>
+    <names>
+        <name lang="ja">導体断線検出継電器</name>
+        <name lang="en">Divided-conductor detection relay</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-17-11
+導体の断線を検出する継電器。巻線に2本の斜線を重ねる。
+規格票にはリード線が描かれていない。作図に使えるよう、外形の左右中央に端子を1つずつ足してある。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <rect x="-30" y="-20" width="60" height="40" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc x="-15" y="-3" width="10" height="10" start="0" angle="180"
+             antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc x="-5" y="-3" width="10" height="10" start="0" angle="180"
+             antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc x="5" y="-3" width="10" height="10" start="0" angle="180"
+             antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="2.5" y1="-7" x2="-4.5" y2="7" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="5.9" y1="-7" x2="-1.1" y2="7" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="-30" y="0" orientation="w" name="1" type="Generic"
+                  uuid="{2d7d9b51-d705-48bf-b63f-428d3c6dd641}"/>
+        <terminal x="30" y="0" orientation="e" name="2" type="Generic"
+                  uuid="{84a47bca-a5b0-47e1-8335-6d428548cc32}"/>
+        <dynamic_text x="35" y="-20" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{2b9f0d20-59ea-4f1d-905e-4c9df4a51d96}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

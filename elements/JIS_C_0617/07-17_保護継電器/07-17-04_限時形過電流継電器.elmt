@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="60" height="60" hotspot_x="30" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{c63429e9-e3c2-4a01-ba6a-a0a28015d939}"/>
+    <names>
+        <name lang="ja">限時形過電流継電器</name>
+        <name lang="en">Delayed overcurrent relay</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-17-04
+限時（動作を遅らせる）付きの過電流継電器。
+規格票にはリード線が描かれていない。作図に使えるよう、外形の左右中央に端子を1つずつ足してある。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <rect x="-30" y="-30" width="60" height="60" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <text text="I " x="-6.22" y="-6" rotation="0"
+              font="Liberation Sans,14,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
+        <text text="&gt;" x="-0.15" y="-6" rotation="0"
+              font="Liberation Sans,14,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <line x1="-15" y1="15" x2="15" y2="15" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-15" y1="12" x2="-15" y2="18" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="15" y1="12" x2="15" y2="18" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="-30" y="0" orientation="w" name="1" type="Generic"
+                  uuid="{0806eb9f-348b-4513-bd0b-fe796ef8a226}"/>
+        <terminal x="30" y="0" orientation="e" name="2" type="Generic"
+                  uuid="{b797180d-a72b-457b-bc31-2e4a5da7a4a3}"/>
+        <dynamic_text x="35" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{d50b09e9-fd68-44de-84ac-88c3f7b8d762}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

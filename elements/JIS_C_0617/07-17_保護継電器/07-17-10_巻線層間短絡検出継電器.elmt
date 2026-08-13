@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="60" height="60" hotspot_x="30" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{401e6df6-8fd1-4903-879b-f2bc0a58c6c8}"/>
+    <names>
+        <name lang="ja">巻線層間短絡検出継電器</name>
+        <name lang="en">Relay detecting short-circuits between windings</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-17-10
+巻線の層間短絡を検出する継電器。
+規格票にはリード線が描かれていない。作図に使えるよう、外形の左右中央に端子を1つずつ足してある。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <rect x="-30" y="-30" width="60" height="60" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <text text="N " x="-8.65" y="-6" rotation="0"
+              font="Liberation Sans,14,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
+        <text text="&lt;" x="2.27" y="-6" rotation="0"
+              font="Liberation Sans,14,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <arc x="-15" y="10" width="10" height="10" start="0" angle="180"
+             antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc x="-5" y="10" width="10" height="10" start="0" angle="180"
+             antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc x="5" y="10" width="10" height="10" start="0" angle="180"
+             antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <terminal x="-30" y="0" orientation="w" name="1" type="Generic"
+                  uuid="{2723008c-e89d-446f-ac26-484d1fa7df92}"/>
+        <terminal x="30" y="0" orientation="e" name="2" type="Generic"
+                  uuid="{5cecc572-d59f-49a1-aed7-4e3d3e11885c}"/>
+        <dynamic_text x="35" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{1068872c-53e2-4b4b-9763-8e2eecfdd047}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

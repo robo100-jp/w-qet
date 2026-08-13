@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="100" height="100" hotspot_x="50" hotspot_y="50"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{46d9d9f1-b2b6-4807-a84b-8b7d38b5d3ef}"/>
+    <names>
+        <name lang="ja">過電流継電器（反限時）</name>
+        <name lang="en">Overcurrent relay</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-17-14
+反限時特性をもつ過電流継電器。動作値の倍率（5倍）を添えた例。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <rect x="-30" y="-50" width="60" height="100" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <text text="I  " x="-7.74" y="-26" rotation="0"
+              font="Liberation Sans,14,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
+        <text text="&gt;" x="1.37" y="-26" rotation="0"
+              font="Liberation Sans,14,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <line x1="-50" y1="-10" x2="-30" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="30" y1="10" x2="50" y2="10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="30" y1="30" x2="50" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <text text="5x" x="8.23" y="14" rotation="0"
+              font="Liberation Sans,14,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <line x1="-15" y1="30" x2="25" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-15" y1="27" x2="-15" y2="33" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="25" y1="27" x2="25" y2="33" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <arc x="-3.4" y="-5.1" width="40.8" height="40.8" start="207.8" angle="39.3"
+             antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <terminal x="-50" y="-10" orientation="w" name="1" type="Generic"
+                  uuid="{ece86c80-540a-4f8a-86f1-4b58dc77476d}"/>
+        <terminal x="50" y="10" orientation="e" name="2" type="Generic"
+                  uuid="{43f4f1de-041a-4309-8fa3-71442f2af2f5}"/>
+        <terminal x="50" y="30" orientation="e" name="3" type="Generic"
+                  uuid="{1baa9fde-d8df-4eae-aad5-cc2a999aec59}"/>
+        <dynamic_text x="55" y="-50" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{cd748190-a59d-4dd6-a2bd-4a986e044fc6}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

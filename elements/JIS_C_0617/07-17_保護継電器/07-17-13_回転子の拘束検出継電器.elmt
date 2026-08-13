@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="60" height="60" hotspot_x="30" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{0898a4da-ac7f-41c6-8780-57235c356805}"/>
+    <names>
+        <name lang="ja">回転子の拘束検出継電器</name>
+        <name lang="en">Locked-rotor detection relay</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-17-13
+回転子が回らなくなったことを検出する継電器。回転速度がほぼ0で、かつ電流が大きい状態を見る。
+規格票にはリード線が描かれていない。作図に使えるよう、外形の左右中央に端子を1つずつ足してある。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <rect x="-30" y="-30" width="60" height="60" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <text text="n" x="-12.3" y="-6" rotation="0"
+              font="Liberation Sans,14,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
+        <text text=" ≈ 0" x="-6.22" y="-6" rotation="0"
+              font="Liberation Sans,14,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="I  " x="-7.74" y="19" rotation="0"
+              font="Liberation Sans,14,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
+        <text text="&gt;" x="1.37" y="19" rotation="0"
+              font="Liberation Sans,14,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <terminal x="-30" y="0" orientation="w" name="1" type="Generic"
+                  uuid="{c7c0c703-bbd9-4dc1-a020-1b4956b80ed3}"/>
+        <terminal x="30" y="0" orientation="e" name="2" type="Generic"
+                  uuid="{4e798da4-6537-4e17-83f1-0d44a856a05f}"/>
+        <dynamic_text x="35" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{b48adc64-3751-43f1-bb2f-afc7a277097f}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

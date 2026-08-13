@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="60" height="40" hotspot_x="30" hotspot_y="20"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{ae6d95de-abd9-4ef9-a7c2-d4de0cf1edb1}"/>
+    <names>
+        <name lang="ja">逆電流継電器</name>
+        <name lang="en">Reverse current relay</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-17-02
+電流の向きが逆になったことを検出する継電器。
+規格票にはリード線が描かれていない。作図に使えるよう、外形の左右中央に端子を1つずつ足してある。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <rect x="-30" y="-20" width="60" height="40" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <text text="I" x="-9.52" y="4" rotation="0"
+              font="Liberation Sans,14,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
+        <line x1="-3" y1="0" x2="13" y2="0" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <polygon x1="-3" y1="0" x2="2" y2="-2" x3="2" y3="2" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:black;color:black"/>
+        <terminal x="-30" y="0" orientation="w" name="1" type="Generic"
+                  uuid="{34330a91-c035-4586-91ff-16e0c871412e}"/>
+        <terminal x="30" y="0" orientation="e" name="2" type="Generic"
+                  uuid="{73af4827-5cee-402e-a4d2-cdfdcfc1270a}"/>
+        <dynamic_text x="35" y="-20" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{cbdd9085-5a20-439e-adc5-d9fefe1ce1ca}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="60" height="40" hotspot_x="30" hotspot_y="20"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{6cc045b3-0db0-48db-b439-5e01cccb6ec9}"/>
+    <names>
+        <name lang="ja">無電圧継電器</name>
+        <name lang="en">No voltage relay</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-17-01
+電圧が無くなったことを検出する継電器。
+規格票にはリード線が描かれていない。作図に使えるよう、外形の左右中央に端子を1つずつ足してある。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <rect x="-30" y="-20" width="60" height="40" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <text text="U" x="-10.17" y="4" rotation="0"
+              font="Liberation Sans,14,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
+        <text text="=0" x="-2.28" y="4" rotation="0"
+              font="Liberation Sans,14,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <terminal x="-30" y="0" orientation="w" name="1" type="Generic"
+                  uuid="{7157455b-8d8c-4176-8bff-ae8dc4aec848}"/>
+        <terminal x="30" y="0" orientation="e" name="2" type="Generic"
+                  uuid="{8ed0c87b-37ad-4ab0-b0e8-0523a2cbde57}"/>
+        <dynamic_text x="35" y="-20" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{43290c62-5001-4255-a22f-d44359ca9db0}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

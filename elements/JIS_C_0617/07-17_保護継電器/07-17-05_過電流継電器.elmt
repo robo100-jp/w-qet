@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="60" height="60" hotspot_x="30" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{d6982ea0-8241-4fcd-a301-bbbc6e298b90}"/>
+    <names>
+        <name lang="ja">過電流継電器</name>
+        <name lang="en">Overcurrent relay</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-17-05
+過電流継電器。要素2個、動作値 5〜10 A の例を示す。
+規格票にはリード線が描かれていない。作図に使えるよう、外形の左右中央に端子を1つずつ足してある。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <rect x="-30" y="-30" width="60" height="60" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <text text="2 ( " x="-17.45" y="-6" rotation="0"
+              font="Liberation Sans,14,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="I" x="-1.67" y="-6" rotation="0"
+              font="Liberation Sans,14,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
+        <text text=" &gt; )" x="1.37" y="-6" rotation="0"
+              font="Liberation Sans,14,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="5…10 A" x="-19.73" y="19" rotation="0"
+              font="Liberation Sans,14,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <terminal x="-30" y="0" orientation="w" name="1" type="Generic"
+                  uuid="{a1f6f142-3e4c-49b5-a6e3-20d25408ee48}"/>
+        <terminal x="30" y="0" orientation="e" name="2" type="Generic"
+                  uuid="{322b4e25-98e8-4feb-80c9-73ba810eb501}"/>
+        <dynamic_text x="35" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{b16e5a43-9f2a-461e-a233-156b17442519}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>
