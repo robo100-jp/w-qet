@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="20" height="110" hotspot_x="13" hotspot_y="53"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{83a38578-2674-480f-b064-fb694a3fed45}"/>
+    <names>
+        <name lang="ja">多機能スイッチング装置</name>
+        <name lang="en">Multiple-function switching device</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-13-15
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <line x1="-5" y1="-52" x2="-5" y2="-50" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-5" y1="-50" x2="0" y2="-40" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="-50" x2="0" y2="10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="-40" x2="4.85" y2="-30" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="4.85" y1="-30" x2="4.85" y2="-25" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-5" y1="-20" x2="5" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="5" y1="-20" x2="-5" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-5" y1="-5" x2="5" y2="-5" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <arc x="-10" y="0" width="10" height="10" start="90" angle="180"
+             antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="-11" y1="8.5" x2="0" y2="30" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <polygon x1="-6.2" y1="15.7" x2="-4.1" y2="19.8" x3="-11" y3="23.3" x4="-13.1" y4="19.2" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:black;color:black"/>
+        <line x1="0" y1="30" x2="0" y2="50" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="0" y="-50" orientation="n" name="1" type="Generic"
+                  uuid="{a30f9de3-d972-420a-80bf-1710decee756}"/>
+        <terminal x="0" y="50" orientation="s" name="2" type="Generic"
+                  uuid="{523a6492-450e-4481-8e2a-fb9cee5ebcd4}"/>
+        <dynamic_text x="12" y="-55" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{0a67d414-6d43-4e76-a53b-476460ec07ab}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>
