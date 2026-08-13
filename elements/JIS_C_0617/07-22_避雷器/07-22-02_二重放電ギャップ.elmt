@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="30" height="60" hotspot_x="20" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{3391e122-ebeb-4ea3-adf8-16e6a49c0b3b}"/>
+    <names>
+        <name lang="ja">二重放電ギャップ</name>
+        <name lang="en">Spark gap, double</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-22-02
+上下の電極の間に中央電極を挟んだ放電ギャップ。
+規格票では中央電極に線が出ていない。作図に使えるよう、横棒の左端を端子にした。
+
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <line x1="0" y1="-30" x2="0" y2="-4" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <polygon x1="0" y1="-4" x2="-2.5" y2="-11.5" x3="2.5" y3="-11.5" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:black;color:black"/>
+        <line x1="0" y1="30" x2="0" y2="4" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <polygon x1="0" y1="4" x2="-2.5" y2="11.5" x3="2.5" y3="11.5" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:black;color:black"/>
+        <line x1="-20" y1="0" x2="6" y2="0" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
+                  uuid="{d6ffe83d-4702-4396-a0dd-548141975c2f}"/>
+        <terminal x="0" y="30" orientation="s" name="2" type="Generic"
+                  uuid="{4509b19d-8d64-42d3-8835-bba3b733be0e}"/>
+        <terminal x="-20" y="0" orientation="w" name="3" type="Generic"
+                  uuid="{6b7877f5-93c7-44e0-b78e-026d2e0f90f1}"/>
+        <dynamic_text x="15" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{e0f59938-49dc-4f3b-b707-8aa059a3e3be}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="20" height="60" hotspot_x="10" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{1ba1bd90-f4db-4af0-b505-17839cb3bf39}"/>
+    <names>
+        <name lang="ja">放電ギャップ</name>
+        <name lang="en">Spark gap</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-22-01
+向かい合う2本の電極の間で放電させるギャップ。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <line x1="0" y1="-30" x2="0" y2="-4" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <polygon x1="0" y1="-4" x2="-2.5" y2="-11.5" x3="2.5" y3="-11.5" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:black;color:black"/>
+        <line x1="0" y1="30" x2="0" y2="4" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <polygon x1="0" y1="4" x2="-2.5" y2="11.5" x3="2.5" y3="11.5" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:black;color:black"/>
+        <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
+                  uuid="{d6ffe83d-4702-4396-a0dd-548141975c2f}"/>
+        <terminal x="0" y="30" orientation="s" name="2" type="Generic"
+                  uuid="{4509b19d-8d64-42d3-8835-bba3b733be0e}"/>
+        <dynamic_text x="15" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{c49719d0-8d9b-428b-bd81-b2ccadb8ede7}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>
