@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="30" height="30" hotspot_x="15" hotspot_y="15"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{e7e6de02-1d02-4b3b-9241-58eb8d5e1ab5}"/>
+    <names>
+        <name lang="ja">端子（十字）</name>
+        <name lang="en">Junction, cross</name>
+    </names>
+    <informations>**規格に基づく図記号ではない。**QET の導体は端子と端子の間にしか引けないので、分岐や折れ点を描くために置いている作図用の部品。
+端子間は 30。黒丸のあるものが電気的な接続点。
+4本を1点でつなぐ。**交差しているだけで接続しない場所には使わない。**</informations>
+    <description>
+        <line x1="0" y1="-15" x2="0" y2="15" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-15" y1="0" x2="15" y2="0" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <ellipse x="-2" y="-2" width="4" height="4" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:black;color:black"/>
+        <terminal x="0" y="-15" orientation="n" name="1" type="Generic"
+                  uuid="{cdb27f97-fb0c-409e-a4d9-95d774d23838}"/>
+        <terminal x="0" y="15" orientation="s" name="2" type="Generic"
+                  uuid="{b7215e72-eca7-4db8-a8f8-b62ff458202e}"/>
+        <terminal x="15" y="0" orientation="e" name="3" type="Generic"
+                  uuid="{08b67647-9250-48f2-91da-6b8bc19ad148}"/>
+        <terminal x="-15" y="0" orientation="w" name="4" type="Generic"
+                  uuid="{8f57d41f-5024-4d5a-9c6d-6eb621496dfe}"/>
+    </description>
+</definition>

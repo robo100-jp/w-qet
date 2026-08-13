@@ -104,7 +104,9 @@ def write(path, num, ja, en, w, h, body, terms=(), link="simple",
           label=True, note=None, hx=None, hy=None):
     """`.elmt` を書き出す
 
-    num   図記号番号（例 "07-02-01"）。check_qet.py と status.py がこれで判別する
+    num   図記号番号（例 "07-02-01"）。check_qet.py と status.py がこれで判別する。
+          **規格に基づかない作図用の部品は `num=None`。**
+          そのとき `<informations>` に規格の行を書かない。書くと出所を偽ることになる
     w, h  外形。10の倍数。hotspot は既定で中央（w/2, h/2）
     hx    hotspot を横にずらす。**図が導体の軸に対して左右非対称のとき**に使う。
           座標の原点から左へ hx、右へ w-hx が外形。既定は w/2（＝中央）
@@ -116,7 +118,10 @@ def write(path, num, ja, en, w, h, body, terms=(), link="simple",
     parts = list(body) + [t for t in terms]
     if label:
         parts.append(_label(w, h, hx))
-    info = "JIS C 0617 / IEC 60617 %s\n%s" % (num, note or NOTE)
+    if num:
+        info = "JIS C 0617 / IEC 60617 %s\n%s" % (num, note or NOTE)
+    else:
+        info = note or ""
     xml = ('<?xml version="1.0" encoding="UTF-8"?>\n'
            '<definition width="%d" height="%d" hotspot_x="%d" hotspot_y="%d"\n'
            '            type="element" link_type="%s" version="0.100.0">\n'

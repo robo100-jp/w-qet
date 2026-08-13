@@ -116,10 +116,13 @@ def render(rows, done):
     w("作図の都合で要るもの。JIS C 0617 には無い。端子間は 30。")
     w("**`elements/作図用部品/` に置く。** 規格に基づくものと混ぜない。")
     w("")
+    # ここも手で書かない。elements/作図用部品/ にファイルがあるかで印を付ける。
+    aid = os.path.join(P.ELEMENTS, "作図用部品")
+    have = set(os.listdir(aid)) if os.path.isdir(aid) else set()
     w("| | 名称 |")
     w("|---|---|")
     for nm in ("端子（通過）", "端子（T字分岐）", "端子（十字）", "端子（終端）", "端子（L字）"):
-        w("| — | %s |" % nm)
+        w("| %s | %s |" % ("✔" if nm + ".elmt" in have else "—", nm))
     w("")
     return "\n".join(out) + "\n"
 

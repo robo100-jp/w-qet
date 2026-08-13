@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="20" height="30" hotspot_x="10" hotspot_y="15"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{38d87749-cce8-46f1-872b-1a45b0bade06}"/>
+    <names>
+        <name lang="ja">端子（終端）</name>
+        <name lang="en">Wire end</name>
+    </names>
+    <informations>**規格に基づく図記号ではない。**QET の導体は端子と端子の間にしか引けないので、分岐や折れ点を描くために置いている作図用の部品。
+端子間は 30。黒丸のあるものが電気的な接続点。
+導体の行き止まり。白丸で、その先へ続かないことを示す。</informations>
+    <description>
+        <line x1="0" y1="-15" x2="0" y2="-2" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <ellipse x="-3.2" y="-3.2" width="6.4" height="6.4" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <terminal x="0" y="-15" orientation="n" name="1" type="Generic"
+                  uuid="{226afa1e-97f2-4ca4-aaff-e453449fb4d5}"/>
+    </description>
+</definition>

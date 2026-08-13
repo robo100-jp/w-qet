@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="30" height="30" hotspot_x="15" hotspot_y="15"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{5d62e161-b902-46e3-bf64-5bd58474ce2c}"/>
+    <names>
+        <name lang="ja">端子（T字分岐）</name>
+        <name lang="en">Junction, tee</name>
+    </names>
+    <informations>**規格に基づく図記号ではない。**QET の導体は端子と端子の間にしか引けないので、分岐や折れ点を描くために置いている作図用の部品。
+端子間は 30。黒丸のあるものが電気的な接続点。
+3本を1点でつなぐ。向きを変えるときは QET で回す。</informations>
+    <description>
+        <line x1="0" y1="-15" x2="0" y2="15" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="0" x2="15" y2="0" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <ellipse x="-2" y="-2" width="4" height="4" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:black;color:black"/>
+        <terminal x="0" y="-15" orientation="n" name="1" type="Generic"
+                  uuid="{a13b6117-2fd2-4467-ad4c-5afd1853ae00}"/>
+        <terminal x="0" y="15" orientation="s" name="2" type="Generic"
+                  uuid="{91e4675a-66d1-4429-ab02-ba10f5812468}"/>
+        <terminal x="15" y="0" orientation="e" name="3" type="Generic"
+                  uuid="{3c9d23b6-1e54-4a0b-9280-02e8efcf27ae}"/>
+    </description>
+</definition>

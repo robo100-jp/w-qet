@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="20" height="30" hotspot_x="10" hotspot_y="15"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{1ca149fb-8b3c-4c5d-9fa7-9858dca106db}"/>
+    <names>
+        <name lang="ja">端子（通過）</name>
+        <name lang="en">Junction, pass-through</name>
+    </names>
+    <informations>**規格に基づく図記号ではない。**QET の導体は端子と端子の間にしか引けないので、分岐や折れ点を描くために置いている作図用の部品。
+端子間は 30。黒丸のあるものが電気的な接続点。
+直線の導体を途中で切りたいときに挟む。黒丸は付けない（分岐ではない）。</informations>
+    <description>
+        <line x1="0" y1="-15" x2="0" y2="15" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="0" y="-15" orientation="n" name="1" type="Generic"
+                  uuid="{d90c064e-ffce-4767-8960-5b133542d91b}"/>
+        <terminal x="0" y="15" orientation="s" name="2" type="Generic"
+                  uuid="{58a3627b-f2e1-42cf-85d0-38cb03296191}"/>
+    </description>
+</definition>
