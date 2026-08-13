@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="10" height="10" hotspot_x="5" hotspot_y="5"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{74ba0486-bdda-45d0-9bdf-84e71fae022f}"/>
+    <names>
+        <name lang="ja">負荷開閉機能</name>
+        <name lang="en">Switch-disconnector function</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-01-04
+限定図記号。端子を持たない。ほかの図記号に重ねて使う。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <ellipse x="-5" y="-5" width="10" height="10" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="-5" y1="-5" x2="5" y2="-5" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+    </description>
+</definition>

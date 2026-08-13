@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="20" height="20" hotspot_x="10" hotspot_y="10"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{2f1f2248-95da-4b6f-847d-fe08199bd727}"/>
+    <names>
+        <name lang="ja">スイッチの確実動作</name>
+        <name lang="en">Positive operation of a switch</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-01-09
+限定図記号。端子を持たない。ほかの図記号に重ねて使う。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <ellipse x="-10" y="-10" width="20" height="20" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="-6" y1="0" x2="6" y2="0" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="simple" length1="1.5" length2="3"/>
+    </description>
+</definition>
