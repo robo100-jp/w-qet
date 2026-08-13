@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="80" height="60" hotspot_x="30" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{d6bffa4d-3a99-4df3-bd3d-bef2241a39cf}"/>
+    <names>
+        <name lang="ja">近接検出装置</name>
+        <name lang="en">Proximity sensing device</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-19-02
+近接センサを内蔵した検出装置。ひし形は枠の中心ではなく上寄りに置く。
+規格票のリード線は右の1本だけ。作図に使えるよう、その端だけを端子にした。電源側の端子は足していない。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <rect x="-30" y="-30" width="60" height="60" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <polygon x1="0" y1="-18.5" x2="8.5" y2="-10" x3="0" y3="-1.5" x4="-8.5" y4="-10" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="-2.2" y1="-16.3" x2="-2.2" y2="-3.7" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="2.2" y1="-16.3" x2="2.2" y2="-3.7" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="30" y1="0" x2="50" y2="0" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="50" y="0" orientation="e" name="1" type="Generic"
+                  uuid="{4ec71aa1-2fcf-44d7-abfd-45233560cbcf}"/>
+        <dynamic_text x="55" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{8f8f244c-4e84-4d63-9edf-b6f99a1332a0}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

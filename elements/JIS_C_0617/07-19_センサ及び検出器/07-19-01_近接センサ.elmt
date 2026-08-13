@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="20" height="40" hotspot_x="10" hotspot_y="20"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{36e12f5f-2534-4f42-921a-c920b4ef9c92}"/>
+    <names>
+        <name lang="ja">近接センサ</name>
+        <name lang="en">Proximity sensor</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-19-01
+近接（物体が近づいたこと）を検出する素子。
+リード線の端が端子。導体の途中に入れて使う。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <line x1="0" y1="-20" x2="0" y2="-8.5" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="8.5" x2="0" y2="20" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <polygon x1="0" y1="-8.5" x2="8.5" y2="0" x3="0" y3="8.5" x4="-8.5" y4="0" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="-2.2" y1="-6.3" x2="-2.2" y2="6.3" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="2.2" y1="-6.3" x2="2.2" y2="6.3" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="0" y="-20" orientation="n" name="1" type="Generic"
+                  uuid="{b7d742fd-1461-499b-a98a-1e6bbe5e8a4c}"/>
+        <terminal x="0" y="20" orientation="s" name="2" type="Generic"
+                  uuid="{7155d9a9-7437-4e79-a1fd-8dc89f7f0e80}"/>
+        <dynamic_text x="15" y="-20" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{dfaa8119-6a7f-4116-adbe-29a6d23befe9}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

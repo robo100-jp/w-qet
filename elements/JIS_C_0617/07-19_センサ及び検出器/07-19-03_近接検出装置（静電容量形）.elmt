@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="100" height="60" hotspot_x="50" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{7cb1bfa6-21f6-44e8-ac52-addb6e5093e0}"/>
+    <names>
+        <name lang="ja">近接検出装置（静電容量形）</name>
+        <name lang="en">Proximity sensing device, capacitive</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-19-03
+固体材料が近づくと動く静電容量形の近接検出装置。左の斜線を引いた長方形は被検出体（固体材料）で、装置の一部ではない。
+規格票のリード線は右の1本だけ。作図に使えるよう、その端だけを端子にした。電源側の端子は足していない。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <rect x="-30" y="-30" width="60" height="60" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <polygon x1="0" y1="-18.5" x2="8.5" y2="-10" x3="0" y3="-1.5" x4="-8.5" y4="-10" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="-2.2" y1="-16.3" x2="-2.2" y2="-3.7" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="2.2" y1="-16.3" x2="2.2" y2="-3.7" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-2.2" y1="8" x2="-2.2" y2="18" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="2.2" y1="8" x2="2.2" y2="18" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-8.5" y1="13" x2="-2.2" y2="13" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="2.2" y1="13" x2="8.5" y2="13" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="30" y1="0" x2="50" y2="0" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <rect x="-50" y="-10" width="10" height="20" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="-50" y1="-10" x2="-40" y2="-4" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-50" y1="-3" x2="-40" y2="3" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-50" y1="4" x2="-40" y2="10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="50" y="0" orientation="e" name="1" type="Generic"
+                  uuid="{e654ca3f-f91d-4ff0-9d25-ad3ae1a1570f}"/>
+        <dynamic_text x="55" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{5eefdf69-ce53-4e8b-8963-d9972718a2f0}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

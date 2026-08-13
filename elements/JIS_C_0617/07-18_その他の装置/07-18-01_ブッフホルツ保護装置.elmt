@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="60" height="80" hotspot_x="30" hotspot_y="40"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{1a5018e7-860e-435b-badd-ca27d7cff410}"/>
+    <names>
+        <name lang="ja">ブッフホルツ保護装置，気体継電器</name>
+        <name lang="en">Buchholz protective device; Gas relay</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-18-01
+変圧器の油中に出るガスと油の流れを見る保護装置。上の枡が浮子（ガス集積）、下の枡が羽根（油流）。
+規格票にはリード線が描かれていない。作図に使えるよう、外形の左右中央に端子を1つずつ足してある。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <rect x="-30" y="-40" width="60" height="80" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="-30" y1="0" x2="30" y2="0" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <arc x="-12.5" y="-25" width="25" height="25" start="36.9" angle="106.3"
+             antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc x="-12.5" y="-40" width="25" height="25" start="216.9" angle="106.2"
+             antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="0" y1="-30" x2="0" y2="-25" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <rect x="-8" y="13" width="16" height="16" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="8" y1="13" x2="14" y2="13" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="-30" y="0" orientation="w" name="1" type="Generic"
+                  uuid="{5f76c740-5139-451e-aed7-1adf626526a3}"/>
+        <terminal x="30" y="0" orientation="e" name="2" type="Generic"
+                  uuid="{cb619c64-4864-45f3-a340-bdcf650fda9b}"/>
+        <dynamic_text x="35" y="-40" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{9bb049e3-4b7f-46cd-a610-10cfb48950c6}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>
