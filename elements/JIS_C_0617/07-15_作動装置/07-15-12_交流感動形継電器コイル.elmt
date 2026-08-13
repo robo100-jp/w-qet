@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition width="60" height="60" hotspot_x="40" hotspot_y="30"
             type="element" link_type="master" version="0.100.0">
-    <uuid uuid="{abdedada-1d8c-4dfa-af3d-2a897bb4beae}"/>
+    <uuid uuid="{9d544dff-25db-43ab-aa04-958daf145356}"/>
     <names>
         <name lang="ja">交流感動形継電器コイル</name>
         <name lang="en">Relay coil of an alternating current relay</name>
@@ -23,13 +23,13 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <arc x="-30" y="-2.25" width="6.3" height="4.5" start="180" angle="180"
              antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
         <terminal x="0" y="-30" orientation="n" name="A1" type="Generic"
-                  uuid="{751bb317-2803-4f9f-94df-495677b471c2}"/>
+                  uuid="{79a4cd00-9cb5-4a18-abc2-d73a9524adbc}"/>
         <terminal x="0" y="30" orientation="s" name="A2" type="Generic"
-                  uuid="{d5546fd5-6fa2-4a5b-ba1d-730227723dd8}"/>
+                  uuid="{4e1eb5da-bc7a-447e-b305-0812253da9dd}"/>
         <dynamic_text x="25" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
-                      text_from="ElementInfo" uuid="{a0a13b4d-69fd-4bae-b9a9-e09b90d9166e}"
+                      text_from="ElementInfo" uuid="{289a5ee7-f585-4132-99fc-04cd3dd4a705}"
                       font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
             <text></text>
             <info_name>label</info_name>

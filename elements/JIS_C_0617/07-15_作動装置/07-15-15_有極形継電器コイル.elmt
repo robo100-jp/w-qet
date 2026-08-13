@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition width="50" height="60" hotspot_x="30" hotspot_y="30"
             type="element" link_type="master" version="0.100.0">
-    <uuid uuid="{9ba28759-1bfd-4e26-b001-b117563ce0f1}"/>
+    <uuid uuid="{a5a3157a-2be7-4b67-9f6c-afe4c3cf0778}"/>
     <names>
         <name lang="ja">有極形継電器コイル</name>
         <name lang="en">Relay coil of a polarized relay</name>
@@ -23,13 +23,13 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <rect x="-29.5" y="-4.5" width="4" height="9" antialias="false"
               style="line-style:normal;line-weight:normal;filling:white;color:black"/>
         <terminal x="0" y="-30" orientation="n" name="A1" type="Generic"
-                  uuid="{479aba36-6c87-4c5d-8b24-cd8a252a2657}"/>
+                  uuid="{5dc2f2c1-4d9c-410d-a0e5-6c58cec30081}"/>
         <terminal x="0" y="30" orientation="s" name="A2" type="Generic"
-                  uuid="{3ceee942-6b2c-4983-9ac9-1f49d007d002}"/>
+                  uuid="{dd8e9a65-8901-4bc4-bff4-9344c9d9dfe6}"/>
         <dynamic_text x="25" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
-                      text_from="ElementInfo" uuid="{95238f03-8ad5-4c37-bb97-92336406b041}"
+                      text_from="ElementInfo" uuid="{acdfb571-1aa2-462d-a2f3-483ff0911d67}"
                       font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
             <text></text>
             <info_name>label</info_name>

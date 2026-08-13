@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition width="40" height="60" hotspot_x="20" hotspot_y="30"
             type="element" link_type="master" version="0.100.0">
-    <uuid uuid="{d0ed3cf3-b4ad-4e91-97de-b1eba934445d}"/>
+    <uuid uuid="{6e2aaa0d-ee3d-42fb-9aa5-782579db0797}"/>
     <names>
         <name lang="ja">電子式継電器で構成される作動装置</name>
         <name lang="en">Operating device of an electronic relay</name>
@@ -25,13 +25,13 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <line x1="0" y1="2.8" x2="7.2" y2="6.7" antialias="true"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <terminal x="0" y="-30" orientation="n" name="A1" type="Generic"
-                  uuid="{0cc9aff1-70f1-4f26-874e-da6298e09182}"/>
+                  uuid="{4b01a467-70d1-4cc1-9c81-9be048b92f7c}"/>
         <terminal x="0" y="30" orientation="s" name="A2" type="Generic"
-                  uuid="{9163bdb9-8e9d-413f-9af1-fd9c8c17d1a0}"/>
+                  uuid="{7dfdc971-8b00-4e45-ad4d-876e068220b9}"/>
         <dynamic_text x="25" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
-                      text_from="ElementInfo" uuid="{335f6f78-b171-4546-be5a-85c5821bf0e2}"
+                      text_from="ElementInfo" uuid="{48271b82-4842-46ce-aee5-68206348ef69}"
                       font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
             <text></text>
             <info_name>label</info_name>

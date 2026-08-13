@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition width="50" height="60" hotspot_x="30" hotspot_y="30"
             type="element" link_type="master" version="0.100.0">
-    <uuid uuid="{53f08216-0487-4d4b-a441-498c14132123}"/>
+    <uuid uuid="{1500b7fc-4c9a-4830-b28c-059489c1b6cf}"/>
     <names>
         <name lang="ja">レマネント形継電器コイル</name>
         <name lang="en">Relay coil of a remanent relay</name>
@@ -21,13 +21,13 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <line x1="-20" y1="-10" x2="-30" y2="10" antialias="true"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <terminal x="0" y="-30" orientation="n" name="A1" type="Generic"
-                  uuid="{4e025b45-4c38-4cd8-8181-ae4b6c782da7}"/>
+                  uuid="{d0a153fb-6b2b-40de-a5a5-b7879ea3f7d3}"/>
         <terminal x="0" y="30" orientation="s" name="A2" type="Generic"
-                  uuid="{8b5a6bd0-ef1d-437b-89cb-fefec8793aa4}"/>
+                  uuid="{6631fbaf-dbb8-442a-baea-cd10ba7e75f6}"/>
         <dynamic_text x="25" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
-                      text_from="ElementInfo" uuid="{a53af170-0173-41c0-ab6a-9ce3dcee7ece}"
+                      text_from="ElementInfo" uuid="{04d752a4-a854-4aa0-9916-cd7229291aa1}"
                       font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
             <text></text>
             <info_name>label</info_name>

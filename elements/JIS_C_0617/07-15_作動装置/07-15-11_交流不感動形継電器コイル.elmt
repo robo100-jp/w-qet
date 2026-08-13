@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition width="40" height="60" hotspot_x="20" hotspot_y="30"
             type="element" link_type="master" version="0.100.0">
-    <uuid uuid="{4dd80065-7e6c-439e-b382-e537499587a4}"/>
+    <uuid uuid="{622b8ca0-0481-43c1-8bfc-130f755ba838}"/>
     <names>
         <name lang="ja">交流不感動形継電器コイル</name>
         <name lang="en">Relay coil of a relay unaffected by alternating current</name>
@@ -21,13 +21,13 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <rect x="-20" y="4.5" width="40" height="5.5" antialias="false"
               style="line-style:normal;line-weight:normal;filling:black;color:black"/>
         <terminal x="0" y="-30" orientation="n" name="A1" type="Generic"
-                  uuid="{d019c8e1-3e9e-4de6-9f40-4194d7949617}"/>
+                  uuid="{081d629d-417b-44a3-b023-3d86b29071aa}"/>
         <terminal x="0" y="30" orientation="s" name="A2" type="Generic"
-                  uuid="{e05ac6ce-3df4-4602-8e38-b6044e80cb97}"/>
+                  uuid="{d1caed40-1caa-41ae-be3f-5501889bab6e}"/>
         <dynamic_text x="25" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
-                      text_from="ElementInfo" uuid="{d53cc0fb-ef99-4853-af04-a91da8f31018}"
+                      text_from="ElementInfo" uuid="{4857dff0-1132-422e-be90-b965befaae4e}"
                       font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
             <text></text>
             <info_name>label</info_name>

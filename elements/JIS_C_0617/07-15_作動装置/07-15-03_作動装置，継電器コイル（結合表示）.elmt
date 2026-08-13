@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition width="80" height="60" hotspot_x="40" hotspot_y="30"
             type="element" link_type="master" version="0.100.0">
-    <uuid uuid="{97325430-402e-4673-b276-73164aa50b99}"/>
+    <uuid uuid="{8197cd43-ef48-4a21-a8e1-a203e8149a76}"/>
     <names>
         <name lang="ja">作動装置，継電器コイル（結合表示）</name>
         <name lang="en">Operating device; Relay coil (attached representation)</name>
@@ -23,17 +23,17 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <line x1="20" y1="10" x2="20" y2="30" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <terminal x="-20" y="-30" orientation="n" name="A1" type="Generic"
-                  uuid="{ffb0ef90-f5c9-483b-a8a7-f8675fc819ac}"/>
+                  uuid="{82af81cc-9faf-4d89-ae38-31f3da7a17bf}"/>
         <terminal x="-20" y="30" orientation="s" name="A2" type="Generic"
-                  uuid="{643d78e5-c46f-4880-ab79-12211734c780}"/>
+                  uuid="{6c4fba12-24b3-4d21-8d0e-4e2f32bf3892}"/>
         <terminal x="20" y="-30" orientation="n" name="B1" type="Generic"
-                  uuid="{e95b1d34-8798-4350-8ea3-9ee36a577dce}"/>
+                  uuid="{54f5a78e-27ef-405f-b004-288a7b261495}"/>
         <terminal x="20" y="30" orientation="s" name="B2" type="Generic"
-                  uuid="{cf82a2ae-69ad-4ade-9d30-979649d8e5bb}"/>
+                  uuid="{c66d6846-1e9b-4194-a746-2a35bdef2db2}"/>
         <dynamic_text x="45" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
-                      text_from="ElementInfo" uuid="{afd87ea9-7f50-4101-9d9f-eb5b691b5e30}"
+                      text_from="ElementInfo" uuid="{7d9a6931-9494-4db4-b6aa-3a1c5388a863}"
                       font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
             <text></text>
             <info_name>label</info_name>

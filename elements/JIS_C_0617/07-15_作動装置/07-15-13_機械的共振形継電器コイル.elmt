@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition width="74" height="60" hotspot_x="20" hotspot_y="30"
             type="element" link_type="master" version="0.100.0">
-    <uuid uuid="{21b85e5c-c86c-4f00-80b2-36425640f03b}"/>
+    <uuid uuid="{8453216c-473d-4aec-92d6-5efe145dfe96}"/>
     <names>
         <name lang="ja">機械的共振形継電器コイル</name>
         <name lang="en">Relay coil of a mechanically resonant relay</name>
@@ -25,13 +25,13 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <arc x="31.6" y="-0.6" width="10.2" height="10.2" start="140" angle="122"
              antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
         <terminal x="0" y="-30" orientation="n" name="A1" type="Generic"
-                  uuid="{7db58c22-9c51-4bd0-8baa-fdabf171843a}"/>
+                  uuid="{ebab2c2a-45ec-4540-8832-91383629a616}"/>
         <terminal x="0" y="30" orientation="s" name="A2" type="Generic"
-                  uuid="{6e30fb21-bdbc-4458-8ece-c6d0c3d2cedc}"/>
+                  uuid="{5f362758-c289-4f1a-8856-b7544c1b43c6}"/>
         <dynamic_text x="59" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
-                      text_from="ElementInfo" uuid="{54d7c4c2-a000-4141-8a09-71e5d8bd3f5b}"
+                      text_from="ElementInfo" uuid="{0d855855-0401-433d-8e19-30b405cc1674}"
                       font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
             <text></text>
             <info_name>label</info_name>

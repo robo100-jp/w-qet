@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition width="90" height="60" hotspot_x="30" hotspot_y="30"
             type="element" link_type="master" version="0.100.0">
-    <uuid uuid="{8397f41c-389d-4dd6-b287-0c53176f4377}"/>
+    <uuid uuid="{8df9be57-99bb-43c2-92df-be51e591e906}"/>
     <names>
         <name lang="ja">有極形継電器（安定形）</name>
         <name lang="en">Polarized relay, stable positions</name>
@@ -28,26 +28,26 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <line x1="40" y1="-10" x2="50" y2="-10" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
-        <line x1="47" y1="-12.2" x2="60" y2="10" antialias="true"
+        <line x1="45.5" y1="-12.5" x2="60" y2="10" antialias="true"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <line x1="60" y1="-30" x2="60" y2="-10" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <line x1="60" y1="10" x2="60" y2="30" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <terminal x="0" y="-30" orientation="n" name="A1" type="Generic"
-                  uuid="{56992de9-7cb8-4377-bd4a-4f61789144ba}"/>
+                  uuid="{582224ff-ec5f-4d85-860b-c84826b88330}"/>
         <terminal x="0" y="30" orientation="s" name="A2" type="Generic"
-                  uuid="{7b5222cf-a30e-495c-af66-bc00a9b30cae}"/>
+                  uuid="{34c56ecb-8180-49db-b6b0-fccbed048990}"/>
         <terminal x="40" y="-30" orientation="n" name="12" type="Generic"
-                  uuid="{556521d6-dcf9-49a5-93e5-a9dbf9c95b29}"/>
+                  uuid="{9cd21cb1-63ad-4415-bb63-62db37a29282}"/>
         <terminal x="60" y="-30" orientation="n" name="14" type="Generic"
-                  uuid="{f33c23bd-7eb0-4827-845c-e5263d10b25d}"/>
+                  uuid="{9fbb2fb3-bdeb-447f-ad74-67423fda66e9}"/>
         <terminal x="60" y="30" orientation="s" name="11" type="Generic"
-                  uuid="{9810e4f3-f265-45b6-95f7-ff51b1cc1dc3}"/>
+                  uuid="{74390313-7aba-42f0-87be-bdc020c93ff9}"/>
         <dynamic_text x="65" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
-                      text_from="ElementInfo" uuid="{2aef2ba7-5c4e-4033-814c-6679cf962c64}"
+                      text_from="ElementInfo" uuid="{d6b7adcb-2be0-4832-827b-8f4b9818b5ee}"
                       font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
             <text></text>
             <info_name>label</info_name>

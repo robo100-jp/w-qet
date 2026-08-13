@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition width="50" height="60" hotspot_x="30" hotspot_y="30"
             type="element" link_type="master" version="0.100.0">
-    <uuid uuid="{1c86d53a-e211-49bf-a407-214512781df9}"/>
+    <uuid uuid="{fb8c7c3a-cc91-49af-af89-5788b25db940}"/>
     <names>
         <name lang="ja">遅緩復旧形継電器コイル</name>
         <name lang="en">Relay coil of a slow-releasing relay</name>
@@ -21,13 +21,13 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <rect x="-30" y="-10" width="10" height="20" antialias="false"
               style="line-style:normal;line-weight:normal;filling:black;color:black"/>
         <terminal x="0" y="-30" orientation="n" name="A1" type="Generic"
-                  uuid="{20799fb5-2086-444e-879d-488e546111d9}"/>
+                  uuid="{018bf9d8-c1a6-4cda-8865-c4d43b94c738}"/>
         <terminal x="0" y="30" orientation="s" name="A2" type="Generic"
-                  uuid="{6c992655-fc68-43bd-8aff-90335b039a63}"/>
+                  uuid="{59ca5470-96e6-4d47-aa51-07184578282d}"/>
         <dynamic_text x="25" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
-                      text_from="ElementInfo" uuid="{b218225a-d1cb-4f1f-80a3-1410730e084a}"
+                      text_from="ElementInfo" uuid="{5d7079be-6bb9-4079-8fea-28b946f7bd50}"
                       font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
             <text></text>
             <info_name>label</info_name>

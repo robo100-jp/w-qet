@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition width="40" height="60" hotspot_x="20" hotspot_y="30"
             type="element" link_type="master" version="0.100.0">
-    <uuid uuid="{8237e2e5-e494-447c-b090-bf6551410c8a}"/>
+    <uuid uuid="{3b859439-8b08-48a5-afc6-ccd7fce47fc7}"/>
     <names>
         <name lang="ja">作動装置（一般図記号）</name>
         <name lang="en">Operating device, general symbol</name>
@@ -17,13 +17,13 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <line x1="0" y1="10" x2="0" y2="30" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <terminal x="0" y="-30" orientation="n" name="A1" type="Generic"
-                  uuid="{16aa143e-0a9c-486b-9f39-5939defc354f}"/>
+                  uuid="{4375dd93-2a8a-4e85-8950-b8d657187cdf}"/>
         <terminal x="0" y="30" orientation="s" name="A2" type="Generic"
-                  uuid="{6d9acc65-d263-4742-aa1f-e103cbab25f1}"/>
+                  uuid="{98899d14-f47f-4417-b3cf-7ad05653483d}"/>
         <dynamic_text x="25" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
-                      text_from="ElementInfo" uuid="{57d95833-ba7c-46a6-ba9f-c3def195c25f}"
+                      text_from="ElementInfo" uuid="{575af0f9-e927-4d68-a04b-bc06ff0ed24c}"
                       font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
             <text></text>
             <info_name>label</info_name>

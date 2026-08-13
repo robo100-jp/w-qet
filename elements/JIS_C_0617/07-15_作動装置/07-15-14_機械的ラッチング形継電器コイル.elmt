@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition width="55" height="60" hotspot_x="35" hotspot_y="30"
             type="element" link_type="master" version="0.100.0">
-    <uuid uuid="{231e94a1-6304-4f09-bd59-f1ea2f89d29c}"/>
+    <uuid uuid="{046d3f2b-21bf-475a-8a5a-ce447cec888f}"/>
     <names>
         <name lang="ja">機械的ラッチング形継電器コイル</name>
         <name lang="en">Relay coil of a mechanically latched relay</name>
@@ -23,13 +23,13 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <line x1="-35" y1="0" x2="-20" y2="10" antialias="true"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <terminal x="0" y="-30" orientation="n" name="A1" type="Generic"
-                  uuid="{443e8d9f-ec71-4225-8c00-69f549ae7d8c}"/>
+                  uuid="{106fa7ba-035a-4de0-bbdc-54ec85919274}"/>
         <terminal x="0" y="30" orientation="s" name="A2" type="Generic"
-                  uuid="{4e932262-e026-4e14-bad5-74fbe80ef454}"/>
+                  uuid="{d614a9c4-8ace-4d63-9959-5ef12aac01d2}"/>
         <dynamic_text x="25" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
-                      text_from="ElementInfo" uuid="{4859099c-2895-43ea-bb4c-df2783c3e03a}"
+                      text_from="ElementInfo" uuid="{0fab8fcb-1d89-4c7a-b0ae-0c306d47cc36}"
                       font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
             <text></text>
             <info_name>label</info_name>

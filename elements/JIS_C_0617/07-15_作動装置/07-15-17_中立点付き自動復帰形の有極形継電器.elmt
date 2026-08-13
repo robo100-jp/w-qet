@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition width="110" height="60" hotspot_x="30" hotspot_y="30"
             type="element" link_type="master" version="0.100.0">
-    <uuid uuid="{784813ce-9b7a-4513-a0fd-d70758659383}"/>
+    <uuid uuid="{7fd1017c-9f70-4de7-bd56-8426e63d2674}"/>
     <names>
         <name lang="ja">中立点付き自動復帰形の有極形継電器</name>
         <name lang="en">Polarized relay with neutral position</name>
@@ -33,19 +33,19 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <ellipse x="58" y="8" width="4" height="4" antialias="true"
                  style="line-style:normal;line-weight:normal;filling:white;color:black"/>
         <terminal x="0" y="-30" orientation="n" name="A1" type="Generic"
-                  uuid="{553ad560-6cef-4bda-8a85-b9f37c275610}"/>
+                  uuid="{edf173d1-73f9-4796-906b-91208f0d129b}"/>
         <terminal x="0" y="30" orientation="s" name="A2" type="Generic"
-                  uuid="{ecb322be-008f-476e-ab56-9735116d8b27}"/>
+                  uuid="{6b3f2088-097c-4866-b3e2-a9d4ff7c62d8}"/>
         <terminal x="40" y="-30" orientation="n" name="12" type="Generic"
-                  uuid="{b3fb888f-6923-4d3b-9c85-c758012835dd}"/>
+                  uuid="{777c1ae6-72c4-4a22-87b0-432c483b2b3b}"/>
         <terminal x="80" y="-30" orientation="n" name="14" type="Generic"
-                  uuid="{b5d7af30-0405-43a8-a308-25016efa1a99}"/>
+                  uuid="{aab0f1d1-0df6-44b4-a889-fdf8a8187f3b}"/>
         <terminal x="60" y="30" orientation="s" name="11" type="Generic"
-                  uuid="{8707250c-c8c8-4145-a1bd-75e89c210ae6}"/>
+                  uuid="{41a8affb-42d2-4598-98ca-060575af3895}"/>
         <dynamic_text x="85" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
-                      text_from="ElementInfo" uuid="{629d8244-e060-448d-bbd4-70b0cc64aec3}"
+                      text_from="ElementInfo" uuid="{a172634f-7f35-4036-85a6-4fdf94fc2e7f}"
                       font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
             <text></text>
             <info_name>label</info_name>
