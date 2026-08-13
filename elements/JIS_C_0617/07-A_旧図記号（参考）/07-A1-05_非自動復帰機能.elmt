@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="10" height="10" hotspot_x="5" hotspot_y="5"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{c68c67aa-3644-4eaf-9868-5f0a267d85e3}"/>
+    <names>
+        <name lang="ja">非自動復帰機能（旧図記号）</name>
+        <name lang="en">Non-automatic return function (obsolete)</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-A1-05
+**附属書A（参考）の旧図記号。既に削除されている。**
+古い図面を読むための参考であって、新しく描く図面には使わない。
+動かした位置にとどまる（残留する）ことを表す。
+限定図記号。端子を持たない。ほかの図記号に重ねて使う。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <ellipse x="-4" y="-4" width="8" height="8" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+    </description>
+</definition>

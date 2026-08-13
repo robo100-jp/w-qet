@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="10" height="10" hotspot_x="5" hotspot_y="5"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{10adf07f-dbe2-4b9d-b27a-b687b70bac23}"/>
+    <names>
+        <name lang="ja">自動復帰機能（旧図記号）</name>
+        <name lang="en">Automatic return function (obsolete)</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-A1-04
+**附属書A（参考）の旧図記号。既に削除されている。**
+古い図面を読むための参考であって、新しく描く図面には使わない。
+ばねなどで自動的に元の位置へ戻ることを表す。接点の軸に底辺を載せ、頂点は可動接片のある側へ向ける。
+限定図記号。端子を持たない。ほかの図記号に重ねて使う。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <polygon x1="3.5" y1="-3.5" x2="3.5" y2="3.5" x3="-3.5" y3="0" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+    </description>
+</definition>

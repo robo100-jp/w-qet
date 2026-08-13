@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="40" height="60" hotspot_x="20" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{2c13c9da-e9fe-4f55-aadb-0f1420c1d67b}"/>
+    <names>
+        <name lang="ja">オフ位置付き切換え接点（自動復帰・残留）</name>
+        <name lang="en">Changeover contact with off position (obsolete)</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-A6-04
+**附属書A（参考）の旧図記号。既に削除されている。**
+古い図面を読むための参考であって、新しく描く図面には使わない。
+オフ位置を持つ切換え接点。可動接片はオフ位置（真上）で描いてある。
+左の固定接点側は自動復帰（三角）、右は残留（円）。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <line x1="-20" y1="-30" x2="-20" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <polygon x1="-20" y1="-17" x2="-20" y2="-10" x3="-13" y3="-13.5" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="20" y1="-30" x2="20" y2="-17.5" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <ellipse x="16" y="-17.5" width="8" height="8" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="0" y1="-14" x2="0" y2="6.8" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <ellipse x="-3.2" y="6.8" width="6.4" height="6.4" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="0" y1="13.2" x2="0" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="-20" y="-30" orientation="n" name="1" type="Generic"
+                  uuid="{2def8e7a-dc81-407d-86a0-7cff86e36012}"/>
+        <terminal x="20" y="-30" orientation="n" name="2" type="Generic"
+                  uuid="{46308eed-ab99-4cac-bd88-6571760cb238}"/>
+        <terminal x="0" y="30" orientation="s" name="3" type="Generic"
+                  uuid="{b635e815-395a-45b1-a62a-3670ee1794f6}"/>
+        <dynamic_text x="25" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{ab538074-f58b-4002-a844-9908a2930858}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>
