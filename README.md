@@ -47,8 +47,18 @@ docs/          設計方針・採録状況
 py -3 tools/install.py
 ```
 
-`%APPDATA%\qelectrotech\QElectroTech\elements\w-qet\` に、節ごとのフォルダに
-分けて入れます。**既存の部品とは混ざりません。** 取り除くのは `--uninstall`。
+`%APPDATA%\qelectrotech\QElectroTech\elements\w-qet\` に入ります。
+**既存の部品とは混ざりません。** 取り除くのは `--uninstall`。
+
+QET の部品パネルにはこう並びます。
+
+```
+w-qet 日本の制御盤
+├─ JIS C 0617        規格を参照して描き起こしたもの
+│   ├─ 07-02 接点
+│   └─ …
+└─ 作図用部品          規格に無い、作図の都合のもの（端子・ジャンクション）
+```
 
 登録後は **QET を再起動**してください（起動時にコレクションを読むため）。
 QET はスタートメニューから起動します。exe を直接叩くと部品が0個になります。
