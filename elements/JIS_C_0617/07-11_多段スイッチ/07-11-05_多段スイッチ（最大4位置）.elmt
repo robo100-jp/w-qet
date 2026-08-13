@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="70" height="60" hotspot_x="25" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{208d1bbd-6aa5-4c41-ad7a-88caa40ba6c3}"/>
+    <names>
+        <name lang="ja">多段スイッチ（最大 4 位置）</name>
+        <name lang="en">Multi-position switch, maximum four positions</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-11-05
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <line x1="-20" y1="-30" x2="-20" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="20" y1="-30" x2="20" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="40" y1="-30" x2="40" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-20" y1="-5" x2="0" y2="10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="10" x2="0" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="-20" y="-30" orientation="n" name="1" type="Generic"
+                  uuid="{8b5af163-4fbe-40d3-8aed-b061ca1d351e}"/>
+        <terminal x="0" y="-30" orientation="n" name="2" type="Generic"
+                  uuid="{e33117aa-a3c7-4ed3-812a-8c765bfca461}"/>
+        <terminal x="20" y="-30" orientation="n" name="3" type="Generic"
+                  uuid="{f3d3193d-3be2-4f91-8dd8-b0a93624313a}"/>
+        <terminal x="40" y="-30" orientation="n" name="4" type="Generic"
+                  uuid="{19b2a90a-e429-4038-9b7a-f5774472bbb4}"/>
+        <terminal x="0" y="30" orientation="s" name="5" type="Generic"
+                  uuid="{9665fc3d-0369-4a17-abbc-56fa732bd8cd}"/>
+        <dynamic_text x="50" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{d236936b-76b4-4bf7-8090-381863120498}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>
