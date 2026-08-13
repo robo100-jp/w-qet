@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition width="18" height="26" hotspot_x="9" hotspot_y="15"
+<definition width="20" height="30" hotspot_x="10" hotspot_y="17"
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{89dc9007-62ad-4924-bfd0-77e91567680b}"/>
     <names>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition width="40" height="60" hotspot_x="20" hotspot_y="30"
+<definition width="50" height="60" hotspot_x="25" hotspot_y="30"
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{2c13c9da-e9fe-4f55-aadb-0f1420c1d67b}"/>
     <names>
@@ -33,7 +33,7 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
                   uuid="{46308eed-ab99-4cac-bd88-6571760cb238}"/>
         <terminal x="0" y="30" orientation="s" name="3" type="Generic"
                   uuid="{b635e815-395a-45b1-a62a-3670ee1794f6}"/>
-        <dynamic_text x="25" y="-30" z="1" text_width="-1"
+        <dynamic_text x="30" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
                       text_from="ElementInfo" uuid="{ab538074-f58b-4002-a844-9908a2930858}"

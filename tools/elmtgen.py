@@ -113,6 +113,11 @@ def write(path, num, ja, en, w, h, body, terms=(), link="simple",
     link  simple / master / slave / terminal
     label 機器記号の欄を置くか。限定図記号のように端子を持たないものは False
     """
+    # **外形は10の倍数でなければならない。** 同梱8597個が全部そうなっていて、
+    # 実装側の要求と見てよい（[docs/寸法基準.md]）。うっかり半端な値で書き出すと
+    # あとで全部直すことになるので、ここで止める。
+    if w % 10 or h % 10:
+        raise ValueError("外形は10の倍数にする: %s は %dx%d" % (path, w, h))
     hx = w // 2 if hx is None else hx
     hy = h // 2 if hy is None else hy
     parts = list(body) + [t for t in terms]

@@ -26,10 +26,13 @@ QElectroTech 用の、日本の制御盤向け図記号ライブラリと作図�
 ```
 elements/      .elmt 図記号定義
 tools/         Python ツール
-  paths.py       図記号の在りかを解決する（他の3本が使う）
+  paths.py       図記号の在りかを解決する（他が使う）
+  elmtgen.py     .elmt を座標から組み立てるライブラリ
   qetgen.py      .qet をコードから生成するライブラリ
   render_elmt.py .elmt を PNG に描き出す（目視確認用）
+  check_elmt.py  .elmt を検証する（外形・端子・属性。目視では出ない誤り）
   check_qet.py   .qet を検証する（重なり・はみ出し・端子未指定・相互参照・線番）
+  measure_page.py 規格票のドット格子を測る
   pdf_page.py    PDF のページを画像に描き出す（規格の図を読む）
   status.py      採録状況を elements/ から数え直す
   install.py     図記号を QET のユーザーコレクションに登録する

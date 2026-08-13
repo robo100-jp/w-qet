@@ -8,6 +8,7 @@
     </names>
     <informations>JIS C 0617 / IEC 60617 07-12-08
 端子表示の書き方を示す例。実際の図面では回路に合わせて書き直す。
+規格票は入力側と出力側の両方に N を書いている。図の文字はそのままにし、QET の端子名だけ出力側を「L(出力)」「N(出力)」にして区別できるようにした。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <rect x="-45" y="-50" width="90" height="100" antialias="false"
@@ -56,9 +57,9 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
                   uuid="{5e3f40ab-09e4-4f3d-b5a1-2aec2738f931}"/>
         <terminal x="-55" y="30" orientation="w" name="N" type="Generic"
                   uuid="{c4117629-53ff-4c21-b188-76e4f4cc63ce}"/>
-        <terminal x="55" y="-10" orientation="e" name="L" type="Generic"
+        <terminal x="55" y="-10" orientation="e" name="L(出力)" type="Generic"
                   uuid="{e0357759-8897-48c5-bfc7-67df786e6d73}"/>
-        <terminal x="55" y="10" orientation="e" name="N" type="Generic"
+        <terminal x="55" y="10" orientation="e" name="N(出力)" type="Generic"
                   uuid="{557c623d-7993-48de-97ab-9a944450cfe0}"/>
         <dynamic_text x="60" y="-50" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"

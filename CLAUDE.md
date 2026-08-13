@@ -50,6 +50,7 @@ QElectroTech 同梱の `91_en_60617`（IEC 60617 規格記号 約900種）から
 
 ```bash
 py -3 tools/render_elmt.py <部品名>
+py -3 tools/check_elmt.py <部品名>     # 目視では出ない誤り（外形・端子・属性）
 ```
 
 **座標を読むだけでは形の誤りに気づけない。** 過去の実例：
@@ -77,6 +78,7 @@ tools/
   elmtgen.py       .elmt を座標から組み立てるライブラリ
   qetgen.py        .qet をコードから生成するライブラリ
   render_elmt.py   .elmt を PNG に描き出す（目視確認用）
+  check_elmt.py    .elmt を検証する（外形・端子・属性。目視では出ない誤り）
   check_qet.py     .qet を検証する
   measure_page.py  規格票のドット格子を測る
   pdf_page.py      PDF のページを画像に描き出す
