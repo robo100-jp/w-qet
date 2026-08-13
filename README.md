@@ -11,14 +11,15 @@ QElectroTech 用の、日本の制御盤向け図記号ライブラリと作図�
 
 ## 現在の状態
 
-**準備中。** シンボルはこれから描き起こす。
+**JIS C 0617 第7部（開閉装置，制御装置及び保護装置）の 161 個を描き起こしています。**
 
 | 内容 | 状態 |
 |---|---|
+| `elements/` 図記号 | 第7部 **2 / 161** → [採録状況](docs/採録状況.md) |
 | `tools/` 作図・検証ツール（Python） | あり |
 | `.claude/skills/` Claude Code 用スキル | あり |
-| `elements/` 図記号 | **これから** |
-| `docs/採録状況.md` 採録の一覧 | これから |
+
+進捗は `py -3 tools/status.py` が `elements/` を走査して数え直します。
 
 ## 構成
 
@@ -30,12 +31,27 @@ tools/         Python ツール
   render_elmt.py .elmt を PNG に描き出す（目視確認用）
   check_qet.py   .qet を検証する（重なり・はみ出し・端子未指定・相互参照・線番）
   pdf_page.py    PDF のページを画像に描き出す（規格の図を読む）
+  status.py      採録状況を elements/ から数え直す
+  install.py     図記号を QET のユーザーコレクションに登録する
 docs/          設計方針・採録状況
 .claude/skills/  Claude Code 用スキル
 ```
 
+- 採録状況（第7部 161個） … [docs/採録状況.md](docs/採録状況.md)
 - 記号の寸法・端子・ラベルの約束ごと … [docs/寸法基準.md](docs/寸法基準.md)
 - ツールの使い方と `.elmt` の書式 … [docs/ツール.md](docs/ツール.md)
+
+## QET に登録する
+
+```bash
+py -3 tools/install.py
+```
+
+`%APPDATA%\qelectrotech\QElectroTech\elements\w-qet\` に、節ごとのフォルダに
+分けて入れます。**既存の部品とは混ざりません。** 取り除くのは `--uninstall`。
+
+登録後は **QET を再起動**してください（起動時にコレクションを読むため）。
+QET はスタートメニューから起動します。exe を直接叩くと部品が0個になります。
 
 ## なぜ作るか
 
