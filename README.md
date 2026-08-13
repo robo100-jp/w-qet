@@ -15,7 +15,7 @@ QElectroTech 用の、日本の制御盤向け図記号ライブラリと作図�
 
 | 内容 | 状態 |
 |---|---|
-| `elements/` 図記号 | 第7部 **2 / 161** → [採録状況](docs/採録状況.md) |
+| `elements/` 図記号 | 第7部の 161 個を順に → [採録状況](docs/採録状況.md) |
 | `tools/` 作図・検証ツール（Python） | あり |
 | `.claude/skills/` Claude Code 用スキル | あり |
 

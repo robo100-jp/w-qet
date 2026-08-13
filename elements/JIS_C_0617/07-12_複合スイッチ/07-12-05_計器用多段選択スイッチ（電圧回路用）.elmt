@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="60" height="60" hotspot_x="30" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{8732f0cd-4d8f-4831-b855-78edf306776f}"/>
+    <names>
+        <name lang="ja">計器用多段選択スイッチ（電圧回路用）</name>
+        <name lang="en">Instrument multi-position selector switch for voltage</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-12-05
+規格票にはリード線が描かれていない。作図に使えるよう、外形の左右中央に端子を1つずつ足してある。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <rect x="-30" y="-30" width="60" height="60" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <text text="VS" x="-9" y="-8.5" rotation="0"
+              font="Liberation Sans,10,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <line x1="-20" y1="0" x2="-10" y2="0" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="10" y1="0" x2="20" y2="0" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="10" y1="0" x2="-13.5" y2="12" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="-30" y="0" orientation="w" name="1" type="Generic"
+                  uuid="{4acddb24-ef2e-4cff-bfc1-d647f5f5eed8}"/>
+        <terminal x="30" y="0" orientation="e" name="2" type="Generic"
+                  uuid="{d6ebb7e9-80c6-410d-86c0-f2f841be87fb}"/>
+        <dynamic_text x="35" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{933c955f-a0f7-42e4-8601-f83f0a3203cd}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

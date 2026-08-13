@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="110" height="120" hotspot_x="55" hotspot_y="60"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{fa7f8af4-6efc-4c8c-a30f-e60da1798110}"/>
+    <names>
+        <name lang="ja">端子表示付き計器用多段選択スイッチ</name>
+        <name lang="en">Instrument multi-position selector switch with terminal marking</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-12-06
+端子表示と切換位置の書き方を示す例。実際の図面では回路に合わせて書き直す。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <rect x="-45" y="-60" width="90" height="120" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="-55" y1="-40" x2="-45" y2="-40" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <text text="L1" x="-42" y="-36" rotation="0"
+              font="Liberation Sans,12,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <line x1="-55" y1="-20" x2="-45" y2="-20" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <text text="L2" x="-42" y="-16" rotation="0"
+              font="Liberation Sans,12,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <line x1="-55" y1="0" x2="-45" y2="0" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <text text="L3" x="-42" y="4" rotation="0"
+              font="Liberation Sans,12,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <line x1="-55" y1="20" x2="-45" y2="20" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <text text="N" x="-42" y="24" rotation="0"
+              font="Liberation Sans,12,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <line x1="45" y1="-20" x2="55" y2="-20" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="45" y1="0" x2="55" y2="0" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <text text="VS" x="10" y="-36" rotation="0"
+              font="Liberation Sans,12,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <line x1="-15" y1="-20" x2="-5" y2="-20" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="15" y1="-20" x2="25" y2="-20" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="15" y1="-20" x2="-5.7" y2="-10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <text text="L1-L2" x="-5" y="6" rotation="0"
+              font="Liberation Sans,11,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="L2-L3" x="-5" y="15.5" rotation="0"
+              font="Liberation Sans,11,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="L3-L1" x="-5" y="25" rotation="0"
+              font="Liberation Sans,11,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="L1-N" x="-5" y="34.5" rotation="0"
+              font="Liberation Sans,11,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="L2-N" x="-5" y="44" rotation="0"
+              font="Liberation Sans,11,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="L3-N" x="-5" y="53.5" rotation="0"
+              font="Liberation Sans,11,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <terminal x="-55" y="-40" orientation="w" name="L1" type="Generic"
+                  uuid="{45d7c0cc-1934-47e7-bade-91cacfd8afd1}"/>
+        <terminal x="-55" y="-20" orientation="w" name="L2" type="Generic"
+                  uuid="{a41361d5-817e-4022-9bb3-37d420eb83b1}"/>
+        <terminal x="-55" y="0" orientation="w" name="L3" type="Generic"
+                  uuid="{27c11878-3698-4093-91d1-f93b245798d6}"/>
+        <terminal x="-55" y="20" orientation="w" name="N" type="Generic"
+                  uuid="{a5858e0e-3549-4664-ac46-538282d59686}"/>
+        <terminal x="55" y="-20" orientation="e" name="1" type="Generic"
+                  uuid="{bc7bd548-58c7-4d18-84fb-c72100f31358}"/>
+        <terminal x="55" y="0" orientation="e" name="2" type="Generic"
+                  uuid="{15ced613-7a9b-474a-b634-758260ed548d}"/>
+        <dynamic_text x="60" y="-60" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{a65735f8-e2aa-4de9-a472-e9cc048af164}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>
