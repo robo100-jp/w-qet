@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="50" height="60" hotspot_x="50" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{43864013-fb22-424a-aa63-e0f5785c204a}"/>
+    <names>
+        <name lang="ja">近接スイッチ（磁石の接近で作動）</name>
+        <name lang="en">Proximity switch, magnetically controlled</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-20-03
+磁石が近づいたことを検出して閉じるスイッチ。左の塗りつぶした コ の字が磁石。
+ひし形とスイッチの間の破線は機械的連結。検出した動きが可動接片に伝わることを表す。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-10" y1="-10" x2="0" y2="10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="10" x2="0" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <polygon x1="-30" y1="-8.5" x2="-21.5" y2="0" x3="-30" y3="8.5" x4="-38.5" y4="0" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="-32.2" y1="-6.3" x2="-32.2" y2="6.3" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-27.8" y1="-6.3" x2="-27.8" y2="6.3" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <polygon x1="-50" y1="-10" x2="-40" y2="-10" x3="-40" y3="-5" x4="-45" y4="-5" x5="-45" y5="5" x6="-40" y6="5" x7="-40" y7="10" x8="-50" y8="10" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:black;color:black"/>
+        <line x1="-21.5" y1="0" x2="-5" y2="0" antialias="false"
+              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
+                  uuid="{c0bff696-9419-4283-b046-08da4b6b7e59}"/>
+        <terminal x="0" y="30" orientation="s" name="2" type="Generic"
+                  uuid="{49f855a2-cdc3-4047-bf16-8ee7ea93ef8f}"/>
+        <dynamic_text x="5" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{94226308-bcc6-4b11-acbf-5ef9816f3a28}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>
