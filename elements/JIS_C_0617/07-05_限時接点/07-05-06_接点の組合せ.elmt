@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="110" height="60" hotspot_x="55" hotspot_y="30"
+            type="element" link_type="slave" version="0.100.0">
+    <uuid uuid="{d19afa30-455e-4e10-be35-4df0646a61e3}"/>
+    <names>
+        <name lang="ja">接点の組合せ</name>
+        <name lang="en">Contact assembly</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-05-06
+規格が示す組合せの例。単独の機器ではない。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <line x1="-40" y1="-30" x2="-40" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-51" y1="-12" x2="-40" y2="10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-40" y1="10" x2="-40" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-11" y1="-12" x2="0" y2="10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="10" x2="0" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <arc x="-28.25" y="-8.5" width="17" height="17" start="90" angle="180"
+             antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="-28.25" y1="-1.5" x2="-5.75" y2="-1.5" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-28.25" y1="1.5" x2="-4.25" y2="1.5" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="40" y1="-30" x2="40" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="40" y1="-10" x2="50" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="48.3" y1="-12.8" x2="40" y2="10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="40" y1="10" x2="40" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <arc x="19.15" y="-8.5" width="17" height="17" start="-90" angle="180"
+             antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="27.65" y1="-1.5" x2="44.19" y2="-1.5" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="27.65" y1="1.5" x2="43.09" y2="1.5" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-45" y1="0" x2="43.6" y2="0" antialias="false"
+              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="-40" y="-30" orientation="n" name="1" type="Generic"
+                  uuid="{1836103d-2800-49b9-82bb-059076a83a23}"/>
+        <terminal x="-40" y="30" orientation="s" name="2" type="Generic"
+                  uuid="{6acf0b55-444b-470a-a87c-801e2f4d913c}"/>
+        <terminal x="0" y="-30" orientation="n" name="3" type="Generic"
+                  uuid="{7cecffb5-3449-42c9-b3a9-3bb190ece82d}"/>
+        <terminal x="0" y="30" orientation="s" name="4" type="Generic"
+                  uuid="{38d8cbdb-e434-4d52-90bd-1c7c47d2d0e2}"/>
+        <terminal x="40" y="-30" orientation="n" name="5" type="Generic"
+                  uuid="{1a859d98-b540-4d24-a5f9-8c8aba2875f3}"/>
+        <terminal x="40" y="30" orientation="s" name="6" type="Generic"
+                  uuid="{9fed3ca1-ca92-4a2b-949a-ebbd851c5bbf}"/>
+        <dynamic_text x="60" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{4aaac1eb-242f-4a51-8504-008ed5de4520}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

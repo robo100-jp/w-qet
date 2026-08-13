@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="40" height="60" hotspot_x="37" hotspot_y="30"
+            type="element" link_type="slave" version="0.100.0">
+    <uuid uuid="{57d43ed0-04d7-4711-be3a-36edafbf9a11}"/>
+    <names>
+        <name lang="ja">メーク接点（限時）</name>
+        <name lang="en">Make contact, delayed</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-05-05
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-11" y1="-12" x2="0" y2="10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="10" x2="0" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <arc x="-42" y="-8.5" width="17" height="17" start="-90" angle="180"
+             antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc x="-25" y="-8.5" width="17" height="17" start="90" angle="180"
+             antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="-25" y1="-1.5" x2="-5.75" y2="-1.5" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-25" y1="1.5" x2="-4.25" y2="1.5" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
+                  uuid="{1a224360-9721-4a81-84d3-abec1500149c}"/>
+        <terminal x="0" y="30" orientation="s" name="2" type="Generic"
+                  uuid="{47a38e05-4428-49ce-94fb-c390b4b716fd}"/>
+        <dynamic_text x="8" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{f062cf30-ab26-48e2-9c52-ca81337baca1}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

@@ -69,15 +69,16 @@ def term(x, y, ori, name):
             '                  uuid="%s"/>' % (x, y, ori, name, _u()))
 
 
-def _label(w, h):
+def _label(w, h, hx=None):
     """機器記号の置き場所。外形の右上、右端から5離す"""
+    right = w / 2 if hx is None else w - hx
     return ('        <dynamic_text x="%g" y="%g" z="1" text_width="-1"\n'
             '                      Halignment="AlignLeft" Valignment="AlignTop"\n'
             '                      frame="false" rotation="0" keep_visual_rotation="true"\n'
             '                      text_from="ElementInfo" uuid="%s"\n'
             '                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">\n'
             '            <text></text>\n            <info_name>label</info_name>\n'
-            '        </dynamic_text>' % (w / 2 + 5, -(h / 2), _u()))
+            '        </dynamic_text>' % (right + 5, -(h / 2), _u()))
 
 
 NOTE = "JIS C 0617 を参考に作成。規格の図版を複製したものではない。"
@@ -85,17 +86,21 @@ NOTE_QUAL = ("限定図記号。端子を持たない。ほかの図記号に重
 
 
 def write(path, num, ja, en, w, h, body, terms=(), link="simple",
-          label=True, note=None):
+          label=True, note=None, hx=None, hy=None):
     """`.elmt` を書き出す
 
     num   図記号番号（例 "07-02-01"）。check_qet.py と status.py がこれで判別する
-    w, h  外形。10の倍数。hotspot は中央（w/2, h/2）
+    w, h  外形。10の倍数。hotspot は既定で中央（w/2, h/2）
+    hx    hotspot を横にずらす。**図が導体の軸に対して左右非対称のとき**に使う。
+          座標の原点から左へ hx、右へ w-hx が外形。既定は w/2（＝中央）
     link  simple / master / slave / terminal
     label 機器記号の欄を置くか。限定図記号のように端子を持たないものは False
     """
+    hx = w // 2 if hx is None else hx
+    hy = h // 2 if hy is None else hy
     parts = list(body) + [t for t in terms]
     if label:
-        parts.append(_label(w, h))
+        parts.append(_label(w, h, hx))
     info = "JIS C 0617 / IEC 60617 %s\n%s" % (num, note or NOTE)
     xml = ('<?xml version="1.0" encoding="UTF-8"?>\n'
            '<definition width="%d" height="%d" hotspot_x="%d" hotspot_y="%d"\n'
@@ -105,7 +110,7 @@ def write(path, num, ja, en, w, h, body, terms=(), link="simple",
            '        <name lang="en">%s</name>\n    </names>\n'
            '    <informations>%s</informations>\n'
            '    <description>\n%s\n    </description>\n</definition>\n'
-           % (w, h, w // 2, h // 2, link, _u(), ja, en, info, "\n".join(parts)))
+           % (w, h, hx, hy, link, _u(), ja, en, info, "\n".join(parts)))
     os.makedirs(os.path.dirname(path), exist_ok=True)
     io.open(path, "w", encoding="utf-8", newline="\n").write(xml)
     return path
