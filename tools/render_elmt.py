@@ -223,7 +223,10 @@ def draw_one(path):
             mfz = re.search(r"[^,]+,([\d.]+)", a.get("font", ""))
             px = float(mfz.group(1)) if mfz else float(a.get("size", 10))
             x, y = P(float(a["x"]), float(a["y"]))
-            dr.text((x, y - px * S * 0.78), a.get("text", ""), fill="black", font=font(int(px * S * 0.78)))
+            # `I &gt;` のような実体参照を戻す。&amp; は最後（二重展開を避ける）
+            s = (a.get("text", "").replace("&lt;", "<").replace("&gt;", ">")
+                 .replace("&quot;", '"').replace("&amp;", "&"))
+            dr.text((x, y - px * S * 0.78), s, fill="black", font=font(int(px * S * 0.78)))
 
     # ラベル欄は青。図形ではないので色で区別する
     for x, y, s, a in dtexts:

@@ -72,8 +72,11 @@ def text(x, y, s, size=9, italic=False):
     """
     f = ("Liberation Sans,%d,-1,5,50,%d,0,0,0,0,%s"
          % (size, 1 if italic else 0, "Italic" if italic else "Regular"))
+    # `I >` のような文字を属性に入れる。**エスケープしないとXMLが壊れる。**
+    # `>` を素で書くと、タグの終わりと見分けがつかず読み手が途中で切ってしまう。
+    e = s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
     return ('        <text text="%s" x="%g" y="%g" rotation="0"\n'
-            '              font="%s" color="#000000"/>' % (s, x, y, f))
+            '              font="%s" color="#000000"/>' % (e, x, y, f))
 
 
 def term(x, y, ori, name):
