@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="20" height="60" hotspot_x="10" hotspot_y="30"
+            type="element" link_type="slave" version="0.100.0">
+    <uuid uuid="{b419c4ee-8cde-4513-b995-b67953046933}"/>
+    <names>
+        <name lang="ja">電磁接触器の主ブレーク接点，電磁接触器</name>
+        <name lang="en">Main break contact of a contactor; Contactor</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-13-04
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="-10" x2="10" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="7.5" y1="-12.5" x2="0" y2="10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="10" x2="0" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <arc x="-5" y="-20" width="10" height="10" start="-90" angle="180"
+             antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
+                  uuid="{76ea1c17-1173-4f17-93e1-f65f1d28d32d}"/>
+        <terminal x="0" y="30" orientation="s" name="2" type="Generic"
+                  uuid="{9b1a8d57-572a-4773-988c-d8795d5e9ba0}"/>
+        <dynamic_text x="15" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{a37be830-5c7a-4c7b-b45c-7b05c10c5c89}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>
