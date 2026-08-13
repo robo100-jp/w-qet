@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="50" height="60" hotspot_x="10" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{06426d9d-66c3-4804-8a5b-480c35dcbd5a}"/>
+    <names>
+        <name lang="ja">警報接点付きヒューズ</name>
+        <name lang="en">Fuse with alarm contact</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-21-04
+溶断すると閉じる警報接点を持つヒューズ。警報接点の片側が本体の出力側につながっていて、端子は3つ。
+破線は機械的連結。ストライカが接点を動かすことを表す。
+
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <line x1="0" y1="-30" x2="0" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <rect x="-5" y="-15" width="10" height="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="5" y1="0" x2="35" y2="0" antialias="false"
+              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="40" y1="-30" x2="40" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="30" y1="-10" x2="40" y2="10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="40" y1="10" x2="40" y2="15" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="15" x2="40" y2="15" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
+                  uuid="{ac1905b3-8001-4f09-8915-ec9d66eb6ee7}"/>
+        <terminal x="0" y="30" orientation="s" name="2" type="Generic"
+                  uuid="{49b39258-cbed-4118-85a8-560c46e47371}"/>
+        <terminal x="40" y="-30" orientation="n" name="3" type="Generic"
+                  uuid="{f8102fa5-fb2b-4697-a8b3-99ac36678a6b}"/>
+        <dynamic_text x="45" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{8b125cf7-e57f-4316-ac80-ea918eae22fb}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

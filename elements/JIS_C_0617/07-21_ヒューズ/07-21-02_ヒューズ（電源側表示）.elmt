@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="20" height="60" hotspot_x="10" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{0df7652b-88e8-4aac-8dcf-c69f9a574363}"/>
+    <names>
+        <name lang="ja">ヒューズ（電源側表示）</name>
+        <name lang="en">Fuse</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-21-02
+溶断したあとも電源がい（活）きたままの側を、太らせた辺で示すヒューズ。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <line x1="0" y1="-30" x2="0" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <rect x="-5" y="-15" width="10" height="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <rect x="-5" y="-15" width="10" height="5.5" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:black;color:black"/>
+        <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
+                  uuid="{ac1905b3-8001-4f09-8915-ec9d66eb6ee7}"/>
+        <terminal x="0" y="30" orientation="s" name="2" type="Generic"
+                  uuid="{49b39258-cbed-4118-85a8-560c46e47371}"/>
+        <dynamic_text x="15" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{e8f48962-7b7f-402e-b431-c40182a95a1f}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

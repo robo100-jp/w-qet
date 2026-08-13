@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="120" height="100" hotspot_x="15" hotspot_y="50"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{aabe991f-1bfc-45b0-a95d-463f353d3038}"/>
+    <names>
+        <name lang="ja">ストライカ付き3極スイッチ</name>
+        <name lang="en">Three-pole switch with striker fuses</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-21-06
+3極それぞれにストライカ付きヒューズを持ち、どの極が溶断しても3極いっしょに開くスイッチ。
+破線は機械的連結。ストライカが接点を動かすことを表す。
+
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <line x1="0" y1="-50" x2="0" y2="10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <rect x="-5" y="-35" width="10" height="20" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="-11" y1="8" x2="0" y2="30" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="30" x2="0" y2="50" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="5" y1="-20" x2="20" y2="-20" antialias="false"
+              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="20" y1="-20" x2="20" y2="0" antialias="false"
+              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="40" y1="-50" x2="40" y2="10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <rect x="35" y="-35" width="10" height="20" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="29" y1="8" x2="40" y2="30" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="40" y1="30" x2="40" y2="50" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="45" y1="-20" x2="60" y2="-20" antialias="false"
+              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="60" y1="-20" x2="60" y2="0" antialias="false"
+              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="80" y1="-50" x2="80" y2="10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <rect x="75" y="-35" width="10" height="20" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="69" y1="8" x2="80" y2="30" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="80" y1="30" x2="80" y2="50" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="85" y1="-20" x2="100" y2="-20" antialias="false"
+              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="100" y1="-20" x2="100" y2="0" antialias="false"
+              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="20" y1="0" x2="100" y2="0" antialias="false"
+              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="100" y1="0" x2="100" y2="20" antialias="false"
+              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-5" y1="20" x2="100" y2="20" antialias="false"
+              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="0" y="-50" orientation="n" name="1" type="Generic"
+                  uuid="{17714b44-74d7-43cc-9b38-2f267ce0f08f}"/>
+        <terminal x="0" y="50" orientation="s" name="2" type="Generic"
+                  uuid="{16ef96c4-8afb-4731-8fee-debcffe1711e}"/>
+        <terminal x="40" y="-50" orientation="n" name="3" type="Generic"
+                  uuid="{0116aa36-0cc2-4e80-89b6-b6ab1f349182}"/>
+        <terminal x="40" y="50" orientation="s" name="4" type="Generic"
+                  uuid="{257d7d4c-bd95-48a8-95d7-58460a9fc05c}"/>
+        <terminal x="80" y="-50" orientation="n" name="5" type="Generic"
+                  uuid="{8684dab0-7137-44d1-ac51-5f70bc7b3383}"/>
+        <terminal x="80" y="50" orientation="s" name="6" type="Generic"
+                  uuid="{49ac2beb-04f8-4017-a7fe-7d26f65e46b6}"/>
+        <dynamic_text x="110" y="-50" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{b00c16b2-ebb2-499c-82f0-57878eb6eaae}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>
