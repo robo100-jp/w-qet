@@ -123,13 +123,18 @@ IEC 60617 の**規格リファレンス集**であって作図用ではない。
 <dynamic_elmt_text x="..." y="..." rotation="0" frame="false"
                    font="..." uuid="{...}" text_width="-1"
                    Halignment="AlignLeft" Valignment="AlignTop"
-                   keep_visual_rotation="false" text_from="UserText">
+                   keep_visual_rotation="true" text_from="UserText">
     <text>t1</text>
 </dynamic_elmt_text>
 ```
 
+> **`keep_visual_rotation` は必ず `true`。** 部品を倒したときに文字まで倒れるのを防ぐ。
+> QET は `true` のとき文字の回転を「基準 − 親の回転」に置いて親の回転を打ち消す
+> （`dynamicelementtextitem.cpp` の `parentElementRotationChanged`）。
+> 属性を省いたときの既定も `true` なので、**明示的に `false` と書いたときだけ倒れる。**
+
 > **日本の慣習**：コイルを大文字（T1・M1・R1）、その接点を小文字（t1・m1・r1）にすると、
-> 印刷したときに一目で区別できる。原図でも広く使われている表記。
+> 印刷したときに一目で区別できる。既設盤の図面でも広く使われている表記。
 
 ### 相互参照の表示
 
