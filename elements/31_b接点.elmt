@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="20" height="60" hotspot_x="10" hotspot_y="30"
+            type="element" link_type="slave" version="0.100.0">
+    <uuid uuid="{d081a05d-fcdb-4d39-9f12-be8a0ae4f828}"/>
+    <names>
+        <name lang="ja">b接点（ブレーク接点）</name>
+        <name lang="en">Break contact</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-02-03
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="-10" x2="10" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="7.5" y1="-12" x2="0" y2="10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="10" x2="0" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
+                  uuid="{6d9862b9-3dd0-49c4-b7c2-fa069bef8f9c}"/>
+        <terminal x="0" y="30" orientation="s" name="2" type="Generic"
+                  uuid="{5011c8f2-09fe-4c86-b2c4-a53a6a52bdf8}"/>
+        <dynamic_text x="15" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{56e3dbab-e5c2-4c06-b5f2-bc0afc7caa51}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

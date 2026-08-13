@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="20" height="60" hotspot_x="10" hotspot_y="30"
+            type="element" link_type="slave" version="0.100.0">
+    <uuid uuid="{cafc04e4-d839-4a8e-9fc0-0b26df9986cc}"/>
+    <names>
+        <name lang="ja">a接点（メーク接点）</name>
+        <name lang="en">Make contact</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-02-01
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-10" y1="-10" x2="0" y2="10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="10" x2="0" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
+                  uuid="{5ef4162c-e669-4d21-8575-0f62f887cbaa}"/>
+        <terminal x="0" y="30" orientation="s" name="2" type="Generic"
+                  uuid="{6a1053f8-30fc-41c9-81b8-ae654c42ba6a}"/>
+        <dynamic_text x="15" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{6176f5ca-253f-411a-a4fd-b25ff75f0d9d}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>
