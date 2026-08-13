@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="60" height="60" hotspot_x="50" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{254fd875-680b-401b-80dc-b881acfc2941}"/>
+    <names>
+        <name lang="ja">断路器，アイソレータ</name>
+        <name lang="en">Disconnector; Isolator</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-13-10
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-11" y1="-12" x2="0" y2="10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="10" x2="0" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-5" y1="-10" x2="5" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-45" y1="-5" x2="-45" y2="5" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <rect x="-36.2" y="-5" width="8.6" height="5" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="-25" y1="-10" x2="-25" y2="-1.5" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-45" y1="0" x2="-5" y2="0" antialias="false"
+              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
+                  uuid="{82b4bbc9-4e78-44ce-9f06-69d89c4db46b}"/>
+        <terminal x="0" y="30" orientation="s" name="2" type="Generic"
+                  uuid="{5b5e9a23-f98a-480e-8614-be6800d313f8}"/>
+        <dynamic_text x="15" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{b98de3a3-b7ed-4b8e-aaca-d50f600ef071}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>
