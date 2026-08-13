@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="29" height="26" hotspot_x="14" hotspot_y="15"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{08860b34-1082-4ec0-a053-3e97fdb8f970}"/>
+    <names>
+        <name lang="ja">地絡電流</name>
+        <name lang="en">Earth fault current</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-16-07
+地絡電流。
+限定図記号。端子を持たない。ほかの図記号に重ねて使う。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <text text="I" x="-9.52" y="0" rotation="0"
+              font="Liberation Sans,14,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
+        <line x1="3.52" y1="-12" x2="3.52" y2="-4" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-2.48" y1="-4" x2="9.52" y2="-4" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0.02" y1="-1.5" x2="7.02" y2="-1.5" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="2.02" y1="1" x2="5.02" y2="1" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+    </description>
+</definition>

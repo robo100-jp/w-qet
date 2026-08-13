@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="26" height="26" hotspot_x="13" hotspot_y="15"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{d44b6192-10e8-4c89-a0ea-40967f8744c7}"/>
+    <names>
+        <name lang="ja">二つの多相系統間の中性点電流</name>
+        <name lang="en">Current between neutrals of two polyphase systems</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-16-09
+二つの多相系統の中性点間を流れる電流。
+限定図記号。端子を持たない。ほかの図記号に重ねて使う。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <text text="I" x="-8.45" y="0" rotation="0"
+              font="Liberation Sans,14,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
+        <text text="N-N" x="-5.41" y="3" rotation="0"
+              font="Liberation Sans,10,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+    </description>
+</definition>

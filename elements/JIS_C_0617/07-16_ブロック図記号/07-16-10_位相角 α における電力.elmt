@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="21" height="26" hotspot_x="10" hotspot_y="15"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{2229fe6b-dbcc-4466-a383-467ed5386336}"/>
+    <names>
+        <name lang="ja">位相角 α における電力</name>
+        <name lang="en">Power at phase angle alpha</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-16-10
+位相角 α における電力。
+限定図記号。端子を持たない。ほかの図記号に重ねて使う。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <text text="P" x="-5.98" y="0" rotation="0"
+              font="Liberation Sans,14,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
+        <text text="α" x="1.3" y="3" rotation="0"
+              font="Liberation Sans,10,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
+    </description>
+</definition>

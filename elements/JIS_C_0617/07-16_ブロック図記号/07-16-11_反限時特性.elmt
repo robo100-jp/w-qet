@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="44" height="16" hotspot_x="22" hotspot_y="8"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{5ea72801-5d40-487e-b82f-9b8bb868fa5c}"/>
+    <names>
+        <name lang="ja">反限時特性</name>
+        <name lang="en">Inverse time-lag characteristic</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-16-11
+反限時（電流が大きいほど早く動作する）特性。
+限定図記号。端子を持たない。ほかの図記号に重ねて使う。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <line x1="-20" y1="0" x2="20" y2="0" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-20" y1="-2.5" x2="-20" y2="2.5" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="20" y1="-2.5" x2="20" y2="2.5" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <arc x="-8.4" y="-35.1" width="40.8" height="40.8" start="207.8" angle="39.3"
+             antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+    </description>
+</definition>
