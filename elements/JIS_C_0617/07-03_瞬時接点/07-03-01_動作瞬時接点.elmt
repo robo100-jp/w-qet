@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="30" height="60" hotspot_x="15" hotspot_y="30"
+            type="element" link_type="slave" version="0.100.0">
+    <uuid uuid="{06e02ec5-99f2-4edd-a9ed-578f09da99dc}"/>
+    <names>
+        <name lang="ja">動作瞬時接点</name>
+        <name lang="en">Passing make contact when actuated</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-03-01
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-11" y1="-12" x2="0" y2="10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="10" x2="0" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-3" y1="-16" x2="0" y2="-10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
+                  uuid="{668644d1-84fa-4904-9510-601c7df364ab}"/>
+        <terminal x="0" y="30" orientation="s" name="2" type="Generic"
+                  uuid="{8a7df906-d74e-4544-bfd8-de1025520ad5}"/>
+        <dynamic_text x="20" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{88ec14a6-bfe0-4be7-9acb-3727df349fde}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>
