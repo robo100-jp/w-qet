@@ -125,31 +125,40 @@ def main():
     tol = a.dpi // 12
     cols = cluster([(c[0]+c[2])/2 for c in dots], tol)
     rows = cluster([(c[1]+c[3])/2 for c in dots], tol)
-    d = ([cols[i+1]-cols[i] for i in range(len(cols)-1)]
-         + [rows[i+1]-rows[i] for i in range(len(rows)-1)])
-    d = [v for v in d if v > tol]
-    M = sum(d) / len(d)
+    # **縦と横で M が違うページがある。** 規格票では図が表のセルに入れられており、
+    # 縦横が同じ比で拡縮されていない。横は列の間隔、縦は行の間隔で別々に測る。
+    def pitch(v):
+        d = [v[i+1]-v[i] for i in range(len(v)-1)]
+        d = [x for x in d if x > tol]
+        return sum(d) / len(d)
+    MX, MY = pitch(cols), pitch(rows)
+    M = (MX + MY) / 2
     OX, OY = cols[0], rows[0]
 
-    print("p.%d  M = %.2f px  格子 %d列 × %d行  原点=左上のドット" % (a.page, M, len(cols), len(rows)))
+    print("p.%d  横 M = %.2f px / 縦 M = %.2f px  格子 %d列 × %d行  原点=左上のドット"
+          % (a.page, MX, MY, len(cols), len(rows)))
+    if abs(MX - MY) / MY > 0.01:
+        print("  ※ 縦横で %.1f%% 違う。図がセルに合わせて歪んでいる。"
+              "**縦横それぞれの格子で測っている**ので、下の数値はそのまま使ってよい"
+              % (100 * abs(MX - MY) / MY))
     print("  1M = 10 なので、下の数値を10倍すれば .elmt の座標になる")
     print()
     # 図記号は格子の内側にある。外の表罫線や文字は落とす
-    lo_x, hi_x = OX - 1.5*M, OX + (len(cols) + 0.5) * M
-    lo_y, hi_y = OY - 1.5*M, OY + (len(rows) + 0.5) * M
+    lo_x, hi_x = OX - 1.5*MX, OX + (len(cols) + 0.5) * MX
+    lo_y, hi_y = OY - 1.5*MY, OY + (len(rows) + 0.5) * MY
     figs = [c for c in figs
             if c[0] >= lo_x and c[2] <= hi_x and c[1] >= lo_y and c[3] <= hi_y]
 
     print("図形の外接矩形（M 単位）  %d 個" % len(figs))
     for x0, y0, x1, y1, n in sorted(figs, key=lambda c: (c[1], c[0])):
         print("  (%6.2f, %6.2f) - (%6.2f, %6.2f)   画素 %d" %
-              ((x0-OX)/M, (y0-OY)/M, (x1-OX)/M, (y1-OY)/M, n))
+              ((x0-OX)/MX, (y0-OY)/MY, (x1-OX)/MX, (y1-OY)/MY, n))
 
     if a.scan:
         print()
         print("横方向の走査（0.25M 刻み。斜線の折れ点を見るため）")
-        y = int(OY - M)
-        while y < int(OY + (len(rows)) * M):
+        y = int(OY - MY)
+        while y < int(OY + (len(rows)) * MY):
             if 0 <= y < H:
                 xs = [x for x in range(W) if dark[y*W + x]]
                 runs = []
@@ -162,14 +171,14 @@ def main():
                     runs.append((s, pv))
                 big = [r for r in runs if r[1]-r[0] > lim // 2]
                 if big:
-                    print("  y=%6.2f : %s" % ((y-OY)/M, "  ".join(
-                        "%.2f–%.2f" % ((p-OX)/M, (q-OX)/M) for p, q in big)))
-            y += max(1, int(M/4))
+                    print("  y=%6.2f : %s" % ((y-OY)/MY, "  ".join(
+                        "%.2f–%.2f" % ((p-OX)/MX, (q-OX)/MX) for p, q in big)))
+            y += max(1, int(MY/4))
 
     os.makedirs(a.out, exist_ok=True)
     p = os.path.join(a.out, "p%04d_図記号.png" % a.page)
-    top.crop((int(max(0, OX-2*M)), int(max(0, OY-2*M)),
-              int(min(W, OX+(len(cols)+2)*M)), int(min(H, OY+(len(rows)+2)*M)))).save(p)
+    top.crop((int(max(0, OX-2*MX)), int(max(0, OY-2*MY)),
+              int(min(W, OX+(len(cols)+2)*MX)), int(min(H, OY+(len(rows)+2)*MY)))).save(p)
     print()
     print("切り出し:", p)
     print("**必ずこの画像を目で見ること。** 連結した図形は1つの塊として出るので、")

@@ -97,6 +97,18 @@ def find(name, dirs=None):
         if hit:
             return hit
 
+    # 図記号番号だけで呼べるようにする（`render_elmt.py 07-02-06`）。
+    # ファイル名は「番号_和名.elmt」なので前方一致で足りる。**一意のときだけ**通す。
+    stem = base[:-5]
+    for d in dd:
+        hit = [p for fn, p in sorted(table([d]).items()) if fn.startswith(stem)]
+        if len(hit) == 1:
+            return hit[0]
+        if len(hit) > 1:
+            raise FileNotFoundError(
+                "%s に当てはまるものが複数ある:\n  %s"
+                % (name, "\n  ".join(os.path.basename(p) for p in hit)))
+
     raise FileNotFoundError(
         "%s が見つからない。探した場所:\n  %s\n"
         "（環境変数 %s で探索先を足せる）"
