@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="40" height="40" hotspot_x="20" hotspot_y="20"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{4f320710-3cd0-4f59-8fa5-2a6fa37ad0b6}"/>
+    <names>
+        <name lang="ja">スターデルタ始動器</name>
+        <name lang="en">Star-delta starter</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-14-06
+規格票にはリード線が描かれていない。作図に使えるよう、外形の上下中央に端子を1つずつ足してある。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <rect x="-20" y="-20" width="40" height="40" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="-20" y1="-20" x2="0" y2="-10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="20" y1="-20" x2="0" y2="-10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <polygon x1="0" y1="-2" x2="-8.66" y2="13" x3="8.66" y3="13" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="0" y1="8" x2="0" y2="-2" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="8" x2="-8.66" y2="13" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="8" x2="8.66" y2="13" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="0" y="-20" orientation="n" name="1" type="Generic"
+                  uuid="{cc988cb4-a83f-47ee-b4e8-664d0df56ec0}"/>
+        <terminal x="0" y="20" orientation="s" name="2" type="Generic"
+                  uuid="{941dd6fb-f2b4-4845-b543-fb4d71152761}"/>
+        <dynamic_text x="25" y="-20" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{d9fb30d7-7020-4c0d-abc1-7e26b0184b49}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

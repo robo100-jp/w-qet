@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="40" height="56" hotspot_x="20" hotspot_y="36"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{9799dec7-a013-4720-bf1f-92aea1c73ca0}"/>
+    <names>
+        <name lang="ja">始動調整器</name>
+        <name lang="en">Starter-regulator</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-14-03
+規格票にはリード線が描かれていない。作図に使えるよう、外形の上下中央に端子を1つずつ足してある。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <rect x="-20" y="-20" width="40" height="40" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="-20" y1="-20" x2="0" y2="-10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="20" y1="-20" x2="0" y2="-10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-11.3" y1="-8.7" x2="13.6" y2="-33.6" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <polygon x1="13.6" y1="-33.7" x2="10" y2="-26.4" x3="6.6" y3="-30" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:black;color:black"/>
+        <terminal x="0" y="-20" orientation="n" name="1" type="Generic"
+                  uuid="{1cdd525c-a1e6-4906-a533-e8bb4ac89e6f}"/>
+        <terminal x="0" y="20" orientation="s" name="2" type="Generic"
+                  uuid="{217b173a-7506-4690-93e6-1f9c5c182567}"/>
+        <dynamic_text x="25" y="-28" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{f9552e20-d42f-4d32-9e2a-2004a79c3c4c}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="40" height="40" hotspot_x="20" hotspot_y="20"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{303edb7f-169b-4125-8216-b2e702587f16}"/>
+    <names>
+        <name lang="ja">電動機始動器（一般図記号）</name>
+        <name lang="en">Motor starter, general symbol</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-14-01
+規格票にはリード線が描かれていない。作図に使えるよう、外形の上下中央に端子を1つずつ足してある。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <rect x="-20" y="-20" width="40" height="40" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="-20" y1="-20" x2="0" y2="-10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="20" y1="-20" x2="0" y2="-10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="0" y="-20" orientation="n" name="1" type="Generic"
+                  uuid="{bdca214b-787c-469a-89c1-fc11e5c1cadd}"/>
+        <terminal x="0" y="20" orientation="s" name="2" type="Generic"
+                  uuid="{e143bc13-32bf-4b37-a954-266eb2e192d4}"/>
+        <dynamic_text x="25" y="-20" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{76310c9a-27dd-4807-948e-e5ba52cd582f}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>
