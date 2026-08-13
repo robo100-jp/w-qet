@@ -64,6 +64,18 @@ def polygon(pts, closed=True, fill="none"):
             '                 style="%s"/>' % (a, c, SOLID % fill))
 
 
+def text(x, y, s, size=9, italic=False):
+    """固定の文字。x,y は**ベースラインの左端**
+
+    規格の図に出てくる Θ（温度）のような記号に使う。
+    機器記号（ラベル）は別で、write() が dynamic_text を置く。
+    """
+    f = ("Liberation Sans,%d,-1,5,50,%d,0,0,0,0,%s"
+         % (size, 1 if italic else 0, "Italic" if italic else "Regular"))
+    return ('        <text text="%s" x="%g" y="%g" rotation="0"\n'
+            '              font="%s" color="#000000"/>' % (s, x, y, f))
+
+
 def term(x, y, ori, name):
     return ('        <terminal x="%g" y="%g" orientation="%s" name="%s" type="Generic"\n'
             '                  uuid="%s"/>' % (x, y, ori, name, _u()))
