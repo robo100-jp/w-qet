@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="74" height="60" hotspot_x="20" hotspot_y="30"
+            type="element" link_type="master" version="0.100.0">
+    <uuid uuid="{21b85e5c-c86c-4f00-80b2-36425640f03b}"/>
+    <names>
+        <name lang="ja">機械的共振形継電器コイル</name>
+        <name lang="en">Relay coil of a mechanically resonant relay</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-15-13
+機械的に共振させる継電器。ばねの図記号を機械的連結の先に置く。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <rect x="-20" y="-10" width="40" height="20" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="10" x2="0" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="20" y1="0" x2="54" y2="0" antialias="false"
+              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <arc x="26.5" y="-9.2" width="9.4" height="9.4" start="-70" angle="165"
+             antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="32.81" y1="-0.08" x2="32.79" y2="1.22" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <arc x="31.6" y="-0.6" width="10.2" height="10.2" start="140" angle="122"
+             antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <terminal x="0" y="-30" orientation="n" name="A1" type="Generic"
+                  uuid="{7db58c22-9c51-4bd0-8baa-fdabf171843a}"/>
+        <terminal x="0" y="30" orientation="s" name="A2" type="Generic"
+                  uuid="{6e30fb21-bdbc-4458-8ece-c6d0c3d2cedc}"/>
+        <dynamic_text x="59" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{54d7c4c2-a000-4141-8a09-71e5d8bd3f5b}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

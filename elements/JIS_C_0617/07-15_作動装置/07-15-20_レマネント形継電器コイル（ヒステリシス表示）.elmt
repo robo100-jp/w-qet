@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="55" height="60" hotspot_x="35" hotspot_y="30"
+            type="element" link_type="master" version="0.100.0">
+    <uuid uuid="{b1f01c42-eabb-4eb6-9a58-679ff096bcd3}"/>
+    <names>
+        <name lang="ja">レマネント形継電器コイル（ヒステリシス表示）</name>
+        <name lang="en">Relay coil of a remanent relay</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-15-20
+残留磁気で保持する継電器。ヒステリシスの枡で示す。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <rect x="-35" y="-10" width="55" height="20" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="10" x2="0" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-20" y1="-10" x2="-20" y2="10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-21.5" y1="-5" x2="-25" y2="-5" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-25" y1="-5" x2="-30" y2="5" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-30" y1="5" x2="-33.5" y2="5" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="0" y="-30" orientation="n" name="A1" type="Generic"
+                  uuid="{795f04b3-bc97-437b-8678-484df041a26f}"/>
+        <terminal x="0" y="30" orientation="s" name="A2" type="Generic"
+                  uuid="{e124e64d-693f-4189-ab3f-aea8eb649f22}"/>
+        <dynamic_text x="25" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{7d9c8af6-5d18-4b7e-bc6c-d250a075fbbf}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

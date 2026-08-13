@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="60" height="60" hotspot_x="40" hotspot_y="30"
+            type="element" link_type="master" version="0.100.0">
+    <uuid uuid="{abdedada-1d8c-4dfa-af3d-2a897bb4beae}"/>
+    <names>
+        <name lang="ja">交流感動形継電器コイル</name>
+        <name lang="en">Relay coil of an alternating current relay</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-15-12
+交流で動作する継電器。正弦波の枡で示す。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <rect x="-40" y="-10" width="60" height="20" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="10" x2="0" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-20" y1="-10" x2="-20" y2="10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <arc x="-36.3" y="-2.25" width="6.3" height="4.5" start="0" angle="180"
+             antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc x="-30" y="-2.25" width="6.3" height="4.5" start="180" angle="180"
+             antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <terminal x="0" y="-30" orientation="n" name="A1" type="Generic"
+                  uuid="{751bb317-2803-4f9f-94df-495677b471c2}"/>
+        <terminal x="0" y="30" orientation="s" name="A2" type="Generic"
+                  uuid="{d5546fd5-6fa2-4a5b-ba1d-730227723dd8}"/>
+        <dynamic_text x="25" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{a0a13b4d-69fd-4bae-b9a9-e09b90d9166e}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

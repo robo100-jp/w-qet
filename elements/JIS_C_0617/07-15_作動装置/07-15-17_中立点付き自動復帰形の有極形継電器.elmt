@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="110" height="60" hotspot_x="30" hotspot_y="30"
+            type="element" link_type="master" version="0.100.0">
+    <uuid uuid="{784813ce-9b7a-4513-a0fd-d70758659383}"/>
+    <names>
+        <name lang="ja">中立点付き自動復帰形の有極形継電器</name>
+        <name lang="en">Polarized relay with neutral position</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-15-17
+中立位置をもつ有極継電器。可動接片は無励磁でどちらにも触れない。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <rect x="-30" y="-10" width="50" height="20" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="10" x2="0" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-20" y1="-10" x2="-20" y2="10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <rect x="-30" y="-10" width="10" height="20" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:black;color:black"/>
+        <rect x="-29.5" y="-4.5" width="4" height="9" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:white;color:black"/>
+        <line x1="20" y1="0" x2="60" y2="0" antialias="false"
+              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="40" y1="-30" x2="40" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="80" y1="-30" x2="80" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="60" y1="-10" x2="60" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <ellipse x="58" y="8" width="4" height="4" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:white;color:black"/>
+        <terminal x="0" y="-30" orientation="n" name="A1" type="Generic"
+                  uuid="{553ad560-6cef-4bda-8a85-b9f37c275610}"/>
+        <terminal x="0" y="30" orientation="s" name="A2" type="Generic"
+                  uuid="{ecb322be-008f-476e-ab56-9735116d8b27}"/>
+        <terminal x="40" y="-30" orientation="n" name="12" type="Generic"
+                  uuid="{b3fb888f-6923-4d3b-9c85-c758012835dd}"/>
+        <terminal x="80" y="-30" orientation="n" name="14" type="Generic"
+                  uuid="{b5d7af30-0405-43a8-a308-25016efa1a99}"/>
+        <terminal x="60" y="30" orientation="s" name="11" type="Generic"
+                  uuid="{8707250c-c8c8-4145-a1bd-75e89c210ae6}"/>
+        <dynamic_text x="85" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{629d8244-e060-448d-bbd4-70b0cc64aec3}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="40" height="60" hotspot_x="20" hotspot_y="30"
+            type="element" link_type="master" version="0.100.0">
+    <uuid uuid="{4dd80065-7e6c-439e-b382-e537499587a4}"/>
+    <names>
+        <name lang="ja">交流不感動形継電器コイル</name>
+        <name lang="en">Relay coil of a relay unaffected by alternating current</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-15-11
+交流では動作しない継電器。上下の帯を塗りつぶす。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <rect x="-20" y="-10" width="40" height="20" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="10" x2="0" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <rect x="-20" y="-10" width="40" height="5.5" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:black;color:black"/>
+        <rect x="-20" y="4.5" width="40" height="5.5" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:black;color:black"/>
+        <terminal x="0" y="-30" orientation="n" name="A1" type="Generic"
+                  uuid="{d019c8e1-3e9e-4de6-9f40-4194d7949617}"/>
+        <terminal x="0" y="30" orientation="s" name="A2" type="Generic"
+                  uuid="{e05ac6ce-3df4-4602-8e38-b6044e80cb97}"/>
+        <dynamic_text x="25" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{d53cc0fb-ef99-4853-af04-a91da8f31018}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

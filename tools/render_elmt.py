@@ -216,7 +216,10 @@ def draw_one(path):
             bb = [P(float(a["x"]), float(a["y"])),
                   P(float(a["x"]) + float(a["width"]), float(a["y"]) + float(a["height"]))]
             qs, qa = float(a.get("start", 0)), float(a.get("angle", 360))
-            dr.arc(bb, -(qs + qa), -qs, fill="black", width=w)   # Qt→Pillow で向きを反転
+            # Qt→Pillow で向きを反転する。Pillow は start から**時計回りに** end まで
+            # 描くので、angle が負（Qt では時計回り）のときは順番を入れ替える。
+            p1, p2 = -(qs + qa), -qs
+            dr.arc(bb, min(p1, p2), max(p1, p2), fill="black", width=w)
         elif tag == "text":
             # 0.100 は font="Liberation Sans,9,…" で持つ。size="9" は旧形式だが
             # 手書きの .elmt に出てくるので両方拾う

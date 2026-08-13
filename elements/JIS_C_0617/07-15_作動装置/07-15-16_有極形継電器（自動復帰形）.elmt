@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="90" height="60" hotspot_x="30" hotspot_y="30"
+            type="element" link_type="master" version="0.100.0">
+    <uuid uuid="{edffcc2f-0e1c-4107-909f-f310f3606a93}"/>
+    <names>
+        <name lang="ja">有極形継電器（自動復帰形）</name>
+        <name lang="en">Polarized relay, self restoring</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-15-16
+巻線を流れる電流の一方向にだけ動き、自動で復帰する有極継電器。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <rect x="-30" y="-10" width="50" height="20" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="10" x2="0" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-20" y1="-10" x2="-20" y2="10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <rect x="-30" y="-10" width="10" height="20" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:black;color:black"/>
+        <rect x="-29.5" y="-4.5" width="4" height="9" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:white;color:black"/>
+        <line x1="20" y1="0" x2="54" y2="0" antialias="false"
+              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="40" y1="-30" x2="40" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="40" y1="-10" x2="50" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="47" y1="-12.2" x2="60" y2="10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="60" y1="-30" x2="60" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="60" y1="10" x2="60" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="0" y="-30" orientation="n" name="A1" type="Generic"
+                  uuid="{1dcaf381-3283-4a02-b97d-804cfe0952a2}"/>
+        <terminal x="0" y="30" orientation="s" name="A2" type="Generic"
+                  uuid="{8c08e0c1-21be-436b-8f48-2f0a603c648c}"/>
+        <terminal x="40" y="-30" orientation="n" name="12" type="Generic"
+                  uuid="{d4688361-319d-429c-b4f2-de6cf61646bb}"/>
+        <terminal x="60" y="-30" orientation="n" name="14" type="Generic"
+                  uuid="{42350886-db37-4e50-a9bd-e03ea88301b5}"/>
+        <terminal x="60" y="30" orientation="s" name="11" type="Generic"
+                  uuid="{e869ed94-2243-40c5-965d-93bf45d8cef2}"/>
+        <dynamic_text x="65" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{dd6d7bbe-a7bf-4e8e-9f95-30cf641bd132}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>
