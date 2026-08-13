@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="20" height="60" hotspot_x="10" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{01956bf7-5221-4c70-85a6-6d46549b1d71}"/>
+    <names>
+        <name lang="ja">リミットスイッチ（ブレーク接点）</name>
+        <name lang="en">Position switch, break contact</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-08-02
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="-10" x2="10" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="7.5" y1="-12.5" x2="0" y2="10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="10" x2="0" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <polygon x1="-0.7" y1="-3.6" x2="3.6" y2="-1.5" x3="1" y3="7" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
+                  uuid="{5267768b-eba6-46b1-bd5a-34159728652b}"/>
+        <terminal x="0" y="30" orientation="s" name="2" type="Generic"
+                  uuid="{14a7317e-c66a-4874-a55e-14713c99798b}"/>
+        <dynamic_text x="15" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{704179bd-a963-4903-82b1-d03e529ea758}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

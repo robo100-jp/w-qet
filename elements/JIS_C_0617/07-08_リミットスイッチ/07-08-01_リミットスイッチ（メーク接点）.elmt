@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="30" height="60" hotspot_x="20" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{65a7a733-5383-4bfa-9937-85853a0e42b0}"/>
+    <names>
+        <name lang="ja">リミットスイッチ（メーク接点）</name>
+        <name lang="en">Position switch, make contact</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-08-01
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-11" y1="-12" x2="0" y2="10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="10" x2="0" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <polygon x1="-10" y1="0" x2="-6.5" y2="-2.9" x3="-1.5" y3="6.9" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
+                  uuid="{5267768b-eba6-46b1-bd5a-34159728652b}"/>
+        <terminal x="0" y="30" orientation="s" name="2" type="Generic"
+                  uuid="{14a7317e-c66a-4874-a55e-14713c99798b}"/>
+        <dynamic_text x="15" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{08d2665e-7c78-4550-bf95-c21fa313072c}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

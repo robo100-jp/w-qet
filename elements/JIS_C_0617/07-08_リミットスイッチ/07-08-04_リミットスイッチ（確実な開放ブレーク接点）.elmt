@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="50" height="60" hotspot_x="35" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{f129df31-c608-4c17-af46-f2fd6c75f2e8}"/>
+    <names>
+        <name lang="ja">リミットスイッチ（確実な開放ブレーク接点）</name>
+        <name lang="en">Position switch, break contact, positive operation</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-08-04
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="-10" x2="10" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="7.5" y1="-12.5" x2="0" y2="10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="10" x2="0" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <polygon x1="-0.7" y1="-3.6" x2="3.6" y2="-1.5" x3="1" y3="7" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <ellipse x="-30" y="-10" width="20" height="20" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="-26.5" y1="0" x2="-14" y2="0" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-19" y1="-5.5" x2="-14" y2="0" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-14" y1="0" x2="-19" y2="5.5" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
+                  uuid="{b187dde3-c192-4955-bea5-7f382af828e4}"/>
+        <terminal x="0" y="30" orientation="s" name="2" type="Generic"
+                  uuid="{a5874d53-d958-42e9-b2e5-2786614f4ec8}"/>
+        <dynamic_text x="20" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{c8b2ab14-fad9-474c-9c59-53fef1497f30}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>
