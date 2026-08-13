@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="40" height="60" hotspot_x="20" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{6c853b7f-7ac5-4848-b362-5bcdefbba104}"/>
+    <names>
+        <name lang="ja">電気分離形結合装置（光学的結合）</name>
+        <name lang="en">Coupling device with electrical separation, optical</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-27-02
+光で結んで入出力を電気的に分離する装置。矢2本が光を表す。
+規格票にリード線が描かれていない。作図に使えるよう、枠の左右中央に端子を1つずつ足してある。
+
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <rect x="-20" y="-30" width="40" height="60" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <text text="//" x="-14" y="-9.5" rotation="0"
+              font="Liberation Sans,16,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
+        <line x1="-8.2" y1="0" x2="9.9" y2="0" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <polygon x1="9.9" y1="0" x2="2.2" y2="-2.7" x3="2.2" y3="2.7" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:black;color:black"/>
+        <line x1="-8.2" y1="10" x2="9.9" y2="10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <polygon x1="9.9" y1="10" x2="2.2" y2="7.3" x3="2.2" y3="12.7" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:black;color:black"/>
+        <terminal x="-20" y="0" orientation="w" name="1" type="Generic"
+                  uuid="{f05da95c-edaf-44c9-8404-fdd0d1822f8b}"/>
+        <terminal x="20" y="0" orientation="e" name="2" type="Generic"
+                  uuid="{b5b28478-16cc-42a2-9449-1a156ec610ad}"/>
+        <dynamic_text x="25" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{88198c38-b0f3-41a0-aac6-c7a6fadf2f91}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

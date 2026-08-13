@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="90" height="60" hotspot_x="20" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{2429712c-37dc-49c8-8da0-31371239bb0b}"/>
+    <names>
+        <name lang="ja">静止形継電器（一般図記号）</name>
+        <name lang="en">Static relay, general symbol</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-26-01
+半導体でできた継電器の一般図記号。左の枠が継電器、右が出力接点。
+破線は機械的連結ではなく、動作の伝達を表す。
+接点を横切る横棒が、半導体で開閉する（静止形である）ことを表す。
+
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <rect x="-20" y="-10" width="40" height="20" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="0" y1="-30" x2="0" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="20" y1="0" x2="55" y2="0" antialias="false"
+              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="60" y1="-30" x2="60" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="49" y1="-12" x2="60" y2="10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="50" y1="10" x2="70" y2="10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="60" y1="10" x2="60" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="0" y="-30" orientation="n" name="A1" type="Generic"
+                  uuid="{d73dbbf5-2462-4357-b396-e66faa0bce59}"/>
+        <terminal x="0" y="30" orientation="s" name="A2" type="Generic"
+                  uuid="{311a4cd9-e7f8-4e49-9067-6a4a909aaa0d}"/>
+        <terminal x="60" y="-30" orientation="n" name="1" type="Generic"
+                  uuid="{80152279-03cb-4127-83e9-4041fcca2a6a}"/>
+        <terminal x="60" y="30" orientation="s" name="2" type="Generic"
+                  uuid="{403e6d7f-2dc5-4815-a577-4a7c9b95765f}"/>
+        <dynamic_text x="75" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{f215d034-1ab4-4777-b8ec-21072c762402}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

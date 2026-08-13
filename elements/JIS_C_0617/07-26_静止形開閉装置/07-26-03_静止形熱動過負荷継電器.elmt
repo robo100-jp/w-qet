@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="180" height="100" hotspot_x="50" hotspot_y="50"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{d47cf74e-53c6-42db-b000-9e9c589f6cac}"/>
+    <names>
+        <name lang="ja">静止形熱動過負荷継電器</name>
+        <name lang="en">Static thermal overload relay</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-26-03
+3極の主回路を監視する半導体式の熱動過負荷継電器。
+枠の中の階段形が過負荷（熱動）の限定図記号。
+出力はブレーク接点（11-12）とメーク接点（13-14）。
+破線は機械的連結ではなく、動作の伝達を表す。
+接点を横切る横棒が、半導体で開閉する（静止形である）ことを表す。
+
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <rect x="-30" y="-30" width="60" height="60" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="-50" y1="-20" x2="-30" y2="-20" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-50" y1="20" x2="-30" y2="20" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-20" y1="-50" x2="-20" y2="-30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-20" y1="30" x2="-20" y2="50" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="-50" x2="0" y2="-30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="30" x2="0" y2="50" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="20" y1="-50" x2="20" y2="-30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="20" y1="30" x2="20" y2="50" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-10" y1="-20" x2="-10" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-10" y1="-10" x2="10" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="10" y1="-10" x2="10" y2="10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="10" y1="10" x2="-10" y2="10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-10" y1="10" x2="-10" y2="20" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="30" y1="0" x2="115" y2="0" antialias="false"
+              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="80" y1="-30" x2="80" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="80" y1="-10" x2="90" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="87.5" y1="-12" x2="80" y2="10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="70" y1="10" x2="90" y2="10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="80" y1="10" x2="80" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="120" y1="-30" x2="120" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="109" y1="-12" x2="120" y2="10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="110" y1="10" x2="130" y2="10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="120" y1="10" x2="120" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="-20" y="-50" orientation="n" name="1" type="Generic"
+                  uuid="{c656a470-a358-47db-8be7-0c5e256775e7}"/>
+        <terminal x="-20" y="50" orientation="s" name="2" type="Generic"
+                  uuid="{914bfdcd-38a7-4d62-ad67-52612d484621}"/>
+        <terminal x="0" y="-50" orientation="n" name="3" type="Generic"
+                  uuid="{6609bc21-f63e-4164-bcc4-69a4b40c503c}"/>
+        <terminal x="0" y="50" orientation="s" name="4" type="Generic"
+                  uuid="{15076c6c-4c21-444c-8021-1b602062136a}"/>
+        <terminal x="20" y="-50" orientation="n" name="5" type="Generic"
+                  uuid="{a6b2e98e-0e2f-4124-a47f-65615050bb97}"/>
+        <terminal x="20" y="50" orientation="s" name="6" type="Generic"
+                  uuid="{5e25ac5c-6e1e-44af-a5eb-633c0ae413b7}"/>
+        <terminal x="-50" y="-20" orientation="w" name="A1" type="Generic"
+                  uuid="{0c2b591b-06c9-4e4e-a820-e906d8a49acf}"/>
+        <terminal x="-50" y="20" orientation="w" name="A2" type="Generic"
+                  uuid="{afcff85b-7a0a-4579-97c9-04201155ed39}"/>
+        <terminal x="80" y="-30" orientation="n" name="11" type="Generic"
+                  uuid="{ddc379fa-5f87-49ad-bb9e-f05f3dcb443b}"/>
+        <terminal x="80" y="30" orientation="s" name="12" type="Generic"
+                  uuid="{4b227290-f854-470f-acc5-f99d932a8472}"/>
+        <terminal x="120" y="-30" orientation="n" name="13" type="Generic"
+                  uuid="{d6fd8388-6f45-4cc7-9208-12213face0e9}"/>
+        <terminal x="120" y="30" orientation="s" name="14" type="Generic"
+                  uuid="{bfc3c9dd-e543-4445-8925-c32b9f9d44c6}"/>
+        <dynamic_text x="135" y="-50" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{945e571d-714f-4bda-b4a3-4dc70cd1099c}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

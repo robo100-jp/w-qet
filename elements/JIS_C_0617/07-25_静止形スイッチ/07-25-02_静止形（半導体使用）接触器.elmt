@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="30" height="60" hotspot_x="15" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{9f01736b-b240-4689-acac-796666fe6466}"/>
+    <names>
+        <name lang="ja">静止形（半導体使用）接触器</name>
+        <name lang="en">Static (semiconductor) contactor</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-25-02
+半導体で開閉する接触器。上の半円が接触器を表す。
+接点を横切る横棒が、半導体で開閉する（静止形である）ことを表す。
+
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-11" y1="-12" x2="0" y2="10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-10" y1="10" x2="10" y2="10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="10" x2="0" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <arc x="-5" y="-20" width="10" height="10" start="90" angle="180"
+             antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
+                  uuid="{52e0063a-9b77-462a-a8f1-19d0f694b029}"/>
+        <terminal x="0" y="30" orientation="s" name="2" type="Generic"
+                  uuid="{9df7dc9b-4124-4283-b56f-13b92e35a00e}"/>
+        <dynamic_text x="20" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{f63e88a0-c44c-488b-887f-26d0599f434f}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

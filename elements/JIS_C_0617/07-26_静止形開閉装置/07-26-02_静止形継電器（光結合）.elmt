@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="140" height="60" hotspot_x="50" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{14656d24-46d2-4a5a-a13e-7bfa26ffcbc6}"/>
+    <names>
+        <name lang="ja">静止形継電器（光結合）</name>
+        <name lang="en">Static relay</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-26-02
+発光ダイオードと受光素子で入出力を分離した静止形継電器。
+破線は機械的連結ではなく、動作の伝達を表す。
+接点を横切る横棒が、半導体で開閉する（静止形である）ことを表す。
+
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <rect x="-30" y="-30" width="60" height="60" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="-50" y1="-20" x2="-15" y2="-20" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-50" y1="20" x2="-15" y2="20" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-15" y1="-20" x2="-15" y2="20" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <polygon x1="-26.5" y1="-10" x2="-3.5" y2="-10" x3="-15" y3="10" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="-25.5" y1="10" x2="-4.5" y2="10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="2" y1="-4" x2="18" y2="-4" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <polygon x1="18" y1="-4" x2="10.3" y2="-6.7" x3="10.3" y3="-1.3" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:black;color:black"/>
+        <line x1="2" y1="4" x2="18" y2="4" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <polygon x1="18" y1="4" x2="10.3" y2="1.5" x3="10.3" y3="6.5" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:black;color:black"/>
+        <line x1="30" y1="0" x2="75" y2="0" antialias="false"
+              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="80" y1="-30" x2="80" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="69" y1="-12" x2="80" y2="10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="70" y1="10" x2="90" y2="10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="80" y1="10" x2="80" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="-50" y="-20" orientation="w" name="A1" type="Generic"
+                  uuid="{567ae318-8b6c-4959-b59a-50920e3b381b}"/>
+        <terminal x="-50" y="20" orientation="w" name="A2" type="Generic"
+                  uuid="{30089d13-d809-41e7-83a2-9662004c7896}"/>
+        <terminal x="80" y="-30" orientation="n" name="1" type="Generic"
+                  uuid="{7065a9b6-fa7a-460b-b0d9-e9cd0aae8bf2}"/>
+        <terminal x="80" y="30" orientation="s" name="2" type="Generic"
+                  uuid="{2cb5e3b7-b83b-4c97-a694-24e9752ebb36}"/>
+        <dynamic_text x="95" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{469b837d-74d0-4865-ac58-aa3c54bfc5cb}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

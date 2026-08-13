@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="40" height="60" hotspot_x="20" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{d1338fef-ddb8-451d-bce0-6979cf6b2493}"/>
+    <names>
+        <name lang="ja">電気分離形結合装置</name>
+        <name lang="en">Coupling device with electrical separation</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-27-01
+入力側 X と出力側 Y を電気的に分離して結ぶ装置。
+* は結合の方式を表す図記号に置き換えて使う（07-27-02 が光の例）。
+規格票にリード線が描かれていない。作図に使えるよう、枠の左右中央に端子を1つずつ足してある。
+
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <rect x="-20" y="-30" width="40" height="60" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <text text="X // Y" x="-15" y="-9.5" rotation="0"
+              font="Liberation Sans,16,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
+        <text text="*" x="-2.7" y="7.5" rotation="0"
+              font="Liberation Sans,18,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <terminal x="-20" y="0" orientation="w" name="1" type="Generic"
+                  uuid="{f05da95c-edaf-44c9-8404-fdd0d1822f8b}"/>
+        <terminal x="20" y="0" orientation="e" name="2" type="Generic"
+                  uuid="{b5b28478-16cc-42a2-9449-1a156ec610ad}"/>
+        <dynamic_text x="25" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{64442023-98a7-45e4-96c8-12adfff71a6d}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>
