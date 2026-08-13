@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="40" height="60" hotspot_x="20" hotspot_y="30"
+            type="element" link_type="slave" version="0.100.0">
+    <uuid uuid="{797f5419-299c-444c-bfe0-370aa2cf639f}"/>
+    <names>
+        <name lang="ja">非オーバーラップ切換え接点</name>
+        <name lang="en">Change-over break before make contact</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-02-04
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <line x1="-20" y1="-30" x2="-20" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-20" y1="-10" x2="-13" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-13" y1="-10" x2="0" y2="10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="10" x2="0" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="-20" y="-30" orientation="n" name="1" type="Generic"
+                  uuid="{f1d67cc0-ba77-44a3-8f35-340b11b3ef3d}"/>
+        <terminal x="0" y="-30" orientation="n" name="2" type="Generic"
+                  uuid="{cc7730c7-802e-4927-94f3-0b77c39f3874}"/>
+        <terminal x="0" y="30" orientation="s" name="3" type="Generic"
+                  uuid="{ade27d2b-8f53-4ecd-8c12-8ba1fe9fc086}"/>
+        <dynamic_text x="25" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{3065554b-3598-4f05-8809-df0ae2039327}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

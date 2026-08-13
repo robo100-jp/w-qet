@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="20" height="60" hotspot_x="10" hotspot_y="30"
+            type="element" link_type="slave" version="0.100.0">
+    <uuid uuid="{063dae7b-33d3-4bc6-95ca-00f01e3ceb3d}"/>
+    <names>
+        <name lang="ja">ミラー接点</name>
+        <name lang="en">Mirror contact</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-02-10
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="-10" x2="10" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <ellipse x="7.5" y="-12.5" width="5" height="5" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:black;color:black"/>
+        <line x1="7.5" y1="-12" x2="0" y2="10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="10" x2="0" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
+                  uuid="{3bd8b87a-4317-47f0-a8ff-c689785899a5}"/>
+        <terminal x="0" y="30" orientation="s" name="2" type="Generic"
+                  uuid="{b41dd092-a758-4109-b6e1-f62bdf110259}"/>
+        <dynamic_text x="15" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{0e29bbb6-5189-4065-92dc-08b7a042e053}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="20" height="60" hotspot_x="10" hotspot_y="30"
+            type="element" link_type="slave" version="0.100.0">
+    <uuid uuid="{c428910a-fc8c-434a-b29e-98579aa75ca1}"/>
+    <names>
+        <name lang="ja">オフ位置付き切換え接点</name>
+        <name lang="en">Change-over contact with off-position</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-02-05
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <line x1="-10" y1="-30" x2="-10" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="10" y1="-30" x2="10" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="-10" x2="0" y2="8" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <ellipse x="-2.5" y="8.5" width="5" height="5" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="0" y1="13.5" x2="0" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="-10" y="-30" orientation="n" name="1" type="Generic"
+                  uuid="{ada167e0-48b6-49d3-991e-ce14f97eb699}"/>
+        <terminal x="10" y="-30" orientation="n" name="2" type="Generic"
+                  uuid="{f21e5478-fd84-49e3-85a6-212b601477fd}"/>
+        <terminal x="0" y="30" orientation="s" name="3" type="Generic"
+                  uuid="{fa1c6ba4-d67a-46bb-a368-c190168e2431}"/>
+        <dynamic_text x="15" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{464db1f9-17d9-41ee-9455-d2351cf7a82c}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>
