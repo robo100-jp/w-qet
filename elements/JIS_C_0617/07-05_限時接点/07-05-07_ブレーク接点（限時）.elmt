@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition width="40" height="60" hotspot_x="27" hotspot_y="30"
             type="element" link_type="slave" version="0.100.0">
-    <uuid uuid="{693126e5-7944-4bba-8a92-fd12bf857f32}"/>
+    <uuid uuid="{12ecf575-a8c4-4c68-8688-2669c77d5e64}"/>
     <names>
         <name lang="ja">ブレーク接点（限時）</name>
         <name lang="en">Break contact, delayed</name>
@@ -13,7 +13,7 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <line x1="0" y1="-10" x2="10" y2="-10" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
-        <line x1="8.3" y1="-12.8" x2="0" y2="10" antialias="true"
+        <line x1="7.5" y1="-12.5" x2="0" y2="10" antialias="true"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <line x1="0" y1="10" x2="0" y2="30" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
@@ -21,18 +21,18 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
              antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
         <arc x="-15" y="-8.5" width="17" height="17" start="90" angle="180"
              antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
-        <line x1="-15" y1="-1.5" x2="4.19" y2="-1.5" antialias="false"
+        <line x1="-15" y1="-1.5" x2="3.83" y2="-1.5" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
-        <line x1="-15" y1="1.5" x2="3.09" y2="1.5" antialias="false"
+        <line x1="-15" y1="1.5" x2="2.83" y2="1.5" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
-                  uuid="{b43393c9-b49d-4815-95eb-65a846c4dd05}"/>
+                  uuid="{a4af6507-8371-4d31-bd42-2ba9cf9b4588}"/>
         <terminal x="0" y="30" orientation="s" name="2" type="Generic"
-                  uuid="{f5570803-daa4-4814-a418-70b9b7e3ddc9}"/>
+                  uuid="{f2c90da0-7bec-4920-8d16-c04b6c1f140e}"/>
         <dynamic_text x="18" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
-                      text_from="ElementInfo" uuid="{0cd77a02-e461-40fc-8530-c871a463157f}"
+                      text_from="ElementInfo" uuid="{622969e9-29b9-4bf3-b43b-015d5da8be55}"
                       font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
             <text></text>
             <info_name>label</info_name>

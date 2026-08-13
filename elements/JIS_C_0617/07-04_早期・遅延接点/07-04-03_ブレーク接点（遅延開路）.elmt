@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition width="20" height="60" hotspot_x="10" hotspot_y="30"
             type="element" link_type="slave" version="0.100.0">
-    <uuid uuid="{5fde44cf-9132-4392-8f9a-ad17d63d007b}"/>
+    <uuid uuid="{81ca1212-8e2b-4d09-8248-9a1bad9e2370}"/>
     <names>
         <name lang="ja">ブレーク接点（遅延開路）</name>
         <name lang="en">Break contact, late opening</name>
@@ -13,20 +13,20 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <line x1="0" y1="-10" x2="10" y2="-10" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
-        <line x1="7.5" y1="-13" x2="0" y2="10" antialias="true"
+        <line x1="7.5" y1="-12.5" x2="0" y2="10" antialias="true"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <line x1="0" y1="10" x2="0" y2="30" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
-        <line x1="7.5" y1="-13" x2="2.3" y2="-14.7" antialias="true"
+        <line x1="7.5" y1="-12.5" x2="2.28" y2="-14.24" antialias="true"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
-                  uuid="{c7945eab-d367-43f2-98f5-d592bda1f93c}"/>
+                  uuid="{a4af6507-8371-4d31-bd42-2ba9cf9b4588}"/>
         <terminal x="0" y="30" orientation="s" name="2" type="Generic"
-                  uuid="{fd09832b-624c-488a-a054-ecc607c89645}"/>
+                  uuid="{f2c90da0-7bec-4920-8d16-c04b6c1f140e}"/>
         <dynamic_text x="15" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
-                      text_from="ElementInfo" uuid="{39d6ac9b-b108-4426-8cd7-33c131ef893c}"
+                      text_from="ElementInfo" uuid="{dbd15ff5-471e-4d64-9dcc-bdae0ce82bbb}"
                       font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
             <text></text>
             <info_name>label</info_name>

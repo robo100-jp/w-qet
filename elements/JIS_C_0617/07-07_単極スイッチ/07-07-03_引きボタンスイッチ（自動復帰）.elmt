@@ -1,32 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition width="30" height="60" hotspot_x="15" hotspot_y="30"
-            type="element" link_type="slave" version="0.100.0">
-    <uuid uuid="{7bbc34ef-7cfa-424c-a42c-8442c61a31c0}"/>
+<definition width="40" height="60" hotspot_x="37" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{4035247b-8f71-47b0-94bc-09f93a385a8e}"/>
     <names>
-        <name lang="ja">ブレーク接点（先行開路）</name>
-        <name lang="en">Break contact, early opening</name>
+        <name lang="ja">手動操作の引きボタンスイッチ（自動復帰）</name>
+        <name lang="en">Switch, manually operated, pulling, automatic return</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-04-04
+    <informations>JIS C 0617 / IEC 60617 07-07-03
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
-        <line x1="0" y1="-10" x2="10" y2="-10" antialias="false"
-              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
-        <line x1="7.5" y1="-12.5" x2="0" y2="10" antialias="true"
+        <line x1="-11" y1="-12" x2="0" y2="10" antialias="true"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <line x1="0" y1="10" x2="0" y2="30" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
-        <line x1="7.5" y1="-12.5" x2="12.72" y2="-10.76" antialias="true"
+        <line x1="-30" y1="-5" x2="-30" y2="5" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-35" y1="-5" x2="-30" y2="-5" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-35" y1="5" x2="-30" y2="5" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-30" y1="0" x2="-5" y2="0" antialias="false"
+              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
                   uuid="{a4af6507-8371-4d31-bd42-2ba9cf9b4588}"/>
         <terminal x="0" y="30" orientation="s" name="2" type="Generic"
                   uuid="{f2c90da0-7bec-4920-8d16-c04b6c1f140e}"/>
-        <dynamic_text x="20" y="-30" z="1" text_width="-1"
+        <dynamic_text x="8" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
-                      text_from="ElementInfo" uuid="{f02ff173-06b4-4be3-a968-acd7b73305a1}"
+                      text_from="ElementInfo" uuid="{99f96f47-7060-408c-b1dc-d71bcf3d2e32}"
                       font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
             <text></text>
             <info_name>label</info_name>
