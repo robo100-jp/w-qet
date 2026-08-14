@@ -163,8 +163,12 @@ def check(path, seen_uuid):
                            % (e.tag, px, py, x0, x1, y0, y1))
                 break
 
+    # **ラベル（機器記号）は倒しても正立させる。** `keep_visual_rotation="true"`。
+    # 規格票の例示値のような `UserText` はここに含めない。あれは記号の中の文字と
+    # 同じ扱いで、記号と一緒に倒れてよい（[docs/寸法基準.md]）。
     for dt in root.iter("dynamic_text"):
-        if dt.get("keep_visual_rotation") != "true":
+        if (dt.get("text_from") == "ElementInfo"
+                and dt.get("keep_visual_rotation") != "true"):
             bad.append("ラベルの keep_visual_rotation が true でない")
 
     info = root.findtext("informations") or ""

@@ -17,10 +17,20 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
               font="Liberation Sans,8,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
         <text text="&lt;" x="2.27" y="-16" rotation="0"
               font="Liberation Sans,8,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
-        <text text="50…80 V" x="-22.76" y="4" rotation="0"
-              font="Liberation Sans,8,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
-        <text text="130%" x="-13.96" y="24" rotation="0"
-              font="Liberation Sans,8,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <dynamic_text x="-22.76" y="-5.65" z="2" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="false"
+                      text_from="UserText" uuid="{51f348aa-d27f-4d01-8380-76084071012d}"
+                      font="Liberation Sans,8,-1,5,50,0,0,0,0,0,Regular">
+            <text>50…80 V</text>
+        </dynamic_text>
+        <dynamic_text x="-13.96" y="14.35" z="2" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="false"
+                      text_from="UserText" uuid="{c846ff1e-52b0-4de0-ac67-d72de3a53a39}"
+                      font="Liberation Sans,8,-1,5,50,0,0,0,0,0,Regular">
+            <text>130%</text>
+        </dynamic_text>
         <terminal x="-30" y="0" orientation="w" name="1" type="Generic"
                   uuid="{b41392dd-9731-4086-930b-ef687720406c}"/>
         <terminal x="30" y="0" orientation="e" name="2" type="Generic"

@@ -22,8 +22,13 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <line x1="30" y1="30" x2="50" y2="30" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
-        <text text="5x" x="8.23" y="14" rotation="0"
-              font="Liberation Sans,8,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <dynamic_text x="8.23" y="4.35" z="2" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="false"
+                      text_from="UserText" uuid="{0f3d7471-3ee9-415c-a724-8241b7aeae23}"
+                      font="Liberation Sans,8,-1,5,50,0,0,0,0,0,Regular">
+            <text>5x</text>
+        </dynamic_text>
         <line x1="-15" y1="30" x2="25" y2="30" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <line x1="-15" y1="27" x2="-15" y2="33" antialias="false"

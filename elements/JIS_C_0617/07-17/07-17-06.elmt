@@ -23,8 +23,13 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <polygon x1="-3.5" y1="-35" x2="2" y2="-37.2" x3="2" y3="-32.8" antialias="true"
                  style="line-style:normal;line-weight:normal;filling:black;color:black"/>
-        <text text="1 Mvar" x="-16.69" y="-8" rotation="0"
-              font="Liberation Sans,8,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <dynamic_text x="-16.69" y="-17.65" z="2" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="false"
+                      text_from="UserText" uuid="{e4885b67-97c6-42f4-899a-00ae1d36b290}"
+                      font="Liberation Sans,8,-1,5,50,0,0,0,0,0,Regular">
+            <text>1 Mvar</text>
+        </dynamic_text>
         <line x1="-15" y1="35" x2="15" y2="35" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <line x1="-15" y1="32" x2="-15" y2="38" antialias="false"
@@ -35,8 +40,13 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <polygon x1="18" y1="17" x2="14.39" y2="24.14" x3="10.86" y3="20.61" antialias="true"
                  style="line-style:normal;line-weight:normal;filling:black;color:black"/>
-        <text text="5…10 s" x="-18.82" y="58" rotation="0"
-              font="Liberation Sans,8,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <dynamic_text x="-18.82" y="48.35" z="2" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="false"
+                      text_from="UserText" uuid="{97b761d4-13ff-474b-82c7-f09875b7d25f}"
+                      font="Liberation Sans,8,-1,5,50,0,0,0,0,0,Regular">
+            <text>5…10 s</text>
+        </dynamic_text>
         <terminal x="-30" y="0" orientation="w" name="1" type="Generic"
                   uuid="{94a39a50-8492-42e1-aedd-646bd4594824}"/>
         <terminal x="30" y="0" orientation="e" name="2" type="Generic"

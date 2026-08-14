@@ -19,8 +19,13 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
               font="Liberation Sans,8,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
         <text text=" &gt; )" x="1.37" y="-6" rotation="0"
               font="Liberation Sans,8,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
-        <text text="5…10 A" x="-19.73" y="19" rotation="0"
-              font="Liberation Sans,8,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <dynamic_text x="-19.73" y="9.35" z="2" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="false"
+                      text_from="UserText" uuid="{2540bd53-cac2-4b4d-9cc9-dba40fcadf9b}"
+                      font="Liberation Sans,8,-1,5,50,0,0,0,0,0,Regular">
+            <text>5…10 A</text>
+        </dynamic_text>
         <terminal x="-30" y="0" orientation="w" name="1" type="Generic"
                   uuid="{a1f6f142-3e4c-49b5-a6e3-20d25408ee48}"/>
         <terminal x="30" y="0" orientation="e" name="2" type="Generic"

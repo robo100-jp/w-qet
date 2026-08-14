@@ -22,6 +22,7 @@ elements/ のどのサブフォルダに置いた記号でも名前だけで見�
 import os
 import re
 import sys
+from xml.sax.saxutils import unescape
 
 from PIL import Image, ImageDraw, ImageFont
 
@@ -73,7 +74,10 @@ def parse(path):
         if a.get("text_from") == "ElementInfo" and info_name:
             show = "[%s]" % info_name.group(1).strip()      # 図面で差し替わる欄
         else:
-            show = (lit.group(1).strip() if lit else "") or "[text]"
+            # **実体参照を戻す。** `I &gt; 5 A` を素通しすると画面に `&gt;` と出る。
+            # 属性側（`<text text="…">`）は正規表現が拾った時点で生のままなので、
+            # ここだけ必要になる。
+            show = (unescape(lit.group(1).strip()) if lit else "") or "[text]"
         dtexts.append((float(a.get("x", 0)), float(a.get("y", 0)), show, a))
     terms = [(float(x), float(y), o) for x, y, o in
              re.findall(r'<terminal[^>]*x="([-\d.]+)"[^>]*y="([-\d.]+)"[^>]*orientation="(\w)"', t)]

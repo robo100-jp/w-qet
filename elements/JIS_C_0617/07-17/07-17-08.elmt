@@ -15,10 +15,20 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
               style="line-style:normal;line-weight:normal;filling:none;color:black"/>
         <text text="I" x="-16.52" y="6" rotation="0"
               font="Liberation Sans,8,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
-        <text text="&gt; 5 A" x="-6.9" y="-4" rotation="0"
-              font="Liberation Sans,8,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
-        <text text="&lt; 3 A" x="-6.9" y="16" rotation="0"
-              font="Liberation Sans,8,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <dynamic_text x="-6.9" y="-13.65" z="2" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="false"
+                      text_from="UserText" uuid="{3b53d287-bbba-400b-a944-c0a5fe7d6b3e}"
+                      font="Liberation Sans,8,-1,5,50,0,0,0,0,0,Regular">
+            <text>&gt; 5 A</text>
+        </dynamic_text>
+        <dynamic_text x="-6.9" y="6.35" z="2" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="false"
+                      text_from="UserText" uuid="{557bec56-26c6-4f1b-8921-f7d3a593f5c0}"
+                      font="Liberation Sans,8,-1,5,50,0,0,0,0,0,Regular">
+            <text>&lt; 3 A</text>
+        </dynamic_text>
         <terminal x="-30" y="0" orientation="w" name="1" type="Generic"
                   uuid="{dac68a37-d73a-4f80-be0c-0c527870af0a}"/>
         <terminal x="30" y="0" orientation="e" name="2" type="Generic"
