@@ -79,7 +79,7 @@ py -3 tools/check_elmt.py <部品名>     # 目視では出ない誤り（外形
 引継ぎ.md        次に何をするか（セッションの初めに読む・区切りごとに書き直す）
 elements/        .elmt 図記号定義
 tools/
-  paths.py         図記号の在りかを解決する（他が使う）
+  paths.py         図記号と規格票 PDF の在りかを解決する（他が使う）
   elmtgen.py       .elmt を座標から組み立てるライブラリ
   qetgen.py        .qet をコードから生成するライブラリ
   render_elmt.py   .elmt を PNG に描き出す（目視確認用）
