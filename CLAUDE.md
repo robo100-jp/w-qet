@@ -95,7 +95,7 @@ tools/
   cheatsheet.py    印刷用の早見表を作る（docs/チートシート.svg）
   checklist.py     点検メモを作る（docs/点検メモ.md。--xlsx で Excel も。書き込みを引き継ぐ）
   install.py       QET のユーザーコレクションに登録する
-docs/            設計方針・採録状況・寸法基準・測定メモ・カタログ
+docs/            設計方針・採録状況・寸法基準・測定メモ・カタログ・QETのXML
 render/          描き出した PNG・SVG（git 管理外）
 .claude/skills/  Claude Code スキル
 ```

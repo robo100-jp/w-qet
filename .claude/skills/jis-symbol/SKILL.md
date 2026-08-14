@@ -9,6 +9,8 @@ description: JIS C 0617 の図記号を .elmt として描き起こす・描い�
 **問題が出るたびにここを直す。**
 
 作図（`.qet` を描く）側の勘所は別のスキル `qelectrotech` にある。
+**XML の構造そのもの**（タグ・属性・座標の意味・公式仕様書とのちがい）は
+[docs/QETのXML.md](../../../docs/QETのXML.md)。
 
 ---
 

@@ -57,6 +57,7 @@ docs/          設計方針・採録状況・カタログ
 - 記号の姿を見る … [docs/カタログ.md](docs/カタログ.md)・[docs/チートシート.svg](docs/チートシート.svg)
 - 次に何をするか（作業の引継ぎ） … [引継ぎ.md](引継ぎ.md)
 - 採録状況（図記号番号と名称の一覧） … [docs/採録状況.md](docs/採録状況.md)
+- **QET の XML（`.elmt` と `.qet`）の構造** … [docs/QETのXML.md](docs/QETのXML.md)
 - 記号の寸法・端子・ラベルの約束ごと … [docs/寸法基準.md](docs/寸法基準.md)
 - 規格票を測ったが、まだ描いていないものの控え … [docs/測定メモ.md](docs/測定メモ.md)
 - ツールの使い方と `.elmt` の書式 … [docs/ツール.md](docs/ツール.md)
