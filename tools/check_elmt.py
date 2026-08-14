@@ -105,6 +105,11 @@ def check(path, seen_uuid):
 
     if w % 10 or h % 10:
         bad.append("外形が10の倍数でない: %dx%d" % (w, h))
+    # **10×10 は小さすぎる。** QET がプレビュー画像を作れず、部品パネルで
+    # 名前がファイル名に化ける（ログに QPainter::begin ... engine == 0 が出る）。
+    # 同梱8597個でも 10×10 は4個しかない外れ値。短辺が10でも長辺があれば通る。
+    if w <= 10 and h <= 10:
+        bad.append("外形が小さすぎる: %dx%d（20x20 以上にする）" % (w, h))
     if not (0 <= hx <= w and 0 <= hy <= h):
         bad.append("hotspot が外形の外: (%g,%g) / %dx%d" % (hx, hy, w, h))
     if d.get("link_type") not in LINK:
