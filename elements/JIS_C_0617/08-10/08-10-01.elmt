@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="20" height="20" hotspot_x="10" hotspot_y="10"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{4392aa42-da0b-40f6-90dc-283a9f116d2f}"/>
+    <names>
+        <name lang="ja">ランプ（一般図記号）</name>
+        <name lang="en">Lamp, general symbol</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 08-10-01
+規格票には引出し線が描かれていない。作図に使えるよう、外形の縁に端子を1つずつ足してある。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。
+</informations>
+    <description>
+        <ellipse x="-10" y="-10" width="20" height="20" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="-7" y1="-7" x2="7" y2="7" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-7" y1="7" x2="7" y2="-7" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="-10" y="0" orientation="w" name="1" type="Generic"
+                  uuid="{cbab63d0-0e90-4b3e-93a7-935b82fe0955}"/>
+        <terminal x="10" y="0" orientation="e" name="2" type="Generic"
+                  uuid="{ca232486-f14f-404b-a6ac-4cc526cd60de}"/>
+        <dynamic_text x="15" y="-10" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{a0cf9690-d6d2-414f-9ffc-8ff86b23a0f8}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

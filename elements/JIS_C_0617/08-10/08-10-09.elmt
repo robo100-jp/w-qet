@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="40" height="50" hotspot_x="20" hotspot_y="25"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{a3d9ec82-b2b3-47b7-9e09-be966c5cb037}"/>
+    <names>
+        <name lang="ja">サイレン</name>
+        <name lang="en">Siren</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 08-10-09
+三角形の底辺は描かない。脚は底辺の位置から出る。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。
+</informations>
+    <description>
+        <line x1="0" y1="-20" x2="-20" y2="0" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="-20" x2="20" y2="0" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-20" y1="0" x2="20" y2="0" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-10" y1="0" x2="-10" y2="21" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="10" y1="0" x2="10" y2="21" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="-10" y="20" orientation="s" name="1" type="Generic"
+                  uuid="{048628d6-dad4-42e3-9a0b-e70598760017}"/>
+        <terminal x="10" y="20" orientation="s" name="2" type="Generic"
+                  uuid="{66a4f751-8782-4c7b-9bcc-7b8f3d65cb62}"/>
+        <dynamic_text x="25" y="-25" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{f5e03d6d-5426-4292-93ca-81db0cbca9bb}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

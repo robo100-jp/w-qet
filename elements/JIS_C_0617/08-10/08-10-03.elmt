@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="20" height="20" hotspot_x="10" hotspot_y="10"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{6eea658a-c611-4809-818d-c45185e02e33}"/>
+    <names>
+        <name lang="ja">電気機械式表示器，アナンシエータ素子</name>
+        <name lang="en">Indicator, electromechanical; annunciator element</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 08-10-03
+規格票には引出し線が描かれていない。作図に使えるよう、外形の縁に端子を1つずつ足してある。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。
+</informations>
+    <description>
+        <ellipse x="-10" y="-10" width="20" height="20" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:black;color:black"/>
+        <polygon x1="-8.1" y1="-5.85" x2="8.1" y2="-5.85" x3="9.7" y3="-2.25" x4="-9.7" y4="-2.25" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:white;color:black"/>
+        <polygon x1="-9.7" y1="2.25" x2="9.7" y2="2.25" x3="8.1" y3="5.85" x4="-8.1" y4="5.85" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:white;color:black"/>
+        <terminal x="-10" y="0" orientation="w" name="1" type="Generic"
+                  uuid="{1d86d7dc-f9c6-4ad7-bf20-913144dfe1ea}"/>
+        <terminal x="10" y="0" orientation="e" name="2" type="Generic"
+                  uuid="{5d722cdb-c8ae-44d8-bb15-3e6eb6fbe524}"/>
+        <dynamic_text x="15" y="-10" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{66fc099c-43a5-49f4-bd9c-1ae959ebfa5f}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

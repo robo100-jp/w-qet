@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="40" height="40" hotspot_x="20" hotspot_y="20"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{02f6cd93-b2ab-4a66-bac8-fef6779de029}"/>
+    <names>
+        <name lang="ja">時計（接点付き）</name>
+        <name lang="en">Clock with contact</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 08-08-03
+下の接点は時刻で動く接点の例。
+規格票には引出し線が描かれていない。作図に使えるよう、外形の縁に端子を1つずつ足してある。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。
+</informations>
+    <description>
+        <ellipse x="-20" y="-20" width="40" height="40" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="0" y1="0" x2="0" y2="-14.8" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="0" x2="-10.7" y2="0" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-15.2" y1="5.4" x2="-3.7" y2="5.4" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-4.4" y1="4.7" x2="16.2" y2="14" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="-20" y="0" orientation="w" name="1" type="Generic"
+                  uuid="{7e5cefe5-71c3-42a5-8def-b868af45bddc}"/>
+        <terminal x="20" y="0" orientation="e" name="2" type="Generic"
+                  uuid="{5828b4c8-981d-4264-aad9-7aa976bc3ea9}"/>
+        <dynamic_text x="25" y="-20" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{1866a689-78d0-4870-8871-74ee5d3b6d25}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>
