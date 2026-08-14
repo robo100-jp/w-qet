@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-"""図記号(.elmt)の在りかを解決する
+"""図記号(.elmt)と規格票 PDF の在りかを解決する
 
-ツール3本が共通で使う。**どのフォルダから叩いても、記号が elements/ の
+各ツールが共通で使う。**どのフォルダから叩いても、記号が elements/ の
 どのサブフォルダにあっても見つかる**ようにするための層。
 探索先をここ1か所に集約してあるので、増やすときはこのファイルだけ直せばよい。
 
@@ -12,7 +12,11 @@
 
 いずれも再帰的に探す。同じファイル名が複数あれば先の探索先が勝つ。
 リポジトリの位置はこのファイルの場所から求めるので、どこに clone してもよい。
+
+規格票 PDF は `standard()` が探す。**リポジトリの外にしか置かない**ので、
+パスをソースに書かずここで解決する（→ docs/規格の参照.md）。
 """
+import glob as _glob
 import os
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -118,3 +122,56 @@ def find(name, dirs=None):
 def collection(refresh=False):
     """このリポジトリの elements/ にある .elmt を全部返す（パスのソート順）"""
     return sorted(table([ELEMENTS], refresh).values()) if os.path.isdir(ELEMENTS) else []
+
+
+# --- 規格票 PDF -------------------------------------------------------------
+#
+# **買った規格票はリポジトリに入れない。**公開リポジトリなので再配布になる。
+# 置き場所も人によって違うので、パスをソースに書かずここで解決する。
+
+STD_ENV = "W_QET_STD"
+
+
+def std_dirs():
+    """規格票 PDF を探す場所を優先順に"""
+    out = []
+    for d in (os.environ.get(STD_ENV),
+              os.path.join(os.path.expanduser("~"), "規格"),
+              os.path.join(os.path.expanduser("~"), "Documents", "規格")):
+        if d and os.path.isdir(d) and d not in out:
+            out.append(d)
+    return out
+
+
+def standard(part=7):
+    """JIS C 0617 第<part>部の PDF を探して返す。無ければ FileNotFoundError
+
+    環境変数 W_QET_STD にファイルそのものを指してもよい（1部だけ使うとき）。
+    JSA の PDF はファイル名が `jis_c_00617_007_000_2024_j_ed10_ch.pdf` の形。
+    """
+    env = os.environ.get(STD_ENV)
+    if env and os.path.isfile(env):
+        return env
+    pat = "jis_c_00617_%03d_*.pdf" % part
+    for d in std_dirs():
+        hit = sorted(_glob.glob(os.path.join(d, pat)))
+        if hit:
+            return hit[0]
+    raise FileNotFoundError(
+        "JIS C 0617 第%d部の PDF が見つからない（%s）。探した場所:\n  %s\n"
+        "（環境変数 %s にフォルダかファイルを指定できる）"
+        % (part, pat, "\n  ".join(std_dirs()) or "(どれも実在しない)", STD_ENV))
+
+
+def index(part=7):
+    """図記号番号 → 規格票のページ。docs/第<part>部索引.tsv から読む"""
+    import io
+    p = os.path.join(REPO, "docs", "第%d部索引.tsv" % part)
+    out = {}
+    if not os.path.isfile(p):
+        return out
+    for line in io.open(p, encoding="utf-8"):
+        f = line.rstrip("\n").split("\t")
+        if len(f) == 4 and f[0].startswith("%02d-" % part) and f[3].isdigit():
+            out[f[0]] = int(f[3])
+    return out

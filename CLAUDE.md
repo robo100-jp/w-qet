@@ -85,7 +85,8 @@ tools/
   render_elmt.py   .elmt を PNG に描き出す（目視確認用）
   check_elmt.py    .elmt を検証する（外形・端子・属性。目視では出ない誤り）
   check_qet.py     .qet を検証する
-  measure_page.py  規格票のドット格子を測る
+  stdpage.py       規格票のページから図の帯と作図モジュールの格子を取り出す
+  compare_page.py  描いた記号を規格票と突き合わせる
   pdf_page.py      PDF のページを画像に描き出す
   status.py        採録状況を elements/ から数え直す
   install.py       QET のユーザーコレクションに登録する
