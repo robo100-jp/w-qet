@@ -4,7 +4,7 @@
 <g stroke-linecap="round" stroke-linejoin="round">
 <text x="9" y="12.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="4.4" font-weight="bold" fill="black">図記号 点検メモ</text>
 <text x="201" y="12.4" text-anchor="end" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.8" fill="#555">9 / 11</text>
-<text x="9" y="16.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.3" fill="#666">気づいたことをその場で書く。直したら docs/測定メモ.md に写して紙は残さない</text>
+<text x="9" y="16.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.3" fill="#666">気づいたことをその場で書く。直したら docs/点検メモ.md に写す</text>
 <line x1="9" y1="18.6" x2="201" y2="18.6" stroke="#333" stroke-width="0.4"/>
 <text x="46" y="21.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#666">番号・名称</text>
 <text x="96" y="21.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#666">気づいたこと</text>

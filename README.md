@@ -25,7 +25,7 @@ QElectroTech 用の、日本の制御盤向け図記号ライブラリと作図�
 
 - **[図記号カタログ](docs/カタログ.md)** — 全部の姿を節ごとに並べたもの。**形から引けます**
 - **[チートシート](docs/チートシート.svg)** — よく使うものだけの A4 1枚。印刷して手元に置く用
-- [点検表](docs/点検表.md) — 176個ぜんぶにメモ欄を付けた A4 11枚。気づいたことを書き留める用
+- [点検メモ](docs/点検メモ.md) — 176個ぜんぶにメモ欄を付けた表。気づいたことをその場で書き込む用
 - [採録状況](docs/採録状況.md) — 図記号番号と名称の一覧
 
 ![07-02 接点](docs/images/07-02.svg)
@@ -48,7 +48,7 @@ tools/         Python ツール
   svg_elmt.py    .elmt を SVG に写す（人に見せる姿）
   catalog.py     カタログ（docs/カタログ.md と docs/images/）を作り直す
   cheatsheet.py  印刷用の早見表（docs/チートシート.svg）を作る
-  checklist.py   印刷用の点検表（docs/点検表/。メモ欄つき）を作る
+  checklist.py   点検メモ（docs/点検メモ.md）を作る。書き込みは作り直しても消えない
   install.py     図記号を QET のユーザーコレクションに登録する
 docs/          設計方針・採録状況・カタログ
 .claude/skills/  Claude Code 用スキル
