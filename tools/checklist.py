@@ -6,12 +6,20 @@
 使っていて気づいたことを書き留めるためのもの。
 
   py -3 tools/checklist.py            # docs/点検メモ.md（と図）
+  py -3 tools/checklist.py --xlsx     # docs/点検メモ.xlsx も出す（GUI で書く用）
   py -3 tools/checklist.py --print    # 印刷用の A4（docs/点検表/*.svg）も出す
 
-**書き込んだものは作り直しても消えない。** 既にある `docs/点検メモ.md` を読んで、
-「済」と「気づいたこと」の中身を番号で引き継ぐ。記号を足したら行が増えるだけ。
+**書き込んだものは作り直しても消えない。**「済」と「気づいたこと」を番号で引き継ぐ。
+記号を足したら行が増えるだけ。
 
-> **表の中で `|` を素で書かない。** 列の区切りと見分けが付かず、行が壊れる。
+**どこから読むか。** `.xlsx` があって `.md` より新しければ Excel から、
+そうでなければ `.md` から読む。**どちらから読んだかを必ず表示する。**
+
+> **`.xlsx` は git に入れない**（`.gitignore`）。バイナリなので差分が出ず、
+> 2台のPCで別々に書き込むと突き合わせができない。**git に載るのは `.md` のほう。**
+> 相手のPCでは `--xlsx` を叩き直せば同じものができる。
+
+> **表の中で `|` を素で書かない**（`.md` のとき）。列の区切りと見分けが付かず行が壊れる。
 > 書きたいときは `\\|` とする。
 
 直したら該当行を空に戻す。控えを残したいものは
@@ -31,11 +39,21 @@ import svg_elmt as S                                        # noqa: E402
 sys.stdout.reconfigure(encoding="utf-8")
 
 DOCS = os.path.join(P.REPO, "docs")
-SYM = os.path.join(DOCS, "images", "sym")            # 1個ずつの図
+SYM = os.path.join(DOCS, "images", "sym")            # 1個ずつの図（.md 用）
 MEMO = os.path.join(DOCS, "点検メモ.md")
+XLSX = os.path.join(DOCS, "点検メモ.xlsx")
+PNG = os.path.join(P.RENDER, "png")                  # Excel に貼る図（git 管理外）
+
+# Excel の列。**番号の列を動かさない。**書き込みを引き継ぐときの手がかり
+COLS = [("節", 20), ("図", 15), ("番号", 13), ("名称", 42), ("済", 6),
+        ("気づいたこと", 62)]
+C_NUM, C_DONE, C_MEMO = 3, 5, 6                      # 1始まり
+FONT = "Meiryo"          # 和名を出すので日本語を持つもの。Arial だと豆腐になる
 
 PX_PER_UNIT = .8                # 表の中での図の大きさ
 PX_MIN, PX_MAX = 22, 74         # 行が潰れる／伸びすぎるのを防ぐ
+
+SHEET = "点検メモ"
 
 HEAD = """# 点検メモ
 
@@ -46,16 +64,137 @@ HEAD = """# 点検メモ
 > **この表は作り直しても消えない。** `py -3 tools/checklist.py` は
 > 既にある「済」と「気づいたこと」を番号で引き継ぐ。記号を足せば行が増えるだけ。
 
-**書き方**
+## Excel で書く
+
+GUI で書きたいときは Excel を出す。**書き込んだあと引数なしで叩き直すと
+この表に写る。**
+
+```bash
+py -3 tools/checklist.py --xlsx    # docs/点検メモ.xlsx を作る
+py -3 tools/checklist.py           # Excel の書き込みをこの表に写す
+```
+
+**`.xlsx` は git に入れていない。** バイナリなので差分が出ず、2台のPCで
+別々に書き込むと突き合わせができないため。**git に載るのはこの `.md` のほう。**
+相手のPCでは `--xlsx` を叩き直せば同じものができる。
+
+`.xlsx` と `.md` の**新しいほうから読む**（どちらから読んだかは実行時に出る）。
+
+## 書き方
 
 - 「済」に `✔` を入れると見たしるしになる。直したら行を空に戻す
-- **`|` を素で書かない。** 列の区切りと見分けが付かず行が壊れる。`\\|` とする
+- この `.md` を直接書くときは **`|` を素で書かない。** 列の区切りと見分けが
+  付かず行が壊れる。`\\|` とする（Excel 側は素の `|` でよい。写すときに逃がす）
 - 残しておきたい控えは [測定メモ.md](測定メモ.md) へ
 
 印刷して紙に書きたいときは `py -3 tools/checklist.py --print` で
 `docs/点検表/` に A4 が出る。
 
 """
+
+# --- Excel（--xlsx のときだけ） ---------------------------------------------
+#
+# **git に入れない。**バイナリで差分が出ず、2台のPCで別々に書き込むと
+# 突き合わせができない。載るのは `.md` のほうで、Excel は書くための面。
+
+XL_K = .25               # PNG を Excel に貼るときの縮尺
+XL_HMIN, XL_HMAX = 20, 60        # 貼ったあとの高さ（px）の下限・上限
+XL_WMAX = 210                    # 幅の上限（px）。横長の記号で列が広がるのを防ぐ
+
+USAGE = [
+    ("この表の使い方", True),
+    ("", False),
+    ("記号を使っていて気づいたことを、黄色の2列に書きます。", False),
+    ("", False),
+    ("済　　　　　見たしるし。プルダウンから ✔ を選ぶ", False),
+    ("気づいたこと　直したいところ・迷ったところを書く", False),
+    ("", False),
+    ("書いたら閉じて、下を叩くと docs/点検メモ.md に写ります。", False),
+    ("git に載るのは .md のほうです（.xlsx はバイナリなので差分が出ません）。", False),
+    ("", False),
+    ("    py -3 tools/checklist.py", False),
+    ("", False),
+    ("叩き直しても書き込みは消えません。番号で引き継ぎます。", False),
+    ("記号を足したときは行が増えるだけです。", False),
+    ("", False),
+    ("書き方の例", True),
+    ("済 = ✔ ／ 気づいたこと = 「可動接片が規格票より寝ている。07-25-01 と揃える」", False),
+    ("直したら、その行を空に戻します。", False),
+]
+
+
+def build_xlsx(items, keep):
+    from openpyxl import Workbook
+    from openpyxl.drawing.image import Image as XLImage
+    from openpyxl.styles import Alignment, Font, PatternFill
+    from openpyxl.utils import get_column_letter
+    from openpyxl.worksheet.datavalidation import DataValidation
+    import render_elmt as R
+
+    os.makedirs(PNG, exist_ok=True)
+    wb = Workbook()
+
+    ws = wb.active
+    ws.title = "使い方"
+    ws.column_dimensions["A"].width = 96
+    for i, (line, bold) in enumerate(USAGE, 1):
+        c = ws.cell(row=i, column=1, value=line)
+        c.font = Font(name=FONT, size=11, bold=bold)
+
+    ws = wb.create_sheet(SHEET)
+    head = Font(name=FONT, size=10, bold=True)
+    body = Font(name=FONT, size=10)
+    # **書き込む列に色を付ける。**どこを触るのか分からない表は使われない
+    fill = PatternFill("solid", fgColor="FFF7CC")
+    wrap = Alignment(vertical="center", wrap_text=True)
+    mid = Alignment(vertical="center")
+    ctr = Alignment(horizontal="center", vertical="center")
+
+    for i, (name, width) in enumerate(COLS, 1):
+        c = ws.cell(row=1, column=i, value=name)
+        c.font, c.alignment = head, ctr
+        ws.column_dimensions[get_column_letter(i)].width = width
+    ws.freeze_panes = "A2"
+    ws.auto_filter.ref = "A1:%s%d" % (get_column_letter(len(COLS)),
+                                      len(items) + 1)
+
+    dv = DataValidation(type="list", formula1='"✔"', allow_blank=True)
+    ws.add_data_validation(dv)
+
+    cur, wmax = "", 0
+    for r, (ja, path) in enumerate(items, 2):
+        if ja:
+            cur = ja
+        base = os.path.basename(path)[:-5]
+        _, _, name, _ = S.body(path, False)
+        done, memo = keep.get(base, ("", ""))
+        for col, val, al in ((1, cur, mid), (3, base, mid), (4, name, wrap),
+                             (5, done, ctr), (6, memo, wrap)):
+            c = ws.cell(row=r, column=col, value=val)
+            c.font, c.alignment = body, al
+            if col in (C_DONE, C_MEMO):
+                c.fill = fill
+        dv.add(ws.cell(row=r, column=C_DONE))
+
+        png = os.path.join(PNG, base + ".png")
+        R.draw_one(path, marks=False, caption=False, pad=8).save(png)
+        img = XLImage(png)
+        k = XL_K
+        if img.height * k > XL_HMAX:
+            k = XL_HMAX / img.height
+        if img.height * k < XL_HMIN:
+            k = XL_HMIN / img.height
+        if img.width * k > XL_WMAX:                  # 横長は幅で頭打ちにする
+            k = XL_WMAX / img.width
+        img.width, img.height = int(img.width * k), int(img.height * k)
+        wmax = max(wmax, img.width)
+        ws.add_image(img, "B%d" % r)
+        ws.row_dimensions[r].height = img.height * .75 + 6   # px → pt
+
+    ws.column_dimensions["B"].width = wmax / 7. + 2
+    wb.save(XLSX)
+    return len(items)
+
 
 # --- 印刷用 A4（--print のときだけ） ---------------------------------------
 PW, PH, MARGIN = 210., 297., 9.
@@ -83,6 +222,21 @@ def rows():
     return out
 
 
+def md_escape(s):
+    """表のセルに入れられる形にする
+
+    **Excel には縦棒も改行も素で書ける。** それをそのまま `.md` に流すと
+    列が1つ増えて行が壊れ、次に読むときに名称とメモがずれる（実際にやった）。
+    書き出す側で必ず逃がす。
+    """
+    return (s.replace("\\", "\\\\").replace("|", "\\|")
+            .replace("\r\n", "<br>").replace("\n", "<br>").replace("\r", "<br>"))
+
+
+def md_unescape(s):
+    return (s.replace("<br>", "\n").replace("\\|", "|").replace("\\\\", "\\"))
+
+
 def read_memo():
     """既にある点検メモから {番号: (済, 気づいたこと)} を読む
 
@@ -105,8 +259,40 @@ def read_memo():
             continue
         m = re.fullmatch(r"`([0-9A-Za-z_\-]+)`", cells[1])
         if m:
-            out[m.group(1)] = (cells[3], cells[4])
+            out[m.group(1)] = (md_unescape(cells[3]), md_unescape(cells[4]))
     return out
+
+
+def read_xlsx():
+    """Excel から {番号: (済, 気づいたこと)} を読む"""
+    from openpyxl import load_workbook
+    wb = load_workbook(XLSX, data_only=True)
+    ws = wb[SHEET] if SHEET in wb.sheetnames else wb.worksheets[0]
+    out = {}
+    for row in ws.iter_rows(min_row=2, values_only=True):
+        if len(row) < C_MEMO or not row[C_NUM - 1]:
+            continue
+        num = str(row[C_NUM - 1]).strip()
+        done = str(row[C_DONE - 1] or "").strip()
+        memo = str(row[C_MEMO - 1] or "").strip()
+        out[num] = (done, memo)
+    return out
+
+
+def read_notes():
+    """書き込みを読む。**どちらから読んだかも返す**
+
+    `.xlsx` があって `.md` より新しければ Excel が勝つ。
+    片方だけを直したときに、古いほうで上書きしてしまわないため。
+    """
+    has_x = os.path.isfile(XLSX)
+    has_m = os.path.isfile(MEMO)
+    if has_x and (not has_m
+                  or os.path.getmtime(XLSX) > os.path.getmtime(MEMO)):
+        return read_xlsx(), "点検メモ.xlsx"
+    if has_m:
+        return read_memo(), "点検メモ.md"
+    return {}, "（まだ無い）"
 
 
 def sym_svg(path):
@@ -133,7 +319,8 @@ def build_md(items, keep):
         _, _, name, _ = S.body(path, False)
         done, memo = keep.get(base, ("", ""))
         out.append('| <img src="images/sym/%s.svg" height="%d"> | `%s` | %s | %s | %s |'
-                   % (base, px, base, name, done, memo))
+                   % (base, px, base, md_escape(name),
+                      md_escape(done), md_escape(memo)))
     return "\n".join(out) + "\n"
 
 
@@ -245,17 +432,26 @@ def build_print(items):
 
 def main():
     ap = argparse.ArgumentParser()
+    ap.add_argument("--xlsx", action="store_true",
+                    help="Excel も出す（GUI で書く用）")
     ap.add_argument("--print", dest="pr", action="store_true",
                     help="印刷用の A4 も出す")
     a = ap.parse_args()
 
     os.makedirs(SYM, exist_ok=True)
     items = rows()
-    keep = read_memo()
-    open(MEMO, "w", encoding="utf-8").write(build_md(items, keep))
+    keep, src = read_notes()
     written = sum(1 for v in keep.values() if v[0] or v[1])
-    print("書き出し: %s  %d行（書き込み済み %d行を引き継いだ）"
-          % (os.path.relpath(MEMO, P.REPO), len(items), written))
+    print("読み取り: %s（書き込み %d行）" % (src, written))
+
+    open(MEMO, "w", encoding="utf-8").write(build_md(items, keep))
+    print("書き出し: %s  %d行" % (os.path.relpath(MEMO, P.REPO), len(items)))
+
+    # **既にあるなら黙って作り直す。**片方だけ新しい状態を残すと、
+    # 次に叩いたとき古いほうから読んで書き込みが消える
+    if a.xlsx or os.path.isfile(XLSX):
+        build_xlsx(items, keep)
+        print("書き出し: %s" % os.path.relpath(XLSX, P.REPO))
 
     if a.pr:
         n = build_print(items)

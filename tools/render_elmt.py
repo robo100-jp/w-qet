@@ -157,7 +157,13 @@ def line_end(dr, tip, other, kind, length, w):
         dr.polygon([A, B, tip, C], fill="black", outline="black")
 
 
-def draw_one(path):
+def draw_one(path, marks=True, caption=True, pad=PAD):
+    """PNG に描く
+
+    既定は**目視確認用**——外形枠・原点・端子の印・キャプションまで描く。
+    `marks=False, caption=False` にすると**人に見せる姿だけ**になる
+    （Excel に貼るなど）。描く中身そのものは同じ経路を通す。
+    """
     prims, terms, dtexts, g, ja, info = parse(path)
     W, H = int(g["width"]), int(g["height"])
     hx, hy = float(g["hotspot_x"]), float(g["hotspot_y"])
@@ -176,23 +182,28 @@ def draw_one(path):
     for x, y, _ in terms:
         xs.append(x)
         ys.append(y)
-    for x, y, s, _ in dtexts:               # ラベルが画布からはみ出さないように
+    # ラベルが画布からはみ出さないように。**印を描かないときは数えない** ——
+    # 図面で埋まる空欄（`[label]`）のぶん画布が広がって、記号が中心からずれる
+    for x, y, s, a in dtexts:
+        if not marks and a.get("text_from") != "UserText":
+            continue
         xs += [x, x + 4 * len(s)]
         ys += [y - 4, y + 6]
     x0, x1, y0, y1 = min(xs), max(xs), min(ys), max(ys)
-    iw = int((x1 - x0) * S) + PAD * 2
-    ih = int((y1 - y0) * S) + PAD * 2 + 34
+    iw = int((x1 - x0) * S) + pad * 2
+    ih = int((y1 - y0) * S) + pad * 2 + (34 if caption else 0)
 
     im = Image.new("RGB", (iw, ih), "white")
     dr = ImageDraw.Draw(im)
 
     def P(x, y):
-        return ((x - x0) * S + PAD, (y - y0) * S + PAD)
+        return ((x - x0) * S + pad, (y - y0) * S + pad)
 
     # 部品の外形枠（薄いグレー）と原点
-    dr.rectangle([P(-hx, -hy), P(W - hx, H - hy)], outline=(215, 215, 215))
-    dr.line([P(-3, 0), P(3, 0)], fill=(230, 170, 170))
-    dr.line([P(0, -3), P(0, 3)], fill=(230, 170, 170))
+    if marks:
+        dr.rectangle([P(-hx, -hy), P(W - hx, H - hy)], outline=(215, 215, 215))
+        dr.line([P(-3, 0), P(3, 0)], fill=(230, 170, 170))
+        dr.line([P(0, -3), P(0, 3)], fill=(230, 170, 170))
 
     for tag, a in prims:
         style = a.get("style", "")
@@ -245,23 +256,33 @@ def draw_one(path):
                  .replace("&quot;", '"').replace("&amp;", "&"))
             dr.text((x, y - px * S * EM), s, fill="black", font=font(int(px * S * EM)))
 
-    # ラベル欄は青。図形ではないので色で区別する
+    # ラベル欄は青。図形ではないので色で区別する。
+    # **印を描かないときは、規格票が「例」として示す値だけを黒で描く**
+    # （`5…10 A` など。QET に置いたときに既定で出るので、落とすと実物と食い違う）
     for x, y, s, a in dtexts:
+        user = a.get("text_from") == "UserText"
+        if not marks and not user:
+            continue
         mfz = re.search(r"[^,]+,([\d.]+)", a.get("font", ""))
         px = float(mfz.group(1)) if mfz else 9.0
         cx, cy = P(x, y)
-        dr.text((cx, cy), s, fill=(60, 90, 200), font=font(int(px * S * EM)))
-        dr.line([(cx - 5, cy), (cx + 5, cy)], fill=(160, 180, 230))
-        dr.line([(cx, cy - 5), (cx, cy + 5)], fill=(160, 180, 230))
+        col = (60, 90, 200) if marks else (0, 0, 0)
+        dr.text((cx, cy), s, fill=col, font=font(int(px * S * EM)))
+        if marks:
+            dr.line([(cx - 5, cy), (cx + 5, cy)], fill=(160, 180, 230))
+            dr.line([(cx, cy - 5), (cx, cy + 5)], fill=(160, 180, 230))
 
-    for x, y, o in terms:
-        cx, cy = P(x, y)
-        dr.ellipse([cx - 4, cy - 4, cx + 4, cy + 4], outline=(200, 60, 60), width=2)
-        dr.text((cx + 6, cy - 6), o, fill=(200, 60, 60), font=font(13))
+    if marks:
+        for x, y, o in terms:
+            cx, cy = P(x, y)
+            dr.ellipse([cx - 4, cy - 4, cx + 4, cy + 4], outline=(200, 60, 60), width=2)
+            dr.text((cx + 6, cy - 6), o, fill=(200, 60, 60), font=font(13))
 
-    cap = f"{os.path.basename(path)[:-5]}  {ja}"
-    dr.text((6, ih - 30), cap, fill=(30, 30, 30), font=font(15))
-    dr.text((6, ih - 14), info.replace("\n", " / ")[:120], fill=(120, 120, 120), font=font(11))
+    if caption:
+        cap = f"{os.path.basename(path)[:-5]}  {ja}"
+        dr.text((6, ih - 30), cap, fill=(30, 30, 30), font=font(15))
+        dr.text((6, ih - 14), info.replace("\n", " / ")[:120],
+                fill=(120, 120, 120), font=font(11))
     return im
 
 
