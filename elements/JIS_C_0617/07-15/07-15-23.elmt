@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition width="90" height="60" hotspot_x="30" hotspot_y="30"
+<definition width="110" height="60" hotspot_x="30" hotspot_y="30"
             type="element" link_type="master" version="0.100.0">
     <uuid uuid="{8df9be57-99bb-43c2-92df-be51e591e906}"/>
     <names>
@@ -8,6 +8,7 @@
     </names>
     <informations>JIS C 0617 / IEC 60617 07-15-23
 二つの安定位置をもつ（双安定形）有極継電器。図は 07-15-16 と同じ形で、意味が違う。
+規格票は形状分類に「点」を挙げており、コイルの下と接点の右上に黒丸が1つずつ描かれている。位置と大きさは規格票の実測による。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <rect x="-30" y="-10" width="50" height="20" antialias="false"
@@ -34,6 +35,10 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <line x1="60" y1="10" x2="60" y2="30" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <ellipse x="8" y="18" width="4" height="4" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:black;color:black"/>
+        <ellipse x="68" y="-17" width="4" height="4" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:black;color:black"/>
         <terminal x="0" y="-30" orientation="n" name="A1" type="Generic"
                   uuid="{582224ff-ec5f-4d85-860b-c84826b88330}"/>
         <terminal x="0" y="30" orientation="s" name="A2" type="Generic"
@@ -44,7 +49,7 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
                   uuid="{9fbb2fb3-bdeb-447f-ad74-67423fda66e9}"/>
         <terminal x="60" y="30" orientation="s" name="11" type="Generic"
                   uuid="{74390313-7aba-42f0-87be-bdc020c93ff9}"/>
-        <dynamic_text x="65" y="-30" z="1" text_width="-1"
+        <dynamic_text x="78" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
                       text_from="ElementInfo" uuid="{d6b7adcb-2be0-4832-827b-8f4b9818b5ee}"

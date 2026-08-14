@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition width="110" height="60" hotspot_x="30" hotspot_y="30"
+<definition width="130" height="60" hotspot_x="30" hotspot_y="30"
             type="element" link_type="master" version="0.100.0">
     <uuid uuid="{7fd1017c-9f70-4de7-bd56-8426e63d2674}"/>
     <names>
@@ -8,6 +8,7 @@
     </names>
     <informations>JIS C 0617 / IEC 60617 07-15-17
 中立位置をもつ有極継電器。可動接片は無励磁でどちらにも触れない。
+規格票は形状分類に「点」を挙げており、コイルの下と接点の右上に黒丸が1つずつ描かれている。位置と大きさは規格票の実測による。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <rect x="-30" y="-10" width="50" height="20" antialias="false"
@@ -32,6 +33,10 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <ellipse x="58" y="8" width="4" height="4" antialias="true"
                  style="line-style:normal;line-weight:normal;filling:white;color:black"/>
+        <ellipse x="8" y="18" width="4" height="4" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:black;color:black"/>
+        <ellipse x="88" y="-22" width="4" height="4" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:black;color:black"/>
         <terminal x="0" y="-30" orientation="n" name="A1" type="Generic"
                   uuid="{edf173d1-73f9-4796-906b-91208f0d129b}"/>
         <terminal x="0" y="30" orientation="s" name="A2" type="Generic"
@@ -42,7 +47,7 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
                   uuid="{aab0f1d1-0df6-44b4-a889-fdf8a8187f3b}"/>
         <terminal x="60" y="30" orientation="s" name="11" type="Generic"
                   uuid="{41a8affb-42d2-4598-98ca-060575af3895}"/>
-        <dynamic_text x="85" y="-30" z="1" text_width="-1"
+        <dynamic_text x="98" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
                       text_from="ElementInfo" uuid="{a172634f-7f35-4036-85a6-4fdf94fc2e7f}"

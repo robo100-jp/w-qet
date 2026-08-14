@@ -88,8 +88,17 @@ def parse(path):
         (info.group(1).strip() if info else "")
 
 
-# 線種のパターン（px 単位の 描く/空ける の繰り返し）
-PATTERN = {"dashed": (6, 4), "dotted": (2, 3), "dashdotted": (7, 3, 2, 3)}
+# 線種のパターン（**単位** の 描く/空ける の繰り返し。1単位 = S px）
+#
+# **QET と同じ刻みにする。** QET は Qt のペンをそのまま使うので、刻みは Qt が
+# 決めている（線の太さ倍。normal は 1）。ここを目分量で決めていたときは
+# QET の4倍細かく描いていて、規格票と見比べる役に立たなかった。
+#   Qt::DashLine 4:2 ／ Qt::DotLine 1:2 ／ Qt::DashDotLine 4:2:1:2
+#
+# 規格票の破線は刻み 1.0M（線 0.5〜0.65M・空き 0.35〜0.5M）で、
+# QET の 0.6M より粗い。**QET では刻みを指定できない**ので、規格票どおりにしたい
+# 線は破線ではなく短い実線を並べて描く。
+PATTERN = {"dashed": (4, 2), "dotted": (1, 2), "dashdotted": (4, 2, 1, 2)}
 
 
 def dashes(dr, p1, p2, lstyle, w):
@@ -106,7 +115,7 @@ def dashes(dr, p1, p2, lstyle, w):
         return
     pos, i = 0.0, 0
     while pos < total:
-        seg = pat[i % len(pat)]
+        seg = pat[i % len(pat)] * S
         if i % 2 == 0:                       # 偶数番目が「描く」
             t1, t2 = pos / total, min(pos + seg, total) / total
             dr.line([(p1[0] + dx * t1, p1[1] + dy * t1),
