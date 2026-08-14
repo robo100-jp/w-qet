@@ -17,6 +17,8 @@
   ・`<name lang="ja">` と `en` があるか
   ・ラベルの `keep_visual_rotation="true"`（無いと倒したとき文字まで倒れる）
   ・`JIS_C_0617/` の下は図記号番号が `<informations>` にあり、ファイル名と一致するか
+  ・**規格の要素を組み合わせたもの**（ファイル名に `+`）は、番号の行ではなく
+    「JIS C 0617 の組合せ A ＋ B」を持ち、組合せ元が実在するか
   ・`JIS_C_0617/` の外に規格の行が紛れ込んでいないか（出所を偽ることになる）
 
 使い方
@@ -91,6 +93,16 @@ for _c in "0123456789":
 LINK = ("simple", "master", "slave", "terminal",
         "next_report", "previous_report")
 NUM_RE = re.compile(r"JIS C 0617 / IEC 60617 ([0-9A-Za-z\-]+)")
+
+# **規格の要素を組み合わせたもの。**規格が「操作子の限定図記号＋接点」のように
+# 組み合わせる建て付けにしているのに、その組合せには番号が振られていない——
+# という図記号がある（押しボタン＋ブレーク接点など）。
+#
+# 番号が無いので `JIS C 0617 / IEC 60617 <番号>` を書いてはいけない
+# （status.py が採録として数えてしまうし、無い番号を騙ることになる）。
+# 代わりにこの行を書き、**ファイル名は番号を + でつないだもの**にする。
+# 探すときは節のフォルダを開くはずなので、置き場所は組合せ元と同じ節。
+COMBO_RE = re.compile(r"JIS C 0617 の組合せ ([0-9A-Za-z\-]+(?: ＋ [0-9A-Za-z\-]+)+)")
 MARGIN = 0.6           # 線の太さぶんの余裕。これを超えたらはみ出しとみなす
 
 
@@ -228,14 +240,28 @@ def check(path, seen_uuid):
     if nonascii:
         bad.append("パスに非ASCIIの文字がある: %s" % "".join(sorted(set(nonascii))))
     if "JIS_C_0617" in path.replace("\\", "/"):
-        m = NUM_RE.search(info)
-        if not m:
-            bad.append("informations に図記号番号が無い")
-        elif not base.startswith(m.group(1)):
-            bad.append("ファイル名と図記号番号が食い違う: %s" % m.group(1))
+        if "+" in base:                        # 規格の要素を組み合わせたもの
+            m = COMBO_RE.search(info)
+            if not m:
+                bad.append("組合せなのに informations に「JIS C 0617 の組合せ」が無い")
+            elif m.group(1).replace(" ＋ ", "+") != base[:-5]:
+                bad.append("ファイル名と組合せの元が食い違う: %s" % m.group(1))
+            if NUM_RE.search(info):
+                bad.append("組合せに図記号番号の行がある（この組合せに番号は無い）")
+            for n in (m.group(1).split(" ＋ ") if m else []):
+                try:
+                    P.find(n)
+                except Exception:
+                    bad.append("組合せの元が見つからない: %s" % n)
+        else:
+            m = NUM_RE.search(info)
+            if not m:
+                bad.append("informations に図記号番号が無い")
+            elif not base.startswith(m.group(1)):
+                bad.append("ファイル名と図記号番号が食い違う: %s" % m.group(1))
         if "JIS準拠" in info:
             bad.append("informations に「JIS準拠」がある")
-    elif NUM_RE.search(info):
+    elif NUM_RE.search(info) or COMBO_RE.search(info):
         bad.append("規格に基づかない部品に規格の行が入っている")
     return bad
 

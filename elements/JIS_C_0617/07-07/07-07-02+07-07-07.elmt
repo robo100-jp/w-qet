@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition width="40" height="60" hotspot_x="27" hotspot_y="30"
             type="element" link_type="simple" version="0.100.0">
-    <uuid uuid="{b347b8e9-5a15-4afc-ad0f-53f795fd54d9}"/>
+    <uuid uuid="{bf905fc8-fe07-49ad-8847-ce6359c34e12}"/>
     <names>
         <name lang="ja">押しボタンスイッチ（ブレーク接点）</name>
         <name lang="en">Push-button switch, break contact</name>
     </names>
-    <informations>押しボタンで開く接点（b接点）。**第7部にこの組合せの図記号番号は無い。**
+    <informations>JIS C 0617 の組合せ 07-07-02 ＋ 07-07-07
+押しボタンで開く接点（b接点）。**この組合せに図記号番号は無い。**
 規格は操作子の限定図記号と接点を組み合わせる建て付けで、番号が振られて
 いるのは 07-07-02（押しボタン＋メーク接点）と 07-07-07（手動操作の一般
 図記号＋ブレーク接点）まで。実務で必ず出るのでこちらで組んだ。
@@ -31,13 +32,13 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <line x1="-25" y1="0" x2="3.33" y2="0" antialias="false"
               style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <terminal x="0" y="-30" orientation="n" name="11" type="Generic"
-                  uuid="{d3ca2875-95f4-4ba9-be5c-e2cdad68e6dd}"/>
+                  uuid="{6b61199d-007d-4ce3-bcf3-744d114b4560}"/>
         <terminal x="0" y="30" orientation="s" name="12" type="Generic"
-                  uuid="{8ece3b0f-c341-4d39-82c7-e7d63c775c1c}"/>
+                  uuid="{2bda91ee-5be9-4b54-99ea-bc5cce501824}"/>
         <dynamic_text x="18" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
-                      text_from="ElementInfo" uuid="{da4c951b-a008-4d87-8731-2e8ce9cc58ee}"
+                      text_from="ElementInfo" uuid="{b6550487-c493-4473-828c-e38f862aea3e}"
                       font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
             <text></text>
             <info_name>label</info_name>

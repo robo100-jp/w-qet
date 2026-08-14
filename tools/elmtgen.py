@@ -125,12 +125,17 @@ NOTE_QUAL = ("限定図記号。端子を持たない。ほかの図記号に重
 
 
 def write(path, num, ja, en, w, h, body, terms=(), link="simple",
-          label=True, note=None, hx=None, hy=None):
+          label=True, note=None, hx=None, hy=None, combo=None):
     """`.elmt` を書き出す
 
     num   図記号番号（例 "07-02-01"）。check_qet.py と status.py がこれで判別する。
           **規格に基づかない作図用の部品は `num=None`。**
-          そのとき `<informations>` に規格の行を書かない。書くと出所を偽ることになる
+          そのとき `<informations>` に規格の行を書かない
+    combo 規格の要素を**組み合わせた**もの（例 ("07-07-02", "07-07-07")）。
+          規格がその組合せに番号を振っていないときに使う。`num` とは併用しない。
+          **番号の行を書かない**（無い番号を騙ることになるし、status.py が
+          採録として数えてしまう）。置き場所は組合せ元と同じ節のフォルダ、
+          ファイル名は番号を `+` でつないだもの。`check_elmt.py` が照合する。書くと出所を偽ることになる
     w, h  外形。10の倍数。hotspot は既定で中央（w/2, h/2）
     hx    hotspot を横にずらす。**図が導体の軸に対して左右非対称のとき**に使う。
           座標の原点から左へ hx、右へ w-hx が外形。既定は w/2（＝中央）
@@ -147,8 +152,14 @@ def write(path, num, ja, en, w, h, body, terms=(), link="simple",
     parts = list(body) + [t for t in terms]
     if label:
         parts.append(_label(w, h, hx))
+    if num and combo:
+        raise ValueError("num と combo は併用しない: %s" % path)
     if num:
         info = "JIS C 0617 / IEC 60617 %s\n%s" % (num, note or NOTE)
+    elif combo:
+        # **番号の行は書かない。**無い番号を騙ることになるし、
+        # status.py が採録として数えてしまう
+        info = "JIS C 0617 の組合せ %s\n%s" % (" ＋ ".join(combo), note or NOTE)
     else:
         info = note or ""
     xml = ('<?xml version="1.0" encoding="UTF-8"?>\n'
