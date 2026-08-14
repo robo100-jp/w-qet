@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="297mm" viewBox="0 0 210 297">
+<rect width="210" height="297" fill="white"/>
+<g stroke-linecap="round" stroke-linejoin="round">
+<text x="9" y="12.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="4.4" font-weight="bold" fill="black">図記号 点検メモ</text>
+<text x="201" y="12.4" text-anchor="end" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.8" fill="#555">8 / 11</text>
+<text x="9" y="16.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.3" fill="#666">気づいたことをその場で書く。直したら docs/測定メモ.md に写して紙は残さない</text>
+<line x1="9" y1="18.6" x2="201" y2="18.6" stroke="#333" stroke-width="0.4"/>
+<text x="46" y="21.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#666">番号・名称</text>
+<text x="96" y="21.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#666">気づいたこと</text>
+<rect x="9" y="22.4" width="192" height="5" fill="#eee"/>
+<text x="10.5" y="26" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.9" font-weight="bold" fill="black">07-16 ブロック図記号（つづき）</text>
+<g transform="translate(29 33.3) scale(0.38) translate(0.1 4.565)" stroke="black" fill="none"><text x="-9.72" y="0.47" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor" font-style="italic">I</text><line x1="3.52" y1="-12" x2="3.52" y2="-4" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-2.48" y1="-4" x2="9.52" y2="-4" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0.02" y1="-1.5" x2="7.02" y2="-1.5" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="2.02" y1="1" x2="5.02" y2="1" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
+<rect x="9.6" y="31.6" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="33" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-16-07</text>
+<text x="46" y="36.5" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">地絡電流</text>
+<line x1="94" y1="28.3" x2="94" y2="38.3" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="38.8" x2="201" y2="38.8" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 44.3) scale(0.38) translate(0.515 2.265)" stroke="black" fill="none"><text x="-4.53" y="0.47" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor" font-style="italic">I</text><text x="-1.3" y="3" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="8" fill="currentColor">N</text></g>
+<rect x="9.6" y="42.6" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="44" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-16-08</text>
+<text x="46" y="47.5" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">中性点電流</text>
+<line x1="94" y1="39.3" x2="94" y2="49.3" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="49.8" x2="201" y2="49.8" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 55.3) scale(0.38) translate(-0.17 2.265)" stroke="black" fill="none"><text x="-8.65" y="0.47" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor" font-style="italic">I</text><text x="-5.41" y="3" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="8" fill="currentColor">N-N</text></g>
+<rect x="9.6" y="53.6" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="55" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-16-09</text>
+<text x="46" y="58.5" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">二つの多相系統間の中性点電流</text>
+<line x1="94" y1="50.3" x2="94" y2="60.3" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="60.8" x2="201" y2="60.8" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 66.3) scale(0.38) translate(0.165 2.265)" stroke="black" fill="none"><text x="-6.43" y="0.47" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor" font-style="italic">P</text><text x="1.3" y="3" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="8" fill="currentColor" font-style="italic">α</text></g>
+<rect x="9.6" y="64.6" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="66" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-16-10</text>
+<text x="46" y="69.5" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">位相角 α における電力</text>
+<line x1="94" y1="61.3" x2="94" y2="71.3" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="71.8" x2="201" y2="71.8" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 77.3) scale(0.38) translate(-0 0.546765)" stroke="black" fill="none"><line x1="-20" y1="0" x2="20" y2="0" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-20" y1="-2.5" x2="-20" y2="2.5" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="20" y1="-2.5" x2="20" y2="2.5" fill="none" stroke="currentColor" stroke-width="0.5"/><path d="M -6.04545 -5.18571 A 20.4 20.4 0 0 0 4.06187 4.09218" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
+<rect x="9.6" y="75.6" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="77" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-16-11</text>
+<text x="46" y="80.5" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">反限時特性</text>
+<line x1="94" y1="72.3" x2="94" y2="82.3" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="82.8" x2="201" y2="82.8" stroke="#999" stroke-width="0.2"/>
+<rect x="9" y="82.8" width="192" height="5" fill="#eee"/>
+<text x="10.5" y="86.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.9" font-weight="bold" fill="black">07-17 保護継電器</text>
+<g transform="translate(29 93.7) scale(0.225) translate(-0 -0)" stroke="black" fill="none"><rect x="-30" y="-20" width="60" height="40" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-11.42" y="4.47" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor" font-style="italic">U</text><text x="-2.77" y="4.47" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">=0</text></g>
+<rect x="9.6" y="92" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="93.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-17-01</text>
+<text x="46" y="96.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">無電圧継電器</text>
+<line x1="94" y1="88.7" x2="94" y2="98.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="99.2" x2="201" y2="99.2" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 104.7) scale(0.225) translate(-0 -0)" stroke="black" fill="none"><rect x="-30" y="-20" width="60" height="40" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-9.72" y="4.47" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor" font-style="italic">I</text><line x1="-3" y1="0" x2="13" y2="0" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="-3,0 2,-2 2,2" fill="black" stroke="currentColor" stroke-width="0.5"/></g>
+<rect x="9.6" y="103" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="104.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-17-02</text>
+<text x="46" y="107.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">逆電流継電器</text>
+<line x1="94" y1="99.7" x2="94" y2="109.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="110.2" x2="201" y2="110.2" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 115.7) scale(0.225) translate(-0 -0)" stroke="black" fill="none"><rect x="-30" y="-20" width="60" height="40" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-7.68" y="4.47" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor" font-style="italic">P</text><text x="0.32" y="4.47" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">&lt;</text></g>
+<rect x="9.6" y="114" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="115.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-17-03</text>
+<text x="46" y="118.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">不足電力継電器</text>
+<line x1="94" y1="110.7" x2="94" y2="120.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="121.2" x2="201" y2="121.2" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 128.7) scale(0.216667) translate(-0 -0)" stroke="black" fill="none"><rect x="-30" y="-30" width="60" height="60" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-7.02" y="-5.52" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor" font-style="italic">I </text><text x="-0.32" y="-5.52" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">&gt;</text><line x1="-15" y1="15" x2="15" y2="15" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-15" y1="12" x2="-15" y2="18" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="15" y1="12" x2="15" y2="18" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
+<rect x="9.6" y="127" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="128.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-17-04</text>
+<text x="46" y="131.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">限時形過電流継電器</text>
+<line x1="94" y1="121.7" x2="94" y2="135.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="136.2" x2="201" y2="136.2" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 143.7) scale(0.216667) translate(-0 -0)" stroke="black" fill="none"><rect x="-30" y="-30" width="60" height="60" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-19.68" y="-5.68" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">2 ( </text><text x="-2.32" y="-5.68" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor" font-style="italic">I</text><text x="1.03" y="-5.68" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor"> &gt; )</text><text x="-19.73" y="19.0033" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="10.6667" fill="currentColor">5…10 A</text></g>
+<rect x="9.6" y="142" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="143.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-17-05</text>
+<text x="46" y="146.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">過電流継電器</text>
+<line x1="94" y1="136.7" x2="94" y2="150.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="151.2" x2="201" y2="151.2" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 167.7) scale(0.206667) translate(-0 -0)" stroke="black" fill="none"><rect x="-30" y="-75" width="60" height="150" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-10.07" y="-49.6" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor" font-style="italic">Q </text><text x="2.62" y="-49.6" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">&gt;</text><line x1="-15" y1="-40" x2="-15" y2="-30" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-15" y1="-35" x2="15.5" y2="-35" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="-3.5,-35 2,-37.2 2,-32.8" fill="black" stroke="currentColor" stroke-width="0.5"/><line x1="-15" y1="35" x2="15" y2="35" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-15" y1="32" x2="-15" y2="38" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="15" y1="32" x2="15" y2="38" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-10" y1="45" x2="18" y2="17" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="18,17 14.39,24.14 10.86,20.61" fill="black" stroke="currentColor" stroke-width="0.5"/><text x="-16.69" y="-7.99667" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="10.6667" fill="currentColor">1 Mvar</text><text x="-18.82" y="58.0033" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="10.6667" fill="currentColor">5…10 s</text></g>
+<rect x="9.6" y="166" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="167.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-17-06</text>
+<text x="46" y="170.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">無効電力継電器</text>
+<line x1="94" y1="151.7" x2="94" y2="183.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="184.2" x2="201" y2="184.2" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 193.7) scale(0.2125) translate(-0 -0)" stroke="black" fill="none"><rect x="-30" y="-40" width="60" height="80" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-9.72" y="-15.55" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor" font-style="italic">U </text><text x="2.28" y="-15.55" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">&lt;</text><text x="-22.76" y="4.00333" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="10.6667" fill="currentColor">50…80 V</text><text x="-13.96" y="24.0033" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="10.6667" fill="currentColor">130%</text></g>
+<rect x="9.6" y="192" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="193.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-17-07</text>
+<text x="46" y="196.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">不足電圧継電器</text>
+<line x1="94" y1="184.7" x2="94" y2="202.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="203.2" x2="201" y2="203.2" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 210.7) scale(0.216667) translate(-0 -0)" stroke="black" fill="none"><rect x="-30" y="-30" width="60" height="60" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-16.72" y="6.47" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor" font-style="italic">I</text><text x="-6.9" y="-3.99667" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="10.6667" fill="currentColor">&gt; 5 A</text><text x="-6.9" y="16.0033" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="10.6667" fill="currentColor">&lt; 3 A</text></g>
+<rect x="9.6" y="209" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="210.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-17-08</text>
+<text x="46" y="213.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">電流継電器</text>
+<line x1="94" y1="203.7" x2="94" y2="217.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="218.2" x2="201" y2="218.2" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 223.7) scale(0.225) translate(-0 -0)" stroke="black" fill="none"><rect x="-30" y="-20" width="60" height="40" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-9.06" y="4.47" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor" font-style="italic">Z </text><text x="1.63" y="4.47" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">&lt;</text></g>
+<rect x="9.6" y="222" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="223.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-17-09</text>
+<text x="46" y="226.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">不足インピーダンス継電器</text>
+<line x1="94" y1="218.7" x2="94" y2="228.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="229.2" x2="201" y2="229.2" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 236.7) scale(0.216667) translate(-0 -0)" stroke="black" fill="none"><rect x="-30" y="-30" width="60" height="60" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-9.72" y="-5.52" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor" font-style="italic">N </text><text x="2.28" y="-5.52" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">&lt;</text><path d="M -5 15 A 5 5 0 0 0 -15 15" fill="none" stroke="currentColor" stroke-width="0.5"/><path d="M 5 15 A 5 5 0 0 0 -5 15" fill="none" stroke="currentColor" stroke-width="0.5"/><path d="M 15 15 A 5 5 0 0 0 5 15" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
+<rect x="9.6" y="235" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="236.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-17-10</text>
+<text x="46" y="239.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">巻線層間短絡検出継電器</text>
+<line x1="94" y1="229.7" x2="94" y2="243.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="244.2" x2="201" y2="244.2" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 249.7) scale(0.225) translate(-0 -0)" stroke="black" fill="none"><rect x="-30" y="-20" width="60" height="40" fill="none" stroke="currentColor" stroke-width="0.5"/><path d="M -5 2 A 5 5 0 0 0 -15 2" fill="none" stroke="currentColor" stroke-width="0.5"/><path d="M 5 2 A 5 5 0 0 0 -5 2" fill="none" stroke="currentColor" stroke-width="0.5"/><path d="M 15 2 A 5 5 0 0 0 5 2" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="2.5" y1="-7" x2="-4.5" y2="7" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="5.9" y1="-7" x2="-1.1" y2="7" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
+<rect x="9.6" y="248" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="249.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-17-11</text>
+<text x="46" y="252.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">導体断線検出継電器</text>
+<line x1="94" y1="244.7" x2="94" y2="254.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="255.2" x2="201" y2="255.2" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 260.7) scale(0.225) translate(-0 -0)" stroke="black" fill="none"><rect x="-30" y="-20" width="60" height="40" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-15.56" y="4.47" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor" font-style="italic">m</text><text x="-5.56" y="4.47" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor"> &lt; 3</text></g>
+<rect x="9.6" y="259" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="260.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-17-12</text>
+<text x="46" y="263.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">欠相検出継電器</text>
+<line x1="94" y1="255.7" x2="94" y2="265.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="266.2" x2="201" y2="266.2" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 273.7) scale(0.216667) translate(-0 -0)" stroke="black" fill="none"><rect x="-30" y="-30" width="60" height="60" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-13.83" y="-5.53" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor" font-style="italic">n</text><text x="-7.18" y="-5.53" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor"> ≈ 0</text><text x="-8.74" y="19.48" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor" font-style="italic">I  </text><text x="1.31" y="19.48" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">&gt;</text></g>
+<rect x="9.6" y="272" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="273.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-17-13</text>
+<text x="46" y="276.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">回転子の拘束検出継電器</text>
+<line x1="94" y1="266.7" x2="94" y2="280.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="281.2" x2="201" y2="281.2" stroke="#999" stroke-width="0.2"/>
+</g></svg>

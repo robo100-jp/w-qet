@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="297mm" viewBox="0 0 210 297">
+<rect width="210" height="297" fill="white"/>
+<g stroke-linecap="round" stroke-linejoin="round">
+<text x="9" y="12.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="4.4" font-weight="bold" fill="black">図記号 点検メモ</text>
+<text x="201" y="12.4" text-anchor="end" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.8" fill="#555">3 / 11</text>
+<text x="9" y="16.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.3" fill="#666">気づいたことをその場で書く。直したら docs/測定メモ.md に写して紙は残さない</text>
+<line x1="9" y1="18.6" x2="201" y2="18.6" stroke="#333" stroke-width="0.4"/>
+<text x="46" y="21.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#666">番号・名称</text>
+<text x="96" y="21.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#666">気づいたこと</text>
+<rect x="9" y="22.4" width="192" height="5" fill="#eee"/>
+<text x="10.5" y="26" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.9" font-weight="bold" fill="black">07-07 単極スイッチ（つづき）</text>
+<g transform="translate(29 35.3) scale(0.216667) translate(17.5 -0)" stroke="black" fill="none"><line x1="0" y1="-30" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-11" y1="-12" x2="0" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="10" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-30" y1="-5" x2="-30" y2="5" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-35" y1="-5" x2="-30" y2="-5" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-35" y1="5" x2="-30" y2="5" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-30" y1="0" x2="-5" y2="0" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="4,2"/></g>
+<rect x="9.6" y="33.6" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="35" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-07-03</text>
+<text x="46" y="38.5" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">手動操作の引きボタンスイッチ（自動復帰）</text>
+<line x1="94" y1="28.3" x2="94" y2="42.3" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="42.8" x2="201" y2="42.8" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 50.3) scale(0.216667) translate(17.5 -0)" stroke="black" fill="none"><line x1="0" y1="-30" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-11" y1="-12" x2="0" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="10" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-30" y1="-5" x2="-30" y2="5" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-30" y1="-5" x2="-25" y2="-5" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-35" y1="5" x2="-30" y2="5" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-30" y1="0" x2="-5" y2="0" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="4,2"/></g>
+<rect x="9.6" y="48.6" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="50" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-07-04</text>
+<text x="46" y="53.5" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">手動操作のひねりスイッチ（非自動復帰）</text>
+<line x1="94" y1="43.3" x2="94" y2="57.3" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="57.8" x2="201" y2="57.8" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 65.3) scale(0.216667) translate(25 -0)" stroke="black" fill="none"><line x1="0" y1="-30" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-11" y1="-12" x2="0" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="10" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-50" y1="-5" x2="-50" y2="5" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-50" y1="-5" x2="-45" y2="-5" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-50" y1="5" x2="-45" y2="5" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-50" y1="0" x2="-5" y2="0" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="4,2"/><ellipse cx="-25" cy="-15" rx="10" ry="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-31.5" y1="-15" x2="-19" y2="-15" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-24" y1="-20.5" x2="-19" y2="-15" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-19" y1="-15" x2="-24" y2="-9.5" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
+<rect x="9.6" y="63.6" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="65" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-07-05</text>
+<text x="46" y="68.5" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">確実動作が行われる手動操作の押しボタンス…</text>
+<line x1="94" y1="58.3" x2="94" y2="72.3" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="72.8" x2="201" y2="72.8" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 80.3) scale(0.216667) translate(15.95 -0)" stroke="black" fill="none"><line x1="0" y1="-30" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="-10" x2="10" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="7.5" y1="-12.5" x2="0" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="10" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-37.5" y1="-8" x2="-37.5" y2="8" fill="none" stroke="currentColor" stroke-width="0.5"/><path d="M -37.4812 -7.97165 A 9.4 9.4 0 0 0 -37.4812 7.97165" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-37.5" y1="0" x2="3.33" y2="0" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="4,2"/><line x1="-20" y1="0" x2="-16" y2="8.5" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-16" y1="8.5" x2="-12" y2="0" fill="none" stroke="currentColor" stroke-width="0.5"/><ellipse cx="-15" cy="-15" rx="10" ry="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-21.5" y1="-15" x2="-9" y2="-15" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-14" y1="-20.5" x2="-9" y2="-15" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-9" y1="-15" x2="-14" y2="-9.5" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
+<rect x="9.6" y="78.6" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="80" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-07-06</text>
+<text x="46" y="83.5" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">非常停止スイッチ</text>
+<line x1="94" y1="73.3" x2="94" y2="87.3" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="87.8" x2="201" y2="87.8" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 95.3) scale(0.216667) translate(7.5 -0)" stroke="black" fill="none"><line x1="0" y1="-30" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="-10" x2="10" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="7.5" y1="-12.5" x2="0" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="10" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-25" y1="-5" x2="-25" y2="5" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-25" y1="0" x2="3.33" y2="0" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="4,2"/></g>
+<rect x="9.6" y="93.6" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="95" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-07-07</text>
+<text x="46" y="98.5" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">手動操作スイッチ（ブレーク接点）</text>
+<line x1="94" y1="88.3" x2="94" y2="102.3" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="102.8" x2="201" y2="102.8" stroke="#999" stroke-width="0.2"/>
+<rect x="9" y="102.8" width="192" height="5" fill="#eee"/>
+<text x="10.5" y="106.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.9" font-weight="bold" fill="black">07-08 リミットスイッチ</text>
+<g transform="translate(29 115.7) scale(0.216667) translate(5.5 -0)" stroke="black" fill="none"><line x1="0" y1="-30" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-11" y1="-12" x2="0" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="10" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="-10,0 -6.5,-2.9 -1.5,6.9" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
+<rect x="9.6" y="114" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="115.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-08-01</text>
+<text x="46" y="118.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">リミットスイッチ（メーク接点）</text>
+<line x1="94" y1="108.7" x2="94" y2="122.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="123.2" x2="201" y2="123.2" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 130.7) scale(0.216667) translate(-4.65 -0)" stroke="black" fill="none"><line x1="0" y1="-30" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="-10" x2="10" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="7.5" y1="-12.5" x2="0" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="10" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="-0.7,-3.6 3.6,-1.5 1,7" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
+<rect x="9.6" y="129" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="130.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-08-02</text>
+<text x="46" y="133.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">リミットスイッチ（ブレーク接点）</text>
+<line x1="94" y1="123.7" x2="94" y2="137.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="138.2" x2="201" y2="138.2" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 145.7) scale(0.216667) translate(-0 -0)" stroke="black" fill="none"><line x1="-30" y1="-30" x2="-30" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-22.5" y1="-12.5" x2="-30" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-30" y1="10" x2="-30" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="-30.7,-3.6 -26.4,-1.5 -29,7" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="-26.4,-1.5 -20.7,0.3 -29,7" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-30" y1="-10" x2="-20" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="30" y1="-30" x2="30" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="22.5" y1="-12.5" x2="30" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="30" y1="10" x2="30" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="30.7,-3.6 26.4,-1.5 29,7" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="26.4,-1.5 20.7,0.3 29,7" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-20.7" y1="0" x2="20.7" y2="0" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="4,2"/></g>
+<rect x="9.6" y="144" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="145.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-08-03</text>
+<text x="46" y="148.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">リミットスイッチ（機械的に連結される個別…</text>
+<line x1="94" y1="138.7" x2="94" y2="152.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="153.2" x2="201" y2="153.2" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 160.7) scale(0.216667) translate(10 -0)" stroke="black" fill="none"><line x1="0" y1="-30" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="-10" x2="10" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="7.5" y1="-12.5" x2="0" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="10" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="-0.7,-3.6 3.6,-1.5 1,7" fill="none" stroke="currentColor" stroke-width="0.5"/><ellipse cx="-20" cy="0" rx="10" ry="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-26.5" y1="0" x2="-14" y2="0" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-19" y1="-5.5" x2="-14" y2="0" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-14" y1="0" x2="-19" y2="5.5" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
+<rect x="9.6" y="159" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="160.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-08-04</text>
+<text x="46" y="163.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">リミットスイッチ（確実な開放ブレーク接点）</text>
+<line x1="94" y1="153.7" x2="94" y2="167.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="168.2" x2="201" y2="168.2" stroke="#999" stroke-width="0.2"/>
+<rect x="9" y="168.2" width="192" height="5" fill="#eee"/>
+<text x="10.5" y="171.8" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.9" font-weight="bold" fill="black">07-09 温度スイッチ</text>
+<g transform="translate(29 181.1) scale(0.216667) translate(-0.225 -0)" stroke="black" fill="none"><line x1="0" y1="-30" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-11" y1="-12" x2="0" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="10" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="3.45" y="6.45" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="13.3333" fill="currentColor" font-style="italic">Θ</text></g>
+<rect x="9.6" y="179.4" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="180.8" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-09-01</text>
+<text x="46" y="184.3" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">温度感知スイッチ（メーク接点）</text>
+<line x1="94" y1="174.1" x2="94" y2="188.1" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="188.6" x2="201" y2="188.6" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 196.1) scale(0.216667) translate(-10.725 -0)" stroke="black" fill="none"><line x1="0" y1="-30" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="-10" x2="10" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="7.5" y1="-12.5" x2="0" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="10" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="13.45" y="6.45" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="13.3333" fill="currentColor" font-style="italic">Θ</text></g>
+<rect x="9.6" y="194.4" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="195.8" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-09-02</text>
+<text x="46" y="199.3" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">温度感知スイッチ（ブレーク接点）</text>
+<line x1="94" y1="189.1" x2="94" y2="203.1" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="203.6" x2="201" y2="203.6" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 211.1) scale(0.216667) translate(10 -0)" stroke="black" fill="none"><line x1="0" y1="-30" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="-10" x2="10" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="7.5" y1="-12.5" x2="0" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="10" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><polyline points="-30,0 -20,0 -20,-10 -10,-10 -10,0 3.33,0" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
+<rect x="9.6" y="209.4" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="210.8" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-09-03</text>
+<text x="46" y="214.3" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">ブレーク接点の自己動作温度スイッチ</text>
+<line x1="94" y1="204.1" x2="94" y2="218.1" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="218.6" x2="201" y2="218.6" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 228.1) scale(0.2125) translate(-0 -0)" stroke="black" fill="none"><ellipse cx="0" cy="0" rx="20" ry="20" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="-40" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><polyline points="-11.3,-12.9 -6.5,-4.3 -13.1,-1.3 -9.4,5 -3.3,2.1 0,9.5" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="9.5" x2="0" y2="40" fill="none" stroke="currentColor" stroke-width="0.5"/><ellipse cx="10" cy="10" rx="2" ry="2" fill="black" stroke="currentColor" stroke-width="0.5"/></g>
+<rect x="9.6" y="226.4" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="227.8" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-09-04</text>
+<text x="46" y="231.3" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">感温体付き気体放電管</text>
+<line x1="94" y1="219.1" x2="94" y2="237.1" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="237.6" x2="201" y2="237.6" stroke="#999" stroke-width="0.2"/>
+<rect x="9" y="237.6" width="192" height="5" fill="#eee"/>
+<text x="10.5" y="241.2" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.9" font-weight="bold" fill="black">07-11 多段スイッチ</text>
+<g transform="translate(29 250.5) scale(0.216667) translate(-60 -0)" stroke="black" fill="none"><line x1="20" y1="-30" x2="20" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="40" y1="-30" x2="40" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="60" y1="-30" x2="60" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="80" y1="-30" x2="80" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="100" y1="-30" x2="100" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="120" y1="-30" x2="120" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="10" x2="120" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="20" y1="-5" x2="20" y2="25" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="10" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
+<rect x="9.6" y="248.8" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="250.2" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-11-04</text>
+<text x="46" y="253.7" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">多段スイッチ</text>
+<line x1="94" y1="243.5" x2="94" y2="257.5" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="258" x2="201" y2="258" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 265.5) scale(0.216667) translate(-20 -0)" stroke="black" fill="none"><line x1="20" y1="-30" x2="20" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="40" y1="-30" x2="40" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="10" x2="40" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="20" y1="-5" x2="20" y2="25" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="10" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
+<rect x="9.6" y="263.8" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="265.2" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-11-04_2</text>
+<text x="46" y="268.7" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">多段スイッチ・2位置</text>
+<line x1="94" y1="258.5" x2="94" y2="272.5" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="273" x2="201" y2="273" stroke="#999" stroke-width="0.2"/>
+</g></svg>

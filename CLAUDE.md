@@ -93,6 +93,7 @@ tools/
   svg_elmt.py      .elmt を SVG に写す（人に見せる姿）
   catalog.py       カタログを作り直す（docs/カタログ.md と docs/images/）
   cheatsheet.py    印刷用の早見表を作る（docs/チートシート.svg）
+  checklist.py     印刷用の点検表を作る（docs/点検表/。メモ欄つき）
   install.py       QET のユーザーコレクションに登録する
 docs/            設計方針・採録状況・寸法基準・測定メモ・カタログ
 render/          描き出した PNG・SVG（git 管理外）
