@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition width="30" height="60" hotspot_x="15" hotspot_y="30"
-            type="element" link_type="simple" version="0.100.0">
+            type="element" link_type="slave" version="0.100.0">
     <uuid uuid="{b8e5d89b-d8fa-459a-a160-acb9ded835a1}"/>
     <names>
         <name lang="ja">自動復帰するメーク接点</name>
         <name lang="en">Make contact, automatic return (obsolete)</name>
     </names>
     <informations>JIS C 0617 / IEC 60617 07-A6-01
+**接点なので link_type は slave。**ラベル（機器記号）は相互参照でマスタ側から
+同期される。接点に独自の表示をしたいときは text_from を UserText にする。
 **附属書A（参考）の旧図記号。既に削除されている。**
 古い図面を読むための参考であって、新しく描く図面には使わない。
 手を離すと自動で開くメーク接点。いまは押しボタンスイッチ（07-07-02）で表す。
