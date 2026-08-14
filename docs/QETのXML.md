@@ -5,8 +5,14 @@ QET の `.elmt`（図記号）と `.qet`（図面）の中身。**公式に詳�
 
 公式 wiki の [XML 仕様](https://qelectrotech.org/wiki_new/doc/xml_struct_elements)は
 最新ページでも **「≥0.3」世代**で、0.100.0 とはかなり離れている。
-[利用者向け文書](https://qelectrotech.github.io/qelectrotech-doc/)は操作の説明が主で、
-XML の構造には踏み込んでいない。**だから読むのではなく、測って書いた。**
+利用者向け文書（[日本語・機械翻訳](https://qelectrotech-github-io.translate.goog/qelectrotech-doc/index.html?_x_tr_sl=fr&_x_tr_tl=ja&_x_tr_hl=ja&_x_tr_pto=wapp)／[原文](https://qelectrotech.github.io/qelectrotech-doc/index.html)）は
+操作の説明が主で、XML の構造には踏み込んでいない。
+**だから読むのではなく、測って書いた。**
+
+> ただし**読めば分かることは読む。** フォリオ参照のラベルが
+> `%id-%l%c` であること、「New folio」の節で定義することは、
+> [element/type](https://qelectrotech.github.io/qelectrotech-doc/users/element/type/index.html)
+> のページに書いてあった。**実機で外したときに読み返して解決した。**
 
 確かめ方は3つ。**推測を書かない。**
 

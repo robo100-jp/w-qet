@@ -65,6 +65,14 @@ docs/          設計方針・採録状況・カタログ
 > **カタログとチートシートは手で書きません。** `py -3 tools/catalog.py` と
 > `py -3 tools/cheatsheet.py` が `elements/` から作り直します。
 
+### QET 本体の文書
+
+- [QElectroTech 公式ドキュメント（日本語・機械翻訳）](https://qelectrotech-github-io.translate.goog/qelectrotech-doc/index.html?_x_tr_sl=fr&_x_tr_tl=ja&_x_tr_hl=ja&_x_tr_pto=wapp)
+  — 原文はフランス語。[原文（英語版）](https://qelectrotech.github.io/qelectrotech-doc/index.html)
+
+**操作の説明が主で、XML の構造には踏み込んでいません。** そちらは
+[docs/QETのXML.md](docs/QETのXML.md) に、実機で確かめた範囲でまとめています。
+
 ## QET に登録する
 
 ```bash

@@ -12,6 +12,12 @@ QET は日本語の情報がほとんど無く、**症状から原因にたど�
 `.elmt` と `.qet` のタグ・属性・座標の意味・公式仕様書とのちがいはそちら。
 ここは**症状から原因を探すため**の覚え書き。
 
+**公式の利用者向け文書も先に読む。**
+[日本語（機械翻訳）](https://qelectrotech-github-io.translate.goog/qelectrotech-doc/index.html?_x_tr_sl=fr&_x_tr_tl=ja&_x_tr_hl=ja&_x_tr_pto=wapp)／
+[原文](https://qelectrotech.github.io/qelectrotech-doc/index.html)。
+操作の説明が主だが、**フォリオ参照のラベルが `%id-%l%c` で「New folio」の節に
+あることはここに書いてあった。**推測で外したあとに読み返して解決した。
+
 ## まず確認すること
 
 作図の相談を受けたら、最初にこの3つを確認する。
