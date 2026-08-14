@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="40" height="60" hotspot_x="27" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{b347b8e9-5a15-4afc-ad0f-53f795fd54d9}"/>
+    <names>
+        <name lang="ja">押しボタンスイッチ（ブレーク接点）</name>
+        <name lang="en">Push-button switch, break contact</name>
+    </names>
+    <informations>押しボタンで開く接点（b接点）。**第7部にこの組合せの図記号番号は無い。**
+規格は操作子の限定図記号と接点を組み合わせる建て付けで、番号が振られて
+いるのは 07-07-02（押しボタン＋メーク接点）と 07-07-07（手動操作の一般
+図記号＋ブレーク接点）まで。実務で必ず出るのでこちらで組んだ。
+操作子は 07-07-02、接点は 07-07-07 の座標をそのまま使っている。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。
+</informations>
+    <description>
+        <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="-10" x2="10" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="7.5" y1="-12.5" x2="0" y2="10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="10" x2="0" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-25" y1="-5" x2="-25" y2="5" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-25" y1="-5" x2="-20" y2="-5" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-25" y1="5" x2="-20" y2="5" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-25" y1="0" x2="3.33" y2="0" antialias="false"
+              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="0" y="-30" orientation="n" name="11" type="Generic"
+                  uuid="{d3ca2875-95f4-4ba9-be5c-e2cdad68e6dd}"/>
+        <terminal x="0" y="30" orientation="s" name="12" type="Generic"
+                  uuid="{8ece3b0f-c341-4d39-82c7-e7d63c775c1c}"/>
+        <dynamic_text x="18" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{da4c951b-a008-4d87-8731-2e8ce9cc58ee}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>
