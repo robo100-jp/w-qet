@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition width="20" height="110" hotspot_x="13" hotspot_y="53"
+<definition width="20" height="120" hotspot_x="13" hotspot_y="60"
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{83a38578-2674-480f-b064-fb694a3fed45}"/>
     <names>
@@ -9,7 +9,7 @@
     <informations>JIS C 0617 / IEC 60617 07-13-15
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
-        <line x1="-5" y1="-52" x2="-5" y2="-50" antialias="false"
+        <line x1="-5" y1="-56.5" x2="-5" y2="-50" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <line x1="-5" y1="-50" x2="0" y2="-40" antialias="true"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition width="60" height="60" hotspot_x="40" hotspot_y="30"
+<definition width="70" height="60" hotspot_x="45" hotspot_y="30"
             type="element" link_type="master" version="0.100.0">
     <uuid uuid="{07e6361a-48a2-4e7e-90a7-3a7876ba9c15}"/>
     <names>
@@ -10,7 +10,7 @@
 動作も復旧も遅い継電器。塗りつぶしと斜め十字を並べる。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
-        <rect x="-40" y="-10" width="60" height="20" antialias="false"
+        <rect x="-45" y="-10" width="65" height="20" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black"/>
         <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
@@ -20,7 +20,7 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <line x1="-20" y1="-10" x2="-20" y2="10" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
-        <rect x="-40" y="-10" width="10" height="20" antialias="false"
+        <rect x="-45" y="-10" width="10" height="20" antialias="false"
               style="line-style:normal;line-weight:normal;filling:black;color:black"/>
         <line x1="-30" y1="-10" x2="-20" y2="10" antialias="true"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
