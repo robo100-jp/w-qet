@@ -94,7 +94,6 @@ tools/
   catalog.py       カタログを作り直す（docs/カタログ.md と docs/images/）
   cheatsheet.py    印刷用の早見表を作る（docs/チートシート.svg）
   checklist.py     点検メモを作る（docs/点検メモ.md。--xlsx で Excel も。書き込みを引き継ぐ）
-  memo_server.py   点検メモをブラウザで書く（局所サーバ。保存で .md が書き換わる）
   install.py       QET のユーザーコレクションに登録する
 docs/            設計方針・採録状況・寸法基準・測定メモ・カタログ
 render/          描き出した PNG・SVG（git 管理外）

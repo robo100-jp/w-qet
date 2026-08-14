@@ -72,21 +72,9 @@ HEAD = """# 点検メモ
 > **この表は作り直しても消えない。** `py -3 tools/checklist.py` は
 > 既にある「済」と「気づいたこと」を番号で引き継ぐ。記号を足せば行が増えるだけ。
 
-## ブラウザで書く（おすすめ）
-
-記号の姿を見ながら書けて、**保存するとこの表が直接書き換わる。**
-書き出しも取り込みも要らない。止めるのは Ctrl+C。
-
-```bash
-py -3 tools/memo_server.py
-```
-
-番号・名称で絞れる。「書いた行だけ」で見直せる。保存は Ctrl+S。
-
 ## Excel で書く
 
-Excel のほうがよければこちら。**書き込んだあと引数なしで叩き直すと
-この表に写る。**
+記号の姿を見ながら書ける。**書き込んだあと引数なしで叩き直すとこの表に写る。**
 
 ```bash
 py -3 tools/checklist.py --xlsx    # docs/点検メモ.xlsx を作る
@@ -497,8 +485,17 @@ def main():
     # **既にあるなら黙って作り直す。**片方だけ新しい状態を残すと、
     # 次に叩いたとき古いほうから読んで書き込みが消える
     if a.xlsx or os.path.isfile(XLSX):
-        build_xlsx(items, keep)
-        print("書き出し: %s" % os.path.relpath(XLSX, P.REPO))
+        try:
+            build_xlsx(items, keep)
+            print("書き出し: %s" % os.path.relpath(XLSX, P.REPO))
+        except PermissionError:
+            # **Excel で開いたままだと書けない。**生の例外を出さない。
+            # `.md` は先に書けているので、読み取った中身は失われていない
+            print("**%s を Excel で開いたままです。**閉じてから叩き直してください。"
+                  % os.path.relpath(XLSX, P.REPO))
+            print("（%s は書けているので、書き込みは失われていません）"
+                  % os.path.relpath(MEMO, P.REPO))
+            return 1
 
     if a.pr:
         n = build_print(items)
