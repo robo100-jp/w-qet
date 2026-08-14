@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="210" height="60" hotspot_x="150" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{b12207b4-48ca-4e5f-afb9-34c8ec716779}"/>
+    <names>
+        <name lang="ja">多段スイッチ（位置図を添えて示す場合・7位置）</name>
+        <name lang="en">Multi-position switch with position diagram, 7 positions</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 07-11-06
+**規格票に載っているのは4位置の例だけ。**位置の数は形なので編集では変えられず、
+実務でよく使う段数をこちらで起こした。一番外の光線を ±40 度に置き、
+残りを等間隔に割る規則で、4位置のときに規格票と一致する。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <line x1="-60" y1="-30" x2="-60" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-40" y1="-30" x2="-40" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-20" y1="-30" x2="-20" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="20" y1="-30" x2="20" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="40" y1="-30" x2="40" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="60" y1="-30" x2="60" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-20.5" y1="-6.5" x2="0" y2="10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="10" x2="0" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-137.13" y1="-10" x2="-108.56" y2="10" antialias="true"
+              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-123.45" y1="-10" x2="-108.56" y2="10" antialias="true"
+              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-115.19" y1="-10" x2="-108.56" y2="10" antialias="true"
+              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-108.56" y1="-10" x2="-108.56" y2="10" antialias="false"
+              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-101.94" y1="-10" x2="-108.56" y2="10" antialias="true"
+              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-93.67" y1="-10" x2="-108.56" y2="10" antialias="true"
+              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-80" y1="-10" x2="-108.56" y2="10" antialias="true"
+              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-108.56" y1="0" x2="-12.4" y2="0" antialias="false"
+              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <text text="1" x="-139.72" y="-13" rotation="0"
+              font="Liberation Sans,7,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="2" x="-126.05" y="-13" rotation="0"
+              font="Liberation Sans,7,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="3" x="-117.78" y="-13" rotation="0"
+              font="Liberation Sans,7,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="4" x="-111.16" y="-13" rotation="0"
+              font="Liberation Sans,7,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="5" x="-104.53" y="-13" rotation="0"
+              font="Liberation Sans,7,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="6" x="-96.27" y="-13" rotation="0"
+              font="Liberation Sans,7,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="7" x="-82.59" y="-13" rotation="0"
+              font="Liberation Sans,7,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <terminal x="-60" y="-30" orientation="n" name="1" type="Generic"
+                  uuid="{1393ae94-af3b-485b-a2d3-3b8c64a5ae7f}"/>
+        <terminal x="-40" y="-30" orientation="n" name="2" type="Generic"
+                  uuid="{d27fc922-6675-45ef-aab2-6697e8514ee5}"/>
+        <terminal x="-20" y="-30" orientation="n" name="3" type="Generic"
+                  uuid="{3e6a04e2-61cf-410c-be7c-8d9b9094e688}"/>
+        <terminal x="0" y="-30" orientation="n" name="4" type="Generic"
+                  uuid="{88000a26-c47b-4a3f-8f04-e8e294f06fff}"/>
+        <terminal x="20" y="-30" orientation="n" name="5" type="Generic"
+                  uuid="{4277aff8-f952-4607-9f63-9c7ec60c9f43}"/>
+        <terminal x="40" y="-30" orientation="n" name="6" type="Generic"
+                  uuid="{b4a10ef8-9e92-4439-a4dc-270204b95346}"/>
+        <terminal x="60" y="-30" orientation="n" name="7" type="Generic"
+                  uuid="{28d6f51b-5f91-42f4-911d-4d3570124603}"/>
+        <terminal x="0" y="30" orientation="s" name="8" type="Generic"
+                  uuid="{221d6066-391e-427c-9dbb-034e5a509975}"/>
+        <dynamic_text x="65" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{a10e97e5-75a2-4bba-9178-00dd65607933}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

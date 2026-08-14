@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition width="120" height="60" hotspot_x="100" hotspot_y="30"
+<definition width="100" height="60" hotspot_x="80" hotspot_y="30"
             type="element" link_type="simple" version="0.100.0">
-    <uuid uuid="{1d6b6218-5d7e-452e-9a82-63c00cdcca8e}"/>
+    <uuid uuid="{901f173f-8d33-4b1a-aa56-99f162b18651}"/>
     <names>
-        <name lang="ja">多段スイッチ（位置図を添えて示す場合・4位置）</name>
-        <name lang="en">Multi-position switch with position diagram, 4 positions</name>
+        <name lang="ja">多段スイッチ（位置図を添えて示す場合・3位置）</name>
+        <name lang="en">Multi-position switch with position diagram, 3 positions</name>
     </names>
     <informations>JIS C 0617 / IEC 60617 07-11-06
-位置図の付け方を示す例。**規格票が載せているのはこの4位置だけ。**
-番号と破線は書き方の説明で、実際の図面では位置に合わせて描き直す。
-段数ちがいは 07-11-06_2 〜 _8 に置いてある。
+**規格票に載っているのは4位置の例だけ。**位置の数は形なので編集では変えられず、
+実務でよく使う段数をこちらで起こした。一番外の光線を ±40 度に置き、
+残りを等間隔に割る規則で、4位置のときに規格票と一致する。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
-        <line x1="-40" y1="-30" x2="-40" y2="-10" antialias="false"
-              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <line x1="-20" y1="-30" x2="-20" y2="-10" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
@@ -24,38 +22,32 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <line x1="0" y1="10" x2="0" y2="30" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
-        <line x1="-93.56" y1="-10" x2="-76.78" y2="10" antialias="true"
+        <line x1="-73.56" y1="-10" x2="-56.78" y2="10" antialias="true"
               style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
-        <line x1="-81.52" y1="-10" x2="-76.78" y2="10" antialias="true"
+        <line x1="-56.78" y1="-10" x2="-56.78" y2="10" antialias="false"
               style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
-        <line x1="-72.04" y1="-10" x2="-76.78" y2="10" antialias="true"
+        <line x1="-40" y1="-10" x2="-56.78" y2="10" antialias="true"
               style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
-        <line x1="-60" y1="-10" x2="-76.78" y2="10" antialias="true"
+        <line x1="-56.78" y1="0" x2="-12.4" y2="0" antialias="false"
               style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
-        <line x1="-76.78" y1="0" x2="-12.4" y2="0" antialias="false"
-              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
-        <text text="1" x="-96.9" y="-13" rotation="0"
+        <text text="1" x="-76.9" y="-13" rotation="0"
               font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
-        <text text="2" x="-84.86" y="-13" rotation="0"
+        <text text="2" x="-60.12" y="-13" rotation="0"
               font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
-        <text text="3" x="-75.38" y="-13" rotation="0"
+        <text text="3" x="-43.34" y="-13" rotation="0"
               font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
-        <text text="4" x="-63.34" y="-13" rotation="0"
-              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
-        <terminal x="-40" y="-30" orientation="n" name="1" type="Generic"
-                  uuid="{cc05710a-ddfd-43ec-a77b-ad712a77c956}"/>
-        <terminal x="-20" y="-30" orientation="n" name="2" type="Generic"
-                  uuid="{23c4cbef-35bd-4a63-868c-de0cd31999c6}"/>
-        <terminal x="0" y="-30" orientation="n" name="3" type="Generic"
-                  uuid="{9edfd2ae-5ec7-4cd2-bfd4-8bdf000f48c0}"/>
-        <terminal x="20" y="-30" orientation="n" name="4" type="Generic"
-                  uuid="{60dee4bf-0ec6-4c50-97ce-dbd49ff67a1f}"/>
-        <terminal x="0" y="30" orientation="s" name="5" type="Generic"
-                  uuid="{ba445739-2894-405f-a777-07870ca50c81}"/>
+        <terminal x="-20" y="-30" orientation="n" name="1" type="Generic"
+                  uuid="{2cf7c559-6348-41b7-9e10-dac4eb07709a}"/>
+        <terminal x="0" y="-30" orientation="n" name="2" type="Generic"
+                  uuid="{4d89fc52-8d87-47d9-8a34-5edf3907293c}"/>
+        <terminal x="20" y="-30" orientation="n" name="3" type="Generic"
+                  uuid="{200e3751-3c26-47bc-9780-9c9d375cd816}"/>
+        <terminal x="0" y="30" orientation="s" name="4" type="Generic"
+                  uuid="{84649102-a309-4510-ad9a-0f9061b065d0}"/>
         <dynamic_text x="25" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
-                      text_from="ElementInfo" uuid="{8e7e9114-cecf-4bc3-938c-c41b19acdcfc}"
+                      text_from="ElementInfo" uuid="{5c7dcf35-e621-4d7b-89f9-990121d19c8a}"
                       font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
             <text></text>
             <info_name>label</info_name>
