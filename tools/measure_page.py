@@ -16,6 +16,7 @@
 出力先はリポジトリの外（`%TEMP%\\w-qet-pdf\\`）。規格票の図は持ち込まない。
 """
 import argparse
+import math
 import os
 import sys
 import tempfile
@@ -127,11 +128,27 @@ def main():
     rows = cluster([(c[1]+c[3])/2 for c in dots], tol)
     # **縦と横で M が違うページがある。** 規格票では図が表のセルに入れられており、
     # 縦横が同じ比で拡縮されていない。横は列の間隔、縦は行の間隔で別々に測る。
+    #
+    # **1目を「隣どうしの差」から決めてはいけない。** ドットは図に隠れて飛ぶし、
+    # 図の小さな部品や表の切れ端がドットに混じる。平均も中央値も最頻値も
+    # それに引きずられる（あるページで 1M が半分に、別のページで 7% 大きく出た）。
+    # **周期そのものを合わせる。**|Σ exp(2πi x/p)| が最大になる p が1目。
+    # ドットが何個か欠けても、余計な点が混ざっても効く。
     def pitch(v):
-        d = [v[i+1]-v[i] for i in range(len(v)-1)]
-        d = [x for x in d if x > tol]
-        return sum(d) / len(d)
-    MX, MY = pitch(cols), pitch(rows)
+        lo, hi = 0.16 * a.dpi, 0.25 * a.dpi     # 600dpi で 95〜145px
+        best, bs, p = 0.0, -1.0, lo
+        while p <= hi:
+            c = sum(math.cos(2 * math.pi * x / p) for x in v)
+            s = sum(math.sin(2 * math.pi * x / p) for x in v)
+            m = math.hypot(c, s) / len(v)
+            if m > bs:
+                best, bs = p, m
+            p += lo / 2000.0
+        if bs < 0.5:
+            raise SystemExit("ドット格子が格子に見えない。目視で測る")
+        return best
+    MX, MY = pitch([(c[0]+c[2])/2 for c in dots]), \
+        pitch([(c[1]+c[3])/2 for c in dots])
     M = (MX + MY) / 2
     OX, OY = cols[0], rows[0]
 
