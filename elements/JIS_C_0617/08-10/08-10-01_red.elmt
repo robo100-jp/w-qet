@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="40" height="60" hotspot_x="15" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{0f33bbb7-24c0-40af-b867-79331b4c8785}"/>
+    <names>
+        <name lang="ja">表示灯（赤）</name>
+        <name lang="en">Indicator lamp, red</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 08-10-01
+**色は規格が定めたものではない。**08-10-01（ランプ・一般図記号）は
+色を持たない。QET は図面に置いた部品の色を変えられないので、
+色ちがいは別ファイルにしてある。
+**塗りと文字の両方で示す。**白黒で刷ると塗りが飛ぶため、色を表す
+文字（R）を右に添えた。これも規格外。
+規格票には引出し線が無い。制御回路の縦の段に入れられるよう、
+上下に引出し線と端子を足してある（端子間 60）。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。
+</informations>
+    <description>
+        <ellipse x="-10" y="-10" width="20" height="20" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:red;color:black"/>
+        <line x1="-7" y1="-7" x2="7" y2="7" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-7" y1="7" x2="7" y2="-7" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="10" x2="0" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <text text="R" x="12.27" y="4.3" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
+                  uuid="{7f78bbf1-1ffb-427a-94a6-42f6db9b453a}"/>
+        <terminal x="0" y="30" orientation="s" name="2" type="Generic"
+                  uuid="{4499efa0-7efe-49dd-8310-28f51cb3f065}"/>
+        <dynamic_text x="30" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{2e6eb17f-250c-4994-a914-f01bdbbfe5f6}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>
