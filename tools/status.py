@@ -23,15 +23,32 @@ import paths as P                                          # noqa: E402
 
 sys.stdout.reconfigure(encoding="utf-8")
 
-INDEX = os.path.join(P.REPO, "docs", "第7部索引.tsv")
-OUT = os.path.join(P.REPO, "docs", "採録状況.md")
+# **部を焼き付けない。**第8部・第6部と増えるので、索引も出力も部ごとに持つ。
+PARTS = {7: "開閉装置，制御装置及び保護装置",
+         8: "計器，ランプ及び信号装置",
+         6: "電気エネルギーの発生及び変換",
+         2: "図記号要素，限定図記号",
+         3: "導体及び接続部品"}
+
+
+def index_path(part):
+    return os.path.join(P.REPO, "docs", "第%d部索引.tsv" % part)
+
+
+def out_path(part):
+    return os.path.join(P.REPO, "docs", "採録状況.md" if part == 7
+                        else "採録状況_第%d部.md" % part)
 NUM_RE = re.compile(r"JIS C 0617 / IEC 60617 ([0-9A-Z\-]+)")
 
 
-def load_index():
+def load_index(part=7):
     """索引を読む → [(番号, 節, 分類, ページ), ...]"""
     rows = []
-    for line in io.open(INDEX, encoding="utf-8"):
+    ip = index_path(part)
+    if not os.path.isfile(ip):
+        raise SystemExit("索引が無い: %s\n"
+                         "  番号→ページの対応表。第7部のものを真似て作る" % ip)
+    for line in io.open(ip, encoding="utf-8"):
         line = line.rstrip("\n")
         if not line or line.startswith("#") or line.startswith("番号\t"):
             continue
@@ -53,7 +70,7 @@ def scan_elements():
     return done
 
 
-def render(rows, done):
+def render(rows, done, part=7):
     secs = []
     for num, sec, label, page in rows:
         if not secs or secs[-1][0] != sec:
@@ -66,7 +83,8 @@ def render(rows, done):
     w = out.append
     w("# 採録状況")
     w("")
-    w("JIS C 0617 **第7部**（開閉装置，制御装置及び保護装置）の図記号 %d 個。" % n_all)
+    w("JIS C 0617 **第%d部**（%s）の図記号 %d 個。"
+      % (part, PARTS.get(part, ""), n_all))
     w("")
     w("| | |")
     w("|---|---|")
@@ -139,9 +157,10 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--next", type=int, metavar="N", help="次に描くもの N 件を表示")
     ap.add_argument("--check", action="store_true", help="書き直さずに要約だけ")
+    ap.add_argument("--part", type=int, default=7, help="規格票の部（既定 7）")
     a = ap.parse_args()
 
-    rows = load_index()
+    rows = load_index(a.part)
     done = scan_elements()
     n_done = sum(1 for num, _, _, _ in rows if num in done)
 
@@ -156,14 +175,19 @@ def main():
         return 0
 
     if not a.check:
-        io.open(OUT, "w", encoding="utf-8", newline="\n").write(render(rows, done))
-        print("書き出し:", os.path.relpath(OUT, P.REPO))
+        op = out_path(a.part)
+        io.open(op, "w", encoding="utf-8", newline="\n").write(
+            render(rows, done, a.part))
+        print("書き出し:", os.path.relpath(op, P.REPO))
 
     print("採録 %d / %d （残り %d）" % (n_done, len(rows), len(rows) - n_done))
-    # 索引に無い番号を持つ .elmt があれば知らせる（第8部など別の部のものは正常）
-    stray = [n for n in done if n not in {r[0] for r in rows}]
+    # 索引に無い番号を持つ .elmt があれば知らせる。
+    # **別の部のものは正常**なので、その部の番号は黙って外す
+    pre = "%02d-" % a.part
+    stray = [n for n in done
+             if n.startswith(pre) and n not in {r[0] for r in rows}]
     if stray:
-        print("索引（第7部）に無い番号:", " ".join(sorted(stray)))
+        print("索引（第%d部）に無い番号:" % a.part, " ".join(sorted(stray)))
     return 0
 
 
