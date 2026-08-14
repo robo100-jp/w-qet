@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="40" height="60" hotspot_x="20" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{fce8612e-f4f4-4e91-9d87-9490c6faadea}"/>
+    <names>
+        <name lang="ja">積算計（一般図記号）</name>
+        <name lang="en">Integrating instrument, general symbol</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 08-01-03
+上の区画は測定量の種類、下の区画は種別を書くところ。
+規格票には引出し線が描かれていない。作図に使えるよう、外形の縁に端子を1つずつ足してある。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。
+</informations>
+    <description>
+        <rect x="-20" y="-30" width="40" height="60" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="-20" y1="-10" x2="20" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <text text="*" x="-3.56" y="20.7" rotation="0"
+              font="Liberation Sans,14,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <terminal x="-20" y="0" orientation="w" name="1" type="Generic"
+                  uuid="{c7745741-86f9-4aea-9264-b122d3eb7d8d}"/>
+        <terminal x="20" y="0" orientation="e" name="2" type="Generic"
+                  uuid="{a5379106-1e4d-40a6-9ceb-3a53b3add82b}"/>
+        <dynamic_text x="25" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{08b85021-20d9-43e8-9f8f-7246fba0ae8e}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

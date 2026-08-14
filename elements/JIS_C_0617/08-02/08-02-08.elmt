@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="40" height="40" hotspot_x="20" hotspot_y="20"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{e6c6d123-e1c0-4c34-8fbe-0f2f164e964f}"/>
+    <names>
+        <name lang="ja">同期検定器</name>
+        <name lang="en">Synchroscope</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 08-02-08
+規格票には引出し線が描かれていない。作図に使えるよう、外形の縁に端子を1つずつ足してある。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。
+</informations>
+    <description>
+        <ellipse x="-20" y="-20" width="40" height="40" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="0" y1="-14" x2="0" y2="11" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <arc x="-16.5" y="-13" width="33" height="22" start="15" angle="150"
+             antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <polygon x1="-16.5" y1="-1.5" x2="-16" y2="-8" x3="-10.5" y3="-5" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:black;color:black"/>
+        <polygon x1="16.5" y1="-1.5" x2="16" y2="-8" x3="10.5" y3="-5" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:black;color:black"/>
+        <terminal x="-20" y="0" orientation="w" name="1" type="Generic"
+                  uuid="{b309e3da-813b-4d05-81e4-079340310094}"/>
+        <terminal x="20" y="0" orientation="e" name="2" type="Generic"
+                  uuid="{5cc40476-22e8-4735-b73e-59fc52fad250}"/>
+        <dynamic_text x="25" y="-20" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{1c96e552-ea60-47dc-8d65-d1c65f1007f3}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

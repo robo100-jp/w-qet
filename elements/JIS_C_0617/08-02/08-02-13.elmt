@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="40" height="40" hotspot_x="20" hotspot_y="20"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{9bef8976-a7ab-4ea1-8727-1f4fd2a86274}"/>
+    <names>
+        <name lang="ja">塩分計</name>
+        <name lang="en">Salinity meter</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 08-02-13
+規格票には引出し線が描かれていない。作図に使えるよう、外形の縁に端子を1つずつ足してある。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。
+</informations>
+    <description>
+        <ellipse x="-20" y="-20" width="40" height="40" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <text text="NaCl" x="-13.35" y="4.3" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <terminal x="-20" y="0" orientation="w" name="1" type="Generic"
+                  uuid="{ef390739-d274-4400-8880-20a625b63a8b}"/>
+        <terminal x="20" y="0" orientation="e" name="2" type="Generic"
+                  uuid="{85d77d38-bd2a-4f1c-bbcb-d24112849d53}"/>
+        <dynamic_text x="25" y="-20" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{dacfcb7f-bf60-4f8d-bc66-a6ad95d6bb24}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

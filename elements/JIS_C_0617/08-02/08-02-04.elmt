@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="40" height="40" hotspot_x="20" hotspot_y="20"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{0e5ec88b-ffca-4dae-8785-8aa06af4784a}"/>
+    <names>
+        <name lang="ja">無効電力計</name>
+        <name lang="en">Varmeter</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 08-02-04
+規格票には引出し線が描かれていない。作図に使えるよう、外形の縁に端子を1つずつ足してある。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。
+</informations>
+    <description>
+        <ellipse x="-20" y="-20" width="40" height="40" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <text text="var" x="-8.5" y="3.12" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <terminal x="-20" y="0" orientation="w" name="1" type="Generic"
+                  uuid="{219be40f-e4d6-4c4e-a61a-ca2f52eacc59}"/>
+        <terminal x="20" y="0" orientation="e" name="2" type="Generic"
+                  uuid="{aaec32f6-a494-4f3d-9797-d49062159244}"/>
+        <dynamic_text x="25" y="-20" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{f77cd908-5861-4fd9-858a-802cbf91913f}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

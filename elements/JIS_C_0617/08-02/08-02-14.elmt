@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="40" height="40" hotspot_x="20" hotspot_y="20"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{f8242b1e-42bc-4089-9de7-d535d8d6d593}"/>
+    <names>
+        <name lang="ja">温度計，高温計</name>
+        <name lang="en">Thermometer, pyrometer</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 08-02-14
+規格票には引出し線が描かれていない。作図に使えるよう、外形の縁に端子を1つずつ足してある。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。
+</informations>
+    <description>
+        <ellipse x="-20" y="-20" width="40" height="40" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <text text="Θ" x="-5.18" y="4.3" rotation="0"
+              font="Liberation Sans,9,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
+        <terminal x="-20" y="0" orientation="w" name="1" type="Generic"
+                  uuid="{387ebef6-2c76-468a-aea7-97a4b43b6fec}"/>
+        <terminal x="20" y="0" orientation="e" name="2" type="Generic"
+                  uuid="{fdcaad0d-27e0-43b0-8ffb-f8811e9ca5ad}"/>
+        <dynamic_text x="25" y="-20" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{3211abea-4998-4ecd-bd5f-514f618b9e8d}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

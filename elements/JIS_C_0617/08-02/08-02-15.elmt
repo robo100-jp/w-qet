@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="40" height="40" hotspot_x="20" hotspot_y="20"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{e4043f91-302c-4782-89be-ef07ed4e5c90}"/>
+    <names>
+        <name lang="ja">回転計</name>
+        <name lang="en">Tachometer</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 08-02-15
+規格票には引出し線が描かれていない。作図に使えるよう、外形の縁に端子を1つずつ足してある。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。
+</informations>
+    <description>
+        <ellipse x="-20" y="-20" width="40" height="40" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <text text="n" x="-3.38" y="3.2" rotation="0"
+              font="Liberation Sans,9,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
+        <terminal x="-20" y="0" orientation="w" name="1" type="Generic"
+                  uuid="{5d056eb6-4a00-4919-b3be-072c5b31c31c}"/>
+        <terminal x="20" y="0" orientation="e" name="2" type="Generic"
+                  uuid="{7448e3d4-813e-4d43-a8f1-ba35b65f543a}"/>
+        <dynamic_text x="25" y="-20" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{3c642d56-bba8-4569-bd5b-81dc2e985660}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>
