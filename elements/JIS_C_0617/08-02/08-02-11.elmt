@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition width="40" height="40" hotspot_x="20" hotspot_y="20"
             type="element" link_type="simple" version="0.100.0">
-    <uuid uuid="{7b9a639b-34b1-4789-bd7d-fff6955bc2bf}"/>
+    <uuid uuid="{4ce472fc-e8a5-41eb-85d7-05513a0a5bc6}"/>
     <names>
         <name lang="ja">差動形電圧計</name>
         <name lang="en">Differential voltmeter</name>
@@ -20,13 +20,13 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <text text="d" x="1.08" y="12.53" rotation="0"
               font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <terminal x="-20" y="0" orientation="w" name="1" type="Generic"
-                  uuid="{1659c676-1166-4dab-a936-4b3ed21b2776}"/>
+                  uuid="{1ce95a3a-1a31-4b19-bf4b-78df0a666258}"/>
         <terminal x="20" y="0" orientation="e" name="2" type="Generic"
-                  uuid="{2dc1fdec-ddce-4ddb-8032-7ce84b397be0}"/>
+                  uuid="{81ca8c88-1e54-48e4-9ddc-a5ee94f7fe50}"/>
         <dynamic_text x="25" y="-20" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
-                      text_from="ElementInfo" uuid="{065bfc48-542c-40cd-804f-b428a7d88529}"
+                      text_from="ElementInfo" uuid="{92624255-cfab-4593-b863-ad98b64f842b}"
                       font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
             <text></text>
             <info_name>label</info_name>

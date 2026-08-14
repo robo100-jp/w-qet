@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition width="40" height="40" hotspot_x="20" hotspot_y="20"
             type="element" link_type="simple" version="0.100.0">
-    <uuid uuid="{e6c6d123-e1c0-4c34-8fbe-0f2f164e964f}"/>
+    <uuid uuid="{0c0d1b14-647d-4efa-af70-36e7a29f649e}"/>
     <names>
         <name lang="ja">同期検定器</name>
         <name lang="en">Synchroscope</name>
@@ -22,13 +22,13 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <polygon x1="16.5" y1="-1.5" x2="16" y2="-8" x3="10.5" y3="-5" antialias="true"
                  style="line-style:normal;line-weight:normal;filling:black;color:black"/>
         <terminal x="-20" y="0" orientation="w" name="1" type="Generic"
-                  uuid="{b309e3da-813b-4d05-81e4-079340310094}"/>
+                  uuid="{e05e945f-ad63-464a-bbc6-09b94f44579f}"/>
         <terminal x="20" y="0" orientation="e" name="2" type="Generic"
-                  uuid="{5cc40476-22e8-4735-b73e-59fc52fad250}"/>
+                  uuid="{791a03d0-e016-4a3e-b5e4-cd8e0a1947fc}"/>
         <dynamic_text x="25" y="-20" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
-                      text_from="ElementInfo" uuid="{1c96e552-ea60-47dc-8d65-d1c65f1007f3}"
+                      text_from="ElementInfo" uuid="{5a27ddf6-fac5-43a5-b0a9-b3829d8338dd}"
                       font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
             <text></text>
             <info_name>label</info_name>

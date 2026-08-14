@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition width="40" height="40" hotspot_x="20" hotspot_y="20"
             type="element" link_type="simple" version="0.100.0">
-    <uuid uuid="{f6e52753-da32-46bd-a764-ba1d6ff6940e}"/>
+    <uuid uuid="{a882009c-3815-4d26-accb-2a2da832255b}"/>
     <names>
         <name lang="ja">電圧計</name>
         <name lang="en">Voltmeter</name>
@@ -16,13 +16,13 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <text text="V" x="-4" y="4.3" rotation="0"
               font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <terminal x="-20" y="0" orientation="w" name="1" type="Generic"
-                  uuid="{d5e04da2-8d78-4218-be0a-a49e610a5b59}"/>
+                  uuid="{311abc11-0529-403e-9387-f0201dc5e944}"/>
         <terminal x="20" y="0" orientation="e" name="2" type="Generic"
-                  uuid="{0140255a-9748-47e8-a142-b98efe1ef587}"/>
+                  uuid="{830fd782-9803-4cce-a9f8-10f4612c22b3}"/>
         <dynamic_text x="25" y="-20" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
-                      text_from="ElementInfo" uuid="{8c020ddb-1b70-48ed-ac3f-54a2ef7941e0}"
+                      text_from="ElementInfo" uuid="{c625d93d-d4ee-4851-a2c4-38836bdb25b2}"
                       font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
             <text></text>
             <info_name>label</info_name>

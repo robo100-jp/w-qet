@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition width="40" height="60" hotspot_x="20" hotspot_y="30"
             type="element" link_type="simple" version="0.100.0">
-    <uuid uuid="{46ee1b0a-ae1a-4cbf-9042-2e2be23f4cc6}"/>
+    <uuid uuid="{6bfaf42f-8f47-449e-9127-444fc26da416}"/>
     <names>
-        <name lang="ja">積算計（一般図記号）</name>
-        <name lang="en">Integrating instrument, general symbol</name>
+        <name lang="ja">時間計，時間計数器</name>
+        <name lang="en">Hour meter</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 08-01-03
-上の区画は測定量の種類、下の区画は種別を書くところ。
+    <informations>JIS C 0617 / IEC 60617 08-04-01
 規格票には引出し線が描かれていない。作図に使えるよう、外形の縁に端子を1つずつ足してある。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。
 </informations>
@@ -16,16 +15,16 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
               style="line-style:normal;line-weight:normal;filling:none;color:black"/>
         <line x1="-20" y1="-10" x2="20" y2="-10" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
-        <text text="*" x="-3.56" y="20.7" rotation="0"
-              font="Liberation Sans,14,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="h" x="-3.33" y="13.8" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <terminal x="-20" y="0" orientation="w" name="1" type="Generic"
-                  uuid="{410f8406-e32f-4cdb-8832-eb86b43164da}"/>
+                  uuid="{dd6c1505-1a9a-4893-8a5d-a6cf78e60037}"/>
         <terminal x="20" y="0" orientation="e" name="2" type="Generic"
-                  uuid="{8003f373-8213-4f29-8830-2993c9cf2a53}"/>
+                  uuid="{755a4b7f-ff8f-4b60-a9fa-2c8099529501}"/>
         <dynamic_text x="25" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
-                      text_from="ElementInfo" uuid="{187e478c-8399-423d-9991-5aa305c32580}"
+                      text_from="ElementInfo" uuid="{299ea17e-1060-4683-b246-fa907b8ba246}"
                       font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
             <text></text>
             <info_name>label</info_name>

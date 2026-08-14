@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition width="40" height="40" hotspot_x="20" hotspot_y="20"
             type="element" link_type="simple" version="0.100.0">
-    <uuid uuid="{780fcf7f-9fed-4ef3-8355-7440d8d10667}"/>
+    <uuid uuid="{2bb1e8b0-758d-4a57-8f01-9eb7676b5c2c}"/>
     <names>
         <name lang="ja">位相計</name>
         <name lang="en">Phase meter</name>
@@ -16,13 +16,13 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <text text="φ" x="-3.9" y="2" rotation="0"
               font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <terminal x="-20" y="0" orientation="w" name="1" type="Generic"
-                  uuid="{09084f60-8fe7-49de-bf7f-5142cf026f6e}"/>
+                  uuid="{125b3267-5693-49db-9302-805cf6bf86e3}"/>
         <terminal x="20" y="0" orientation="e" name="2" type="Generic"
-                  uuid="{1462dedf-ca26-43b4-8104-972eee1ac08b}"/>
+                  uuid="{2a6b6151-c699-4495-8eb5-9fc3b96ca6df}"/>
         <dynamic_text x="25" y="-20" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
-                      text_from="ElementInfo" uuid="{503b02a9-0284-4146-a2a7-3346343fd47a}"
+                      text_from="ElementInfo" uuid="{cf5cd931-18c8-401f-b0fc-96b3a5cb284f}"
                       font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
             <text></text>
             <info_name>label</info_name>

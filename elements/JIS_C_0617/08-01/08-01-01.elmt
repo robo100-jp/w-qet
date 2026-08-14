@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition width="40" height="40" hotspot_x="20" hotspot_y="20"
             type="element" link_type="simple" version="0.100.0">
-    <uuid uuid="{9093a76a-34bd-4162-bfdd-a90b712d1272}"/>
+    <uuid uuid="{9930b061-31ee-4db9-b231-75cd840a9f34}"/>
     <names>
         <name lang="ja">指示計器（一般図記号）</name>
         <name lang="en">Indicating instrument, general symbol</name>
@@ -16,13 +16,13 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <text text="*" x="-3.56" y="10.7" rotation="0"
               font="Liberation Sans,14,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <terminal x="-20" y="0" orientation="w" name="1" type="Generic"
-                  uuid="{33cbe55e-e862-4e3e-b758-bd5f40e854d2}"/>
+                  uuid="{8d75d927-d3f3-4959-8c72-0809cea621be}"/>
         <terminal x="20" y="0" orientation="e" name="2" type="Generic"
-                  uuid="{90557f84-93bb-462b-bea1-7b618a21043f}"/>
+                  uuid="{2d3b8296-ae87-4c2f-8336-646e0b650ee6}"/>
         <dynamic_text x="25" y="-20" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
-                      text_from="ElementInfo" uuid="{9d4c749d-2b02-4f3b-ac8a-825143d211b5}"
+                      text_from="ElementInfo" uuid="{313ffc18-e6bc-4ddb-a300-4b9145bdaa70}"
                       font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
             <text></text>
             <info_name>label</info_name>

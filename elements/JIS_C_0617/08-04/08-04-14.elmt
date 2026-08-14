@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="40" height="100" hotspot_x="20" hotspot_y="50"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{2e3eebc5-97de-4321-97b6-caf4cf58abce}"/>
+    <names>
+        <name lang="ja">電力量計（最大需要電力記録計付き）</name>
+        <name lang="en">Watt-hour meter with recording maximum demand meter</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 08-04-14
+規格票には引出し線が描かれていない。作図に使えるよう、外形の縁に端子を1つずつ足してある。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。
+</informations>
+    <description>
+        <rect x="-20" y="-50" width="40" height="100" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="-20" y1="-30" x2="20" y2="-30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-20" y1="10" x2="20" y2="10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <text text="Wh" x="-9.43" y="-3.35" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="P" x="-16.4" y="38.95" rotation="0"
+              font="Liberation Sans,9,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
+        <text text="max" x="-7.58" y="41.58" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <terminal x="-20" y="0" orientation="w" name="1" type="Generic"
+                  uuid="{abe8cc66-0023-4e86-bc36-b3aab4d41e66}"/>
+        <terminal x="20" y="0" orientation="e" name="2" type="Generic"
+                  uuid="{acb403d2-2e02-4259-866b-afb3892e4853}"/>
+        <dynamic_text x="25" y="-50" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{cb60fd33-b10c-49ad-bb60-b92cd1718ffe}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

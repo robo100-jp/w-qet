@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition width="40" height="40" hotspot_x="20" hotspot_y="20"
             type="element" link_type="simple" version="0.100.0">
-    <uuid uuid="{1e32ba40-ccae-474c-9b36-2d19a2b16362}"/>
+    <uuid uuid="{417432fd-e751-4182-902e-4a8c862badf3}"/>
     <names>
         <name lang="ja">無効電流計</name>
         <name lang="en">Reactive current meter</name>
@@ -20,13 +20,13 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <text text="sinφ" x="-8.32" y="10.8" rotation="0"
               font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <terminal x="-20" y="0" orientation="w" name="1" type="Generic"
-                  uuid="{92a0e645-7360-4668-8c66-aeb3d26367b3}"/>
+                  uuid="{13ab944b-d126-4bde-a642-68faf26d284d}"/>
         <terminal x="20" y="0" orientation="e" name="2" type="Generic"
-                  uuid="{601d8a30-3b2e-4b63-b986-fe3571a83d77}"/>
+                  uuid="{da870657-5eec-4584-888e-8fe537f865ee}"/>
         <dynamic_text x="25" y="-20" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
-                      text_from="ElementInfo" uuid="{a3616b8f-3088-42ec-bfb4-45c7701a7078}"
+                      text_from="ElementInfo" uuid="{f37e39a8-e503-4ed4-8b8a-dfe7479d1827}"
                       font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
             <text></text>
             <info_name>label</info_name>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="80" height="60" hotspot_x="55" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{e9c4c044-3c1d-45cb-8413-6b53627d7465}"/>
+    <names>
+        <name lang="ja">従属電力量計（表示器）</name>
+        <name lang="en">Watt-hour meter, slave indicator</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 08-04-11
+左から入る矢は親の計器から受ける信号。**左が矢で塞がるので端子は右と下。**
+規格票には引出し線が描かれていない。作図に使えるよう、外形の縁に端子を1つずつ足してある。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。
+</informations>
+    <description>
+        <rect x="-20" y="-30" width="40" height="60" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="-20" y1="-10" x2="20" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <text text="Wh" x="-8.68" y="14.45" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <line x1="-51.7" y1="0" x2="-20" y2="0" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="simple" length1="1.5" length2="3"/>
+        <terminal x="20" y="0" orientation="e" name="1" type="Generic"
+                  uuid="{e02f9d08-9152-433f-a23e-2b27fe4920e9}"/>
+        <terminal x="0" y="30" orientation="s" name="2" type="Generic"
+                  uuid="{03f77b7e-4c3e-45ae-b737-3f227ebf0ed5}"/>
+        <dynamic_text x="30" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{16399644-8b3d-473e-9515-6a2a91250387}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

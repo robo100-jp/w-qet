@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition width="40" height="40" hotspot_x="20" hotspot_y="20"
             type="element" link_type="simple" version="0.100.0">
-    <uuid uuid="{629cc099-c45b-4361-b6bf-1ce865e7608a}"/>
+    <uuid uuid="{fe882055-b4d1-4069-bf05-ea1911615f95}"/>
     <names>
         <name lang="ja">オシロスコープ</name>
         <name lang="en">Oscilloscope</name>
@@ -16,13 +16,13 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <polygon x1="-15" y1="5" x2="-1" y2="-9" x3="-1" y3="5" x4="15" y4="-8" closed="false" antialias="true"
                  style="line-style:normal;line-weight:normal;filling:none;color:black"/>
         <terminal x="-20" y="0" orientation="w" name="1" type="Generic"
-                  uuid="{4b0fcbe7-a622-485c-b426-a9a7f3f4a564}"/>
+                  uuid="{d1ddeab1-2cfc-405b-916e-f2ec7a4e515f}"/>
         <terminal x="20" y="0" orientation="e" name="2" type="Generic"
-                  uuid="{641a2b9c-a9a8-4c6e-ac84-36e233f5d405}"/>
+                  uuid="{87f4ef69-fb9a-4629-b5b5-12eeae76a58b}"/>
         <dynamic_text x="25" y="-20" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
-                      text_from="ElementInfo" uuid="{8a8b4c77-7c5f-41da-82b2-d598ae7f8671}"
+                      text_from="ElementInfo" uuid="{4e87f8c5-c56e-4e66-b365-10cb750c00c3}"
                       font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
             <text></text>
             <info_name>label</info_name>

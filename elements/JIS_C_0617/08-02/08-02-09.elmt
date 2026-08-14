@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition width="40" height="40" hotspot_x="20" hotspot_y="20"
             type="element" link_type="simple" version="0.100.0">
-    <uuid uuid="{5352159d-65bb-4152-9e0a-8c82f2602f33}"/>
+    <uuid uuid="{1091c454-01e5-4d50-9b9b-3c3fb6f7e127}"/>
     <names>
         <name lang="ja">波長計</name>
         <name lang="en">Wavemeter</name>
@@ -16,13 +16,13 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <text text="λ" x="-2.97" y="4.3" rotation="0"
               font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <terminal x="-20" y="0" orientation="w" name="1" type="Generic"
-                  uuid="{b4586392-5054-40b2-bc80-17944021c20b}"/>
+                  uuid="{6fbd0bd3-29a6-4c05-934d-95ea48100f10}"/>
         <terminal x="20" y="0" orientation="e" name="2" type="Generic"
-                  uuid="{541452bf-e2d0-47a5-a78e-c181966cb82d}"/>
+                  uuid="{788d8e0b-9105-4901-88eb-827694bc38c3}"/>
         <dynamic_text x="25" y="-20" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
-                      text_from="ElementInfo" uuid="{a0d310e2-00e7-4ba3-a0db-a4568b26d055}"
+                      text_from="ElementInfo" uuid="{7c4abe29-c52f-436c-af02-30b3c25bf8e7}"
                       font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
             <text></text>
             <info_name>label</info_name>

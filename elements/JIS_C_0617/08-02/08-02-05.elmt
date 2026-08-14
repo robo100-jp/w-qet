@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition width="40" height="40" hotspot_x="20" hotspot_y="20"
             type="element" link_type="simple" version="0.100.0">
-    <uuid uuid="{e6d16c32-86a2-459f-8df2-f1e7fd626ed7}"/>
+    <uuid uuid="{2fd19250-6d20-481b-b7c8-eb537ffeaf48}"/>
     <names>
         <name lang="ja">力率計</name>
         <name lang="en">Power factor meter</name>
@@ -16,13 +16,13 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <text text="cos φ" x="-14.92" y="2" rotation="0"
               font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <terminal x="-20" y="0" orientation="w" name="1" type="Generic"
-                  uuid="{2691609e-e443-433a-b0ad-a9342dc0729f}"/>
+                  uuid="{55abcd3a-443c-428a-81b9-043db6e25bd1}"/>
         <terminal x="20" y="0" orientation="e" name="2" type="Generic"
-                  uuid="{07560553-0d04-4f15-9cde-c68c9faf16f2}"/>
+                  uuid="{fe850f09-8918-4416-a172-675fbc538b0f}"/>
         <dynamic_text x="25" y="-20" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
-                      text_from="ElementInfo" uuid="{d7189026-7d7c-4ee1-8143-ac6d54121753}"
+                      text_from="ElementInfo" uuid="{7025850e-a9b1-4d7d-95e6-9938e755def2}"
                       font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
             <text></text>
             <info_name>label</info_name>

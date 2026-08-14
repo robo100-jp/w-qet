@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition width="40" height="40" hotspot_x="20" hotspot_y="20"
             type="element" link_type="simple" version="0.100.0">
-    <uuid uuid="{01e1e5e7-8e2d-4318-b6a2-c792a3d34a9c}"/>
+    <uuid uuid="{7e8857e6-082f-409d-8793-e1c4053e4e4c}"/>
     <names>
         <name lang="ja">記録計（一般図記号）</name>
         <name lang="en">Recording instrument, general symbol</name>
@@ -16,13 +16,13 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <text text="*" x="-3.56" y="10.7" rotation="0"
               font="Liberation Sans,14,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <terminal x="-20" y="0" orientation="w" name="1" type="Generic"
-                  uuid="{1dfd35b5-4774-43ea-a3bc-1ff66715af6c}"/>
+                  uuid="{699f9982-cbfc-41af-a266-278ee5f4e86f}"/>
         <terminal x="20" y="0" orientation="e" name="2" type="Generic"
-                  uuid="{07687f00-cd9e-49a5-81ab-ac737466debf}"/>
+                  uuid="{73640c10-38b7-4554-b569-2011e80e505e}"/>
         <dynamic_text x="25" y="-20" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
-                      text_from="ElementInfo" uuid="{a3385a86-6465-412a-bcaf-d0ead48c6274}"
+                      text_from="ElementInfo" uuid="{cb947190-223f-4e05-8812-f34732c059fd}"
                       font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
             <text></text>
             <info_name>label</info_name>

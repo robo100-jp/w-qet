@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition width="40" height="40" hotspot_x="20" hotspot_y="20"
             type="element" link_type="simple" version="0.100.0">
-    <uuid uuid="{37e1e494-8c5f-44b2-90cc-65cc47afdbee}"/>
+    <uuid uuid="{964fce73-58e3-4c3a-b325-2ef9b7f46c8e}"/>
     <names>
         <name lang="ja">検流計</name>
         <name lang="en">Galvanometer</name>
@@ -16,13 +16,13 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <line x1="0" y1="13" x2="0" y2="-13" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="triangle" length1="1.5" length2="2.2"/>
         <terminal x="-20" y="0" orientation="w" name="1" type="Generic"
-                  uuid="{187180b2-cc99-4e05-a697-2dce3384d29c}"/>
+                  uuid="{3ff0024d-9cdb-4222-96df-9ad1bedefea9}"/>
         <terminal x="20" y="0" orientation="e" name="2" type="Generic"
-                  uuid="{da6949da-1032-4c5d-8be4-8f5343dbf67e}"/>
+                  uuid="{1fce12ab-2ef8-434c-9901-5d8ef7fbd43f}"/>
         <dynamic_text x="25" y="-20" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
-                      text_from="ElementInfo" uuid="{3658d906-b15a-4b19-9c6b-53acedb2ea6a}"
+                      text_from="ElementInfo" uuid="{5517cd79-4db6-4ac0-ad0a-2b19c9fe73f7}"
                       font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
             <text></text>
             <info_name>label</info_name>
