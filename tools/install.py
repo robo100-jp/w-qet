@@ -29,8 +29,8 @@ import paths as P                                          # noqa: E402
 sys.stdout.reconfigure(encoding="utf-8")
 
 DIRNAME = "w-qet"
-TOP_NAME_JA = "w-qet 日本の制御盤"
-TOP_NAME_EN = "w-qet Japanese control panels"
+TOP_NAME_JA = "w-qet 電気用図記号（日本）"
+TOP_NAME_EN = "w-qet Graphical symbols for diagrams (Japan)"
 
 
 def qet_directory(ja, en):

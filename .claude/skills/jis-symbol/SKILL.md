@@ -24,7 +24,7 @@ py -3 tools/status.py --next 10        # 次の番号と規格票のページ
 3. `py -3 tools/render_elmt.py <番号>` で**目視**
 4. `py -3 tools/check_elmt.py` で**機械の点検**。目視で出ない不備を拾う
 5. `py -3 tools/compare_page.py <番号>` で**規格票と並べる**。寸法が数値で出る
-6. `py -3 tools/status.py` → `git commit` → `git push`
+6. `py -3 tools/status.py` と `py -3 tools/catalog.py` → `git commit` → `git push`
 
 **3・4・5 は役割が違う。全部かける。**
 
@@ -33,6 +33,11 @@ py -3 tools/status.py --next 10        # 次の番号と規格票のページ
 | `render_elmt.py` | 形が規格どおりか（目で見る） |
 | `check_elmt.py` | 外形・端子・属性が壊れていないか（絵に出ない） |
 | `compare_page.py` | 規格票と寸法が合っているか（目分量では出ない） |
+
+**記号を足したり直したら `catalog.py` も叩く。**`docs/カタログ.md` と
+`docs/images/*.svg` が `elements/` から作り直される。`status.py` が採録の「数」を
+数え直すのと同じで、**カタログを手で書かない。**よく使うものを載せた
+`docs/チートシート.svg`（印刷用 A4 1枚）は `cheatsheet.py` が作る。
 
 ---
 

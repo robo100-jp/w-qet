@@ -51,6 +51,7 @@ QElectroTech 同梱の `91_en_60617`（IEC 60617 規格記号 約900種）から
 ```bash
 py -3 tools/render_elmt.py <部品名>
 py -3 tools/check_elmt.py <部品名>     # 目視では出ない誤り（外形・端子・属性）
+py -3 tools/catalog.py                # 記号を足したり直したらカタログも作り直す
 ```
 
 **座標を読むだけでは形の誤りに気づけない。** 過去の実例：
@@ -89,9 +90,12 @@ tools/
   compare_page.py  描いた記号を規格票と突き合わせる
   pdf_page.py      PDF のページを画像に描き出す
   status.py        採録状況を elements/ から数え直す
+  svg_elmt.py      .elmt を SVG に写す（人に見せる姿）
+  catalog.py       カタログを作り直す（docs/カタログ.md と docs/images/）
+  cheatsheet.py    印刷用の早見表を作る（docs/チートシート.svg）
   install.py       QET のユーザーコレクションに登録する
-docs/            設計方針・採録状況・寸法基準・測定メモ
-render/          描き出した PNG（git 管理外）
+docs/            設計方針・採録状況・寸法基準・測定メモ・カタログ
+render/          描き出した PNG・SVG（git 管理外）
 .claude/skills/  Claude Code スキル
 ```
 

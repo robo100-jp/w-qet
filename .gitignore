@@ -1,6 +1,6 @@
 ﻿__pycache__/
 *.pyc
-render/*.png
+render/
 *.qet~
 
 # 規格票をリポジトリに入れない。ここは公開リポジトリで、

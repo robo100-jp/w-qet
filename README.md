@@ -15,11 +15,19 @@ QElectroTech 用の、日本の制御盤向け図記号ライブラリと作図�
 
 | 内容 | 状態 |
 |---|---|
-| `elements/` 図記号 | 第7部 161 個 → [採録状況](docs/採録状況.md) |
+| `elements/` 図記号 | 第7部 161 個 ＋ 旧図記号 7 個 ＋ 作図用部品 5 個 |
 | `tools/` 作図・検証ツール（Python） | あり |
 | `.claude/skills/` Claude Code 用スキル | あり |
 
 進捗は `py -3 tools/status.py` が `elements/` を走査して数え直します。
+
+## どんな記号があるか
+
+- **[図記号カタログ](docs/カタログ.md)** — 全部の姿を節ごとに並べたもの。**形から引けます**
+- **[チートシート](docs/チートシート.svg)** — よく使うものだけの A4 1枚。印刷して手元に置く用
+- [採録状況](docs/採録状況.md) — 図記号番号と名称の一覧
+
+![07-02 接点](docs/images/07-02.svg)
 
 ## 構成
 
@@ -36,16 +44,23 @@ tools/         Python ツール
   compare_page.py 描いた記号を規格票と突き合わせる
   pdf_page.py    PDF のページを画像に描き出す（規格の図を読む）
   status.py      採録状況を elements/ から数え直す
+  svg_elmt.py    .elmt を SVG に写す（人に見せる姿）
+  catalog.py     カタログ（docs/カタログ.md と docs/images/）を作り直す
+  cheatsheet.py  印刷用の早見表（docs/チートシート.svg）を作る
   install.py     図記号を QET のユーザーコレクションに登録する
-docs/          設計方針・採録状況
+docs/          設計方針・採録状況・カタログ
 .claude/skills/  Claude Code 用スキル
 ```
 
+- 記号の姿を見る … [docs/カタログ.md](docs/カタログ.md)・[docs/チートシート.svg](docs/チートシート.svg)
 - 次に何をするか（作業の引継ぎ） … [引継ぎ.md](引継ぎ.md)
-- 採録状況（第7部 161個） … [docs/採録状況.md](docs/採録状況.md)
+- 採録状況（図記号番号と名称の一覧） … [docs/採録状況.md](docs/採録状況.md)
 - 記号の寸法・端子・ラベルの約束ごと … [docs/寸法基準.md](docs/寸法基準.md)
 - 規格票を測ったが、まだ描いていないものの控え … [docs/測定メモ.md](docs/測定メモ.md)
 - ツールの使い方と `.elmt` の書式 … [docs/ツール.md](docs/ツール.md)
+
+> **カタログとチートシートは手で書きません。** `py -3 tools/catalog.py` と
+> `py -3 tools/cheatsheet.py` が `elements/` から作り直します。
 
 ## QET に登録する
 
@@ -59,7 +74,7 @@ py -3 tools/install.py
 QET の部品パネルにはこう並びます。
 
 ```
-w-qet 日本の制御盤
+w-qet 電気用図記号（日本）
 ├─ JIS C 0617        規格を参照して描き起こしたもの
 │   ├─ 07-02 接点
 │   ├─ …
