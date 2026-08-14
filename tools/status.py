@@ -116,13 +116,21 @@ def render(rows, done):
     w("作図の都合で要るもの。JIS C 0617 には無い。端子間は 30。")
     w("**`elements/drawing_aids/` に置く。** 規格に基づくものと混ぜない。")
     w("")
-    # ここも手で書かない。elements/drawing_aids/ にファイルがあるかで印を付ける。
+    # ここも手で書かない。elements/drawing_aids/ の実物から名前を読む。
+    # **ファイル名はASCIIなので、和名は .elmt の中の <name lang="ja"> が持つ。**
     aid = os.path.join(P.ELEMENTS, "drawing_aids")
-    have = set(os.listdir(aid)) if os.path.isdir(aid) else set()
-    w("| | 名称 |")
-    w("|---|---|")
-    for nm in ("端子（通過）", "端子（T字分岐）", "端子（十字）", "端子（終端）", "端子（L字）"):
-        w("| %s | %s |" % ("✔" if nm + ".elmt" in have else "—", nm))
+    w("| | 名称 | ファイル |")
+    w("|---|---|---|")
+    got = False
+    for fn in sorted(os.listdir(aid)) if os.path.isdir(aid) else []:
+        if not fn.endswith(".elmt"):
+            continue
+        t = io.open(os.path.join(aid, fn), encoding="utf-8").read()
+        m = re.search(r'<name lang="ja">([^<]*)</name>', t)
+        w("| ✔ | %s | `%s` |" % (m.group(1) if m else "", fn))
+        got = True
+    if not got:
+        w("| — | （まだ無い） | |")
     w("")
     return "\n".join(out) + "\n"
 

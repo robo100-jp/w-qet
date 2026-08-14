@@ -169,6 +169,13 @@ def check(path, seen_uuid):
 
     info = root.findtext("informations") or ""
     base = os.path.basename(path)
+    # **ファイル名に日本語を入れない。** QET が中身を読めず、部品パネルで
+    # 名前が `<name lang="ja">` ではなくファイル名（拡張子つき）に化ける。
+    # フォルダ名も同じ（そちらは qet_directory が読めず名前が空欄になる）。
+    nonascii = [c for c in path.replace("\\", "/").split("/elements/")[-1]
+                if ord(c) > 127]
+    if nonascii:
+        bad.append("パスに非ASCIIの文字がある: %s" % "".join(sorted(set(nonascii))))
     if "JIS_C_0617" in path.replace("\\", "/"):
         m = NUM_RE.search(info)
         if not m:
