@@ -44,11 +44,19 @@ MEMO = os.path.join(DOCS, "点検メモ.md")
 XLSX = os.path.join(DOCS, "点検メモ.xlsx")
 PNG = os.path.join(P.RENDER, "png")                  # Excel に貼る図（git 管理外）
 
-# Excel の列。**番号の列を動かさない。**書き込みを引き継ぐときの手がかり
-COLS = [("節", 20), ("図", 15), ("番号", 13), ("名称", 42), ("済", 6),
-        ("気づいたこと", 62)]
-C_NUM, C_DONE, C_MEMO = 3, 5, 6                      # 1始まり
+# Excel の列。**番号の列を動かさない。**書き込みを引き継ぐときの手がかり。
+# 節は列に持たず、**ブラウザのページと同じように見出しの行**にする
+COLS = [("図", 17), ("番号", 14), ("名称", 40), ("済", 7), ("気づいたこと", 68)]
+C_NUM, C_DONE, C_MEMO = 2, 4, 5                      # 1始まり
 FONT = "Meiryo"          # 和名を出すので日本語を持つもの。Arial だと豆腐になる
+MONO = "Consolas"        # 番号は等幅にすると桁が揃って引きやすい
+
+# 見た目はブラウザのページに合わせる（docs/ツール.md）
+SZ_BODY, SZ_HEAD, SZ_SEC = 12, 12, 14
+CLR_RULE = "E6E6E6"      # 行の下の罫線
+CLR_SEC = "333333"       # 節の見出しの下線
+CLR_EDIT = "FFFDF2"      # 書き込む欄（ページの textarea と同じ）
+CLR_HAS = "FFF8E0"       # 書いてある行（ページの tr.has と同じ）
 
 PX_PER_UNIT = .8                # 表の中での図の大きさ
 PX_MIN, PX_MAX = 22, 74         # 行が潰れる／伸びすぎるのを防ぐ
@@ -108,9 +116,10 @@ py -3 tools/checklist.py           # Excel の書き込みをこの表に写す
 # **git に入れない。**バイナリで差分が出ず、2台のPCで別々に書き込むと
 # 突き合わせができない。載るのは `.md` のほうで、Excel は書くための面。
 
-XL_K = .25               # PNG を Excel に貼るときの縮尺
-XL_HMIN, XL_HMAX = 20, 60        # 貼ったあとの高さ（px）の下限・上限
-XL_WMAX = 210                    # 幅の上限（px）。横長の記号で列が広がるのを防ぐ
+XL_K = .30               # PNG を Excel に貼るときの縮尺
+XL_HMIN, XL_HMAX = 26, 76        # 貼ったあとの高さ（px）の下限・上限
+XL_WMAX = 230                    # 幅の上限（px）。横長の記号で列が広がるのを防ぐ
+XL_ROWMIN = 34                   # 行の高さの下限（pt）。文字が12ptなので窮屈にしない
 
 USAGE = [
     ("この表の使い方", True),
@@ -135,9 +144,15 @@ USAGE = [
 
 
 def build_xlsx(items, keep):
+    """**ブラウザのページと同じ体裁にする。**
+
+    節は列ではなく**見出しの行**にし、文字は 12pt、罫線は淡く、
+    書き込む欄だけ色を敷く。表としての並べ替えより**読みやすさ**を採る
+    （176行を上から順に見ていく使い方なので、絞り込みより見出しが効く）。
+    """
     from openpyxl import Workbook
     from openpyxl.drawing.image import Image as XLImage
-    from openpyxl.styles import Alignment, Font, PatternFill
+    from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
     from openpyxl.utils import get_column_letter
     from openpyxl.worksheet.datavalidation import DataValidation
     import render_elmt as R
@@ -150,41 +165,60 @@ def build_xlsx(items, keep):
     ws.column_dimensions["A"].width = 96
     for i, (line, bold) in enumerate(USAGE, 1):
         c = ws.cell(row=i, column=1, value=line)
-        c.font = Font(name=FONT, size=11, bold=bold)
+        c.font = Font(name=FONT, size=SZ_SEC if bold else SZ_BODY, bold=bold)
+        ws.row_dimensions[i].height = 22 if bold else 18
 
     ws = wb.create_sheet(SHEET)
-    head = Font(name=FONT, size=10, bold=True)
-    body = Font(name=FONT, size=10)
-    # **書き込む列に色を付ける。**どこを触るのか分からない表は使われない
-    fill = PatternFill("solid", fgColor="FFF7CC")
+    head = Font(name=FONT, size=SZ_HEAD, bold=True)
+    body = Font(name=FONT, size=SZ_BODY)
+    num_f = Font(name=MONO, size=SZ_BODY)
+    sec_f = Font(name=FONT, size=SZ_SEC, bold=True)
+    # **書き込む欄に色を敷く。**どこを触るのか分からない表は使われない
+    edit = PatternFill("solid", fgColor=CLR_EDIT)
+    has = PatternFill("solid", fgColor=CLR_HAS)
+    rule = Border(bottom=Side(style="thin", color=CLR_RULE))
+    under = Border(bottom=Side(style="medium", color=CLR_SEC))
     wrap = Alignment(vertical="center", wrap_text=True)
     mid = Alignment(vertical="center")
     ctr = Alignment(horizontal="center", vertical="center")
+    ncols = len(COLS)
+    last = get_column_letter(ncols)
 
     for i, (name, width) in enumerate(COLS, 1):
         c = ws.cell(row=1, column=i, value=name)
-        c.font, c.alignment = head, ctr
+        c.font, c.alignment, c.border = head, ctr, under
         ws.column_dimensions[get_column_letter(i)].width = width
+    ws.row_dimensions[1].height = 24
     ws.freeze_panes = "A2"
-    ws.auto_filter.ref = "A1:%s%d" % (get_column_letter(len(COLS)),
-                                      len(items) + 1)
 
     dv = DataValidation(type="list", formula1='"✔"', allow_blank=True)
     ws.add_data_validation(dv)
 
-    cur, wmax = "", 0
-    for r, (ja, path) in enumerate(items, 2):
+    r, wmax = 2, 0
+    for ja, path in items:
         if ja:
-            cur = ja
+            # 節の見出し。**ブラウザのページの h2 と同じ**（太字＋下線）
+            ws.merge_cells("A%d:%s%d" % (r, last, r))
+            c = ws.cell(row=r, column=1, value=ja)
+            c.font, c.alignment = sec_f, Alignment(vertical="bottom")
+            for i in range(1, ncols + 1):
+                ws.cell(row=r, column=i).border = under
+            ws.row_dimensions[r].height = 26
+            r += 1
+
         base = os.path.basename(path)[:-5]
         _, _, name, _ = S.body(path, False)
         done, memo = keep.get(base, ("", ""))
-        for col, val, al in ((1, cur, mid), (3, base, mid), (4, name, wrap),
-                             (5, done, ctr), (6, memo, wrap)):
+        written = bool(done or memo.strip())
+        for col, val, al, ft in ((2, base, mid, num_f), (3, name, wrap, body),
+                                 (4, done, ctr, body), (5, memo, wrap, body)):
             c = ws.cell(row=r, column=col, value=val)
-            c.font, c.alignment = body, al
+            c.font, c.alignment, c.border = ft, al, rule
             if col in (C_DONE, C_MEMO):
-                c.fill = fill
+                c.fill = edit
+            if written:
+                c.fill = has
+        ws.cell(row=r, column=1).border = rule
         dv.add(ws.cell(row=r, column=C_DONE))
 
         png = os.path.join(PNG, base + ".png")
@@ -199,10 +233,12 @@ def build_xlsx(items, keep):
             k = XL_WMAX / img.width
         img.width, img.height = int(img.width * k), int(img.height * k)
         wmax = max(wmax, img.width)
-        ws.add_image(img, "B%d" % r)
-        ws.row_dimensions[r].height = img.height * .75 + 6   # px → pt
+        ws.add_image(img, "A%d" % r)
+        ws.row_dimensions[r].height = max(XL_ROWMIN, img.height * .75 + 8)
+        r += 1
 
-    ws.column_dimensions["B"].width = wmax / 7. + 2
+    ws.column_dimensions["A"].width = wmax / 7. + 2.5
+    ws.sheet_view.showGridLines = False       # 罫線は自分で引くので方眼は消す
     wb.save(XLSX)
     return len(items)
 
