@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="30" height="90" hotspot_x="15" hotspot_y="45"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{3577b42f-524c-44f6-acee-31caea7be1df}"/>
+    <names>
+        <name lang="ja">傍熱形熱電対</name>
+        <name lang="en">Thermocouple with insulated heating element</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 08-06-05
+加熱線が絶縁されている形。**下の頂点は接合点に触れない。**
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。
+</informations>
+    <description>
+        <line x1="-10" y1="-40" x2="-10" y2="-16.5" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="10" y1="-40" x2="10" y2="-16.5" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-10" y1="-16.5" x2="0" y2="-3" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="10" y1="-16.5" x2="0" y2="-3" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <ellipse x="-2.5" y="-2.5" width="5" height="5" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:black;color:black"/>
+        <arc x="-10" y="8.6" width="20" height="20" start="0" angle="180"
+             antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="-10" y1="18.6" x2="-10" y2="40" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="10" y1="18.6" x2="10" y2="40" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="-10" y="-40" orientation="n" name="1" type="Generic"
+                  uuid="{cd445096-65a7-45a1-a85c-ffbeea9b8132}"/>
+        <terminal x="10" y="-40" orientation="n" name="2" type="Generic"
+                  uuid="{01b44cf8-cb65-4f5a-8c47-a0a00ff9ff9f}"/>
+        <terminal x="-10" y="40" orientation="s" name="3" type="Generic"
+                  uuid="{f89a1366-98a6-493e-a115-2da7999d2c59}"/>
+        <terminal x="10" y="40" orientation="s" name="4" type="Generic"
+                  uuid="{c08f4ebd-1d39-439a-8f29-a522f867ed9b}"/>
+        <dynamic_text x="20" y="-45" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{99f705f6-4a0b-4c12-98d3-d1ef924b2e1e}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>
