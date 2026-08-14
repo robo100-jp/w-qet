@@ -115,40 +115,40 @@ class Inst:
             f'\n                    <terminal x="{t["x"]:g}" y="{t["y"]:g}" '
             f'id="{t["id"]}" orientation="{t["ori"]}" />'
             for t in self.part.terms)
-        # **スレーブのラベルは同期されない。実機で確かめた**（0.100.0）。
-        # リンクを張っても、GUI で張り直しても、接点のラベルは空のまま。
-        # だから**こちらで書き込む。**ラベルを省いたら、リンク先のコイルの
-        # ラベルを**小文字にして**入れる —— 日本の慣習（コイル T1 / 接点 t1）。
-        # 既存の盤図でも コイル M1・R1・RY-S に対して接点 m1・r1・ry-s だった。
+        # **空の <dynamic_texts /> を書かない。**書くと部品定義側のラベル欄まで
+        # 打ち消され、**文字の置き場所そのものが無くなる**（実機で確認。
+        # ラベルを省いた接点に何も出ず、同期していないと読み違えた）。
+        # ラベルを省いたときも枠だけは置き、中身は QET に埋めさせる。
         slave = self.part.link_type == "slave"
         label = self.label
-        if not label and slave:
-            label = next((m.label for m in self.links if m.label), "").lower()
 
-        info = dtxt = ""
+        info = ""
         if label:
             info = (f'\n                    <elementInformation name="label" '
                     f'show="1">{esc(label)}</elementInformation>')
-            # スレーブは固定文字（UserText）にする。同期が無い以上 ElementInfo に
-            # する利点が無く、**コイルの大文字で上書きされる余地を残さない**ほうがよい。
-            # 相互参照は links_uuids 側なので、これで切れることはない。
-            src = "UserText" if slave else "ElementInfo"
-            iname = ("" if slave else
-                     '\n                        <info_name>label</info_name>')
-            dtxt = (
-                '\n                    <dynamic_elmt_text frame="false" '
-                f'Halignment="AlignLeft" x="{LBL_X}" y="{LBL_Y}" rotation="0" '
-                f'font="Liberation Sans,{LBL_PT},-1,5,50,0,0,0,0,0,Regular" '
-                f'text_width="-1" uuid="{{{U.uuid4()}}}" '
-                # 部品を倒しても機器記号は正立のままにする。QET は true のとき
-                # 文字の回転を「基準 − 親の回転」に置いて親の回転を打ち消す
-                # （dynamicelementtextitem.cpp の parentElementRotationChanged）。
-                # false だと文字まで倒れる。属性を省いたときの既定も true。
-                f'keep_visual_rotation="true" text_from="{src}" '
-                'Valignment="AlignTop">'
-                f'\n                        <text>{esc(label)}</text>'
-                f'{iname}'
-                '\n                    </dynamic_elmt_text>')
+        # スレーブに**明示ラベルを付けたときだけ**固定文字（UserText）にする。
+        # ElementInfo のままだとリンク先のコイルのラベルで表示が上書きされ、
+        # 「t1」と書いてもコイルの「T1」が出る。相互参照は links_uuids 側なので
+        # UserText にしても切れない。
+        # **省いたときは ElementInfo。**スレーブならマスタのラベルがここに出る。
+        fixed = slave and bool(label)
+        src = "UserText" if fixed else "ElementInfo"
+        iname = ("" if fixed else
+                 '\n                        <info_name>label</info_name>')
+        dtxt = (
+            '\n                    <dynamic_elmt_text frame="false" '
+            f'Halignment="AlignLeft" x="{LBL_X}" y="{LBL_Y}" rotation="0" '
+            f'font="Liberation Sans,{LBL_PT},-1,5,50,0,0,0,0,0,Regular" '
+            f'text_width="-1" uuid="{{{U.uuid4()}}}" '
+            # 部品を倒しても機器記号は正立のままにする。QET は true のとき
+            # 文字の回転を「基準 − 親の回転」に置いて親の回転を打ち消す
+            # （dynamicelementtextitem.cpp の parentElementRotationChanged）。
+            # false だと文字まで倒れる。属性を省いたときの既定も true。
+            f'keep_visual_rotation="true" text_from="{src}" '
+            'Valignment="AlignTop">'
+            f'\n                        <text>{esc(label)}</text>'
+            f'{iname}'
+            '\n                    </dynamic_elmt_text>')
         links = ""
         if self.links:
             links = ('\n                <links_uuids>' + "".join(
