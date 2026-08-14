@@ -7,6 +7,10 @@
         <name lang="en">Disconnecting circuit breaker</name>
     </names>
     <informations>JIS C 0617 / IEC 60617 07-13-17
+**遮断と断路が一体で、ひとつの操作で制御される機器にだけ使う。**
+断路位置での施錠は別操作になる。遮断と断路を別々に操作する機器なら、
+この記号ではなく 07-02-01 に 07-01-02（遮断機能）と 07-01-03（断路機能）を
+重ねる形（07-13-15 と同じ組み方）が規格票の薦めるやり方。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"

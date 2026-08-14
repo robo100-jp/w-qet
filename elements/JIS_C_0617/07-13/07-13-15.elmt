@@ -7,6 +7,8 @@
         <name lang="en">Multiple-function switching device</name>
     </names>
     <informations>JIS C 0617 / IEC 60617 07-13-15
+**使わない機能の図記号素子は消すこと。**この記号は反転・遮断・断路・接触・
+自動引外しの機能をすべて重ねて示したもので、そのまま置くものではない。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <line x1="-5" y1="-56.5" x2="-5" y2="-50" antialias="false"
