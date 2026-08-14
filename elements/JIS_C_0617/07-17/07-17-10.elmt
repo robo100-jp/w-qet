@@ -14,9 +14,9 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <rect x="-30" y="-30" width="60" height="60" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black"/>
         <text text="N " x="-8.65" y="-6" rotation="0"
-              font="Liberation Sans,14,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
+              font="Liberation Sans,8,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
         <text text="&lt;" x="2.27" y="-6" rotation="0"
-              font="Liberation Sans,14,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+              font="Liberation Sans,8,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <arc x="-15" y="10" width="10" height="10" start="0" angle="180"
              antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
         <arc x="-5" y="10" width="10" height="10" start="0" angle="180"

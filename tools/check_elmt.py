@@ -82,7 +82,7 @@ def shape_points(e):
     if t == "text":
         # x,y はベースラインの左端。送り幅の合計と、おおよその上下を見る
         m = re.search(r",(\d+),", g.get("font", ",9,"))
-        em = 0.78 * (int(m.group(1)) if m else 9)
+        em = (4.0 / 3.0) * (int(m.group(1)) if m else 9)   # Qt: pt × 96/72
         adv = sum(ADV.get(c, 0.55) for c in g.get("text", "")) * em
         return [(f("x"), f("y") - em * 0.75), (f("x") + adv, f("y") + em * 0.22)]
     return []

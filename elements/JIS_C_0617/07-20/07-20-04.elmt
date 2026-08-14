@@ -26,7 +26,7 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <line x1="-17.8" y1="-6.3" x2="-17.8" y2="6.3" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <text text="Fe" x="-47.5" y="4.5" rotation="0"
-              font="Liberation Sans,16,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <line x1="-11.5" y1="0" x2="3.4" y2="0" antialias="false"
               style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <terminal x="0" y="-30" orientation="n" name="1" type="Generic"

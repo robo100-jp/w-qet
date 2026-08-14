@@ -14,13 +14,13 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <rect x="-30" y="-40" width="60" height="80" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black"/>
         <text text="U " x="-8.65" y="-16" rotation="0"
-              font="Liberation Sans,14,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
+              font="Liberation Sans,8,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
         <text text="&lt;" x="2.27" y="-16" rotation="0"
-              font="Liberation Sans,14,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+              font="Liberation Sans,8,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <text text="50…80 V" x="-22.76" y="4" rotation="0"
-              font="Liberation Sans,14,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+              font="Liberation Sans,8,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <text text="130%" x="-13.96" y="24" rotation="0"
-              font="Liberation Sans,14,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+              font="Liberation Sans,8,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <terminal x="-30" y="0" orientation="w" name="1" type="Generic"
                   uuid="{b41392dd-9731-4086-930b-ef687720406c}"/>
         <terminal x="30" y="0" orientation="e" name="2" type="Generic"

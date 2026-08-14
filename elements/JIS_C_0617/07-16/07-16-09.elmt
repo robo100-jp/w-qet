@@ -12,8 +12,8 @@
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <text text="I" x="-8.45" y="0" rotation="0"
-              font="Liberation Sans,14,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
+              font="Liberation Sans,8,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
         <text text="N-N" x="-5.41" y="3" rotation="0"
-              font="Liberation Sans,10,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+              font="Liberation Sans,6,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
     </description>
 </definition>

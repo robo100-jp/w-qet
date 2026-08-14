@@ -14,9 +14,9 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <rect x="-30" y="-75" width="60" height="150" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black"/>
         <text text="Q " x="-8.95" y="-50" rotation="0"
-              font="Liberation Sans,14,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
+              font="Liberation Sans,8,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
         <text text="&gt;" x="2.58" y="-50" rotation="0"
-              font="Liberation Sans,14,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+              font="Liberation Sans,8,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <line x1="-15" y1="-40" x2="-15" y2="-30" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <line x1="-15" y1="-35" x2="15.5" y2="-35" antialias="false"
@@ -24,7 +24,7 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <polygon x1="-3.5" y1="-35" x2="2" y2="-37.2" x3="2" y3="-32.8" antialias="true"
                  style="line-style:normal;line-weight:normal;filling:black;color:black"/>
         <text text="1 Mvar" x="-16.69" y="-8" rotation="0"
-              font="Liberation Sans,14,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+              font="Liberation Sans,8,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <line x1="-15" y1="35" x2="15" y2="35" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <line x1="-15" y1="32" x2="-15" y2="38" antialias="false"
@@ -36,7 +36,7 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <polygon x1="18" y1="17" x2="14.39" y2="24.14" x3="10.86" y3="20.61" antialias="true"
                  style="line-style:normal;line-weight:normal;filling:black;color:black"/>
         <text text="5…10 s" x="-18.82" y="58" rotation="0"
-              font="Liberation Sans,14,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+              font="Liberation Sans,8,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <terminal x="-30" y="0" orientation="w" name="1" type="Generic"
                   uuid="{94a39a50-8492-42e1-aedd-646bd4594824}"/>
         <terminal x="30" y="0" orientation="e" name="2" type="Generic"

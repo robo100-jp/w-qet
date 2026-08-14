@@ -32,6 +32,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 
 OUT = P.RENDER
 
+EM = 4.0 / 3.0    # 1em = ポイント数 × 96/72（Qt が pt を画素に直す比）
 S = 4          # 拡大率（1単位=4px）
 PAD = 40       # 余白
 
@@ -229,14 +230,14 @@ def draw_one(path):
             # `I &gt;` のような実体参照を戻す。&amp; は最後（二重展開を避ける）
             s = (a.get("text", "").replace("&lt;", "<").replace("&gt;", ">")
                  .replace("&quot;", '"').replace("&amp;", "&"))
-            dr.text((x, y - px * S * 0.78), s, fill="black", font=font(int(px * S * 0.78)))
+            dr.text((x, y - px * S * EM), s, fill="black", font=font(int(px * S * EM)))
 
     # ラベル欄は青。図形ではないので色で区別する
     for x, y, s, a in dtexts:
         mfz = re.search(r"[^,]+,([\d.]+)", a.get("font", ""))
         px = float(mfz.group(1)) if mfz else 9.0
         cx, cy = P(x, y)
-        dr.text((cx, cy), s, fill=(60, 90, 200), font=font(int(px * S * 0.78)))
+        dr.text((cx, cy), s, fill=(60, 90, 200), font=font(int(px * S * EM)))
         dr.line([(cx - 5, cy), (cx + 5, cy)], fill=(160, 180, 230))
         dr.line([(cx, cy - 5), (cx, cy + 5)], fill=(160, 180, 230))
 

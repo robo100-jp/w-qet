@@ -16,9 +16,9 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <rect x="-20" y="-30" width="40" height="60" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black"/>
         <text text="X // Y" x="-15" y="-9.5" rotation="0"
-              font="Liberation Sans,16,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
+              font="Liberation Sans,9,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
         <text text="*" x="-2.7" y="7.5" rotation="0"
-              font="Liberation Sans,18,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+              font="Liberation Sans,10,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <terminal x="-20" y="0" orientation="w" name="1" type="Generic"
                   uuid="{f05da95c-edaf-44c9-8404-fdd0d1822f8b}"/>
         <terminal x="20" y="0" orientation="e" name="2" type="Generic"

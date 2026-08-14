@@ -14,9 +14,9 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <rect x="-30" y="-30" width="60" height="60" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black"/>
         <text text="I " x="-6.22" y="-6" rotation="0"
-              font="Liberation Sans,14,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
+              font="Liberation Sans,8,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
         <text text="&gt;" x="-0.15" y="-6" rotation="0"
-              font="Liberation Sans,14,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+              font="Liberation Sans,8,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <line x1="-15" y1="15" x2="15" y2="15" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <line x1="-15" y1="12" x2="-15" y2="18" antialias="false"

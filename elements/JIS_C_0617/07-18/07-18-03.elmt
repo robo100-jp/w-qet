@@ -20,7 +20,7 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <ellipse x="20" y="-20" width="40" height="40" antialias="true"
                  style="line-style:normal;line-weight:normal;filling:none;color:black"/>
         <text text="V" x="35.84" y="4.5" rotation="0"
-              font="Liberation Sans,16,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
                   uuid="{f41f60b4-fee9-4f08-b64e-998106a806be}"/>
         <terminal x="0" y="30" orientation="s" name="2" type="Generic"
