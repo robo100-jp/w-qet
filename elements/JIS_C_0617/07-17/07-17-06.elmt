@@ -13,10 +13,10 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
     <description>
         <rect x="-30" y="-75" width="60" height="150" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black"/>
-        <text text="Q " x="-8.95" y="-50" rotation="0"
-              font="Liberation Sans,8,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
-        <text text="&gt;" x="2.58" y="-50" rotation="0"
-              font="Liberation Sans,8,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="Q " x="-10.07" y="-49.6" rotation="0"
+              font="Liberation Sans,9,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
+        <text text="&gt;" x="2.62" y="-49.6" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <line x1="-15" y1="-40" x2="-15" y2="-30" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <line x1="-15" y1="-35" x2="15.5" y2="-35" antialias="false"

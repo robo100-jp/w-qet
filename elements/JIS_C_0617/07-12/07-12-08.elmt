@@ -15,30 +15,30 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
               style="line-style:normal;line-weight:normal;filling:none;color:black"/>
         <line x1="-55" y1="-30" x2="-45" y2="-30" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
-        <text text="L1" x="-42" y="-26" rotation="0"
-              font="Liberation Sans,6,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="L1" x="-44.2" y="-24.57" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <line x1="-55" y1="-10" x2="-45" y2="-10" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
-        <text text="L2" x="-42" y="-6" rotation="0"
-              font="Liberation Sans,6,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="L2" x="-44.2" y="-4.58" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <line x1="-55" y1="10" x2="-45" y2="10" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
-        <text text="L3" x="-42" y="14" rotation="0"
-              font="Liberation Sans,6,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="L3" x="-44.2" y="15.4" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <line x1="-55" y1="30" x2="-45" y2="30" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
-        <text text="N" x="-42" y="34" rotation="0"
-              font="Liberation Sans,6,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="N" x="-43.43" y="35.42" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <line x1="45" y1="-10" x2="55" y2="-10" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
-        <text text="L" x="36" y="-6" rotation="0"
-              font="Liberation Sans,6,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="L" x="34.9" y="-4.58" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <line x1="45" y1="10" x2="55" y2="10" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
-        <text text="N" x="36" y="14" rotation="0"
-              font="Liberation Sans,6,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
-        <text text="AS" x="-5" y="-25" rotation="0"
-              font="Liberation Sans,6,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="N" x="34.57" y="15.43" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="AS" x="-7.65" y="-23.57" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <line x1="-17.5" y1="-10" x2="-7.5" y2="-10" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <line x1="-12.5" y1="-12" x2="-12.5" y2="0" antialias="false"

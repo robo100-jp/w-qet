@@ -13,12 +13,12 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
     <description>
         <rect x="-30" y="-30" width="60" height="60" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black"/>
-        <text text="2 ( " x="-17.45" y="-6" rotation="0"
-              font="Liberation Sans,8,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
-        <text text="I" x="-1.67" y="-6" rotation="0"
-              font="Liberation Sans,8,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
-        <text text=" &gt; )" x="1.37" y="-6" rotation="0"
-              font="Liberation Sans,8,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="2 ( " x="-19.68" y="-5.68" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="I" x="-2.32" y="-5.68" rotation="0"
+              font="Liberation Sans,9,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
+        <text text=" &gt; )" x="1.03" y="-5.68" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <dynamic_text x="-19.73" y="9.35" z="2" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="false"

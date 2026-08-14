@@ -11,8 +11,8 @@
 限定図記号。端子を持たない。ほかの図記号に重ねて使う。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
-        <text text="I" x="-3.69" y="0" rotation="0"
-              font="Liberation Sans,8,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
+        <text text="I" x="-3.89" y="0.47" rotation="0"
+              font="Liberation Sans,9,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
         <text text="d" x="-0.65" y="3" rotation="0"
               font="Liberation Sans,6,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
     </description>

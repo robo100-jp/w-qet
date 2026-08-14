@@ -13,8 +13,8 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
     <description>
         <rect x="-30" y="-20" width="60" height="40" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black"/>
-        <text text="I" x="-9.52" y="4" rotation="0"
-              font="Liberation Sans,8,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
+        <text text="I" x="-9.72" y="4.47" rotation="0"
+              font="Liberation Sans,9,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
         <line x1="-3" y1="0" x2="13" y2="0" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <polygon x1="-3" y1="0" x2="2" y2="-2" x3="2" y3="2" antialias="true"

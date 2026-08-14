@@ -24,8 +24,8 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
               style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <ellipse x="-95" y="-35" width="20" height="20" antialias="true"
                  style="line-style:normal;line-weight:normal;filling:none;color:black"/>
-        <text text="M" x="-89.5" y="-20.5" rotation="0"
-              font="Liberation Sans,8,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="M" x="-90.08" y="-20.02" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <rect x="-43" y="-53" width="16" height="16" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black"/>
         <line x1="-35" y1="-58" x2="-35" y2="-32" antialias="false"
@@ -70,14 +70,14 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <line x1="5" y1="0" x2="5" y2="5" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
-        <text text="I &gt;" x="-1" y="19.5" rotation="0"
-              font="Liberation Sans,7,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
+        <text text="I &gt;" x="-2.52" y="20.48" rotation="0"
+              font="Liberation Sans,9,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
         <line x1="5" y1="25" x2="5" y2="45" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <line x1="12.5" y1="37" x2="-2.5" y2="45" antialias="true"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
-        <text text="3" x="15" y="44.5" rotation="0"
-              font="Liberation Sans,6,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="3" x="13.9" y="45.9" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <line x1="-35" y1="-32" x2="-35" y2="75" antialias="false"
               style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <line x1="-35" y1="-12" x2="-35" y2="-8" antialias="false"

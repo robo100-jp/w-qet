@@ -38,7 +38,44 @@ import paths as P                                          # noqa: E402
 
 sys.stdout.reconfigure(encoding="utf-8")
 
-# Liberation Sans の送り幅（em 単位）。文字が外形に収まるかを見るのに使う。
+# 文字が外形に収まるかを見るための、字面の測り方。
+#
+# **表で見積もらず、実際のフォントで測る。**送り幅の表は空白や記号を取りこぼすし、
+# 上下の高さは em の割合で当てるしかない。QET が使う Liberation Sans は
+# Windows に無いので **Arial** で測る（字幅互換で、字面の高さもほぼ同じ）。
+# フォントが見つからないときだけ下の表に落ちる。
+try:
+    from PIL import Image, ImageDraw, ImageFont
+except ImportError:
+    ImageFont = None
+_FCACHE = {}
+
+
+def text_box(s, pt, italic):
+    """(左, 上, 右, 下) をベースライン左端からの単位で返す。取れなければ None"""
+    if ImageFont is None or not s:
+        return None
+    key = (s, pt, italic)
+    if key in _FCACHE:
+        return _FCACHE[key]
+    em, k = pt * 96.0 / 72.0, 20
+    try:
+        f = ImageFont.truetype("ariali.ttf" if italic else "arial.ttf",
+                               int(em * k))
+    except Exception:
+        _FCACHE[key] = None
+        return None
+    im = Image.new("L", (int(em * k * (len(s) + 3)), int(em * k * 3)), 0)
+    b = int(em * k * 2)
+    ImageDraw.Draw(im).text((int(em * k), b), s, fill=255, font=f, anchor="ls")
+    bb = im.getbbox()
+    r = None if bb is None else ((bb[0] - em * k) / k, (bb[1] - b) / float(k),
+                                 (bb[2] - em * k) / k, (bb[3] - b) / float(k))
+    _FCACHE[key] = r
+    return r
+
+
+# フォントが読めないときの当て（Liberation Sans の送り幅・em 単位）
 ADV = {"I": .278, "U": .722, "P": .667, "Q": .778, "Z": .611, "N": .722,
        "X": .667, "Y": .667, "V": .667, "M": .833, "A": .667, "F": .611,
        "m": .833, "n": .556, "d": .556, "x": .500, "s": .500, "r": .333,
@@ -80,10 +117,17 @@ def shape_points(e):
             i += 1
         return out
     if t == "text":
-        # x,y はベースラインの左端。送り幅の合計と、おおよその上下を見る
-        m = re.search(r",(\d+),", g.get("font", ",9,"))
-        em = (4.0 / 3.0) * (int(m.group(1)) if m else 9)   # Qt: pt × 96/72
-        adv = sum(ADV.get(c, 0.55) for c in g.get("text", "")) * em
+        # x,y はベースラインの左端
+        fo = g.get("font", ",9,")
+        m = re.search(r",(\d+),", fo)
+        pt = int(m.group(1)) if m else 9
+        em = (4.0 / 3.0) * pt                              # Qt: pt × 96/72
+        s = g.get("text", "")
+        bb = text_box(s, pt, "Italic" in fo)
+        if bb:
+            return [(f("x") + bb[0], f("y") + bb[1]),
+                    (f("x") + bb[2], f("y") + bb[3])]
+        adv = sum(ADV.get(c, 0.55) for c in s) * em
         return [(f("x"), f("y") - em * 0.75), (f("x") + adv, f("y") + em * 0.22)]
     return []
 

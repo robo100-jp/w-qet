@@ -13,10 +13,10 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
     <description>
         <rect x="-30" y="-20" width="60" height="40" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black"/>
-        <text text="Z " x="-8.04" y="4" rotation="0"
-              font="Liberation Sans,8,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
-        <text text="&lt;" x="1.67" y="4" rotation="0"
-              font="Liberation Sans,8,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="Z " x="-9.06" y="4.47" rotation="0"
+              font="Liberation Sans,9,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
+        <text text="&lt;" x="1.63" y="4.47" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <terminal x="-30" y="0" orientation="w" name="1" type="Generic"
                   uuid="{70d6e340-ada7-4ab8-82f5-3329c94bf934}"/>
         <terminal x="30" y="0" orientation="e" name="2" type="Generic"

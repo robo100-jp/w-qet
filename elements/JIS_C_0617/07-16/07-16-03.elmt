@@ -11,8 +11,8 @@
 限定図記号。端子を持たない。ほかの図記号に重ねて使う。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
-        <text text="U" x="-9.36" y="0" rotation="0"
-              font="Liberation Sans,8,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
+        <text text="U" x="-9.84" y="0.45" rotation="0"
+              font="Liberation Sans,9,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
         <text text="rsd" x="-1.47" y="3" rotation="0"
               font="Liberation Sans,6,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
     </description>

@@ -12,10 +12,10 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
     <description>
         <rect x="-30" y="-50" width="60" height="100" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black"/>
-        <text text="I  " x="-7.74" y="-26" rotation="0"
-              font="Liberation Sans,8,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
-        <text text="&gt;" x="1.37" y="-26" rotation="0"
-              font="Liberation Sans,8,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="I  " x="-8.74" y="-25.52" rotation="0"
+              font="Liberation Sans,9,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
+        <text text="&gt;" x="1.31" y="-25.52" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <line x1="-50" y1="-10" x2="-30" y2="-10" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <line x1="30" y1="10" x2="50" y2="10" antialias="false"

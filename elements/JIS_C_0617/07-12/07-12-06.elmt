@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition width="110" height="120" hotspot_x="55" hotspot_y="60"
+<definition width="110" height="140" hotspot_x="55" hotspot_y="60"
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{fa7f8af4-6efc-4c8c-a30f-e60da1798110}"/>
     <names>
@@ -10,48 +10,48 @@
 端子表示と切換位置の書き方を示す例。実際の図面では回路に合わせて書き直す。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
-        <rect x="-45" y="-60" width="90" height="120" antialias="false"
+        <rect x="-45" y="-60" width="90" height="140" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black"/>
         <line x1="-55" y1="-40" x2="-45" y2="-40" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
-        <text text="L1" x="-42" y="-36" rotation="0"
-              font="Liberation Sans,7,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="L1" x="-43.5" y="-35.0" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <line x1="-55" y1="-20" x2="-45" y2="-20" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
-        <text text="L2" x="-42" y="-16" rotation="0"
-              font="Liberation Sans,7,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="L2" x="-43.5" y="-15.0" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <line x1="-55" y1="0" x2="-45" y2="0" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
-        <text text="L3" x="-42" y="4" rotation="0"
-              font="Liberation Sans,7,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="L3" x="-43.5" y="4.97" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <line x1="-55" y1="20" x2="-45" y2="20" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
-        <text text="N" x="-42" y="24" rotation="0"
-              font="Liberation Sans,7,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="N" x="-42.98" y="24.98" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <line x1="45" y1="-20" x2="55" y2="-20" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <line x1="45" y1="0" x2="55" y2="0" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
-        <text text="VS" x="10" y="-36" rotation="0"
-              font="Liberation Sans,7,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="VS" x="-6.6" y="-36.24" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <line x1="-15" y1="-20" x2="-5" y2="-20" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <line x1="15" y1="-20" x2="25" y2="-20" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <line x1="15" y1="-20" x2="-5.7" y2="-10" antialias="true"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
-        <text text="L1-L2" x="-5" y="6" rotation="0"
-              font="Liberation Sans,6,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
-        <text text="L2-L3" x="-5" y="15.5" rotation="0"
-              font="Liberation Sans,6,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
-        <text text="L3-L1" x="-5" y="25" rotation="0"
-              font="Liberation Sans,6,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
-        <text text="L1-N" x="-5" y="34.5" rotation="0"
-              font="Liberation Sans,6,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
-        <text text="L2-N" x="-5" y="44" rotation="0"
-              font="Liberation Sans,6,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
-        <text text="L3-N" x="-5" y="53.5" rotation="0"
-              font="Liberation Sans,6,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="L1-L2" x="-14.5" y="9.07" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="L2-L3" x="-14.5" y="21.65" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="L3-L1" x="-14.5" y="34.3" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="L1-N" x="-14.5" y="47.03" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="L2-N" x="-14.5" y="59.68" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="L3-N" x="-14.5" y="72.25" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <terminal x="-55" y="-40" orientation="w" name="L1" type="Generic"
                   uuid="{45d7c0cc-1934-47e7-bade-91cacfd8afd1}"/>
         <terminal x="-55" y="-20" orientation="w" name="L2" type="Generic"

@@ -13,8 +13,8 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
     <description>
         <rect x="-30" y="-30" width="60" height="60" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black"/>
-        <text text="I" x="-16.52" y="6" rotation="0"
-              font="Liberation Sans,8,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
+        <text text="I" x="-16.72" y="6.47" rotation="0"
+              font="Liberation Sans,9,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
         <dynamic_text x="-6.9" y="-13.65" z="2" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="false"
