@@ -115,16 +115,23 @@ class Inst:
             f'\n                    <terminal x="{t["x"]:g}" y="{t["y"]:g}" '
             f'id="{t["id"]}" orientation="{t["ori"]}" />'
             for t in self.part.terms)
+        # **スレーブのラベルは同期されない。実機で確かめた**（0.100.0）。
+        # リンクを張っても、GUI で張り直しても、接点のラベルは空のまま。
+        # だから**こちらで書き込む。**ラベルを省いたら、リンク先のコイルの
+        # ラベルを**小文字にして**入れる —— 日本の慣習（コイル T1 / 接点 t1）。
+        # 既存の盤図でも コイル M1・R1・RY-S に対して接点 m1・r1・ry-s だった。
+        slave = self.part.link_type == "slave"
+        label = self.label
+        if not label and slave:
+            label = next((m.label for m in self.links if m.label), "").lower()
+
         info = dtxt = ""
-        if self.label:
+        if label:
             info = (f'\n                    <elementInformation name="label" '
-                    f'show="1">{esc(self.label)}</elementInformation>')
-            # 接点（link_type="slave"）の label は、リンク先のコイル（master）から
-            # QET が自動同期する。ElementInfo 参照のままだと「t1」と書いても
-            # コイルの「T1」で上書きされて表示される。
-            # 明示ラベルを付けたスレーブは固定文字（UserText）にして、
-            # 表示だけマスタから独立させる。相互参照は links_uuids 側なので保たれる。
-            slave = self.part.link_type == "slave"
+                    f'show="1">{esc(label)}</elementInformation>')
+            # スレーブは固定文字（UserText）にする。同期が無い以上 ElementInfo に
+            # する利点が無く、**コイルの大文字で上書きされる余地を残さない**ほうがよい。
+            # 相互参照は links_uuids 側なので、これで切れることはない。
             src = "UserText" if slave else "ElementInfo"
             iname = ("" if slave else
                      '\n                        <info_name>label</info_name>')
@@ -139,7 +146,7 @@ class Inst:
                 # false だと文字まで倒れる。属性を省いたときの既定も true。
                 f'keep_visual_rotation="true" text_from="{src}" '
                 'Valignment="AlignTop">'
-                f'\n                        <text>{esc(self.label)}</text>'
+                f'\n                        <text>{esc(label)}</text>'
                 f'{iname}'
                 '\n                    </dynamic_elmt_text>')
         links = ""
@@ -261,10 +268,13 @@ HEAD = '''<project title="{title}" version="0.100.0">
         <border cols="32" colsize="60" rows="16" displaycols="true" displayrows="true" rowsize="80" />
         <inset date="null" title="" auto_page_num="" displayAt="bottom" filename="" folio="%id/%total" author="" />
         <conductors num="_" conductor_color="" type="multi" displaytext="1" onetextperfolio="0" vertirotatetext="270" color2="#000000" horizrotatetext="0" bicolor="false" condsize="1" numsize="{npt}" tension_protocol="" bus="" dash-size="1" conductor_section="" vertical-alignment="AlignRight" function="" horizontal-alignment="AlignBottom" text_color="#000000" cable="" formula="" />
-        <report label="%f-%l%c" />
+        <!-- フォリオ参照の札に出す文字。**既定は %id-%l%c。**%f（フォリオ番号）は
+             番号を振っていないと空になり、札に何も出ない。%id は何枚目かなので必ず値を持つ。
+             **これは「新しいフォリオ」の設定で、既存のフォリオには効かない。** -->
+        <report label="%id-%l%c" />
         <xrefs>
-            <xref type="coil" displayhas="cross" offset="0" slave_label="(%f-%l%c)" showpowerctc="true" master_label="%f-%l%c" snapto="bottom" />
-            <xref type="protection" displayhas="cross" offset="0" slave_label="(%f-%l%c)" showpowerctc="true" master_label="%f-%l%c" snapto="bottom" />
+            <xref type="coil" displayhas="cross" offset="0" slave_label="(%id-%l%c)" showpowerctc="true" master_label="%id-%l%c" snapto="bottom" />
+            <xref type="protection" displayhas="cross" offset="0" slave_label="(%id-%l%c)" showpowerctc="true" master_label="%id-%l%c" snapto="bottom" />
         </xrefs>
         <conductors_autonums freeze_new_conductors="false" current_autonum="" />
         <folio_autonums />
