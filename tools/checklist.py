@@ -83,9 +83,29 @@ py -3 tools/checklist.py           # Excel の書き込みをこの表に写す
 
 **`.xlsx` は git に入れていない。** バイナリなので差分が出ず、2台のPCで
 別々に書き込むと突き合わせができないため。**git に載るのはこの `.md` のほう。**
-相手のPCでは `--xlsx` を叩き直せば同じものができる。
+
+## もう1台のPCで書くとき
+
+**Excel ファイルをコピーしない。** 持ち歩くのは `.md` で、Excel は現地で組み直す。
+
+```bash
+git pull
+py -3 tools/checklist.py --xlsx    # .md の書き込みごと Excel が組み上がる
+```
+
+書いたら写して送る。
+
+```bash
+py -3 tools/checklist.py
+git add -A && git commit -m "点検メモ" && git push
+```
+
+> **Excel に書いたら、`git pull` の前に写す。** 写さずに pull すると `.md` の
+> ほうが新しくなる。**そうなったら止まる**ので黙って消えることはないが、
+> どちらを採るか選ぶ手間が出る（`--from xlsx` / `--from md`）。
 
 `.xlsx` と `.md` の**新しいほうから読む**（どちらから読んだかは実行時に出る）。
+**両方に食い違う書き込みがあるときは選ばずに止まる。**
 
 ## 書き方
 
@@ -314,20 +334,46 @@ def read_xlsx():
     return out
 
 
-def read_notes():
+def has_note(v):
+    return bool(v[0].strip() or v[1].strip())
+
+
+def conflicts(a, b):
+    """2つの書き込みのうち、**片方にしかない／食い違う**番号を返す"""
+    out = []
+    for k in sorted(set(a) | set(b)):
+        x, y = a.get(k, ("", "")), b.get(k, ("", ""))
+        if (has_note(x) or has_note(y)) and x != y:
+            out.append(k)
+    return out
+
+
+def read_notes(force=None):
     """書き込みを読む。**どちらから読んだかも返す**
 
     `.xlsx` があって `.md` より新しければ Excel が勝つ。
     片方だけを直したときに、古いほうで上書きしてしまわないため。
+
+    **ただし新しさだけでは足りない。** 家で Excel に書いたまま写さずに
+    `git pull` すると `.md` のほうが新しくなり、**Excel の書き込みが
+    黙って消える。** 両方に食い違う書き込みがあるときは選ばずに返し、
+    呼び手に止めさせる。
     """
-    has_x = os.path.isfile(XLSX)
-    has_m = os.path.isfile(MEMO)
-    if has_x and (not has_m
-                  or os.path.getmtime(XLSX) > os.path.getmtime(MEMO)):
-        return read_xlsx(), "点検メモ.xlsx"
-    if has_m:
-        return read_memo(), "点検メモ.md"
-    return {}, "（まだ無い）"
+    has_x, has_m = os.path.isfile(XLSX), os.path.isfile(MEMO)
+    x = read_xlsx() if has_x else {}
+    m = read_memo() if has_m else {}
+    if force == "xlsx" and has_x:
+        return x, "点検メモ.xlsx", []
+    if force == "md" and has_m:
+        return m, "点検メモ.md", []
+    if not has_x:
+        return m, "点検メモ.md" if has_m else "（まだ無い）", []
+    if not has_m:
+        return x, "点検メモ.xlsx", []
+    bad = conflicts(x, m)
+    if os.path.getmtime(XLSX) > os.path.getmtime(MEMO):
+        return x, "点検メモ.xlsx", bad
+    return m, "点検メモ.md", bad
 
 
 def sym_svg(path):
@@ -471,12 +517,25 @@ def main():
                     help="Excel も出す（GUI で書く用）")
     ap.add_argument("--print", dest="pr", action="store_true",
                     help="印刷用の A4 も出す")
+    ap.add_argument("--from", dest="src", choices=("md", "xlsx"),
+                    help="食い違ったとき、どちらを採るか決める")
     a = ap.parse_args()
 
     os.makedirs(SYM, exist_ok=True)
     items = rows()
-    keep, src = read_notes()
-    written = sum(1 for v in keep.values() if v[0] or v[1])
+    keep, src, bad = read_notes(a.src)
+
+    if bad:
+        # **黙ってどちらかで上書きしない。** 家で Excel に書いたまま写さずに
+        # git pull すると .md が新しくなり、書き込みが消える。実際に起きうる
+        print("**食い違っています。**どちらを採るか決めてください。")
+        print("  .md と .xlsx で中身の違う行: %s" % "・".join(bad[:12])
+              + ("　ほか%d件" % (len(bad) - 12) if len(bad) > 12 else ""))
+        print("  Excel に書いたぶんを採る : py -3 tools/checklist.py --from xlsx")
+        print("  .md のぶんを採る         : py -3 tools/checklist.py --from md")
+        return 1
+
+    written = sum(1 for v in keep.values() if has_note(v))
     print("読み取り: %s（書き込み %d行）" % (src, written))
 
     open(MEMO, "w", encoding="utf-8").write(build_md(items, keep))
