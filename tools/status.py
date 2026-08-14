@@ -86,7 +86,7 @@ def render(rows, done):
     w("1. 上のコマンドで次の番号と**規格票のページ**を出す")
     w("2. `py -3 tools/pdf_page.py \"<規格票>\" <ページ> --dpi 600` で図を描き出す")
     w("3. ドット格子（**1M = 10**）を基準に座標を読み、`.elmt` を起こす")
-    w("   置き場所は `elements/JIS_C_0617/<節>_<分類>/<番号>_<和名>.elmt`")
+    w("   置き場所は `elements/JIS_C_0617/<節>/<番号>_<和名>.elmt`")
     w("4. `py -3 tools/render_elmt.py <名前>` で**必ず目視**")
     w("5. `py -3 tools/status.py` でこの文書を作り直し、コミット")
     w("")
@@ -114,10 +114,10 @@ def render(rows, done):
     w("## 規格記号ではない部品")
     w("")
     w("作図の都合で要るもの。JIS C 0617 には無い。端子間は 30。")
-    w("**`elements/作図用部品/` に置く。** 規格に基づくものと混ぜない。")
+    w("**`elements/drawing_aids/` に置く。** 規格に基づくものと混ぜない。")
     w("")
-    # ここも手で書かない。elements/作図用部品/ にファイルがあるかで印を付ける。
-    aid = os.path.join(P.ELEMENTS, "作図用部品")
+    # ここも手で書かない。elements/drawing_aids/ にファイルがあるかで印を付ける。
+    aid = os.path.join(P.ELEMENTS, "drawing_aids")
     have = set(os.listdir(aid)) if os.path.isdir(aid) else set()
     w("| | 名称 |")
     w("|---|---|")
