@@ -262,6 +262,13 @@ py -3 -c "import sys;sys.path.insert(0,'tools');sys.stdout.reconfigure(encoding=
 py -3 tools/install.py
 ```
 
+```bash
+py -3 tools/install.py --uninstall
+```
+
+**この2つはいつも並べて出す。**入れ直しを頼むとき、取り除き方も一緒に渡さないと
+フォルダ構成を変えたときに古い名前が残って二重に並ぶ。
+
 - **これは依頼者自身のターミナルで叩いてもらう。**
   Claude Code の環境からだとリポジトリの外への書き込みが実ディスクに届かない。
   たちの悪いことに書いた直後に読み返すと自分が書いたものが見えるので、

@@ -68,8 +68,15 @@ docs/          設計方針・採録状況・カタログ
 py -3 tools/install.py
 ```
 
+取り除くとき。**フォルダ構成が変わったときは、入れる前にこれを叩いてください**
+（古い名前のフォルダが残って二重に並びます）。
+
+```bash
+py -3 tools/install.py --uninstall
+```
+
 `%APPDATA%\qelectrotech\QElectroTech\elements\w-qet\` に入ります。
-**既存の部品とは混ざりません。** 取り除くのは `--uninstall`。
+**既存の部品とは混ざりません。**
 
 QET の部品パネルにはこう並びます。
 
