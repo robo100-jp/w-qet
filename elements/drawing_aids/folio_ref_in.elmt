@@ -8,9 +8,10 @@
     </names>
     <informations>**規格に基づく図記号ではない。**作図の都合で置いている部品。
 前のページから来た導体の続きを示す。
-**相手の札と明示的にリンクする。**（右クリック →「リンクする要素」→ 相手をクリック）
-リンクすると参照先（ページ・行・列）がラベル欄に入る。**線番は関係ない。**
-リンクしていない札は「/」と表示される。</informations>
+**参照先は札の中に手で書く**（札の「/」をダブルクリックして「1-C4」などに直す）。
+相手の札とのリンクもできる（右クリック →「リンクする要素」→ 相手をクリック）。
+リンクすると「リンクされた要素を見る」で相手へ飛べるが、
+**QET 0.100.0 は参照先の値を書き込まないので、表示は手で書く。**</informations>
     <description>
         <polygon x1="-60" y1="-10" x2="-10" y2="-10" x3="0" y3="0" x4="-10" y4="10" x5="-60" y5="10" antialias="true"
                  style="line-style:normal;line-weight:normal;filling:none;color:black"/>
@@ -19,10 +20,9 @@
         <dynamic_text x="-56" y="-6" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
-                      text_from="ElementInfo" uuid="{fb90667f-0424-45b4-88b5-326b16547150}"
+                      text_from="UserText" uuid="{fb90667f-0424-45b4-88b5-326b16547150}"
                       font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
-            <text></text>
-            <info_name>label</info_name>
+            <text>/</text>
         </dynamic_text>
         <terminal x="10" y="0" orientation="e" name="1" type="Generic"
                   uuid="{d3c8a852-6ed9-4b23-acb8-90d6abd640cc}"/>
