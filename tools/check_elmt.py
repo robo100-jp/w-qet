@@ -86,7 +86,10 @@ ADV = {"I": .278, "U": .722, "P": .667, "Q": .778, "Z": .611, "N": .722,
 for _c in "0123456789":
     ADV[_c] = .556
 
-LINK = ("simple", "master", "slave", "terminal")
+# QET が解釈する役割。`next_report` / `previous_report` は**フォリオ参照**で、
+# ページをまたいだ導体のつながりを QET が自動で書き込む（相互参照と同じ仕組み）。
+LINK = ("simple", "master", "slave", "terminal",
+        "next_report", "previous_report")
 NUM_RE = re.compile(r"JIS C 0617 / IEC 60617 ([0-9A-Za-z\-]+)")
 MARGIN = 0.6           # 線の太さぶんの余裕。これを超えたらはみ出しとみなす
 

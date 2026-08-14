@@ -84,6 +84,30 @@ def term(x, y, ori, name):
             '                  uuid="%s"/>' % (x, y, ori, name, _u()))
 
 
+def dyntext(x, y, info="label", text="", size=9, halign="AlignLeft",
+            valign="AlignTop", keep=True):
+    """図面で差し替わる文字
+
+    `info` を渡すと `text_from="ElementInfo"`（機器記号・相互参照）、
+    `info=None` なら `text_from="UserText"`（規格票が例として示す値など）。
+
+    **x,y は外接矩形の左上。** `text()`（ベースラインの左端）と意味が違う。
+    置き換えるときは `y_上端 = y_ベースライン − 0.905 × em`（[docs/寸法基準.md]）。
+    """
+    e = text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    body = "            <text>%s</text>\n" % e
+    if info:
+        body += "            <info_name>%s</info_name>\n" % info
+    return ('        <dynamic_text x="%g" y="%g" z="1" text_width="-1"\n'
+            '                      Halignment="%s" Valignment="%s"\n'
+            '                      frame="false" rotation="0" keep_visual_rotation="%s"\n'
+            '                      text_from="%s" uuid="%s"\n'
+            '                      font="Liberation Sans,%d,-1,5,50,0,0,0,0,0,Regular">\n'
+            '%s        </dynamic_text>'
+            % (x, y, halign, valign, "true" if keep else "false",
+               "ElementInfo" if info else "UserText", _u(), size, body))
+
+
 def _label(w, h, hx=None):
     """機器記号の置き場所。外形の右上、右端から5離す"""
     right = w / 2 if hx is None else w - hx

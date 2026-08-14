@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="70" height="30" hotspot_x="10" hotspot_y="15"
+            type="element" link_type="next_report" version="0.100.0">
+    <uuid uuid="{a727ddd5-eb7b-4125-bb16-91f07f23542d}"/>
+    <names>
+        <name lang="ja">フォリオ参照 出（次ページへ）</name>
+        <name lang="en">Folio reference, out (to next page)</name>
+    </names>
+    <informations>**規格に基づく図記号ではない。**作図の都合で置いている部品。
+次のページへ続く導体を示す。
+参照先（ページ・行・列）は QET がラベル欄に自動で書き込む。</informations>
+    <description>
+        <polygon x1="0" y1="-10" x2="50" y2="-10" x3="60" y3="0" x4="50" y4="10" x5="0" y5="10" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="-10" y1="0" x2="0" y2="0" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <dynamic_text x="4" y="-6" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{796c69f9-b9f1-4531-9216-5de71c4b0ff1}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+        <terminal x="-10" y="0" orientation="w" name="1" type="Generic"
+                  uuid="{511aaee7-3fb8-4ddb-abef-0dd5f1ded8fd}"/>
+    </description>
+</definition>

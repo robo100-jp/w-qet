@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="80" height="60" hotspot_x="40" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{2c089db6-92b1-4534-9d67-9d18abc75377}"/>
+    <names>
+        <name lang="ja">汎用ブロック（規格に無い機器）</name>
+        <name lang="en">Generic block (device not in the standard)</name>
+    </names>
+    <informations>**規格に基づく図記号ではない。**作図の都合で置いている部品。
+規格に図記号の無い機器を四角で置くためのもの。
+機器の名前はラベル欄に書く。端子間は 60。</informations>
+    <description>
+        <rect x="-40" y="-20" width="80" height="40" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="0" y1="-30" x2="0" y2="-20" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="20" x2="0" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
+                  uuid="{eaca7442-2d43-405d-9358-8ca68c129e1a}"/>
+        <terminal x="0" y="30" orientation="s" name="2" type="Generic"
+                  uuid="{52519b69-2bfb-46cf-8e72-72ac40ac478c}"/>
+        <dynamic_text x="45" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{577a3633-6bf2-4169-8b11-d6d01282a763}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>
