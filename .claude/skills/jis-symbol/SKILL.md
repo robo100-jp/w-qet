@@ -26,7 +26,7 @@ py -3 tools/status.py --next 10        # 次の番号と規格票のページ
 3. `py -3 tools/render_elmt.py <番号>` で**目視**
 4. `py -3 tools/check_elmt.py` で**機械の点検**。目視で出ない不備を拾う
 5. `py -3 tools/compare_page.py <番号>` で**規格票と並べる**。寸法が数値で出る
-6. `py -3 tools/status.py` と `py -3 tools/catalog.py` → `git commit` → `git push`
+6. `py -3 tools/status.py` と `py -3 tools/sympage.py` → `git commit` → `git push`
 
 **3・4・5 は役割が違う。全部かける。**
 
@@ -36,10 +36,15 @@ py -3 tools/status.py --next 10        # 次の番号と規格票のページ
 | `check_elmt.py` | 外形・端子・属性が壊れていないか（絵に出ない） |
 | `compare_page.py` | 規格票と寸法が合っているか（目分量では出ない） |
 
-**記号を足したり直したら `catalog.py` も叩く。**`docs/カタログ.md` と
-`docs/images/*.svg` が `elements/` から作り直される。`status.py` が採録の「数」を
-数え直すのと同じで、**カタログを手で書かない。**よく使うものを載せた
-`docs/チートシート.svg`（印刷用 A4 1枚）は `cheatsheet.py` が作る。
+**記号を足したり直したら `sympage.py` も叩く。**`docs/sym/` の
+1個1枚の頁・目次・注釈のページ・SVG が `elements/` から作り直される。
+`status.py` が採録の「数」を数え直すのと同じで、**一覧を手で書かない。**
+
+> **ただし `docs/sym/*.html` には人が書き込む欄がある。**
+> `<!--hand:memo-->` `<!--hand:combine-->` で挟んだところは、
+> 作り直しても消えない（`sympage.py` が読み戻す）。**印を消さないこと。**
+
+よく使うものを載せた `docs/チートシート.svg`（印刷用 A4 1枚）は `cheatsheet.py`。
 
 ---
 
@@ -359,26 +364,85 @@ py -3 -c "import sys;sys.path.insert(0,'tools');sys.stdout.reconfigure(encoding=
 
 ---
 
-## 新しい部を足すとき
+## 新しい部を買ったときの手順
 
-第7部→第8部でやった手順。**道具はもう部を受け取る**（`--part`）。
+**ここに書いてあるとおりにやれば、第7部・第8部で踏んだ穴を踏まずに済む。**
+道具はもう部を受け取る（`--part`）。
 
-1. 規格票 PDF を `%USERPROFILE%\規格\` に置く。`paths.standard(8)` が拾う
-2. **`docs/第<N>部索引.tsv` を作る**（番号→ページ）。第7部のものを真似る
+### 1. PDF を置く
 
-   > **「図記号番号」の見出しがあるページだけ拾う。**巻末の「注釈」の節にも
-   > 図記号番号が並ぶので、番号を見ただけで拾うと二重に入る（実際に入った）。
-   > 節の名前は**規格票の見出しを写さず短く付け直す**
+`%USERPROFILE%\規格\jis_c_00617_<3桁の部>_*.pdf`。`paths.standard(N)` が拾う。
+**パスをソースに書かない。リポジトリにも入れない**（`.gitignore` で二重に弾いてある）。
 
-3. `elements/JIS_C_0617/<節>/` を作って `qet_directory` を置く。
-   **旧図記号（附属書A）は `<部>-A` にまとめ、「使わない」と書く**
-4. `py -3 tools/status.py --part 8 --next 5` で次に描くものとページが出る
-5. 節ごとに描いて、`status.py --part 8` → `catalog.py` → コミット
+### 2. 索引を作る —— **手で作らない**
+
+```bash
+py -3 tools/mkindex.py --part 6 --write     # docs/第6部索引.tsv
+py -3 tools/mkindex.py --part 6             # 突き合わせ（差があれば終了コード1）
+```
+
+> **手で作って 19個を丸ごと落とした。** 第7部の索引が附属書A の途中で切れていて、
+> `status.py` が **161/161 と嘘の採録率**を出していた。実際は 161/180。
+> 分母を手で作ると、**足りないことに気づく手立てが無くなる。**
+> `mkindex.py` は「番号のすぐ後ろに識別番号（S00227）が続くページ」だけを拾う。
+> 「図記号番号」という語だけで拾うと、巻頭の表1（項目名の説明）を誤って拾う。
+
+### 3. 注釈を読んで tsv に落とす
+
+**規格票の各図記号には「注釈」（`A00174` のような番号）が付いている。
+中身は巻末の注釈の節にあり、番号しか書いていないので引かないと読めない。**
+
+```bash
+py -3 -c "import sys;sys.path.insert(0,'tools');sys.stdout.reconfigure(encoding='utf-8');import paths,re,pypdfium2 as p;d=p.PdfDocument(paths.standard(6));print(''.join(re.sub(r'\s+',' ',d[i].get_textpage().get_text_range()) for i in range(len(d)) if '図記号番号' not in d[i].get_textpage().get_text_range()))"
+```
+
+2つ作る。
+
+| ファイル | 中身 | 作り方 |
+|---|---|---|
+| `docs/第<N>部注釈.tsv` | `番号 ⇥ 表題 ⇥ 要点` | **要点は自分の言葉で書く**（本文を写さない） |
+| `docs/第<N>部注釈_適用.tsv` | `番号 ⇥ 適用される図記号` | 各図記号ページの「注釈」欄から機械で抜く |
+
+> **注釈を後回しにしない。** 第8部では図を描き終えてから読み、
+> ランプの色の符号を自分で決めていたのが規格に定めがあると分かって直した（A00174）。
+> **第7部は注釈32種のうち A00060 が50個・A00061 が53個に効いていた。**
+
+### 4. 節のフォルダを作る
+
+`elements/JIS_C_0617/<節>/` に `qet_directory`。**フォルダ名は ASCII**。
+**旧図記号（附属書A）は `<部>-A` にまとめ、「参考・使わない」と書く。**
+
+### 5. 描く
+
+```bash
+py -3 tools/status.py --part 6 --next 5
+```
 
 **節ごとにまとめて描くほうが速い。**同じ節の記号は枠が同じで中身だけ違うことが多い
-（第8部は 67個中 50個以上が「枠＋中の文字」だった）。
-`py -3 tools/stdpage.py <ページ> --part 8` で1枚ずつ測るより、
+（第8部は 67個中 50個以上が「枠＋中の文字」だった）。1枚ずつ測るより、
 ページを並べた画像を1枚作って**中の文字だけ先に読む**ほうが手数が少ない。
+
+### 6. 突き合わせる
+
+```bash
+py -3 tools/check_elmt.py
+py -3 tools/compare_page.py --num --all --part 6
+```
+
+### 7. 説明欄を**全件**通し読みする
+
+**節ごとに読まない。部を描き終えてから一度に、全件でかける。**
+書きながら1枚ずつ読むと、他の記号と共通の注釈を落とす。
+
+### 8. 作り直してコミット
+
+```bash
+py -3 tools/status.py --part 6
+py -3 tools/sympage.py        # docs/sym/（1個1枚の頁＋目次＋注釈）
+py -3 tools/checklist.py
+```
+
+`cheatsheet.py` は A4 に空きが無いので、載せるなら何かを落とす。
 
 ---
 

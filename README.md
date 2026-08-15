@@ -25,12 +25,13 @@ QElectroTech 用の、日本の制御盤向け図記号ライブラリと作図�
 
 ## どんな記号があるか
 
-- **[図記号カタログ](docs/カタログ.md)** — 全部の姿を節ごとに並べたもの。**形から引けます**
+- **[図記号の一覧](docs/sym/index.html)** — 1個ずつの諸元（外形・挿入基点・端子・図形の座標）。**形からも番号からも引けます**
+- **[規格の注釈](docs/sym/notes.html)** — 図記号の使い方の決めごと。要点をこちらの言葉でまとめたもの
 - **[チートシート](docs/チートシート.svg)** — よく使うものだけの A4 1枚。印刷して手元に置く用
 - [点検メモ](docs/点検メモ.md) — 全部の記号にメモ欄を付けた表。Excel で書いて `.md` に写せます
 - [採録状況](docs/採録状況.md) — 図記号番号と名称の一覧
 
-![07-02 接点](docs/images/07-02.svg)
+![07-02 接点](docs/sym/svg/07-02-01.svg)
 
 ## 構成
 
@@ -48,15 +49,17 @@ tools/         Python ツール
   pdf_page.py    PDF のページを画像に描き出す（規格の図を読む）
   status.py      採録状況を elements/ から数え直す（--part で部を選ぶ）
   svg_elmt.py    .elmt を SVG に写す（人に見せる姿）
-  catalog.py     カタログ（docs/カタログ.md と docs/images/）を作り直す
+  sympage.py     図記号1個1枚の HTML と目次・注釈を作る（docs/sym/）
+  mkindex.py     図記号番号→ページの索引を規格票から作り直す
   cheatsheet.py  印刷用の早見表（docs/チートシート.svg）を作る
   checklist.py   点検メモ（docs/点検メモ.md）を作る。書き込みは作り直しても消えない
   install.py     図記号を QET のユーザーコレクションに登録する
-docs/          設計方針・採録状況・カタログ
+docs/          設計方針・採録状況・寸法基準
+  sym/           図記号1個1枚の HTML＋目次＋注釈（公開用）
 .claude/skills/  Claude Code 用スキル
 ```
 
-- 記号の姿を見る … [docs/カタログ.md](docs/カタログ.md)・[docs/チートシート.svg](docs/チートシート.svg)
+- 記号の姿と諸元を見る … [docs/sym/index.html](docs/sym/index.html)・[docs/チートシート.svg](docs/チートシート.svg)
 - 次に何をするか（作業の引継ぎ） … [引継ぎ.md](引継ぎ.md)
 - 採録状況（図記号番号と名称の一覧） … [docs/採録状況.md](docs/採録状況.md)
 - **QET の XML（`.elmt` と `.qet`）の構造** … [docs/QETのXML.md](docs/QETのXML.md)
@@ -64,7 +67,7 @@ docs/          設計方針・採録状況・カタログ
 - 規格票を測ったが、まだ描いていないものの控え … [docs/測定メモ.md](docs/測定メモ.md)
 - ツールの使い方と `.elmt` の書式 … [docs/ツール.md](docs/ツール.md)
 
-> **カタログとチートシートは手で書きません。** `py -3 tools/catalog.py` と
+> **一覧とチートシートは手で書きません。** `py -3 tools/sympage.py` と
 > `py -3 tools/cheatsheet.py` が `elements/` から作り直します。
 
 ### QET 本体の文書

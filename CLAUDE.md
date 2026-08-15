@@ -51,7 +51,7 @@ QElectroTech 同梱の `91_en_60617`（IEC 60617 規格記号 約900種）から
 ```bash
 py -3 tools/render_elmt.py <部品名>
 py -3 tools/check_elmt.py <部品名>     # 目視では出ない誤り（外形・端子・属性）
-py -3 tools/catalog.py                # 記号を足したり直したらカタログも作り直す
+py -3 tools/sympage.py                # 記号を足したり直したら docs/sym/ も作り直す
 ```
 
 **座標を読むだけでは形の誤りに気づけない。** 過去の実例：
@@ -114,13 +114,17 @@ tools/
   stdpage.py       規格票のページから図の帯と作図モジュールの格子を取り出す
   compare_page.py  描いた記号を規格票と突き合わせる
   pdf_page.py      PDF のページを画像に描き出す
+  mkindex.py       図記号番号→ページの索引を規格票から作り直す（手で作らない）
   status.py        採録状況を elements/ から数え直す
   svg_elmt.py      .elmt を SVG に写す（人に見せる姿）
-  catalog.py       カタログを作り直す（docs/カタログ.md と docs/images/）
+  sympage.py       図記号1個1枚の HTML と目次・注釈のページを作る（docs/sym/）
   cheatsheet.py    印刷用の早見表を作る（docs/チートシート.svg）
   checklist.py     点検メモを作る（docs/点検メモ.md。--xlsx で Excel も。書き込みを引き継ぐ）
   install.py       QET のユーザーコレクションに登録する
-docs/            設計方針・採録状況・寸法基準・測定メモ・カタログ・QETのXML
+docs/            設計方針・採録状況・寸法基準・測定メモ・QETのXML
+  sym/             図記号1個1枚の HTML＋目次＋注釈（公開用。sympage.py が作る）
+  第<N>部索引.tsv    図記号番号→規格票のページ（mkindex.py が作る）
+  第<N>部注釈.tsv    規格の注釈の**要点を自分の言葉で**書いたもの
 render/          描き出した PNG・SVG（git 管理外）
 .claude/skills/  Claude Code スキル
 ```

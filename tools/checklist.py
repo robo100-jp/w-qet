@@ -32,7 +32,6 @@ import sys
 from xml.sax.saxutils import escape
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import catalog as C                                         # noqa: E402
 import paths as P                                           # noqa: E402
 import svg_elmt as S                                        # noqa: E402
 
@@ -67,7 +66,7 @@ HEAD = """# 点検メモ
 
 記号を使っていて気づいたことを書き留める表。**`elements/` のぜんぶ**が載っている。
 番号を引くだけなら [チートシート](チートシート.svg)、
-姿を見比べるなら [カタログ](カタログ.md)。
+姿と諸元を見るなら [図記号の一覧](sym/index.html)。
 
 > **この表は作り直しても消えない。** `py -3 tools/checklist.py` は
 > 既にある「済」と「気づいたこと」を番号で引き継ぐ。記号を足せば行が増えるだけ。
@@ -270,7 +269,7 @@ def rows():
     secs = S.sections()
     out, cur = [], None
     for key in sorted(secs):
-        ja = C.dirname_ja(os.path.join(P.ELEMENTS, *key.split("/")))
+        ja = P.dirname_ja(os.path.join(P.ELEMENTS, *key.split("/")))
         for p in sorted(secs[key]):
             out.append((ja if ja != cur else None, p))
             cur = ja
@@ -399,7 +398,7 @@ def build_md(items, keep):
         base, px = sym_svg(path)
         _, _, name, _ = S.body(path, False)
         done, memo = keep.get(base, ("", ""))
-        out.append('| <img src="images/sym/%s.svg" height="%d"> | `%s` | %s | %s | %s |'
+        out.append('| <img src="sym/svg/%s.svg" height="%d"> | `%s` | %s | %s | %s |'
                    % (base, px, base, md_escape(name),
                       md_escape(done), md_escape(memo)))
     return "\n".join(out) + "\n"

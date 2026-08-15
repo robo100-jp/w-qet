@@ -3,7 +3,7 @@
 <rect width="210" height="297" fill="white"/>
 <g stroke-linecap="round" stroke-linejoin="round" fill="none">
 <text x="9" y="13" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="5.2" font-weight="bold" fill="black">JIS C 0617 図記号 早見表（第7部・第8部）</text>
-<text x="9" y="15.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.5" fill="#555">w-qet — JIS C 0617（＝IEC 60617）を参考に描き起こしたもの。全251個の一覧は docs/カタログ.md</text>
+<text x="9" y="15.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.5" fill="#555">w-qet — JIS C 0617（＝IEC 60617）を参考に描き起こしたもの。全251個の一覧は docs/sym/index.html</text>
 <text x="9" y="21.6" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="3.2" font-weight="bold" fill="black">接点</text>
 <line x1="9" y1="22.7" x2="201" y2="22.7" stroke="#bbb" stroke-width="0.2"/>
 <g transform="translate(26 31.5) scale(0.25) translate(5 -0)" stroke="black"><line x1="0" y1="-30" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-10" y1="-10" x2="0" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="10" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/></g>

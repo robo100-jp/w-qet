@@ -175,3 +175,20 @@ def index(part=7):
         if len(f) == 4 and f[0].startswith("%02d-" % part) and f[3].isdigit():
             out[f[0]] = int(f[3])
     return out
+
+
+def dirname_ja(d):
+    """節のフォルダの日本語の表示名。`qet_directory` が持っている
+
+    **フォルダ名は ASCII にしてある**（日本語だと QET が `qet_directory` を
+    読めず、部品パネルで名前が空欄になる）。和名はここから引く。
+    """
+    import io
+    import re
+    f = os.path.join(d, "qet_directory")
+    if os.path.isfile(f):
+        m = re.search(r'<name lang="ja">([^<]*)</name>',
+                      io.open(f, encoding="utf-8").read())
+        if m:
+            return m.group(1)
+    return os.path.basename(d)
