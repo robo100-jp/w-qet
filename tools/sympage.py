@@ -554,6 +554,53 @@ def missing_rows(have):
             if n not in have]
 
 
+def stub_page(num, name, notes):
+    """**まだ図の無い図記号の頁。**規格には載っているので頁だけ先に作る
+
+    図が無くても、番号・名称・規格票のページ・付いている注釈は書けるし、
+    **「CAD用シンボルにするか」を先に決めて書いておける。**
+    描いたら図と諸元が入って、手で書いた欄はそのまま残る。
+    """
+    part = int(num[:2])
+    pg = P.index(part).get(num)
+    mine = sorted(a for a, v in notes.items() if num in v[2])
+    o = []
+    w = o.append
+    w('<nav class="crumb"><a href="index.html">図記号の一覧</a>'
+      ' ／ <a href="notes.html">規格の注釈</a> ／ %s</nav>' % escape(num))
+    w('<h1><span class="num">%s</span>%s</h1>' % (escape(num), escape(name)))
+    w('<p class="src">JIS C 0617 / IEC 60617 %s%s</p>'
+      % (escape(num), "　—— 規格票 p.%d" % pg if pg else ""))
+    w('<div class="caution"><b>まだ図がありません。</b>'
+      "規格には載っているが、こちらでまだ描き起こしていないもの。"
+      "描けば姿と諸元がこの頁に入る。<b>下の手で書く欄はそのまま残る。</b></div>")
+    if mine:
+        w("<h2>規格の注釈</h2>")
+        w('<p class="rule">この図記号に付いている注釈。'
+          "<b>要点はこちらの言葉でまとめたもの</b>で、原文ではない。"
+          '<a href="notes.html">注釈の一覧</a>。</p>')
+        for a2 in mine:
+            title, gist, _ = notes[a2]
+            w('<div class="an"><h3><span class="id">'
+              '<a href="notes.html#%s">%s</a></span>%s</h3>%s</div>'
+              % (a2, a2, escape(title), rich(gist)))
+    w('<h2>覚え書き<span class="pencil">手で書く欄</span></h2>')
+    w(hand("memo", "使ってみて分かったこと、選ぶときの目安、注意など。"))
+    old = re.match(r"\d\d-A", num) is not None
+    w('<h2>この図記号から何を作るか<span class="pencil">手で書く欄</span></h2>')
+    w("<h3>CAD用シンボルにする／しない</h3>")
+    w('<p class="rule">CAD 用のシンボル（QET の <code>.elmt</code>、'
+      "DXF のブロックなど）を作るかどうか。<b>「しない」と書いてあれば作らなくてよい。"
+      "</b><b>「する。」か「しない。」で書き始めること。</b></p>")
+    w(hand("cad", "する／しない と、その理由",
+           "<p><b>しない。</b>旧図記号。規格票の附属書Aに参考として載っている"
+           "もので、新しい図面には使わない。</p>" if old
+           else "<p><b>する。</b></p>"))
+    w("<h3>組合せ・変種</h3>")
+    w(hand("combine", "組合せ・変種を書く欄"))
+    return "\n".join(o)
+
+
 def index_page(items, skipped):
     o = []
     w = o.append
@@ -586,8 +633,8 @@ def index_page(items, skipped):
         w('<div class="scroll"><table><thead><tr><th>図記号番号</th>'
           "<th>名称</th></tr></thead><tbody>")
         for n, name in skipped:
-            w("<tr><td><code>%s</code></td><td>%s</td></tr>"
-              % (escape(n), escape(name)))
+            w('<tr><td><a href="%s.html"><code>%s</code></a></td>'
+              "<td>%s</td></tr>" % (escape(n), escape(n), escape(name)))
         w("</tbody></table></div>")
     return "\n".join(o)
 
@@ -635,6 +682,16 @@ def main():
         if _KEEP.get("_written"):
             kept += 1
         items.append((part, sec, secname, base, ja, thumb(p)))
+    # **図の無いものにも頁を作る。**規格に載っているのに頁が無いと、
+    # 描き忘れたのか決めて外したのかが分からず、判断の書き場所も無い
+    stub = 0
+    for n, name in missing_rows(have):
+        _KEEP = keep.get(n, {})
+        globals()["_KEEP"] = _KEEP
+        io.open(os.path.join(dst, n + ".html"), "w", encoding="utf-8",
+                newline="\n").write(
+            html("%s %s — w-qet" % (n, name), stub_page(n, name, notes)))
+        stub += 1
     io.open(os.path.join(dst, "index.html"), "w", encoding="utf-8",
             newline="\n").write(
         html("JIS C 0617 図記号の一覧 — w-qet",
@@ -644,8 +701,11 @@ def main():
         html("規格の注釈 — w-qet", notes_page(notes, have)))
     print("書き出し: docs/sym/  記号 %d 枚 ＋ 目次 ＋ 注釈 %d 件（SVG も %d 枚）"
           % (len(items), len(notes), len(items)))
+    print("  まだ図の無い頁 %d" % stub)
     print("  手書きを引き継いだ頁 %d" % kept)
-    lost = sorted(set(keep) - {i[3] for i in items} - {"index", "notes"})
+    # **図の無い頁も「作った頁」に数える。**でないと消えたと誤って知らせる
+    made = {i[3] for i in items} | {n for n, _ in missing_rows(have)}
+    lost = sorted(set(keep) - made - {"index", "notes"})
     if lost:
         print("  **頁が消えるが手書きが入っていた:**", " ".join(lost))
     return 0

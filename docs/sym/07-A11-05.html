@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>07-A11-05 多段スイッチ（一つの位置が無効の場 合） — w-qet</title><style>
+:root{--bg:#fff;--fg:#1a1a1a;--dim:#666;--line:#dcdcdc;--accent:#1c4f9c;
+      --card:#fafafa;--code:#f2f3f5;--warn:#8a5a00}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#16181c;--fg:#e6e6e6;--dim:#9aa0a6;--line:#33363c;--accent:#8ab4f8;
+  --card:#1e2126;--code:#202329;--warn:#d9a441}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font-family:"Yu Gothic UI",Meiryo,system-ui,sans-serif;line-height:1.75;
+  font-size:15px}
+.wrap{max-width:1000px;margin:0 auto;padding:22px 18px 64px}
+a{color:var(--accent)}
+h1{font-size:1.45rem;margin:.2em 0 .1em}
+h1 .num{font-family:ui-monospace,Consolas,monospace;color:var(--dim);
+  margin-right:.6em}
+h2{font-size:1.05rem;margin:2.2em 0 .5em;padding-bottom:.25em;
+  border-bottom:1px solid var(--line)}
+h3{font-size:.95rem;margin:1.6em 0 .3em}
+.en{color:var(--dim);font-size:.9rem}
+.src{font-family:ui-monospace,Consolas,monospace;font-size:.82rem;
+  color:var(--dim);margin:.4em 0 0}
+.top{display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start}
+.fig{background:var(--card);border:1px solid var(--line);border-radius:8px;
+  padding:12px;flex:0 0 auto;max-width:100%}
+.fig svg{display:block;max-width:100%;height:auto;color:var(--fg)}
+.legend{font-size:.78rem;color:var(--dim);margin-top:6px;text-align:center}
+.spec{flex:1 1 320px;min-width:280px}
+table{border-collapse:collapse;width:100%;font-size:.86rem}
+.scroll{overflow-x:auto}
+th,td{border:1px solid var(--line);padding:5px 8px;text-align:left;
+  vertical-align:top}
+th{background:var(--card);font-weight:600;white-space:nowrap}
+td.n,th.n{text-align:right;font-family:ui-monospace,Consolas,monospace;
+  white-space:nowrap}
+.spec table th{width:8.5em}
+.units{margin:1.4em 0 .4em;font-size:.85rem}
+.units button{font:inherit;padding:3px 12px;margin-right:-1px;cursor:pointer;
+  border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+.units button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+.note{white-space:pre-wrap;background:var(--card);border-left:3px solid var(--line);
+  padding:10px 14px;font-size:.88rem;border-radius:0 6px 6px 0}
+.rule{font-size:.85rem;color:var(--dim)}
+.rule li{margin:.25em 0}
+pre{background:var(--code);padding:12px;border-radius:6px;overflow-x:auto;
+  font-size:.78rem;line-height:1.5}
+code{font-family:ui-monospace,Consolas,monospace;font-size:.92em}
+details summary{cursor:pointer;color:var(--accent);font-size:.9rem}
+nav.crumb{font-size:.85rem;color:var(--dim);margin-bottom:1em}
+footer{margin-top:3.5em;padding-top:1em;border-top:1px solid var(--line);
+  font-size:.8rem;color:var(--dim)}
+.grid{display:grid;gap:10px;
+  grid-template-columns:repeat(auto-fill,minmax(118px,1fr))}
+.cell{border:1px solid var(--line);border-radius:6px;padding:8px 4px 6px;
+  text-align:center;text-decoration:none;color:inherit;background:var(--card)}
+.cell:hover{border-color:var(--accent)}
+.cell .box{height:66px;display:flex;align-items:center;justify-content:center}
+.cell svg{max-width:100%;max-height:64px;height:auto;color:var(--fg)}
+.cell .id{font-family:ui-monospace,Consolas,monospace;font-size:.72rem;
+  color:var(--dim);margin-top:4px}
+.cell .ja{font-size:.74rem;line-height:1.35;margin-top:1px;overflow:hidden;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+#q{width:100%;max-width:360px;font:inherit;padding:6px 10px;
+  border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg)}
+.hit{font-size:.82rem;color:var(--dim);margin-left:.6em}
+.an{border:1px solid var(--line);border-radius:8px;padding:12px 16px;
+  margin:.8em 0;background:var(--card)}
+.an h3{margin:0 0 .2em}
+.an .id{font-family:ui-monospace,Consolas,monospace;color:var(--dim);
+  margin-right:.5em}
+.an .apply{font-size:.8rem;margin-top:.5em}
+.an .apply a{font-family:ui-monospace,Consolas,monospace;margin-right:.35em}
+.hand{border:1px dashed var(--line);border-radius:6px;padding:2px 14px;
+  background:var(--card)}
+.hand .ph{color:var(--dim);font-size:.85rem;font-style:italic}
+.hand h4{margin:.8em 0 .2em;font-size:.9rem}
+h3 + .rule{margin-top:.1em}
+.pencil{font-size:.72rem;color:var(--dim);font-weight:400;margin-left:.6em;
+  border:1px solid var(--line);border-radius:3px;padding:0 5px}
+.caution{border-left:3px solid var(--warn);background:var(--card);
+  padding:10px 14px;font-size:.85rem;border-radius:0 6px 6px 0;margin:1em 0}
+</style></head><body><div class="wrap"><nav class="crumb"><a href="index.html">図記号の一覧</a> ／ <a href="notes.html">規格の注釈</a> ／ 07-A11-05</nav>
+<h1><span class="num">07-A11-05</span>多段スイッチ（一つの位置が無効の場 合）</h1>
+<p class="src">JIS C 0617 / IEC 60617 07-A11-05　—— 規格票 p.191</p>
+<div class="caution"><b>まだ図がありません。</b>規格には載っているが、こちらでまだ描き起こしていないもの。描けば姿と諸元がこの頁に入る。<b>下の手で書く欄はそのまま残る。</b></div>
+<h2>規格の注釈</h2>
+<p class="rule">この図記号に付いている注釈。<b>要点はこちらの言葉でまとめたもの</b>で、原文ではない。<a href="notes.html">注釈の一覧</a>。</p>
+<div class="an"><h3><span class="id"><a href="notes.html#A00060">A00060</a></span>動作の支点の小円</h3>接触片の支点を表す小円（白丸か黒丸）は、たいていの接点図記号に足してよい。<b>必ず描かなければならないものもある</b>（オフ位置付き切換え接点 07-02-05 がその例）。</div>
+<div class="an"><h3><span class="id"><a href="notes.html#A00061">A00061</a></span>複雑な電子式スイッチ</h3>電子式のスイッチには別の表し方がある。第12部（二値論理素子）と第13部（アナログ素子）を見ること。</div>
+<h2>覚え書き<span class="pencil">手で書く欄</span></h2>
+<div class="hand"><!--hand:memo--><p class="ph">（使ってみて分かったこと、選ぶときの目安、注意など。）</p><!--/hand:memo--></div>
+<h2>この図記号から何を作るか<span class="pencil">手で書く欄</span></h2>
+<h3>CAD用シンボルにする／しない</h3>
+<p class="rule">CAD 用のシンボル（QET の <code>.elmt</code>、DXF のブロックなど）を作るかどうか。<b>「しない」と書いてあれば作らなくてよい。</b><b>「する。」か「しない。」で書き始めること。</b></p>
+<div class="hand"><!--hand:cad--><p><b>しない。</b>旧図記号。規格票の附属書Aに参考として載っているもので、新しい図面には使わない。</p><!--/hand:cad--></div>
+<h3>組合せ・変種</h3>
+<div class="hand"><!--hand:combine--><p class="ph">（組合せ・変種を書く欄）</p><!--/hand:combine--></div><footer>w-qet — JIS C 0617（＝IEC 60617）を参考に、座標から描き起こしたもの。<b>規格票の図版や本文を複製したものではなく、「JIS準拠」を名乗るものでもありません。</b>正しさは保証しません。<br>この頁は <code>tools/sympage.py</code> が <code>elements/</code> から作り直します。<b>「手で書く欄」だけは作り直しても消えません</b>（<code>&lt;!--hand:…--&gt;</code> の印で挟んであります。<b>印を消さないでください</b>）。それ以外を書き換えても次の作り直しで消えます。　ライセンス CC0 1.0</footer></div></body></html>
