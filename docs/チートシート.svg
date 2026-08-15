@@ -2,8 +2,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="297mm" viewBox="0 0 210 297">
 <rect width="210" height="297" fill="white"/>
 <g stroke-linecap="round" stroke-linejoin="round" fill="none">
-<text x="9" y="13" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="5.2" font-weight="bold" fill="black">JIS C 0617 第7部 図記号 早見表</text>
-<text x="9" y="15.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.5" fill="#555">w-qet — JIS C 0617（＝IEC 60617）を参考に描き起こしたもの。全176個の一覧は docs/カタログ.md</text>
+<text x="9" y="13" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="5.2" font-weight="bold" fill="black">JIS C 0617 図記号 早見表（第7部・第8部）</text>
+<text x="9" y="15.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.5" fill="#555">w-qet — JIS C 0617（＝IEC 60617）を参考に描き起こしたもの。全251個の一覧は docs/カタログ.md</text>
 <text x="9" y="21.6" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="3.2" font-weight="bold" fill="black">接点</text>
 <line x1="9" y1="22.7" x2="201" y2="22.7" stroke="#bbb" stroke-width="0.2"/>
 <g transform="translate(26 31.5) scale(0.25) translate(5 -0)" stroke="black"><line x1="0" y1="-30" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-10" y1="-10" x2="0" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="10" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
@@ -129,43 +129,52 @@
 <g transform="translate(185 187.5) scale(0.25) translate(7.5 -0)" stroke="black"><rect x="-35" y="-10" width="55" height="20" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="-30" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="10" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-20" y1="-10" x2="-20" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-20" y1="-10" x2="-35" y2="0" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-35" y1="0" x2="-20" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
 <text x="185" y="197.6" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.3" fill="black">07-15-14</text>
 <text x="185" y="200.2" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.1" fill="#444">機械的ラッチング</text>
-<text x="9" y="203.6" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="3.2" font-weight="bold" fill="black">始動器</text>
+<text x="9" y="203.6" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="3.2" font-weight="bold" fill="black">表示灯・計器（第8部）</text>
 <line x1="9" y1="204.7" x2="201" y2="204.7" stroke="#bbb" stroke-width="0.2"/>
-<g transform="translate(26 211) scale(0.25) translate(-0 -0)" stroke="black"><rect x="-20" y="-20" width="40" height="40" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-20" y1="-20" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="20" y1="-20" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
-<text x="26" y="218.6" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.3" fill="black">07-14-01</text>
-<text x="26" y="221.2" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.1" fill="#444">電動機始動器</text>
-<g transform="translate(60 211) scale(0.25) translate(-0 -0)" stroke="black"><rect x="-20" y="-20" width="40" height="40" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-20" y1="-20" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="20" y1="-20" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-15" y1="0" x2="15" y2="0" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="-15,0 -7,-2.5 -7,2.5" fill="black" stroke="currentColor" stroke-width="0.5"/><polygon points="15,0 7,-2.5 7,2.5" fill="black" stroke="currentColor" stroke-width="0.5"/><line x1="-15" y1="5" x2="-6" y2="5" fill="none" stroke="currentColor" stroke-width="0.5"/><path d="M -12 5 A 3 3 0 0 0 -6 5" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="5" y1="5" x2="15" y2="5" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="5" y1="5" x2="-8.4" y2="12.5" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
-<text x="60" y="218.6" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.3" fill="black">07-14-05</text>
-<text x="60" y="221.2" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.1" fill="#444">直結始動器（可逆）</text>
-<g transform="translate(94 211) scale(0.25) translate(-0 -0)" stroke="black"><rect x="-20" y="-20" width="40" height="40" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-20" y1="-20" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="20" y1="-20" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="0,-2 -8.66,13 8.66,13" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="8" x2="0" y2="-2" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="8" x2="-8.66" y2="13" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="8" x2="8.66" y2="13" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
-<text x="94" y="218.6" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.3" fill="black">07-14-06</text>
-<text x="94" y="221.2" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.1" fill="#444">スターデルタ</text>
-<text x="9" y="224.6" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="3.2" font-weight="bold" fill="black">作図用部品（規格外）</text>
-<line x1="9" y1="225.7" x2="201" y2="225.7" stroke="#bbb" stroke-width="0.2"/>
-<g transform="translate(26 230.75) scale(0.25) translate(-0 -0)" stroke="black"><line x1="0" y1="-15" x2="0" y2="15" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
-<text x="26" y="237.1" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.3" fill="black">junction_pass</text>
-<text x="26" y="239.7" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.1" fill="#444">通過</text>
-<g transform="translate(60 230.75) scale(0.25) translate(-6.5 -0)" stroke="black"><line x1="0" y1="-15" x2="0" y2="15" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="0" x2="15" y2="0" fill="none" stroke="currentColor" stroke-width="0.5"/><ellipse cx="0" cy="0" rx="2" ry="2" fill="black" stroke="currentColor" stroke-width="0.5"/></g>
-<text x="60" y="237.1" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.3" fill="black">junction_tee</text>
-<text x="60" y="239.7" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.1" fill="#444">T字分岐</text>
-<g transform="translate(94 230.75) scale(0.25) translate(-0 -0)" stroke="black"><line x1="0" y1="-15" x2="0" y2="15" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-15" y1="0" x2="15" y2="0" fill="none" stroke="currentColor" stroke-width="0.5"/><ellipse cx="0" cy="0" rx="2" ry="2" fill="black" stroke="currentColor" stroke-width="0.5"/></g>
-<text x="94" y="237.1" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.3" fill="black">junction_cross</text>
-<text x="94" y="239.7" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.1" fill="#444">十字</text>
-<g transform="translate(128 230.75) scale(0.25) translate(-7.5 7.5)" stroke="black"><line x1="0" y1="-15" x2="0" y2="0" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="0" x2="15" y2="0" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
-<text x="128" y="237.1" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.3" fill="black">junction_corner</text>
-<text x="128" y="239.7" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.1" fill="#444">L字</text>
-<g transform="translate(162 230.75) scale(0.25) translate(-0 5.9)" stroke="black"><line x1="0" y1="-15" x2="0" y2="-2" fill="none" stroke="currentColor" stroke-width="0.5"/><ellipse cx="0" cy="0" rx="3.2" ry="3.2" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
-<text x="162" y="237.1" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.3" fill="black">wire_end</text>
-<text x="162" y="239.7" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.1" fill="#444">終端</text>
-<text x="9" y="245.8" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="3.0" font-weight="bold" fill="black">端子とグリッド</text>
-<text x="11" y="250.1" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.5" fill="#222">グリッド 10 ＝ 規格の作図モジュール 1M。端子間は縦置き機器 60（6M）</text>
-<text x="11" y="253.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.5" fill="#222">作図用部品の端子間は 30。端子は原点に対して対称に置く</text>
-<text x="9" y="256.6" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="3.0" font-weight="bold" fill="black">ラベルの慣習</text>
-<text x="11" y="260.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.5" fill="#222">コイルは大文字（R1・T1・M1）、その接点は小文字（r1・t1・m1）</text>
-<text x="11" y="264.2" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.5" fill="#222">接点のラベルはコイルから自動で同期される。独自表示は text_from="UserText"</text>
-<text x="9" y="267.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="3.0" font-weight="bold" fill="black">QET で引っかかるところ</text>
-<text x="11" y="271.7" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.5" fill="#222">導体は端子と端子の間にしか引けない。ジャンクション部品は無いので、</text>
-<text x="11" y="275" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.5" fill="#222">　分岐は同じ端子に2本目の導体をつなぐ（作図用部品は見た目を整えるためのもの）</text>
-<text x="11" y="278.3" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.5" fill="#222">QET はスタートメニューから起動する。exe を直に叩くと部品が0個になる</text>
-<text x="11" y="281.6" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.5" fill="#222">記号を回してもラベルは正立のまま。記号の中の文字（Θ・I &gt;）は一緒に倒れる</text>
+<g transform="translate(25 213.5) scale(0.25) translate(-8.4 -0)" stroke="black"><ellipse cx="0" cy="0" rx="10" ry="10" fill="green" stroke="currentColor" stroke-width="0.5"/><line x1="-7" y1="-7" x2="7" y2="7" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-7" y1="7" x2="7" y2="-7" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="-30" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="10" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="12.4" y="4.3" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">GN</text></g>
+<text x="25" y="223.6" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.3" fill="black">08-10-01_green</text>
+<text x="25" y="226.2" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.1" fill="#444">表示灯 緑</text>
+<g transform="translate(57 213.5) scale(0.25) translate(-8.25 -0)" stroke="black"><ellipse cx="0" cy="0" rx="10" ry="10" fill="red" stroke="currentColor" stroke-width="0.5"/><line x1="-7" y1="-7" x2="7" y2="7" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-7" y1="7" x2="7" y2="-7" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="-30" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="10" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="12.1" y="4.3" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">RD</text></g>
+<text x="57" y="223.6" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.3" fill="black">08-10-01_red</text>
+<text x="57" y="226.2" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.1" fill="#444">表示灯 赤</text>
+<g transform="translate(89 213.5) scale(0.25) translate(-8.7 -0)" stroke="black"><ellipse cx="0" cy="0" rx="10" ry="10" fill="yellow" stroke="currentColor" stroke-width="0.5"/><line x1="-7" y1="-7" x2="7" y2="7" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-7" y1="7" x2="7" y2="-7" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="-30" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="10" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="13" y="4.3" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">YE</text></g>
+<text x="89" y="223.6" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.3" fill="black">08-10-01_yellow</text>
+<text x="89" y="226.2" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.1" fill="#444">表示灯 黄</text>
+<g transform="translate(121 213.5) scale(0.25) translate(-8.65 -0)" stroke="black"><ellipse cx="0" cy="0" rx="10" ry="10" fill="white" stroke="currentColor" stroke-width="0.5"/><line x1="-7" y1="-7" x2="7" y2="7" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-7" y1="7" x2="7" y2="-7" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="-30" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="10" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="12.9" y="4.3" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">WH</text></g>
+<text x="121" y="223.6" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.3" fill="black">08-10-01_white</text>
+<text x="121" y="226.2" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.1" fill="#444">表示灯 白</text>
+<g transform="translate(153 213.5) scale(0.25) translate(-0 -0.5)" stroke="black"><line x1="-20" y1="-20" x2="20" y2="-20" fill="none" stroke="currentColor" stroke-width="0.5"/><path d="M -20 -20 A 20 20 0 0 0 20 -20" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-10" y1="-2.7" x2="-10" y2="21" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="10" y1="-2.7" x2="10" y2="21" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
+<text x="153" y="223.6" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.3" fill="black">08-10-10</text>
+<text x="153" y="226.2" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.1" fill="#444">ブザー</text>
+<g transform="translate(185 213.5) scale(0.25) translate(-0 -0)" stroke="black"><ellipse cx="0" cy="0" rx="20" ry="20" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-3.56" y="10.7" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="18.6667" fill="currentColor">*</text></g>
+<text x="185" y="223.6" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.3" fill="black">08-01-01</text>
+<text x="185" y="226.2" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.1" fill="#444">指示計器（中に V・A）</text>
+<text x="9" y="229.6" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="3.2" font-weight="bold" fill="black">作図用部品（規格外）</text>
+<line x1="9" y1="230.7" x2="201" y2="230.7" stroke="#bbb" stroke-width="0.2"/>
+<g transform="translate(26 235.75) scale(0.25) translate(-0 -0)" stroke="black"><line x1="0" y1="-15" x2="0" y2="15" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
+<text x="26" y="242.1" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.3" fill="black">junction_pass</text>
+<text x="26" y="244.7" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.1" fill="#444">通過</text>
+<g transform="translate(60 235.75) scale(0.25) translate(-6.5 -0)" stroke="black"><line x1="0" y1="-15" x2="0" y2="15" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="0" x2="15" y2="0" fill="none" stroke="currentColor" stroke-width="0.5"/><ellipse cx="0" cy="0" rx="2" ry="2" fill="black" stroke="currentColor" stroke-width="0.5"/></g>
+<text x="60" y="242.1" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.3" fill="black">junction_tee</text>
+<text x="60" y="244.7" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.1" fill="#444">T字分岐</text>
+<g transform="translate(94 235.75) scale(0.25) translate(-0 -0)" stroke="black"><line x1="0" y1="-15" x2="0" y2="15" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-15" y1="0" x2="15" y2="0" fill="none" stroke="currentColor" stroke-width="0.5"/><ellipse cx="0" cy="0" rx="2" ry="2" fill="black" stroke="currentColor" stroke-width="0.5"/></g>
+<text x="94" y="242.1" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.3" fill="black">junction_cross</text>
+<text x="94" y="244.7" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.1" fill="#444">十字</text>
+<g transform="translate(128 235.75) scale(0.25) translate(-7.5 7.5)" stroke="black"><line x1="0" y1="-15" x2="0" y2="0" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="0" x2="15" y2="0" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
+<text x="128" y="242.1" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.3" fill="black">junction_corner</text>
+<text x="128" y="244.7" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.1" fill="#444">L字</text>
+<g transform="translate(162 235.75) scale(0.25) translate(-0 5.9)" stroke="black"><line x1="0" y1="-15" x2="0" y2="-2" fill="none" stroke="currentColor" stroke-width="0.5"/><ellipse cx="0" cy="0" rx="3.2" ry="3.2" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
+<text x="162" y="242.1" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.3" fill="black">wire_end</text>
+<text x="162" y="244.7" text-anchor="middle" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.1" fill="#444">終端</text>
+<text x="9" y="250.8" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="3.0" font-weight="bold" fill="black">端子とグリッド</text>
+<text x="11" y="255.1" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.5" fill="#222">グリッド 10 ＝ 規格の作図モジュール 1M。端子間は縦置き機器 60（6M）</text>
+<text x="11" y="258.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.5" fill="#222">作図用部品の端子間は 30。端子は原点に対して対称に置く</text>
+<text x="9" y="261.6" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="3.0" font-weight="bold" fill="black">ラベルの慣習</text>
+<text x="11" y="265.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.5" fill="#222">コイルは大文字（R1・T1・M1）、その接点は小文字（r1・t1・m1）</text>
+<text x="11" y="269.2" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.5" fill="#222">接点のラベルはコイルから自動で同期される。独自表示は text_from="UserText"</text>
+<text x="9" y="272.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="3.0" font-weight="bold" fill="black">QET で引っかかるところ</text>
+<text x="11" y="276.7" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.5" fill="#222">導体は端子と端子の間にしか引けない。ジャンクション部品は無いので、</text>
+<text x="11" y="280" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.5" fill="#222">　分岐は同じ端子に2本目の導体をつなぐ（作図用部品は見た目を整えるためのもの）</text>
+<text x="11" y="283.3" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.5" fill="#222">QET はスタートメニューから起動する。exe を直に叩くと部品が0個になる</text>
+<text x="11" y="286.6" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.5" fill="#222">記号を回してもラベルは正立のまま。記号の中の文字（Θ・I &gt;）は一緒に倒れる</text>
 </g></svg>
