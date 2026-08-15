@@ -439,7 +439,7 @@ py -3 -c "import sys;sys.path.insert(0,'tools');sys.stdout.reconfigure(encoding=
 ### 2. 索引を作る —— **手で作らない**
 
 ```bash
-py -3 tools/mkindex.py --part 6 --write     # docs/第6部索引.tsv
+py -3 tools/mkindex.py --part 6 --write     # docs/規格データ/第6部索引.tsv
 py -3 tools/mkindex.py --part 6             # 突き合わせ（差があれば終了コード1）
 ```
 
@@ -462,8 +462,8 @@ py -3 -c "import sys;sys.path.insert(0,'tools');sys.stdout.reconfigure(encoding=
 
 | ファイル | 中身 | 作り方 |
 |---|---|---|
-| `docs/第<N>部注釈.tsv` | `番号 ⇥ 表題 ⇥ 要点` | **要点は自分の言葉で書く**（本文を写さない） |
-| `docs/第<N>部注釈_適用.tsv` | `番号 ⇥ 適用される図記号` | 各図記号ページの「注釈」欄から機械で抜く |
+| `docs/規格データ/第<N>部注釈.tsv` | `番号 ⇥ 表題 ⇥ 要点` | **要点は自分の言葉で書く**（本文を写さない） |
+| `docs/規格データ/第<N>部注釈_適用.tsv` | `番号 ⇥ 適用される図記号` | 各図記号ページの「注釈」欄から機械で抜く |
 
 > **注釈を後回しにしない。** 第8部では図を描き終えてから読み、
 > ランプの色の符号を自分で決めていたのが規格に定めがあると分かって直した（A00174）。

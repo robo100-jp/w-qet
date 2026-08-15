@@ -139,8 +139,9 @@ tools/
   install.py       QET のユーザーコレクションに登録する
 docs/            設計方針・採録状況・寸法基準・測定メモ・QETのXML
   sym/             図記号1個1枚の HTML＋目次＋注釈（公開用。sympage.py が作る）
-  第<N>部索引.tsv    図記号番号→規格票のページ（mkindex.py が作る）
-  第<N>部注釈.tsv    規格の注釈の**要点を自分の言葉で**書いたもの
+  規格データ/       規格票から採った作業用のデータ（文書ではない）
+    第<N>部索引.tsv    図記号番号→規格票のページ（mkindex.py が作る）
+    第<N>部注釈.tsv    規格の注釈の**要点を自分の言葉で**書いたもの
 render/          描き出した PNG・SVG（git 管理外）
 .claude/skills/  Claude Code スキル
 ```

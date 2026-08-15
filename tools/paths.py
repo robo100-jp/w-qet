@@ -23,6 +23,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
 
 ELEMENTS = os.path.join(REPO, "elements")     # このリポジトリの図記号
+# **規格票から採った作業用のデータ。**文書ではないので docs/ 直下に散らさない
+STDDATA = os.path.join(REPO, "docs", "規格データ")
 RENDER = os.path.join(REPO, "render")         # 描き出した PNG の置き場
 
 ENV = "W_QET_ELEMENTS"
@@ -164,9 +166,9 @@ def standard(part=7):
 
 
 def index(part=7):
-    """図記号番号 → 規格票のページ。docs/第<part>部索引.tsv から読む"""
+    """図記号番号 → 規格票のページ。docs/規格データ/第<part>部索引.tsv から読む"""
     import io
-    p = os.path.join(REPO, "docs", "第%d部索引.tsv" % part)
+    p = os.path.join(STDDATA, "第%d部索引.tsv" % part)
     out = {}
     if not os.path.isfile(p):
         return out

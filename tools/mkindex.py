@@ -6,7 +6,7 @@
 `status.py` は索引を分母にするので、**採録率が 161/161 と嘘をついていた。**
 
   py -3 tools/mkindex.py --part 7            # 突き合わせるだけ（既定）
-  py -3 tools/mkindex.py --part 7 --write    # docs/第7部索引.tsv を作り直す
+  py -3 tools/mkindex.py --part 7 --write    # docs/規格データ/第7部索引.tsv を作り直す
 
 **規格票 PDF が要る**（家PCのみ）。索引そのものはリポジトリに入っているので、
 会社PCでは作り直せないが読める。
@@ -82,7 +82,7 @@ def title(d, i):
 
 
 def load(part):
-    p = os.path.join(P.REPO, "docs", "第%d部索引.tsv" % part)
+    p = os.path.join(P.STDDATA, "第%d部索引.tsv" % part)
     rows = []
     if os.path.isfile(p):
         for line in io.open(p, encoding="utf-8"):

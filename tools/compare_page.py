@@ -126,7 +126,7 @@ def main():
 
     index = P.index(a.part)
     if not index:
-        raise SystemExit("docs/第%d部索引.tsv が無い" % a.part)
+        raise SystemExit("docs/規格データ/第%d部索引.tsv が無い" % a.part)
     names = sorted(index) if a.all else a.names
     if not names:
         raise SystemExit("記号の番号を指定するか --all")

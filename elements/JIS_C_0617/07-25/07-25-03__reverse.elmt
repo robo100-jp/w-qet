@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition width="30" height="80" hotspot_x="15" hotspot_y="40"
             type="element" link_type="simple" version="0.100.0">
-    <uuid uuid="{dc223f43-eb47-489f-b9d7-11a6da30e326}"/>
+    <uuid uuid="{06c62cbe-46d0-4ffe-aed6-aa4ecc6907f0}"/>
     <names>
-        <name lang="ja">単一方向性静止形スイッチ</name>
-        <name lang="en">Static switch, unidirectional</name>
+        <name lang="ja">単一方向性静止形スイッチ（電流の向きが逆）</name>
+        <name lang="en">Static switch, unidirectional, reversed</name>
     </names>
     <informations>JIS C 0617 / IEC 60617 07-25-03
 一方向にだけ電流を流す静止形スイッチ。下の三角と横棒がダイオード。
-規格票は電流の向きが逆の図も併記している。**180度回しても再現できない** ——
-併記された図は刃の向きが同じで、ダイオードだけが反転している。
-逆向きは 07-25-03__reverse に置いてある。
+**07-25-03 と対で、規格票が併記している2つの図の片方。**
+刃の向きは同じで、ダイオードだけが反転している。
+**180度回しても作れない**（回すと刃まで倒れる）ので別ファイルにした。
+番号は 07-25-03 と同じ。規格はこの向きに別の番号を振っていない。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <line x1="0" y1="-40" x2="0" y2="-20" antialias="false"
@@ -19,18 +20,18 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <line x1="0" y1="0" x2="0" y2="40" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
-        <polygon x1="-9.1" y1="3" x2="9.1" y2="3" x3="0" y3="19" antialias="true"
+        <polygon x1="-9.1" y1="19" x2="9.1" y2="19" x3="0" y3="3" antialias="true"
                  style="line-style:normal;line-weight:normal;filling:none;color:black"/>
-        <line x1="-8.1" y1="19" x2="8.1" y2="19" antialias="false"
+        <line x1="-8.1" y1="3" x2="8.1" y2="3" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <terminal x="0" y="-40" orientation="n" name="1" type="Generic"
-                  uuid="{45af3cba-efb4-45cc-bd8d-a43283248d1a}"/>
+                  uuid="{37b18b6d-f0a1-4a9a-8ab7-88e96c58036a}"/>
         <terminal x="0" y="40" orientation="s" name="2" type="Generic"
-                  uuid="{fd0b70cb-2acf-4b99-ba6b-28aa9e8982db}"/>
+                  uuid="{d391a543-bd2e-450d-bf66-96c564437daf}"/>
         <dynamic_text x="20" y="-40" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
-                      text_from="ElementInfo" uuid="{cb506a4c-5660-4dc8-a0b9-e44d5e038daf}"
+                      text_from="ElementInfo" uuid="{f6224138-0784-403e-a5dc-23e9150b9f06}"
                       font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
             <text></text>
             <info_name>label</info_name>

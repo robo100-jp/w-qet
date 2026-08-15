@@ -32,7 +32,7 @@ PARTS = {7: "開閉装置，制御装置及び保護装置",
 
 
 def index_path(part):
-    return os.path.join(P.REPO, "docs", "第%d部索引.tsv" % part)
+    return os.path.join(P.STDDATA, "第%d部索引.tsv" % part)
 
 
 def out_path(part):

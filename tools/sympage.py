@@ -11,7 +11,7 @@
 GitHub Pages でも、ローカルの file:// でも、1枚だけ人に渡してもそのまま開ける。
 
 規格票の PDF は**要らない。**規格から採った情報は
-`docs/第<N>部注釈.tsv`（要点）と `docs/第<N>部注釈_適用.tsv`（適用先）に
+`docs/規格データ/` の注釈 tsv（要点と適用先）に
 落としてあり、ここはそれを読む。**会社PCでも作り直せる。**
 
 > **規格票の本文を写さない。**注釈のページに載せるのは、番号・こちらの言葉での
@@ -172,7 +172,7 @@ def load_notes():
     """{注釈番号: (表題, 要点, [適用される図記号])}"""
     out = {}
     for part in (7, 8):
-        f = os.path.join(P.REPO, "docs", "第%d部注釈.tsv" % part)
+        f = os.path.join(P.STDDATA, "第%d部注釈.tsv" % part)
         if not os.path.isfile(f):
             continue
         for line in io.open(f, encoding="utf-8"):
@@ -180,7 +180,7 @@ def load_notes():
                 continue
             a, title, gist = line.rstrip("\n").split("\t")
             out[a] = [title, gist, []]
-        g = os.path.join(P.REPO, "docs", "第%d部注釈_適用.tsv" % part)
+        g = os.path.join(P.STDDATA, "第%d部注釈_適用.tsv" % part)
         for line in io.open(g, encoding="utf-8"):
             if not line.strip():
                 continue
@@ -534,7 +534,7 @@ def index_names():
     """図記号番号 → 名称（規格票から採った索引が持っている）"""
     out = {}
     for part in (7, 8):
-        f = os.path.join(P.REPO, "docs", "第%d部索引.tsv" % part)
+        f = os.path.join(P.STDDATA, "第%d部索引.tsv" % part)
         if not os.path.isfile(f):
             continue
         for line in io.open(f, encoding="utf-8"):
