@@ -240,11 +240,14 @@ def check(path, seen_uuid):
     if nonascii:
         bad.append("パスに非ASCIIの文字がある: %s" % "".join(sorted(set(nonascii))))
     if "JIS_C_0617" in path.replace("\\", "/"):
-        if "+" in base:                        # 規格の要素を組み合わせたもの
+        # **区切りは `__`（アンダースコア2つ）。**`+` は HTTP サーバで
+        # エスケープが要るので避ける。`_green` のような修飾は `_` 1つなので
+        # 字面で見分けが付く
+        if "__" in base:                       # 規格の要素を組み合わせたもの
             m = COMBO_RE.search(info)
             if not m:
                 bad.append("組合せなのに informations に「JIS C 0617 の組合せ」が無い")
-            elif m.group(1).replace(" ＋ ", "+") != base[:-5]:
+            elif m.group(1).replace(" ＋ ", "__") != base[:-5]:
                 bad.append("ファイル名と組合せの元が食い違う: %s" % m.group(1))
             if NUM_RE.search(info):
                 bad.append("組合せに図記号番号の行がある（この組合せに番号は無い）")

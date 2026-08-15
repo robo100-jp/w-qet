@@ -446,7 +446,7 @@ def page(path, notes):
       "規格に番号のある組合せ、番号は無いが規格の流儀で組めるもの、"
       "組んだ結果を別ファイルにしたなら、その番号。</p>")
     w(hand("combine", "例：07-07-02（押しボタンの操作子）＋ 07-07-07（ブレーク接点）"
-                      " → 07-07-02+07-07-07"))
+                      " → 07-07-02__07-07-07"))
 
     w("<h2>他の形式に写すときの約束</h2>")
     w('<ul class="rule">')
@@ -510,7 +510,7 @@ def notes_page(notes, have):
           % (a, a, escape(title), rich(gist)))
         if syms:
             w('<div class="apply">付いている図記号（%d）—— ' % len(syms))
-            w("".join('<a href="%s.html">%s</a>' % (s.replace("+", "%2B"), s)
+            w("".join('<a href="%s.html">%s</a>' % (s, s)
                       if s in have else '<span class="rule">%s </span>' % s
                       for s in syms))
             w("</div>")
@@ -564,7 +564,7 @@ def index_page(items, skipped):
             cur = key
         w('<a class="cell" href="%s.html" data-k="%s"><div class="box">%s</div>'
           '<div class="id">%s</div><div class="ja">%s</div></a>'
-          % (base.replace("+", "%2B"), escape((base + " " + ja).lower()),
+          % (base, escape((base + " " + ja).lower()),
              th, escape(base), escape(ja)))
     w("</div></section>")
     if skipped:
