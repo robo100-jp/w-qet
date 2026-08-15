@@ -34,8 +34,15 @@ def _aa(dx, dy):
     return "true"
 
 
-def line(x1, y1, x2, y2, end1="none", end2="none", len1=1.5, len2=1.5, weight="normal"):
-    st = ("line-style:normal;line-weight:%s;filling:none;color:black" % weight)
+def line(x1, y1, x2, y2, end1="none", end2="none", len1=1.5, len2=1.5,
+         weight="normal", dashed=False):
+    """`dashed=True` で機械的な結合の破線
+
+    **刻みは指定できない。**QET は Qt のペンをそのまま使うので 4:2 に固定される
+    （規格票は 1.0M 刻み）。[docs/寸法基準.md] の「線」を見ること。
+    """
+    st = ("line-style:%s;line-weight:%s;filling:none;color:black"
+          % ("dashed" if dashed else "normal", weight))
     return ('        <line x1="%g" y1="%g" x2="%g" y2="%g" antialias="%s"\n'
             '              style="%s" end1="%s" end2="%s" length1="%g" length2="%g"/>'
             % (x1, y1, x2, y2, _aa(x2 - x1, y2 - y1), st, end1, end2, len1, len2))

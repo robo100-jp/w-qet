@@ -39,10 +39,19 @@
 
 5. **縦横で縮尺が違う。** 図が表のセルに入れられていて同じ比で拡縮されていない。
    実測で最大6%。**列の間隔と行の間隔を別々に測る。**
+
+6. **倍尺のページがある。** 規格票の「概要」に、小さい図記号は2倍に拡大して
+   図記号欄に `200 %` と付けると書いてある。**格子のドットは拡大されない**ので、
+   図だけがドット2目で1M になる。気づかずに測ると**倍の大きさの記号を作る**。
+   `200 %` の文字そのものも墨に数えられて外接矩形が伸びる。
+   ここでは PDF の文字から倍率と文字の位置を拾い、`mx`/`my` に掛けて墨から外す。
+   （説明欄にも「再設定比は 130 %」のような数字＋%が出るので、**図の帯の中に
+   あるものだけ**を倍率と見る。）
 """
 import argparse
 import math
 import os
+import re
 import sys
 import tempfile
 
@@ -129,6 +138,7 @@ class Page(object):
       ink     図形の連結成分 [(x0,y0,x1,y1,画素数)]。ドットは除いてある
       dots    格子のドット
       ok      格子が取れたか。第16節のように格子の無いページは False
+      scale   図の倍率。`200 %` と付いたページは 2.0（冒頭 6.）
     """
 
     def __init__(self, page, part=7, dpi=DPI):
@@ -138,12 +148,14 @@ class Page(object):
             raise SystemExit("py -3 -m pip install pypdfium2 pillow")
         self.page, self.dpi = page, dpi
         pdf = pdfium.PdfDocument(P.standard(part))
-        im = pdf[page - 1].render(scale=dpi / 72.0).to_pil().convert("L")
+        pg = pdf[page - 1]
+        im = pg.render(scale=dpi / 72.0).to_pil().convert("L")
         W0, H0 = im.size
         # 表の外（ページ番号・柱）を落とす。図はこの内側にある
-        self.band = im.crop((int(W0 * 0.20), int(H0 * 0.13),
-                             int(W0 * 0.95), int(H0 * 0.62)))
+        self.ox, self.oy = int(W0 * 0.20), int(H0 * 0.13)
+        self.band = im.crop((self.ox, self.oy, int(W0 * 0.95), int(H0 * 0.62)))
         self._find()
+        self._rescale(pg)
 
     def _find(self):
         W, H = self.band.size
@@ -198,6 +210,42 @@ class Page(object):
             self.fit = (fx, fy)
             if min(fx, fy) < 0.9:
                 self.mx = self.my = 0.0
+        self.ok = bool(self.mx and self.my and self.ink)
+
+    def _rescale(self, pg):
+        """倍尺のページを見つけて `mx`/`my` に掛け、`NNN %` の文字を墨から外す
+
+        **図の帯の中にある `NNN %` だけ**を倍率と見る（冒頭 6.）。
+        説明欄の「再設定比は 130 %」を拾うと図が 1.3 倍だと誤る。
+        """
+        self.scale = 1.0
+        tp = pg.get_textpage()
+        txt = tp.get_text_range()
+        k = self.dpi / 72.0
+        H = pg.get_size()[1]
+        for m in set(re.findall(r"\d+\s*%", txt)):
+            s = tp.search(m)
+            while True:
+                r = s.get_next()
+                if not r:
+                    break
+                i, n = r
+                bs = [tp.get_charbox(j) for j in range(i, i + n)]
+                x0 = min(b[0] for b in bs) * k - self.ox
+                x1 = max(b[2] for b in bs) * k - self.ox
+                y0 = (H - max(b[3] for b in bs)) * k - self.oy
+                y1 = (H - min(b[1] for b in bs)) * k - self.oy
+                if not (self.y0 <= y0 and y1 <= self.y1):
+                    continue                       # 図の帯の外＝説明欄の数字
+                self.scale = int(re.match(r"\d+", m).group()) / 100.0
+                # 倍率の文字そのものを墨から外す。ここを忘れると外接矩形が伸びる
+                self.ink = [c for c in self.ink
+                            if not (x0 - 4 <= c[0] and c[2] <= x1 + 4
+                                    and y0 - 4 <= c[1] and c[3] <= y1 + 4)]
+        if self.scale != 1.0:
+            # **ドットは拡大されていない。**図だけが2目で1M になっている
+            self.mx *= self.scale
+            self.my *= self.scale
         self.ok = bool(self.mx and self.my and self.ink)
 
     # --- 座標 -----------------------------------------------------------
@@ -307,6 +355,9 @@ def main():
     w, h = p.size
     print("p.%d  1M = %.2f x %.2f px（縦横のちがい %+.1f%%）  墨 %.2fM x %.2fM"
           % (a.page, p.mx, p.my, 100 * (p.my / p.mx - 1), w, h))
+    if p.scale != 1.0:
+        print("  **このページの図は %d %% の倍尺。**下の数値は実寸に直してある"
+              % int(p.scale * 100))
     print("  1M = 10 なので、下の数値を10倍すれば .elmt の座標になる")
     print()
     print("図形の外接矩形（M。原点は墨の左上）  %d 個" % len(p.ink))

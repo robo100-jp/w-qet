@@ -8,6 +8,8 @@
     </names>
     <informations>JIS C 0617 / IEC 60617 08-10-01
 規格票には引出し線が描かれていない。作図に使えるよう、外形の縁に端子を1つずつ足してある。
+色を示すときは図記号の脇に RD（赤）・YE（黄）・GN（緑）・BU（青）・WH（白）と書く。
+種類は Ne・Xe・Na・Hg・I・IN・EL・ARC・FL・IR・UV・LED（規格の注釈 A00174）。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。
 </informations>
     <description>

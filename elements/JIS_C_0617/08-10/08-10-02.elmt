@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="40" height="40" hotspot_x="20" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{1a22b94c-7436-43b5-ad5b-cb4ae842d725}"/>
+    <names>
+        <name lang="ja">信号ランプ（せん光形）</name>
+        <name lang="en">Signal lamp, flashing type</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 08-10-02
+上の方形パルスがせん光（点滅）を表す。
+色を示すときは図記号の脇に RD（赤）・YE（黄）・GN（緑）・BU（青）・
+WH（白）と書く。種類は Ne・Xe・Na・Hg・I・IN・EL・ARC・FL・
+IR・UV・LED（規格の注釈 A00174。08-10-01 と共通）。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <ellipse x="-10" y="-10" width="20" height="20" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="-7" y1="-7" x2="7" y2="7" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-7" y1="7" x2="7" y2="-7" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-20" y1="0" x2="-10" y2="0" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="10" y1="0" x2="20" y2="0" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-8" y1="-15" x2="-2" y2="-15" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-2" y1="-15" x2="-2" y2="-25" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-2" y1="-25" x2="2" y2="-25" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="2" y1="-25" x2="2" y2="-15" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="2" y1="-15" x2="8" y2="-15" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="-20" y="0" orientation="w" name="1" type="Generic"
+                  uuid="{4f50d80f-5540-46c3-bb64-9e05c82f9b42}"/>
+        <terminal x="20" y="0" orientation="e" name="2" type="Generic"
+                  uuid="{f7334070-e436-48e7-a5e3-98f6bd8d880c}"/>
+        <dynamic_text x="25" y="-20" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{5e113fa5-da5f-45c0-b1b1-09e65a5c6dd8}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

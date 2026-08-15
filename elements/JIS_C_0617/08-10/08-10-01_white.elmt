@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition width="40" height="60" hotspot_x="15" hotspot_y="30"
+<definition width="50" height="60" hotspot_x="15" hotspot_y="30"
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{8383a89a-eb2d-4eea-a354-552fbb14c938}"/>
     <names>
@@ -11,7 +11,8 @@
 色を持たない。QET は図面に置いた部品の色を変えられないので、
 色ちがいは別ファイルにしてある。
 **塗りと文字の両方で示す。**白黒で刷ると塗りが飛ぶため、色を表す
-文字（W）を右に添えた。これも規格外。
+符号（WH）を右に添えた。
+**符号は規格の注釈 A00174 のもの**（RD＝赤・YE＝黄・GN＝緑・BU＝青・WH＝白）。塗りのほうは規格外。
 規格票には引出し線が無い。制御回路の縦の段に入れられるよう、
 上下に引出し線と端子を足してある（端子間 60）。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。
@@ -27,13 +28,13 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <line x1="0" y1="10" x2="0" y2="30" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
-        <text text="W" x="11.35" y="4.3" rotation="0"
+        <text text="WH" x="12.9" y="4.3" rotation="0"
               font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
                   uuid="{876117bf-077b-435a-8930-bc59e9d89dca}"/>
         <terminal x="0" y="30" orientation="s" name="2" type="Generic"
                   uuid="{6961e41d-b4c7-4c87-9625-be270800d926}"/>
-        <dynamic_text x="30" y="-30" z="1" text_width="-1"
+        <dynamic_text x="40" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"
                       text_from="ElementInfo" uuid="{fe9be956-467e-4842-b58b-bfafddc3e036}"

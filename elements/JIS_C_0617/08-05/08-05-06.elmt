@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="90" height="60" hotspot_x="75" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{1228ffce-64ee-47b6-bd2f-1fdc61dfa6a7}"/>
+    <names>
+        <name lang="ja">計数装置（カム作動形）</name>
+        <name lang="en">Counting device, cam driven</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 08-05-06
+n 回数えるごとに接点を閉じる。
+左の欠けた円はカム、破線は機械的な結合で電気の接続ではない。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <arc x="-70" y="-10" width="20" height="20" start="90" angle="270"
+             antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="-60" y1="-10" x2="-60" y2="0" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-60" y1="0" x2="-50" y2="0" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-50" y1="0" x2="-40" y2="0" antialias="false"
+              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <rect x="-40" y="-10" width="20" height="20" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <ellipse x="-34.5" y="-4.5" width="9" height="9" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="-20" y1="0" x2="-5" y2="0" antialias="false"
+              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-10" y1="-10" x2="0" y2="10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="10" x2="0" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <text text="n" x="-10.075" y="-17.6" rotation="0"
+              font="Liberation Sans,9,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
+        <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
+                  uuid="{a43c8c83-7ad1-4b70-afe6-312ff487178e}"/>
+        <terminal x="0" y="30" orientation="s" name="2" type="Generic"
+                  uuid="{79985bc7-a116-4352-ade1-c33de73451ec}"/>
+        <dynamic_text x="20" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{417cee1f-ca6d-4cbd-a9db-30be8a95286f}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

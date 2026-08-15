@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="250" height="80" hotspot_x="30" hotspot_y="45"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{3f278eb3-0979-45e8-9931-a3c82ad52b08}"/>
+    <names>
+        <name lang="ja">パルス計数装置（複合接点付き）</name>
+        <name lang="en">Pulse counting device with multiple contacts</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 08-05-05
+4つの接点は、計数装置が 1・10・100・1000 事象を数えるごとに
+それぞれ1回閉じる（右から 10⁰・10¹・10²・10³）。
+破線は機械的な結合で、電気の接続ではない。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
+    <description>
+        <rect x="-20" y="-10" width="60" height="20" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="20" y1="-10" x2="20" y2="10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <ellipse x="25.5" y="-4.5" width="9" height="9" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="10" x2="0" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="40" y1="0" x2="205" y2="0" antialias="false"
+              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="90" y1="-30" x2="90" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="80" y1="-10" x2="90" y2="10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="90" y1="10" x2="90" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <text text="10" x="69.25" y="-24.5" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="3" x="82.7833" y="-30.175" rotation="0"
+              font="Liberation Sans,7,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <line x1="130" y1="-30" x2="130" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="120" y1="-10" x2="130" y2="10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="130" y1="10" x2="130" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <text text="10" x="109.2" y="-24.5" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="2" x="122.833" y="-30.125" rotation="0"
+              font="Liberation Sans,7,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <line x1="170" y1="-30" x2="170" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="160" y1="-10" x2="170" y2="10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="170" y1="10" x2="170" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <text text="10" x="151.15" y="-24.5" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="1" x="164.033" y="-30.125" rotation="0"
+              font="Liberation Sans,7,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <line x1="210" y1="-30" x2="210" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="200" y1="-10" x2="210" y2="10" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="210" y1="10" x2="210" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <text text="10" x="189.25" y="-24.5" rotation="0"
+              font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <text text="0" x="202.783" y="-30.175" rotation="0"
+              font="Liberation Sans,7,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
+        <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
+                  uuid="{6d51afa1-3444-4582-ae98-d91413465e71}"/>
+        <terminal x="0" y="30" orientation="s" name="2" type="Generic"
+                  uuid="{0f68b854-3617-4304-a340-24fe911d6435}"/>
+        <terminal x="90" y="-30" orientation="n" name="3" type="Generic"
+                  uuid="{cabbcfa4-4af6-44b1-9107-7a67d085c8ed}"/>
+        <terminal x="90" y="30" orientation="s" name="4" type="Generic"
+                  uuid="{853a5fad-236d-43bd-9565-a51a7f55282e}"/>
+        <terminal x="130" y="-30" orientation="n" name="5" type="Generic"
+                  uuid="{a116c703-dfef-46cd-a8dc-77ad6f3856ee}"/>
+        <terminal x="130" y="30" orientation="s" name="6" type="Generic"
+                  uuid="{336f1469-17e5-4540-84b2-0b064ddaa352}"/>
+        <terminal x="170" y="-30" orientation="n" name="7" type="Generic"
+                  uuid="{711c74f9-3188-4c56-a950-93ac2eeed897}"/>
+        <terminal x="170" y="30" orientation="s" name="8" type="Generic"
+                  uuid="{8584d43a-5323-40e2-9df1-d5b295806d2c}"/>
+        <terminal x="210" y="-30" orientation="n" name="9" type="Generic"
+                  uuid="{dccb142e-eb28-496f-a934-bf48deffbbfd}"/>
+        <terminal x="210" y="30" orientation="s" name="10" type="Generic"
+                  uuid="{5f46f251-627a-482c-a212-9281a0f00c81}"/>
+        <dynamic_text x="225" y="-40" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{2431c6d8-95b4-474f-a44e-2103c080a3cc}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>
