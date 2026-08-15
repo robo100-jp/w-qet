@@ -128,6 +128,7 @@ footer{margin-top:3.5em;padding-top:1em;border-top:1px solid var(--line);
   background:var(--card)}
 .hand .ph{color:var(--dim);font-size:.85rem;font-style:italic}
 .hand h4{margin:.8em 0 .2em;font-size:.9rem}
+h3 + .rule{margin-top:.1em}
 .pencil{font-size:.72rem;color:var(--dim);font-weight:400;margin-left:.6em;
   border:1px solid var(--line);border-radius:3px;padding:0 5px}
 .caution{border-left:3px solid var(--warn);background:var(--card);
@@ -407,18 +408,6 @@ def page(path, notes):
     w("<tr><th>図形</th><td>%d</td></tr>" % len(sh))
     w("</tbody></table></div></div>")
 
-    # **CAD用シンボルにするかどうかは、この頁を見て分かるようにする。**
-    # 規格票から判断が付くものは `docs/第<N>部方針.tsv` に書いてあり、
-    # 初回の書き出しでここに焼かれる。以後は**頁に書いてあるほうが勝つ**ので、
-    # 人が直接書き換えればそれが残る。
-    w('<h2>CAD用シンボルにするか<span class="pencil">手で書く欄</span></h2>')
-    w('<p class="rule">この図記号から CAD 用のシンボル（QET の <code>.elmt</code>、'
-      "DXF のブロックなど）を作るかどうか。<b>「しない」と書いてあれば作らなくてよい。"
-      "</b>図（SVG）とこの頁は、作らないものにも用意する。<br>"
-      "<b>「する。」か「しない。」で書き始めること。</b>道具がそこだけ見て数える。"
-      "規格票から判断が付くときも、人が決めるときも、<b>書く場所はここ</b>。</p>")
-    w(hand("cad", "する／しない と、その理由", "<p><b>する。</b></p>"))
-
     if mine:
         w("<h2>規格の注釈</h2>")
         w('<p class="rule">この図記号に付いている注釈。'
@@ -436,13 +425,24 @@ def page(path, notes):
         w("<h2>図記号ファイルの覚え書き</h2>")
         w('<p class="rule"><code>.elmt</code> の <code>&lt;informations&gt;</code>'
           " から。<b>ここは書き換えても次に作り直すと消える。</b>"
-          "書くなら下の欄か <code>.elmt</code> 側に。</p>")
+          "書くなら下の「手で書く欄」か <code>.elmt</code> 側に。</p>")
         w('<div class="note">%s</div>' % escape(body_note))
 
     w('<h2>覚え書き<span class="pencil">手で書く欄</span></h2>')
     w(hand("memo", "使ってみて分かったこと、選ぶときの目安、注意など。"))
-    w('<h2>組合せ<span class="pencil">手で書く欄</span></h2>')
-    w('<p class="rule">この図記号を他と組み合わせて使うときのこと。'
+
+    # **「何を作るか」の2つは隣に置く。**単独でシンボルにするか、
+    # 他と組み合わせて別の記号にするか —— 同じ種類の判断なので離さない。
+    w('<h2>この図記号から何を作るか<span class="pencil">手で書く欄</span></h2>')
+    w('<h3>CAD用シンボルにする／しない</h3>')
+    w('<p class="rule">CAD 用のシンボル（QET の <code>.elmt</code>、'
+      "DXF のブロックなど）を作るかどうか。<b>「しない」と書いてあれば作らなくてよい。"
+      "</b>図（SVG）とこの頁は、作らないものにも用意する。<br>"
+      "<b>「する。」か「しない。」で書き始めること。</b>道具がそこだけ見て数える。"
+      "規格票から判断が付くときも、人が決めるときも、<b>書く場所はここ</b>。</p>")
+    w(hand("cad", "する／しない と、その理由", "<p><b>する。</b></p>"))
+    w("<h3>組合せ</h3>")
+    w('<p class="rule">他と組み合わせて使うときのこと。'
       "規格に番号のある組合せ、番号は無いが規格の流儀で組めるもの、"
       "組んだ結果を別ファイルにしたなら、その番号。</p>")
     w(hand("combine", "例：07-07-02（押しボタンの操作子）＋ 07-07-07（ブレーク接点）"

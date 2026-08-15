@@ -74,6 +74,7 @@ footer{margin-top:3.5em;padding-top:1em;border-top:1px solid var(--line);
   background:var(--card)}
 .hand .ph{color:var(--dim);font-size:.85rem;font-style:italic}
 .hand h4{margin:.8em 0 .2em;font-size:.9rem}
+h3 + .rule{margin-top:.1em}
 .pencil{font-size:.72rem;color:var(--dim);font-weight:400;margin-left:.6em;
   border:1px solid var(--line);border-radius:3px;padding:0 5px}
 .caution{border-left:3px solid var(--warn);background:var(--card);
@@ -90,14 +91,11 @@ footer{margin-top:3.5em;padding-top:1em;border-top:1px solid var(--line);
 <tr><th>端子</th><td>2</td></tr>
 <tr><th>図形</th><td>4</td></tr>
 </tbody></table></div></div>
-<h2>CAD用シンボルにするか<span class="pencil">手で書く欄</span></h2>
-<p class="rule">この図記号から CAD 用のシンボル（QET の <code>.elmt</code>、DXF のブロックなど）を作るかどうか。<b>「しない」と書いてあれば作らなくてよい。</b>図（SVG）とこの頁は、作らないものにも用意する。<br><b>「する。」か「しない。」で書き始めること。</b>道具がそこだけ見て数える。規格票から判断が付くときも、人が決めるときも、<b>書く場所はここ</b>。</p>
-<div class="hand"><!--hand:cad--><p><b>する。</b></p><!--/hand:cad--></div>
 <h2>規格の注釈</h2>
 <p class="rule">この図記号に付いている注釈。<b>要点はこちらの言葉でまとめたもの</b>で、原文ではない。<a href="notes.html">注釈の一覧</a>。</p>
 <div class="an"><h3><span class="id"><a href="notes.html#A00061">A00061</a></span>複雑な電子式スイッチ</h3>電子式のスイッチには別の表し方がある。第12部（二値論理素子）と第13部（アナログ素子）を見ること。</div>
 <h2>図記号ファイルの覚え書き</h2>
-<p class="rule"><code>.elmt</code> の <code>&lt;informations&gt;</code> から。<b>ここは書き換えても次に作り直すと消える。</b>書くなら下の欄か <code>.elmt</code> 側に。</p>
+<p class="rule"><code>.elmt</code> の <code>&lt;informations&gt;</code> から。<b>ここは書き換えても次に作り直すと消える。</b>書くなら下の「手で書く欄」か <code>.elmt</code> 側に。</p>
 <div class="note">**接点なので link_type は slave。**ラベル（機器記号）は相互参照でマスタ側から
 同期される。接点に独自の表示をしたいときは text_from を UserText にする。
 **附属書A（参考）の旧図記号。既に削除されている。**
@@ -105,8 +103,12 @@ footer{margin-top:3.5em;padding-top:1em;border-top:1px solid var(--line);
 可動接片が軸に着く点を小さい円で示したメーク接点。</div>
 <h2>覚え書き<span class="pencil">手で書く欄</span></h2>
 <div class="hand"><!--hand:memo--><p class="ph">（使ってみて分かったこと、選ぶときの目安、注意など。）</p><!--/hand:memo--></div>
-<h2>組合せ<span class="pencil">手で書く欄</span></h2>
-<p class="rule">この図記号を他と組み合わせて使うときのこと。規格に番号のある組合せ、番号は無いが規格の流儀で組めるもの、組んだ結果を別ファイルにしたなら、その番号。</p>
+<h2>この図記号から何を作るか<span class="pencil">手で書く欄</span></h2>
+<h3>CAD用シンボルにする／しない</h3>
+<p class="rule">CAD 用のシンボル（QET の <code>.elmt</code>、DXF のブロックなど）を作るかどうか。<b>「しない」と書いてあれば作らなくてよい。</b>図（SVG）とこの頁は、作らないものにも用意する。<br><b>「する。」か「しない。」で書き始めること。</b>道具がそこだけ見て数える。規格票から判断が付くときも、人が決めるときも、<b>書く場所はここ</b>。</p>
+<div class="hand"><!--hand:cad--><p class="ph">（する／しない と、その理由）</p><!--/hand:cad--></div>
+<h3>組合せ</h3>
+<p class="rule">他と組み合わせて使うときのこと。規格に番号のある組合せ、番号は無いが規格の流儀で組めるもの、組んだ結果を別ファイルにしたなら、その番号。</p>
 <div class="hand"><!--hand:combine--><p class="ph">（例：07-07-02（押しボタンの操作子）＋ 07-07-07（ブレーク接点） → 07-07-02+07-07-07）</p><!--/hand:combine--></div>
 <h2>他の形式に写すときの約束</h2>
 <ul class="rule">
