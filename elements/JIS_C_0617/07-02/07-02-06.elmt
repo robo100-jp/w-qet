@@ -3,10 +3,11 @@
             type="element" link_type="slave" version="0.100.0">
     <uuid uuid="{317d36cd-76ea-4eff-b0ed-8aec7476dbde}"/>
     <names>
-        <name lang="ja">オーバーラップ切換え接点（様式1）</name>
+        <name lang="ja">c接点（メーク前ブレーク）</name>
         <name lang="en">Change-over make before break contact, both ways (form 1)</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-02-06
+    <informations>規格の名称: オーバーラップ切換え接点（様式1）
+JIS C 0617 / IEC 60617 07-02-06
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <line x1="-20" y1="-30" x2="-20" y2="-10" antialias="false"

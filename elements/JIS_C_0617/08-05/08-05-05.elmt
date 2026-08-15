@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{3f278eb3-0979-45e8-9931-a3c82ad52b08}"/>
     <names>
-        <name lang="ja">パルス計数装置（複合接点付き）</name>
+        <name lang="ja">カウンタ（けた別の接点付き）</name>
         <name lang="en">Pulse counting device with multiple contacts</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 08-05-05
+    <informations>規格の名称: パルス計数装置（複合接点付き）
+JIS C 0617 / IEC 60617 08-05-05
 4つの接点は、計数装置が 1・10・100・1000 事象を数えるごとに
 それぞれ1回閉じる（右から 10⁰・10¹・10²・10³）。
 破線は機械的な結合で、電気の接続ではない。
