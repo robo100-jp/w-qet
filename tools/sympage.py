@@ -411,15 +411,13 @@ def page(path, notes):
     # 規格票から判断が付くものは `docs/第<N>部方針.tsv` に書いてあり、
     # 初回の書き出しでここに焼かれる。以後は**頁に書いてあるほうが勝つ**ので、
     # 人が直接書き換えればそれが残る。
-    judge, why = P.policy(
-        int(base[:2]) if base[:2].isdigit() else 0).get(base, ("", ""))
-    dflt = ("<p><b>%s。</b>%s</p>" % (escape(judge), escape(why)) if judge
-            else "<p><b>する。</b></p>")
     w('<h2>CAD用シンボルにするか<span class="pencil">手で書く欄</span></h2>')
     w('<p class="rule">この図記号から CAD 用のシンボル（QET の <code>.elmt</code>、'
       "DXF のブロックなど）を作るかどうか。<b>「しない」と書いてあれば作らなくてよい。"
-      "</b>図（SVG）とこの頁は、作らないものにも用意する。</p>")
-    w(hand("cad", "する／しない と、その理由", dflt))
+      "</b>図（SVG）とこの頁は、作らないものにも用意する。<br>"
+      "<b>「する。」か「しない。」で書き始めること。</b>道具がそこだけ見て数える。"
+      "規格票から判断が付くときも、人が決めるときも、<b>書く場所はここ</b>。</p>")
+    w(hand("cad", "する／しない と、その理由", "<p><b>する。</b></p>"))
 
     if mine:
         w("<h2>規格の注釈</h2>")
@@ -520,25 +518,28 @@ def notes_page(notes, have):
     return "\n".join(o)
 
 
-def skipped_rows():
-    """シンボルにしないと決めたもの → [(番号, 名称, 理由)]
-
-    **黙って落とさない。**規格に載っているのに一覧に無いと、
-    描き忘れたのか決めて外したのかが分からなくなる。
-    """
-    out = []
+def index_names():
+    """図記号番号 → 名称（規格票から採った索引が持っている）"""
+    out = {}
     for part in (7, 8):
-        rows = {}
         f = os.path.join(P.REPO, "docs", "第%d部索引.tsv" % part)
-        if os.path.isfile(f):
-            for line in io.open(f, encoding="utf-8"):
-                c = line.rstrip("\n").split("\t")
-                if len(c) >= 5:
-                    rows[c[0]] = c[4]
-        for n, (judge, why) in sorted(P.policy(part).items()):
-            if judge == "見送り":
-                out.append((n, rows.get(n, ""), why))
+        if not os.path.isfile(f):
+            continue
+        for line in io.open(f, encoding="utf-8"):
+            c = line.rstrip("\n").split("\t")
+            if len(c) >= 5 and c[0][0].isdigit():
+                out[c[0]] = c[4]
     return out
+
+
+def missing_rows(have):
+    """規格には載っているが、まだ図の無いもの → [(番号, 名称)]
+
+    **黙って落とさない。**一覧に無いと、描き忘れたのか決めて外したのかが
+    分からなくなる。
+    """
+    return [(n, name) for n, name in sorted(index_names().items())
+            if n not in have]
 
 
 def index_page(items, skipped):
@@ -567,15 +568,14 @@ def index_page(items, skipped):
              th, escape(base), escape(ja)))
     w("</div></section>")
     if skipped:
-        w('<h2 style="margin-top:2.6em">シンボルにしないもの</h2>')
-        w('<p class="en">規格には載っているが、この集まりでは図記号ファイルに'
-          "しないと決めたもの。旧図記号のうち、装置ではなく"
-          "<b>使い方の例</b>を示しているものが主です。</p>")
-        w('<div class="scroll"><table><thead><tr><th>図記号番号</th><th>名称</th>'
-          "<th>理由</th></tr></thead><tbody>")
-        for n, name, why in skipped:
-            w("<tr><td><code>%s</code></td><td>%s</td><td>%s</td></tr>"
-              % (escape(n), escape(name), escape(why)))
+        w('<h2 style="margin-top:2.6em">まだ図の無いもの</h2>')
+        w('<p class="en">規格には載っているが、まだ描いていないもの。'
+          "<b>図と頁は、CAD用シンボルにしないものにも作ります。</b></p>")
+        w('<div class="scroll"><table><thead><tr><th>図記号番号</th>'
+          "<th>名称</th></tr></thead><tbody>")
+        for n, name in skipped:
+            w("<tr><td><code>%s</code></td><td>%s</td></tr>"
+              % (escape(n), escape(name)))
         w("</tbody></table></div>")
     return "\n".join(o)
 
@@ -626,7 +626,7 @@ def main():
     io.open(os.path.join(dst, "index.html"), "w", encoding="utf-8",
             newline="\n").write(
         html("JIS C 0617 図記号の一覧 — w-qet",
-             index_page(items, skipped_rows()), JS_FILTER))
+             index_page(items, missing_rows(have)), JS_FILTER))
     io.open(os.path.join(dst, "notes.html"), "w", encoding="utf-8",
             newline="\n").write(
         html("規格の注釈 — w-qet", notes_page(notes, have)))

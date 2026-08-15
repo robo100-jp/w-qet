@@ -78,7 +78,7 @@ def render(rows, done, pol, part=7):
         secs[-1][2].append((num, page, name))
 
     # **CADにしないものも図は作る。**分母から外さない
-    n_skip = sum(1 for r in rows if pol.get(r[0], ("", ""))[0] == "CADにしない")
+    n_skip = sum(1 for r in rows if pol.get(r[0], ("", ""))[0] == "しない")
     n_all = len(rows)
     n_done = sum(1 for r in rows if r[0] in done)
     out = []
@@ -94,7 +94,7 @@ def render(rows, done, pol, part=7):
     w("| 残り | %d |" % (n_all - n_done))
     if n_skip:
         w("| うち **CAD用シンボルにしない**もの | %d"
-          "（[第%d部方針.tsv](第%d部方針.tsv)） |" % (n_skip, part, part))
+          "（判断は `docs/sym/<番号>.html` に書いてある） |" % n_skip)
     w("")
     w("> **この文書は手で書かない。** `py -3 tools/status.py` が"
       "`elements/` を走査して作り直す。")
@@ -128,7 +128,7 @@ def render(rows, done, pol, part=7):
         for num, page, name in items:
             judge, why = pol.get(num, ("", ""))
             tail = ""
-            if judge == "CADにしない":
+            if judge == "しない":
                 tail = "　**CAD用シンボルにしない** —— " + why
             if num in done:
                 fn, nm = done[num]
@@ -171,9 +171,9 @@ def main():
 
     rows = load_index(a.part)
     done = scan_elements()
-    pol = P.policy(a.part)
+    pol = P.cad_policy()
     n_done = sum(1 for r in rows if r[0] in done)
-    n_skip = sum(1 for r in rows if pol.get(r[0], ("", ""))[0] == "CADにしない")
+    n_skip = sum(1 for r in rows if pol.get(r[0], ("", ""))[0] == "しない")
 
     if a.next:
         todo = [r for r in rows if r[0] not in done][:a.next]

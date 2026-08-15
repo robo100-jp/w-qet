@@ -177,26 +177,30 @@ def index(part=7):
     return out
 
 
-def policy(part=7):
-    """図記号番号 → (判断, 理由)。docs/第<part>部方針.tsv
+def cad_policy():
+    """図記号番号 → (判断, 理由)。**docs/sym/<番号>.html に書いてあるものを読む**
 
-    **索引と分けてある。**索引は `mkindex.py` が規格票から作り直すので、
-    手で書いた判断を索引に混ぜると作り直しで消える。
+    「CAD用シンボルにするか」の答えは**頁そのものに書く。**Claude が規格票から
+    判断して書くこともあれば、人が判断して書くこともある。
+    **置き場を分けると二重管理になる**ので、どちらも同じ場所に書く。
 
-    書いていないものは「作る」。書くのは見送るものだけ。
+    頁の `<!--hand:cad-->` の中身を見て、**「しない」で始まっていれば作らない**。
     """
     import io
-    p = os.path.join(REPO, "docs", "第%d部方針.tsv" % part)
+    import re
+    d = os.path.join(REPO, "docs", "sym")
     out = {}
-    if not os.path.isfile(p):
+    if not os.path.isdir(d):
         return out
-    for line in io.open(p, encoding="utf-8"):
-        line = line.rstrip("\n")
-        if not line or line.startswith("#") or line.startswith("番号\t"):
+    for f in os.listdir(d):
+        if not f.endswith(".html") or f in ("index.html", "notes.html"):
             continue
-        f = line.split("\t")
-        if len(f) >= 2:
-            out[f[0]] = (f[1], f[2] if len(f) > 2 else "")
+        m = re.search(r"<!--hand:cad-->(.*?)<!--/hand:cad-->",
+                      io.open(os.path.join(d, f), encoding="utf-8").read(), re.S)
+        if not m:
+            continue
+        s = re.sub(r"<[^>]+>", "", m.group(1)).strip()
+        out[f[:-5]] = ("しない" if s.startswith("しない") else "する", s)
     return out
 
 
