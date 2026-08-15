@@ -124,6 +124,8 @@ footer{margin-top:3.5em;padding-top:1em;border-top:1px solid var(--line);
   margin-right:.5em}
 .an .apply{font-size:.8rem;margin-top:.5em}
 .an .apply a{font-family:ui-monospace,Consolas,monospace;margin-right:.35em}
+.cell.todo{border-style:dashed;background:transparent;opacity:.72}
+.cell .todo-t{font-size:.72rem;color:var(--dim)}
 .hand{border:1px dashed var(--line);border-radius:6px;padding:2px 14px;
   background:var(--card)}
 .hand .ph{color:var(--dim);font-size:.85rem;font-style:italic}
@@ -530,6 +532,24 @@ def notes_page(notes, have):
     return "\n".join(o)
 
 
+def index_sections():
+    """図記号番号 → (節, 分類)。**節分けは規格票に合わせる**
+
+    附属書A は `elements/` では `07-A` ひとつに入れているが、規格は
+    `07-A1` `07-A11` … と分かれている。一覧は**規格の並び**に従う。
+    """
+    out = {}
+    for part in (7, 8):
+        f = os.path.join(P.STDDATA, "第%d部索引.tsv" % part)
+        if not os.path.isfile(f):
+            continue
+        for line in io.open(f, encoding="utf-8"):
+            c = line.rstrip("\n").split("\t")
+            if len(c) >= 5 and c[0][0].isdigit():
+                out[c[0]] = (c[1], c[2])
+    return out
+
+
 def index_names():
     """図記号番号 → 名称（規格票から採った索引が持っている）"""
     out = {}
@@ -607,7 +627,9 @@ def index_page(items, skipped):
     w("<h1>JIS C 0617 図記号の一覧</h1>")
     w('<p class="en">1個ずつの諸元（外形・挿入基点・端子・図形の座標・文字の'
       "大きさ）へ飛べます。他の形式に写すのに要る数値はそちらにあります。"
-      '　<a href="notes.html">規格の注釈</a></p>')
+      '　<a href="notes.html">規格の注釈</a><br>'
+      "<b>まだ描いていないものは薄く出ます</b>（規格には載っているもの）。"
+      "頁は先にあるので、覚え書きや「CAD用シンボルにするか」は書けます。</p>")
     w('<p><input id="q" placeholder="番号・名称でしぼり込む（例 接点／07-13／lamp）">'
       '<span class="hit" id="hit"></span></p>')
     cur = None
@@ -621,12 +643,13 @@ def index_page(items, skipped):
             w('<section><h3 id="%s">%s %s</h3><div class="grid">'
               % (escape(sec), escape(sec), escape(secname)))
             cur = key
-        w('<a class="cell" href="%s.html" data-k="%s"><div class="box">%s</div>'
+        w('<a class="cell%s" href="%s.html" data-k="%s"><div class="box">%s</div>'
           '<div class="id">%s</div><div class="ja">%s</div></a>'
-          % (base, escape((base + " " + ja).lower()),
-             th, escape(base), escape(ja)))
+          % ("" if th else " todo", base, escape((base + " " + ja).lower()),
+             th or '<span class="todo-t">図はまだ</span>',
+             escape(base), escape(ja)))
     w("</div></section>")
-    if skipped:
+    if False:
         w('<h2 style="margin-top:2.6em">まだ図の無いもの</h2>')
         w('<p class="en">規格には載っているが、まだ描いていないもの。'
           "<b>図と頁は、CAD用シンボルにしないものにも作ります。</b></p>")
@@ -664,11 +687,14 @@ def main():
     kept = 0
     files = sorted(P.collection())
     have = {os.path.basename(p)[:-5] for p in files}
+    secs = index_sections()
     items = []
     for p in files:
         base = os.path.basename(p)[:-5]
-        sec = os.path.basename(os.path.dirname(p))
-        secname = P.dirname_ja(os.path.dirname(p))
+        # **節は索引（＝規格）に合わせる。**無いものはフォルダから
+        sec, secname = secs.get(base.split("__")[0],
+                                (os.path.basename(os.path.dirname(p)),
+                                 P.dirname_ja(os.path.dirname(p))))
         _, _, _, _, ja, _ = R.parse(p)
         part = PARTS.get(base[:2], "規格に基づかない部品")
         # **姿だけの SVG も出す。**README や外の文書から `<img>` で貼るため
@@ -692,6 +718,18 @@ def main():
                 newline="\n").write(
             html("%s %s — w-qet" % (n, name), stub_page(n, name, notes)))
         stub += 1
+        sec, secname = secs.get(n, ("?", ""))
+        items.append((PARTS.get(n[:2], ""), sec, secname, n, name, None))
+
+    # **節の並びを規格の順にそろえる。**`07-A6` と `07-A11` を文字で比べると
+    # A11 が先に来てしまう。部 → 附属書かどうか → 節の番号、の順で並べる
+    def order(it):
+        m = re.match(r"(\d\d)-(A?)(\d+)$", it[1])
+        if not m:
+            return (99, 9, 0, it[1])
+        return (int(m.group(1)), 1 if m.group(2) else 0, int(m.group(3)), "")
+    items.sort(key=lambda it: (order(it), it[3]))
+
     io.open(os.path.join(dst, "index.html"), "w", encoding="utf-8",
             newline="\n").write(
         html("JIS C 0617 図記号の一覧 — w-qet",
