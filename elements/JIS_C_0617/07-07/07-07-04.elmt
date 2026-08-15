@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{bce29ab7-1b21-4878-b2b2-a30942fa31f8}"/>
     <names>
-        <name lang="ja">手動操作のひねりスイッチ（非自動復帰）</name>
+        <name lang="ja">ひねりスイッチ</name>
         <name lang="en">Switch, manually operated, turning, stay-put</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-07-04
+    <informations>規格の名称: 手動操作のひねりスイッチ（非自動復帰）
+JIS C 0617 / IEC 60617 07-07-04
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"

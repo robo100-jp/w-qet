@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{a185a88a-e818-4955-9e68-cd5f7f876a00}"/>
     <names>
-        <name lang="ja">多段スイッチ</name>
+        <name lang="ja">セレクタスイッチ</name>
         <name lang="en">Multi-position switch</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-11-04
+    <informations>規格の名称: 多段スイッチ
+JIS C 0617 / IEC 60617 07-11-04
 規格票が示しているのは6位置の例。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

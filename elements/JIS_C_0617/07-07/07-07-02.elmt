@@ -3,7 +3,7 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{0da4de17-2c49-4665-9270-994962d4889a}"/>
     <names>
-        <name lang="ja">押しボタン</name>
+        <name lang="ja">押しボタン（モメンタリ）</name>
         <name lang="en">Switch, manually operated, push-button, automatic return</name>
     </names>
     <informations>規格の名称: 手動操作の押しボタンスイッチ（自動復帰）
