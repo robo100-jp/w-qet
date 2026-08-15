@@ -399,6 +399,13 @@ def page(path, notes):
     else:
         w('<p class="src">規格に基づかない、作図の都合の部品</p>')
 
+    w('<h2>現場での呼び名<span class="pencil">手で書く欄</span></h2>')
+    w('<p class="rule">この図記号が指す部品を、現場や部品表で何と呼ぶか。'
+      "<b>規格の名称ではない。</b>規格は「安全開離機能接点」でも、"
+      "現場では「ミラー接点」と言う。<b>探すときはこの言葉で探すので、"
+      "目次の絞り込みもここを見る。</b></p>")
+    w(hand("names", "現場での呼び名・部品表に書く名前・カタログでの言い方"))
+
     w('<div class="top"><div class="fig">%s<div class="legend">'
       '格子 1目 = 1M。灰の枠が外形、赤丸が端子、青が名前の欄</div></div>'
       % figure(path))
@@ -594,6 +601,13 @@ def stub_page(num, name, notes):
     w('<div class="caution"><b>まだ図がありません。</b>'
       "規格には載っているが、こちらでまだ描き起こしていないもの。"
       "描けば姿と諸元がこの頁に入る。<b>下の手で書く欄はそのまま残る。</b></div>")
+    w('<h2>現場での呼び名<span class="pencil">手で書く欄</span></h2>')
+    w('<p class="rule">この図記号が指す部品を、現場や部品表で何と呼ぶか。'
+      "<b>規格の名称ではない。</b>規格は「安全開離機能接点」でも、"
+      "現場では「ミラー接点」と言う。<b>探すときはこの言葉で探すので、"
+      "目次の絞り込みもここを見る。</b></p>")
+    w(hand("names", "現場での呼び名・部品表に書く名前・カタログでの言い方"))
+
     if mine:
         w("<h2>規格の注釈</h2>")
         w('<p class="rule">この図記号に付いている注釈。'
@@ -621,6 +635,9 @@ def stub_page(num, name, notes):
     return "\n".join(o)
 
 
+KEYS = {}          # 番号 → 現場での呼び名（目次の絞り込みが使う）
+
+
 def index_page(items, skipped):
     o = []
     w = o.append
@@ -645,7 +662,8 @@ def index_page(items, skipped):
             cur = key
         w('<a class="cell%s" href="%s.html" data-k="%s"><div class="box">%s</div>'
           '<div class="id">%s</div><div class="ja">%s</div></a>'
-          % ("" if th else " todo", base, escape((base + " " + ja).lower()),
+          % ("" if th else " todo", base,
+             escape((base + " " + ja + " " + KEYS.get(base, "")).lower()),
              th or '<span class="todo-t">図はまだ</span>',
              escape(base), escape(ja)))
     w("</div></section>")
@@ -684,6 +702,11 @@ def main():
     svgdir = os.path.join(dst, "svg")
     os.makedirs(svgdir, exist_ok=True)
     notes = load_notes()
+    # **現場での呼び名でも探せるようにする。**頁の手書き欄から読み戻す
+    for b, h in keep.items():
+        s = re.sub(r"<[^>]+>", " ", h.get("names", ""))
+        if s.strip() and "class=\"ph\"" not in h.get("names", ""):
+            KEYS[b] = re.sub(r"\s+", " ", s).strip()
     kept = 0
     files = sorted(P.collection())
     have = {os.path.basename(p)[:-5] for p in files}
