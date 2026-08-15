@@ -7,6 +7,8 @@
         <name lang="en">Electromechanical position indicator</name>
     </names>
     <informations>JIS C 0617 / IEC 60617 08-10-04
+停止位置1つと動作位置2つを示した例。
+規格票には引出し線が描かれていない。作図に使えるよう、外形の縁に端子を足してある。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。
 </informations>
     <description>

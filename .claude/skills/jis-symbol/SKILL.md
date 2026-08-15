@@ -340,8 +340,18 @@ py -3 tools/compare_page.py --num --all          # 数値だけ全件。数分�
 > `G`・`R`・`Y`・`W` と書いてしまい、あとで規格の符号に直した。
 
 ```bash
-py -3 -c "import sys;sys.path.insert(0,'tools');sys.stdout.reconfigure(encoding='utf-8');import paths,pypdfium2 as p;print(p.PdfDocument(paths.standard())[107].get_textpage().get_text_range())"
+py -3 -c "import sys;sys.path.insert(0,'tools');sys.stdout.reconfigure(encoding='utf-8');import paths,pypdfium2 as p;print(p.PdfDocument(paths.standard(8))[57].get_textpage().get_text_range())"
 ```
+
+**説明欄の照合は節ごとではなく部ごとに一度、全件でかける。**書きながら1枚ずつ
+読むと、他の記号と共通の注釈（`A00174` のような）を落とす。第7部・第8部とも、
+描き終えてから全件を通し読みして拾った。
+
+| 欄 | 照合のしかた | 出てきたもの |
+|---|---|---|
+| 形状分類 | 図形の種類（`<line>` `<ellipse>` …）と機械的に突き合わせる | 第7部22件・第8部4件が引っかかり、**全部空振り**。折れ線を `<polygon>` で描くなど、同じ形を別のプリミティブで描いているだけ |
+| 補足事項 | 「〜しなければならない」「〜だけに使用する」を探す | 第7部2件・第8部23件が本物 |
+| 注釈 | **番号（`A00174`）しか書いていない。**巻末の注釈の節を引く | 符号の決め・組合せ方・形が変わる規則 |
 
 **フォントは合わない。** 規格票は変数をセリフ斜体で組んでいる（`U` `I` `P`）。
 こちらは Liberation Sans。**形は合わせるが書体は合わせない**と決めてある。
