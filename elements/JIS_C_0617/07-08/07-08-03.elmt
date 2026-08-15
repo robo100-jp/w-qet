@@ -3,7 +3,7 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{e572f1e0-1852-4dcf-ac23-3adc0c314394}"/>
     <names>
-        <name lang="ja">リミットスイッチ（a接点・b接点を1つに持つ）</name>
+        <name lang="ja">リミットスイッチ（独立した a接点と b接点）</name>
         <name lang="en">Position switch assembly</name>
     </names>
     <informations>規格の名称: リミットスイッチ（機械的に連結される個別のメーク接点とブレーク接点）
