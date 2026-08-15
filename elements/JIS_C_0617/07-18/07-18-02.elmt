@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{b826893a-8886-4fea-ae3f-0db21f57a094}"/>
     <names>
-        <name lang="ja">自動再閉路用装置，自動再閉路継電器</name>
+        <name lang="ja">自動再閉路継電器</name>
         <name lang="en">Device for auto-reclosing; Auto-reclose relay</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-18-02
+    <informations>規格の名称: 自動再閉路用装置，自動再閉路継電器
+JIS C 0617 / IEC 60617 07-18-02
 事故のあと自動で再投入する装置。上は再投入の動き（円から矢が的へ）、下は再投入までの時限を表す。
 規格票にはリード線が描かれていない。作図に使えるよう、外形の左右中央に端子を1つずつ足してある。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>

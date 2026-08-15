@@ -3,10 +3,11 @@
             type="element" link_type="slave" version="0.100.0">
     <uuid uuid="{150849ce-00ba-4249-8308-0cc0c3fc6328}"/>
     <names>
-        <name lang="ja">自動引外し装置付き電磁接触器</name>
+        <name lang="ja">電磁開閉器</name>
         <name lang="en">Contactor with automatic tripping</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-13-03
+    <informations>規格の名称: 自動引外し装置付き電磁接触器
+JIS C 0617 / IEC 60617 07-13-03
 継電器または開放機構で動く。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{f04ec164-5287-4110-bdff-e31e119d4605}"/>
     <names>
-        <name lang="ja">静止形継電器（増幅器付き）</name>
+        <name lang="ja">アンプ付きの静止形継電器</name>
         <name lang="en">Static relay</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-26-04
+    <informations>規格の名称: 静止形継電器（増幅器付き）
+JIS C 0617 / IEC 60617 07-26-04
 増幅する半導体を枠の中に示した静止形継電器。
 破線は機械的連結ではなく、動作の伝達を表す。
 接点を横切る横棒が、半導体で開閉する（静止形である）ことを表す。

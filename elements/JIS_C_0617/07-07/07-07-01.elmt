@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{152db420-599d-40bd-b2e3-902bd660b344}"/>
     <names>
-        <name lang="ja">手動操作スイッチ（一般図記号）</name>
+        <name lang="ja">手動スイッチ（一般）</name>
         <name lang="en">Switch, manually operated, general symbol</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-07-01
+    <informations>規格の名称: 手動操作スイッチ（一般図記号）
+JIS C 0617 / IEC 60617 07-07-01
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"

@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{2429712c-37dc-49c8-8da0-31371239bb0b}"/>
     <names>
-        <name lang="ja">静止形継電器（一般図記号）</name>
+        <name lang="ja">静止形継電器</name>
         <name lang="en">Static relay, general symbol</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-26-01
+    <informations>規格の名称: 静止形継電器（一般図記号）
+JIS C 0617 / IEC 60617 07-26-01
 半導体でできた継電器の一般図記号。左の枠が継電器、右が出力接点。
 破線は機械的連結ではなく、動作の伝達を表す。
 接点を横切る横棒が、半導体で開閉する（静止形である）ことを表す。

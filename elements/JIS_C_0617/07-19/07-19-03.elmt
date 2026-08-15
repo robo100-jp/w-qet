@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{7cb1bfa6-21f6-44e8-ac52-addb6e5093e0}"/>
     <names>
-        <name lang="ja">近接検出装置（静電容量形）</name>
+        <name lang="ja">静電容量形の近接センサ</name>
         <name lang="en">Proximity sensing device, capacitive</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-19-03
+    <informations>規格の名称: 近接検出装置（静電容量形）
+JIS C 0617 / IEC 60617 07-19-03
 固体材料が近づくと動く静電容量形の近接検出装置。左の斜線を引いた長方形は被検出体（固体材料）で、装置の一部ではない。
 規格票のリード線は右の1本だけ。作図に使えるよう、その端だけを端子にした。電源側の端子は足していない。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>

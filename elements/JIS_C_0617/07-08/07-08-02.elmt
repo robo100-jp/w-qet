@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{01956bf7-5221-4c70-85a6-6d46549b1d71}"/>
     <names>
-        <name lang="ja">リミットスイッチ（ブレーク接点）</name>
+        <name lang="ja">リミットスイッチ（b接点）</name>
         <name lang="en">Position switch, break contact</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-08-02
+    <informations>規格の名称: リミットスイッチ（ブレーク接点）
+JIS C 0617 / IEC 60617 07-08-02
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"

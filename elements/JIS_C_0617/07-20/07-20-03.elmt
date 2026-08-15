@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{43864013-fb22-424a-aa63-e0f5785c204a}"/>
     <names>
-        <name lang="ja">近接スイッチ（磁石の接近で作動）</name>
+        <name lang="ja">リードスイッチ</name>
         <name lang="en">Proximity switch, magnetically controlled</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-20-03
+    <informations>規格の名称: 近接スイッチ（磁石の接近で作動）
+JIS C 0617 / IEC 60617 07-20-03
 磁石が近づいたことを検出して閉じるスイッチ。左の塗りつぶした コ の字が磁石。
 ひし形とスイッチの間の破線は機械的連結。検出した動きが可動接片に伝わることを表す。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>

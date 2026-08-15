@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{02f6cd93-b2ab-4a66-bac8-fef6779de029}"/>
     <names>
-        <name lang="ja">時計（接点付き）</name>
+        <name lang="ja">タイムスイッチ</name>
         <name lang="en">Clock with contact</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 08-08-03
+    <informations>規格の名称: 時計（接点付き）
+JIS C 0617 / IEC 60617 08-08-03
 下の接点は時刻で動く接点の例。
 規格票には引出し線が描かれていない。作図に使えるよう、外形の縁に端子を1つずつ足してある。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。

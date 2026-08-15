@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{e723c2ee-c045-4d8e-bcf9-fa2d1a91b315}"/>
     <names>
-        <name lang="ja">多段スイッチ・8位置</name>
+        <name lang="ja">セレクタスイッチ（8位置）</name>
         <name lang="en">Multi-position switch, 8 positions</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-11-04
+    <informations>規格の名称: 多段スイッチ・8位置
+JIS C 0617 / IEC 60617 07-11-04
 **規格票が示しているのは6位置の例だけ**（補足事項「6 位置を示してある」）。
 位置の数は形なので編集では変えられず、実務でよく使う段数をこちらで起こした。
 規格票にリード線が無いので、共通の横棒の左端に端子を1つ足してある。

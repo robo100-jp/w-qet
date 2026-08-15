@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{f305fa88-a3c8-43a6-b379-421de7b129cc}"/>
     <names>
-        <name lang="ja">従属電力量計（印字装置付き，表示器）</name>
+        <name lang="ja">子メーター（印字装置付き）</name>
         <name lang="en">Watt-hour meter, slave indicator with printer</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 08-04-12
+    <informations>規格の名称: 従属電力量計（印字装置付き，表示器）
+JIS C 0617 / IEC 60617 08-04-12
 下の横線は印字装置。**左が矢で塞がるので端子は右と下。**
 規格票には引出し線が描かれていない。作図に使えるよう、外形の縁に端子を1つずつ足してある。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。

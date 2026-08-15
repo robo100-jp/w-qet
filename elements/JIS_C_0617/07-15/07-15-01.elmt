@@ -3,10 +3,11 @@
             type="element" link_type="master" version="0.100.0">
     <uuid uuid="{3b859439-8b08-48a5-afc6-ccd7fce47fc7}"/>
     <names>
-        <name lang="ja">作動装置（一般図記号）</name>
+        <name lang="ja">リレーコイル</name>
         <name lang="en">Operating device, general symbol</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-15-01
+    <informations>規格の名称: 作動装置（一般図記号）
+JIS C 0617 / IEC 60617 07-15-01
 継電器コイル・電磁接触器コイルの一般図記号。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

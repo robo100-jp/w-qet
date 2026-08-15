@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{25650a77-23d3-4ab0-806d-dfa3f2d9bbe7}"/>
     <names>
-        <name lang="ja">簡易検圧（検電）装置</name>
+        <name lang="ja">検電器</name>
         <name lang="en">Simplicity voltage detector</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-18-03
+    <informations>規格の名称: 簡易検圧（検電）装置
+JIS C 0617 / IEC 60617 07-18-03
 充電の有無を見る簡易な検電器。縦の線が被検電導体、その脇の短い縦棒が検出極。
 外形の左端が被検電導体に重なる。端子はその上下。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>

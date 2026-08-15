@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{7e8857e6-082f-409d-8793-e1c4053e4e4c}"/>
     <names>
-        <name lang="ja">記録計（一般図記号）</name>
+        <name lang="ja">記録計（中に量の文字を書く）</name>
         <name lang="en">Recording instrument, general symbol</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 08-01-02
+    <informations>規格の名称: 記録計（一般図記号）
+JIS C 0617 / IEC 60617 08-01-02
 規格票には引出し線が描かれていない。作図に使えるよう、外形の縁に端子を1つずつ足してある。
 `*` は測る量に置き換える —— 単位の文字記号（V・A・Hz…）／量の文字記号／
 化学式／図記号のいずれか。文字記号は IEC 60027 から採り、適当な図記号が無ければ

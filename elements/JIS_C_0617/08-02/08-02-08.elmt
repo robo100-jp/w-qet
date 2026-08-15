@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{0c0d1b14-647d-4efa-af70-36e7a29f649e}"/>
     <names>
-        <name lang="ja">同期検定器</name>
+        <name lang="ja">シンクロスコープ</name>
         <name lang="en">Synchroscope</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 08-02-08
+    <informations>規格の名称: 同期検定器
+JIS C 0617 / IEC 60617 08-02-08
 規格票には引出し線が描かれていない。作図に使えるよう、外形の縁に端子を1つずつ足してある。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。
 </informations>

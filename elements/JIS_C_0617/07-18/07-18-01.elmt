@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{1a5018e7-860e-435b-badd-ca27d7cff410}"/>
     <names>
-        <name lang="ja">ブッフホルツ保護装置，気体継電器</name>
+        <name lang="ja">ブッフホルツ継電器</name>
         <name lang="en">Buchholz protective device; Gas relay</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-18-01
+    <informations>規格の名称: ブッフホルツ保護装置，気体継電器
+JIS C 0617 / IEC 60617 07-18-01
 変圧器の油中に出るガスと油の流れを見る保護装置。上の枡が浮子（ガス集積）、下の枡が羽根（油流）。
 規格票にはリード線が描かれていない。作図に使えるよう、外形の左右中央に端子を1つずつ足してある。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>

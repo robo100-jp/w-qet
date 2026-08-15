@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{4af00d5f-d7f1-440a-87d8-f13c64db9658}"/>
     <names>
-        <name lang="ja">温度感知スイッチ（メーク接点）</name>
+        <name lang="ja">温度スイッチ（a接点）</name>
         <name lang="en">Temperature sensitive switch, make contact</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-09-01
+    <informations>規格の名称: 温度感知スイッチ（メーク接点）
+JIS C 0617 / IEC 60617 07-09-01
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"

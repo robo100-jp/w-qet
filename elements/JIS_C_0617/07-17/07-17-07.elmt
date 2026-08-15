@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{33a2b5e6-e3d0-43c7-a770-49d56188e8c6}"/>
     <names>
-        <name lang="ja">不足電圧継電器</name>
+        <name lang="ja">UVR（不足電圧継電器）</name>
         <name lang="en">Undervoltage relay</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-17-07
+    <informations>規格の名称: 不足電圧継電器
+JIS C 0617 / IEC 60617 07-17-07
 電圧が下がったことを検出する継電器。動作値と復帰率の例を添える。
 規格票にはリード線が描かれていない。作図に使えるよう、外形の左右中央に端子を1つずつ足してある。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>

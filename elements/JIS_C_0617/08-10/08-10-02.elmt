@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{1a22b94c-7436-43b5-ad5b-cb4ae842d725}"/>
     <names>
-        <name lang="ja">信号ランプ（せん光形）</name>
+        <name lang="ja">せん光灯</name>
         <name lang="en">Signal lamp, flashing type</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 08-10-02
+    <informations>規格の名称: 信号ランプ（せん光形）
+JIS C 0617 / IEC 60617 08-10-02
 上の方形パルスがせん光（点滅）を表す。
 色を示すときは図記号の脇に RD（赤）・YE（黄）・GN（緑）・BU（青）・
 WH（白）と書く。種類は Ne・Xe・Na・Hg・I・IN・EL・ARC・FL・

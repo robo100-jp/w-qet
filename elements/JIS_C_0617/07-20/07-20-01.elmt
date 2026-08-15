@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{2d220b2b-abe1-42ea-b684-434945452450}"/>
     <names>
-        <name lang="ja">触れ感応スイッチ</name>
+        <name lang="ja">タッチスイッチ</name>
         <name lang="en">Touch sensitive switch</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-20-01
+    <informations>規格の名称: 触れ感応スイッチ
+JIS C 0617 / IEC 60617 07-20-01
 触れたことを検出して閉じるスイッチ。ひし形の左の縦棒が触れる面。
 ひし形とスイッチの間の破線は機械的連結。検出した動きが可動接片に伝わることを表す。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>

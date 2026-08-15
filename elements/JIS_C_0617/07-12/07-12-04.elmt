@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{9afec550-2365-4f67-b724-738a043328d7}"/>
     <names>
-        <name lang="ja">複合スイッチ（一般図記号）</name>
+        <name lang="ja">複合スイッチ（一般）</name>
         <name lang="en">Complex switch, general symbol</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-12-04
+    <informations>規格の名称: 複合スイッチ（一般図記号）
+JIS C 0617 / IEC 60617 07-12-04
 規格票にはリード線が描かれていない。作図に使えるよう、外形の左右中央に端子を1つずつ足してある。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

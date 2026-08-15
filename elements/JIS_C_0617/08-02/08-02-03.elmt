@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{4d0d700f-d812-4f88-85f9-6bfd413fa02f}"/>
     <names>
-        <name lang="ja">最大需要電力計</name>
+        <name lang="ja">デマンド計</name>
         <name lang="en">Maximum demand meter</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 08-02-03
+    <informations>規格の名称: 最大需要電力計
+JIS C 0617 / IEC 60617 08-02-03
 矢は測定するエネルギーの向き。**左が矢で塞がるので端子は上下に置いた。**
 規格票には引出し線が描かれていない。作図に使えるよう、外形の縁に端子を1つずつ足してある。
 積算計に駆動される計器。

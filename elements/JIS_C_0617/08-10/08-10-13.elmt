@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{2816fce5-c362-4bf6-a83e-a0f73acab2ca}"/>
     <names>
-        <name lang="ja">変圧器付き信号ランプ</name>
+        <name lang="ja">変圧器付き表示灯</name>
         <name lang="en">Signalling lamp with built-in transformer</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 08-10-13
+    <informations>規格の名称: 変圧器付き信号ランプ
+JIS C 0617 / IEC 60617 08-10-13
 左が変圧器、右がランプ。引出し線は変圧器側を通る。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。
 </informations>

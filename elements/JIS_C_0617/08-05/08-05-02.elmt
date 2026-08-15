@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{c75d5730-08d3-4f45-a5a2-b887ed68eec9}"/>
     <names>
-        <name lang="ja">パルス計数装置</name>
+        <name lang="ja">カウンタ</name>
         <name lang="en">Pulse counting device</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 08-05-02
+    <informations>規格の名称: パルス計数装置
+JIS C 0617 / IEC 60617 08-05-02
 右の区画の丸が計数部。引出し線は左寄りを上下に貫く。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。
 </informations>

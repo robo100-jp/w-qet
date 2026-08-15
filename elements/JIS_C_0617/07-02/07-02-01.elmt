@@ -3,10 +3,11 @@
             type="element" link_type="slave" version="0.100.0">
     <uuid uuid="{cafc04e4-d839-4a8e-9fc0-0b26df9986cc}"/>
     <names>
-        <name lang="ja">a接点（メーク接点）</name>
+        <name lang="ja">a接点</name>
         <name lang="en">Make contact</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-02-01
+    <informations>規格の名称: a接点（メーク接点）
+JIS C 0617 / IEC 60617 07-02-01
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"

@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{303edb7f-169b-4125-8216-b2e702587f16}"/>
     <names>
-        <name lang="ja">電動機始動器（一般図記号）</name>
+        <name lang="ja">電動機始動器</name>
         <name lang="en">Motor starter, general symbol</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-14-01
+    <informations>規格の名称: 電動機始動器（一般図記号）
+JIS C 0617 / IEC 60617 07-14-01
 規格票にはリード線が描かれていない。作図に使えるよう、外形の上下中央に端子を1つずつ足してある。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

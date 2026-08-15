@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{0c6fb855-c404-41d6-a257-0c42b69114aa}"/>
     <names>
-        <name lang="ja">引外し自由機構（適用例）</name>
+        <name lang="ja">トリップフリーの使い方の例</name>
         <name lang="en">Trip-free mechanism, application</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-13-12
+    <informations>規格の名称: 引外し自由機構（適用例）
+JIS C 0617 / IEC 60617 07-13-12
 引外し自由機構の使い方を示す**回路の例**。単独の機器ではない。
 下端の破線は引外し機構への連結。途中の V 形は戻り止め。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>

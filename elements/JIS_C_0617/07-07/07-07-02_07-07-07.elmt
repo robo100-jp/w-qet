@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{bf905fc8-fe07-49ad-8847-ce6359c34e12}"/>
     <names>
-        <name lang="ja">押しボタンスイッチ（ブレーク接点）</name>
+        <name lang="ja">押しボタンの b接点</name>
         <name lang="en">Push-button switch, break contact</name>
     </names>
-    <informations>JIS C 0617 の組合せ 07-07-02 ＋ 07-07-07
+    <informations>規格の名称: 押しボタンスイッチ（ブレーク接点）
+JIS C 0617 の組合せ 07-07-02 ＋ 07-07-07
 押しボタンで開く接点（b接点）。**この組合せに図記号番号は無い。**
 規格は操作子の限定図記号と接点を組み合わせる建て付けで、番号が振られて
 いるのは 07-07-02（押しボタン＋メーク接点）と 07-07-07（手動操作の一般

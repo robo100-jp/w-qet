@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{4392aa42-da0b-40f6-90dc-283a9f116d2f}"/>
     <names>
-        <name lang="ja">ランプ（一般図記号）</name>
+        <name lang="ja">表示灯</name>
         <name lang="en">Lamp, general symbol</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 08-10-01
+    <informations>規格の名称: ランプ（一般図記号）
+JIS C 0617 / IEC 60617 08-10-01
 規格票には引出し線が描かれていない。作図に使えるよう、外形の縁に端子を1つずつ足してある。
 色を示すときは図記号の脇に RD（赤）・YE（黄）・GN（緑）・BU（青）・WH（白）と書く。
 種類は Ne・Xe・Na・Hg・I・IN・EL・ARC・FL・IR・UV・LED（規格の注釈 A00174）。

@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{18d29428-22d0-4371-9893-9c98a01fe5a9}"/>
     <names>
-        <name lang="ja">機械式開閉装置（3極）</name>
+        <name lang="ja">3極スイッチ</name>
         <name lang="en">Mechanical switching device, three-pole</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-13-13
+    <informations>規格の名称: 機械式開閉装置（3極）
+JIS C 0617 / IEC 60617 07-13-13
 電動ばね蓄勢で操作する開閉装置の適用例。次のものが備わっている。
 　手動引外し装置／ばね蓄勢装置／引外し自由機構
 　過負荷引外し装置 3個・過電流引外し装置 3個

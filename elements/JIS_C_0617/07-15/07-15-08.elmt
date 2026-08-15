@@ -3,10 +3,11 @@
             type="element" link_type="master" version="0.100.0">
     <uuid uuid="{5fd063be-e3ca-419a-9ae1-9d919e7e5363}"/>
     <names>
-        <name lang="ja">遅緩動作形継電器コイル</name>
+        <name lang="ja">オンディレータイマのコイル</name>
         <name lang="en">Relay coil of a slow-operating relay</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-15-08
+    <informations>規格の名称: 遅緩動作形継電器コイル
+JIS C 0617 / IEC 60617 07-15-08
 動作が遅い継電器。斜め十字の枡で示す。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

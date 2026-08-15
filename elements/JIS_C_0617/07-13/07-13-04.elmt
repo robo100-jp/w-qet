@@ -3,10 +3,11 @@
             type="element" link_type="slave" version="0.100.0">
     <uuid uuid="{b419c4ee-8cde-4513-b995-b67953046933}"/>
     <names>
-        <name lang="ja">電磁接触器の主ブレーク接点，電磁接触器</name>
+        <name lang="ja">電磁接触器の主 b接点</name>
         <name lang="en">Main break contact of a contactor; Contactor</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-13-04
+    <informations>規格の名称: 電磁接触器の主ブレーク接点，電磁接触器
+JIS C 0617 / IEC 60617 07-13-04
 休止状態で閉じている接点。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

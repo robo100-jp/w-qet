@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{1228ffce-64ee-47b6-bd2f-1fdc61dfa6a7}"/>
     <names>
-        <name lang="ja">計数装置（カム作動形）</name>
+        <name lang="ja">カウンタ（カムで回すもの）</name>
         <name lang="en">Counting device, cam driven</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 08-05-06
+    <informations>規格の名称: 計数装置（カム作動形）
+JIS C 0617 / IEC 60617 08-05-06
 n 回数えるごとに接点を閉じる。
 左の欠けた円はカム、破線は機械的な結合で電気の接続ではない。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>

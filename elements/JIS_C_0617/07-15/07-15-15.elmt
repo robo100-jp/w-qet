@@ -3,10 +3,11 @@
             type="element" link_type="master" version="0.100.0">
     <uuid uuid="{a5a3157a-2be7-4b67-9f6c-afe4c3cf0778}"/>
     <names>
-        <name lang="ja">有極形継電器コイル</name>
+        <name lang="ja">有極リレー</name>
         <name lang="en">Relay coil of a polarized relay</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-15-15
+    <informations>規格の名称: 有極形継電器コイル
+JIS C 0617 / IEC 60617 07-15-15
 電流の向きで動作が変わる継電器。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

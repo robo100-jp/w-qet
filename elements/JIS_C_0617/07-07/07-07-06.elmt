@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{96585aae-b5e3-41ea-a578-0c15ef2243a1}"/>
     <names>
-        <name lang="ja">非常停止スイッチ</name>
+        <name lang="ja">非常停止</name>
         <name lang="en">Switch, emergency stop</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-07-06
+    <informations>規格の名称: 非常停止スイッチ
+JIS C 0617 / IEC 60617 07-07-06
 きのこ形ヘッドで操作する。ブレーク接点を確実に開き、その位置を保つ。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

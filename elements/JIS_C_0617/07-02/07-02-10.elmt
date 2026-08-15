@@ -3,10 +3,11 @@
             type="element" link_type="slave" version="0.100.0">
     <uuid uuid="{063dae7b-33d3-4bc6-95ca-00f01e3ceb3d}"/>
     <names>
-        <name lang="ja">安全開離機能接点（ミラー接点）</name>
+        <name lang="ja">ミラー接点</name>
         <name lang="en">Mirror contact</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-02-10
+    <informations>規格の名称: 安全開離機能接点（ミラー接点）
+JIS C 0617 / IEC 60617 07-02-10
 **規格の名称は「安全開離機能接点」。**現場で言う「ミラー接点」は英名 Mirror contact から。
 ふだん閉じている補助接点で、主接点が溶着するような異常のときも、
 開いているはずの主接点と同時に閉じることがない、という意味の接点。

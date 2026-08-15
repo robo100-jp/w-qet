@@ -3,10 +3,11 @@
             type="element" link_type="master" version="0.100.0">
     <uuid uuid="{9d544dff-25db-43ab-aa04-958daf145356}"/>
     <names>
-        <name lang="ja">交流感動形継電器コイル</name>
+        <name lang="ja">交流で動くリレーコイル</name>
         <name lang="en">Relay coil of an alternating current relay</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-15-12
+    <informations>規格の名称: 交流感動形継電器コイル
+JIS C 0617 / IEC 60617 07-15-12
 交流で動作する継電器。正弦波の枡で示す。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

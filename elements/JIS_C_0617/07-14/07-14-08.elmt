@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{3b1212a4-f669-4db3-96b2-0b5510c54ba3}"/>
     <names>
-        <name lang="ja">サイリスタを用いる始動調整器</name>
+        <name lang="ja">ソフトスタータ</name>
         <name lang="en">Starter-regulator with thyristors</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-14-08
+    <informations>規格の名称: サイリスタを用いる始動調整器
+JIS C 0617 / IEC 60617 07-14-08
 規格票にはリード線が描かれていない。作図に使えるよう、外形の上下中央に端子を1つずつ足してある。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

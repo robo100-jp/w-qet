@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{4035247b-8f71-47b0-94bc-09f93a385a8e}"/>
     <names>
-        <name lang="ja">手動操作の引きボタンスイッチ（自動復帰）</name>
+        <name lang="ja">引きボタン</name>
         <name lang="en">Switch, manually operated, pulling, automatic return</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-07-03
+    <informations>規格の名称: 手動操作の引きボタンスイッチ（自動復帰）
+JIS C 0617 / IEC 60617 07-07-03
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"

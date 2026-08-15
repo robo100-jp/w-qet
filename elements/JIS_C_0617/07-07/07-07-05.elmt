@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{4fca4d79-2473-49b8-b18d-47e3145c9d29}"/>
     <names>
-        <name lang="ja">確実動作が行われる手動操作の押しボタンスイッチ（自動復帰）</name>
+        <name lang="ja">押しボタン（確実動作）</name>
         <name lang="en">Switch, manually operated with positive operation, push-button, automatic return</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-07-05
+    <informations>規格の名称: 確実動作が行われる手動操作の押しボタンスイッチ（自動復帰）
+JIS C 0617 / IEC 60617 07-07-05
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>08-05-06 計数装置（カム作動形） — w-qet</title><style>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>08-05-06 カウンタ（カムで回すもの） — w-qet</title><style>
 :root{--bg:#fff;--fg:#1a1a1a;--dim:#666;--line:#dcdcdc;--accent:#1c4f9c;
       --card:#fafafa;--code:#f2f3f5;--warn:#8a5a00}
 @media (prefers-color-scheme:dark){:root{
@@ -82,7 +82,7 @@ h3 + .rule{margin-top:.1em}
 .caution{border-left:3px solid var(--warn);background:var(--card);
   padding:10px 14px;font-size:.85rem;border-radius:0 6px 6px 0;margin:1em 0}
 </style></head><body><div class="wrap"><nav class="crumb"><a href="index.html">図記号の一覧</a> ／ <a href="notes.html">規格の注釈</a> ／ 08-05-06</nav>
-<h1><span class="num">08-05-06</span>計数装置（カム作動形）</h1>
+<h1><span class="num">08-05-06</span>カウンタ（カムで回すもの）</h1>
 <div class="en">Counting device, cam driven</div>
 <p class="src">JIS C 0617 / IEC 60617 08-05-06　—— 規格を参考に座標から描き起こしたもの</p>
 <div class="top"><div class="fig"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-81 -36 102 72" width="326.4" height="230.4" role="img"><defs><pattern id="g1" width="10" height="10" patternUnits="userSpaceOnUse" x="-75" y="-30"><path d="M10 0H0V10" fill="none" stroke="currentColor" stroke-width=".25" opacity=".22"/></pattern></defs><rect x="-81" y="-36" width="102" height="72" fill="url(#g1)"/><g stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" fill="none"><rect x="-75" y="-30" width="90" height="60" fill="none" stroke="#d8d8d8" stroke-width="0.4"/><path d="M -60 -10 A 10 10 0 1 0 -50 2.44929e-15" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-60" y1="-10" x2="-60" y2="0" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-60" y1="0" x2="-50" y2="0" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-50" y1="0" x2="-40" y2="0" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="4,2"/><rect x="-40" y="-10" width="20" height="20" fill="none" stroke="currentColor" stroke-width="0.5"/><ellipse cx="-30" cy="0" rx="4.5" ry="4.5" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-20" y1="0" x2="-5" y2="0" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="4,2"/><line x1="0" y1="-30" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-10" y1="-10" x2="0" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="10" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-10.075" y="-17.6" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor" font-style="italic">n</text><circle cx="0" cy="-30" r="1.6" fill="none" stroke="#c04040" stroke-width="0.5"/><circle cx="0" cy="30" r="1.6" fill="none" stroke="#c04040" stroke-width="0.5"/><text x="20" y="-23" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="9" fill="#3c5ac8">[label]</text></g></svg><div class="legend">格子 1目 = 1M。灰の枠が外形、赤丸が端子、青が名前の欄</div></div>
@@ -95,7 +95,8 @@ h3 + .rule{margin-top:.1em}
 </tbody></table></div></div>
 <h2>図記号ファイルの覚え書き</h2>
 <p class="rule"><code>.elmt</code> の <code>&lt;informations&gt;</code> から。<b>ここは書き換えても次に作り直すと消える。</b>書くなら下の「手で書く欄」か <code>.elmt</code> 側に。</p>
-<div class="note">n 回数えるごとに接点を閉じる。
+<div class="note">規格の名称: 計数装置（カム作動形）
+n 回数えるごとに接点を閉じる。
 左の欠けた円はカム、破線は機械的な結合で電気の接続ではない。</div>
 <h2>一般的な名称<span class="pencil">手で書く欄</span></h2>
 <p class="rule">この図記号が指す部品を、ふだん何と呼ぶか。現場・部品表・カタログでの言い方。<b>規格の名称とは別。</b>規格が「安全開離機能接点」でも、通じるのは「ミラー接点」。<b>探すときはこの言葉で探すので、目次の絞り込みもここを見る。</b><br><b>名前だけを書く。</b>どういう部品かの説明は次の欄へ。ここは <code>.elmt</code> の名称（QET の部品パネルに出る名前）の元になる。</p>
@@ -127,7 +128,7 @@ h3 + .rule{margin-top:.1em}
 <details><summary>開く</summary><pre id="data">{
  "id": "08-05-06",
  "name": {
-  "ja": "計数装置（カム作動形）",
+  "ja": "カウンタ（カムで回すもの）",
   "en": "Counting device, cam driven"
  },
  "standard": "08-05-06",

@@ -3,10 +3,11 @@
             type="element" link_type="master" version="0.100.0">
     <uuid uuid="{6e2aaa0d-ee3d-42fb-9aa5-782579db0797}"/>
     <names>
-        <name lang="ja">電子式継電器で構成される作動装置</name>
+        <name lang="ja">電子式リレー</name>
         <name lang="en">Operating device of an electronic relay</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-15-22
+    <informations>規格の名称: 電子式継電器で構成される作動装置
+JIS C 0617 / IEC 60617 07-15-22
 電子式継電器の作動部。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

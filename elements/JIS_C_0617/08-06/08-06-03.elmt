@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{6d9fc6b9-9f7d-41c7-a00f-17cfafcd7274}"/>
     <names>
-        <name lang="ja">直熱形熱電対</name>
+        <name lang="ja">直熱形の熱電対</name>
         <name lang="en">Thermocouple with non-insulated heating element</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 08-06-03
+    <informations>規格の名称: 直熱形熱電対
+JIS C 0617 / IEC 60617 08-06-03
 加熱線が熱電対とつながっている形。下の2本が加熱線。
 加熱線は第5部の 05-07-06 の代わりに 05-A7-02 で描いてもよい（補足事項）。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。

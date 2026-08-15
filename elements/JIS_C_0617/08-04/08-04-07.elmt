@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{7701920a-1f79-4cd5-b726-6f78fb138822}"/>
     <names>
-        <name lang="ja">電力量計（双方向）</name>
+        <name lang="ja">双方向電力量計</name>
         <name lang="en">Watt-hour meter, both directions</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 08-04-07
+    <informations>規格の名称: 電力量計（双方向）
+JIS C 0617 / IEC 60617 08-04-07
 上の区画の矢は測定するエネルギーの向き。
 規格票には引出し線が描かれていない。作図に使えるよう、外形の縁に端子を1つずつ足してある。
 母線へ流入する・母線から流出する、どちらも測る。

@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{db864821-ab8e-4283-a913-f439c2bd39e4}"/>
     <names>
-        <name lang="ja">導体断線検出継電器</name>
+        <name lang="ja">断線検出継電器</name>
         <name lang="en">Divided-conductor detection relay</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-17-11
+    <informations>規格の名称: 導体断線検出継電器
+JIS C 0617 / IEC 60617 07-17-11
 導体の断線を検出する継電器。巻線に2本の斜線を重ねる。
 規格票にはリード線が描かれていない。作図に使えるよう、外形の左右中央に端子を1つずつ足してある。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>

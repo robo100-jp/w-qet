@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{9d6b694c-ed48-409b-bf9c-863d51738fcd}"/>
     <names>
-        <name lang="ja">欠相検出継電器</name>
+        <name lang="ja">欠相リレー</name>
         <name lang="en">Phase-failure detection relay</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-17-12
+    <informations>規格の名称: 欠相検出継電器
+JIS C 0617 / IEC 60617 07-17-12
 相が欠けたことを検出する継電器。3相のうち動いている相の数 m で示す。
 規格票にはリード線が描かれていない。作図に使えるよう、外形の左右中央に端子を1つずつ足してある。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>

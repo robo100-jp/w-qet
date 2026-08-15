@@ -3,10 +3,11 @@
             type="element" link_type="slave" version="0.100.0">
     <uuid uuid="{c428910a-fc8c-434a-b29e-98579aa75ca1}"/>
     <names>
-        <name lang="ja">オフ位置付き切換え接点</name>
+        <name lang="ja">c接点（オフ位置付き）</name>
         <name lang="en">Change-over contact with off-position</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-02-05
+    <informations>規格の名称: オフ位置付き切換え接点
+JIS C 0617 / IEC 60617 07-02-05
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <line x1="-10" y1="-30" x2="-10" y2="-10" antialias="false"

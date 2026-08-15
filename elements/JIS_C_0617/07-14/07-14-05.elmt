@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{a3de5fe1-cd45-4b3b-9c72-2e36c2c1c948}"/>
     <names>
-        <name lang="ja">主回路直結始動器（可逆）</name>
+        <name lang="ja">正逆始動器</name>
         <name lang="en">Direct-on-line starter, reversing</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-14-05
+    <informations>規格の名称: 主回路直結始動器（可逆）
+JIS C 0617 / IEC 60617 07-14-05
 規格票にはリード線が描かれていない。作図に使えるよう、外形の上下中央に端子を1つずつ足してある。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

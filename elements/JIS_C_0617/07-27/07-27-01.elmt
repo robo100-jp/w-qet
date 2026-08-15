@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{d1338fef-ddb8-451d-bce0-6979cf6b2493}"/>
     <names>
-        <name lang="ja">電気分離形結合装置</name>
+        <name lang="ja">絶縁形の結合装置</name>
         <name lang="en">Coupling device with electrical separation</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-27-01
+    <informations>規格の名称: 電気分離形結合装置
+JIS C 0617 / IEC 60617 07-27-01
 入力側 X と出力側 Y を電気的に分離して結ぶ装置。
 * は結合の方式を表す図記号に置き換えて使う（07-27-02 が光の例）。
 規格票にリード線が描かれていない。作図に使えるよう、枠の左右中央に端子を1つずつ足してある。

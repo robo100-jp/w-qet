@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{0da4de17-2c49-4665-9270-994962d4889a}"/>
     <names>
-        <name lang="ja">手動操作の押しボタンスイッチ（自動復帰）</name>
+        <name lang="ja">押しボタン</name>
         <name lang="en">Switch, manually operated, push-button, automatic return</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-07-02
+    <informations>規格の名称: 手動操作の押しボタンスイッチ（自動復帰）
+JIS C 0617 / IEC 60617 07-07-02
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"

@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{f27bdbde-dbe6-4bbf-8dce-8437ec18bce8}"/>
     <names>
-        <name lang="ja">保護ガス封入形放電管</name>
+        <name lang="ja">GDT（ガス入り放電管）</name>
         <name lang="en">Protective gas discharge tube</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-22-04
+    <informations>規格の名称: 保護ガス封入形放電管
+JIS C 0617 / IEC 60617 07-22-04
 放電ギャップをガスの入った管に封じたもの。右下の黒丸がガス封入を表す。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

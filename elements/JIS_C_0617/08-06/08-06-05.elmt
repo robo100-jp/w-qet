@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{3577b42f-524c-44f6-acee-31caea7be1df}"/>
     <names>
-        <name lang="ja">傍熱形熱電対</name>
+        <name lang="ja">傍熱形の熱電対</name>
         <name lang="en">Thermocouple with insulated heating element</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 08-06-05
+    <informations>規格の名称: 傍熱形熱電対
+JIS C 0617 / IEC 60617 08-06-05
 加熱線が絶縁されている形。**下の頂点は接合点に触れない。**
 加熱線は第5部の 05-07-06 の代わりに 05-A7-02 で描いてもよい（補足事項）。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。

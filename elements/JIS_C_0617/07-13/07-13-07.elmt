@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{ef682770-b911-444a-a3c0-3b9294943c46}"/>
     <names>
-        <name lang="ja">双投形断路器，双投形アイソレータ</name>
+        <name lang="ja">双投形断路器</name>
         <name lang="en">Two-way disconnector; Two-way isolator</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-13-07
+    <informations>規格の名称: 双投形断路器，双投形アイソレータ
+JIS C 0617 / IEC 60617 07-13-07
 中央がオフ位置。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

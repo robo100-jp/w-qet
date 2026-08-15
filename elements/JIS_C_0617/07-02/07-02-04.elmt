@@ -3,10 +3,11 @@
             type="element" link_type="slave" version="0.100.0">
     <uuid uuid="{797f5419-299c-444c-bfe0-370aa2cf639f}"/>
     <names>
-        <name lang="ja">非オーバーラップ切換え接点</name>
+        <name lang="ja">c接点</name>
         <name lang="en">Change-over break before make contact</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-02-04
+    <informations>規格の名称: 非オーバーラップ切換え接点
+JIS C 0617 / IEC 60617 07-02-04
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <line x1="-20" y1="-30" x2="-20" y2="-10" antialias="false"

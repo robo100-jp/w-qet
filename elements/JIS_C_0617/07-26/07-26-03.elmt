@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{d47cf74e-53c6-42db-b000-9e9c589f6cac}"/>
     <names>
-        <name lang="ja">静止形熱動過負荷継電器</name>
+        <name lang="ja">電子式サーマル</name>
         <name lang="en">Static thermal overload relay</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-26-03
+    <informations>規格の名称: 静止形熱動過負荷継電器
+JIS C 0617 / IEC 60617 07-26-03
 3極の主回路を監視する半導体式の熱動過負荷継電器。
 枠の中の階段形が過負荷（熱動）の限定図記号。
 出力はブレーク接点（11-12）とメーク接点（13-14）。

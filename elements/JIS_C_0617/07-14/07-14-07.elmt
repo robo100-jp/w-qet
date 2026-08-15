@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{d2d8d5c8-72e6-449b-a544-4ba3bde34c80}"/>
     <names>
-        <name lang="ja">単巻変圧器を用いる始動器</name>
+        <name lang="ja">コンドルファ始動器</name>
         <name lang="en">Starter with auto-transformer</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-14-07
+    <informations>規格の名称: 単巻変圧器を用いる始動器
+JIS C 0617 / IEC 60617 07-14-07
 規格票にはリード線が描かれていない。作図に使えるよう、外形の上下中央に端子を1つずつ足してある。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

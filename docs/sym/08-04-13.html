@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>08-04-13 電力量計（最大需要電力計付き） — w-qet</title><style>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>08-04-13 電力量計＋デマンド計 — w-qet</title><style>
 :root{--bg:#fff;--fg:#1a1a1a;--dim:#666;--line:#dcdcdc;--accent:#1c4f9c;
       --card:#fafafa;--code:#f2f3f5;--warn:#8a5a00}
 @media (prefers-color-scheme:dark){:root{
@@ -82,7 +82,7 @@ h3 + .rule{margin-top:.1em}
 .caution{border-left:3px solid var(--warn);background:var(--card);
   padding:10px 14px;font-size:.85rem;border-radius:0 6px 6px 0;margin:1em 0}
 </style></head><body><div class="wrap"><nav class="crumb"><a href="index.html">図記号の一覧</a> ／ <a href="notes.html">規格の注釈</a> ／ 08-04-13</nav>
-<h1><span class="num">08-04-13</span>電力量計（最大需要電力計付き）</h1>
+<h1><span class="num">08-04-13</span>電力量計＋デマンド計</h1>
 <div class="en">Watt-hour meter with maximum demand meter</div>
 <p class="src">JIS C 0617 / IEC 60617 08-04-13　—— 規格を参考に座標から描き起こしたもの</p>
 <div class="top"><div class="fig"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-26 -36 52 72" width="166.4" height="230.4" role="img"><defs><pattern id="g1" width="10" height="10" patternUnits="userSpaceOnUse" x="-20" y="-30"><path d="M10 0H0V10" fill="none" stroke="currentColor" stroke-width=".25" opacity=".22"/></pattern></defs><rect x="-26" y="-36" width="52" height="72" fill="url(#g1)"/><g stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" fill="none"><rect x="-20" y="-30" width="40" height="60" fill="none" stroke="#d8d8d8" stroke-width="0.4"/><rect x="-20" y="-30" width="40" height="60" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-20" y1="-10" x2="20" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-8.53" y="5.1" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">Wh</text><text x="-15.45" y="20.7" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor" font-style="italic">P</text><text x="-6.58" y="23.27" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">max</text><circle cx="-20" cy="0" r="1.6" fill="none" stroke="#c04040" stroke-width="0.5"/><circle cx="20" cy="0" r="1.6" fill="none" stroke="#c04040" stroke-width="0.5"/><text x="25" y="-23" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="9" fill="#3c5ac8">[label]</text></g></svg><div class="legend">格子 1目 = 1M。灰の枠が外形、赤丸が端子、青が名前の欄</div></div>
@@ -100,7 +100,8 @@ h3 + .rule{margin-top:.1em}
 <div class="an"><h3><span class="id"><a href="notes.html#A00146">A00146</a></span>量の文字記号を下に添える</h3>単位の文字記号を使ったときは、測定する量の文字記号を補足として<b>その下に</b>書くとよい。測定量についての補足情報や限定図記号も、量の文字記号の下に示してよい。</div>
 <h2>図記号ファイルの覚え書き</h2>
 <p class="rule"><code>.elmt</code> の <code>&lt;informations&gt;</code> から。<b>ここは書き換えても次に作り直すと消える。</b>書くなら下の「手で書く欄」か <code>.elmt</code> 側に。</p>
-<div class="note">規格票には引出し線が描かれていない。作図に使えるよう、外形の縁に端子を1つずつ足してある。</div>
+<div class="note">規格の名称: 電力量計（最大需要電力計付き）
+規格票には引出し線が描かれていない。作図に使えるよう、外形の縁に端子を1つずつ足してある。</div>
 <h2>一般的な名称<span class="pencil">手で書く欄</span></h2>
 <p class="rule">この図記号が指す部品を、ふだん何と呼ぶか。現場・部品表・カタログでの言い方。<b>規格の名称とは別。</b>規格が「安全開離機能接点」でも、通じるのは「ミラー接点」。<b>探すときはこの言葉で探すので、目次の絞り込みもここを見る。</b><br><b>名前だけを書く。</b>どういう部品かの説明は次の欄へ。ここは <code>.elmt</code> の名称（QET の部品パネルに出る名前）の元になる。</p>
 <div class="hand"><!--hand:names--><p>電力量計＋デマンド計</p><!--/hand:names--></div>
@@ -131,7 +132,7 @@ h3 + .rule{margin-top:.1em}
 <details><summary>開く</summary><pre id="data">{
  "id": "08-04-13",
  "name": {
-  "ja": "電力量計（最大需要電力計付き）",
+  "ja": "電力量計＋デマンド計",
   "en": "Watt-hour meter with maximum demand meter"
  },
  "standard": "08-04-13",

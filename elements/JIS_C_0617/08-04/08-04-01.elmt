@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{6bfaf42f-8f47-449e-9127-444fc26da416}"/>
     <names>
-        <name lang="ja">時間計，時間計数器</name>
+        <name lang="ja">アワーメータ</name>
         <name lang="en">Hour meter</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 08-04-01
+    <informations>規格の名称: 時間計，時間計数器
+JIS C 0617 / IEC 60617 08-04-01
 規格票には引出し線が描かれていない。作図に使えるよう、外形の縁に端子を1つずつ足してある。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。
 </informations>

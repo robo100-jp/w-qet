@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{33e7ee0e-59fd-46e9-b8ec-2f3a4ead4b7b}"/>
     <names>
-        <name lang="ja">計器用多段選択スイッチ（電流回路用）</name>
+        <name lang="ja">AS（電流計切換スイッチ）</name>
         <name lang="en">Instrument multi-position selector switch for current circuit</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-12-07
+    <informations>規格の名称: 計器用多段選択スイッチ（電流回路用）
+JIS C 0617 / IEC 60617 07-12-07
 規格票にはリード線が描かれていない。作図に使えるよう、外形の左右中央に端子を1つずつ足してある。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

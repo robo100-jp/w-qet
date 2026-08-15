@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{658a0ebe-c440-4f40-9071-f62dbd014832}"/>
     <names>
-        <name lang="ja">静止形スイッチ（一般図記号）</name>
+        <name lang="ja">静止形スイッチ</name>
         <name lang="en">Static switch, general symbol</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-25-01
+    <informations>規格の名称: 静止形スイッチ（一般図記号）
+JIS C 0617 / IEC 60617 07-25-01
 半導体で開閉するスイッチの一般図記号。
 接点を横切る横棒が、半導体で開閉する（静止形である）ことを表す。
 

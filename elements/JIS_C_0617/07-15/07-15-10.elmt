@@ -3,10 +3,11 @@
             type="element" link_type="master" version="0.100.0">
     <uuid uuid="{d3be9e82-3b2c-4396-937e-b5a931084e42}"/>
     <names>
-        <name lang="ja">高速動作形継電器コイル</name>
+        <name lang="ja">高速動作リレー</name>
         <name lang="en">Relay coil of a high speed relay</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-15-10
+    <informations>規格の名称: 高速動作形継電器コイル
+JIS C 0617 / IEC 60617 07-15-10
 動作も復旧も速い継電器。横線を引いた枡で示す。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

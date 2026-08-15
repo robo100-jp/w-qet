@@ -3,10 +3,11 @@
             type="element" link_type="master" version="0.100.0">
     <uuid uuid="{fb8c7c3a-cc91-49af-af89-5788b25db940}"/>
     <names>
-        <name lang="ja">遅緩復旧形継電器コイル</name>
+        <name lang="ja">オフディレータイマのコイル</name>
         <name lang="en">Relay coil of a slow-releasing relay</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-15-07
+    <informations>規格の名称: 遅緩復旧形継電器コイル
+JIS C 0617 / IEC 60617 07-15-07
 復旧が遅い継電器。塗りつぶした枡で示す。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

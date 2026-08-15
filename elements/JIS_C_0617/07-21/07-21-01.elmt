@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{2824dca1-0718-4031-a874-fbe30e38f016}"/>
     <names>
-        <name lang="ja">ヒューズ（一般図記号）</name>
+        <name lang="ja">ヒューズ</name>
         <name lang="en">Fuse, general symbol</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-21-01
+    <informations>規格の名称: ヒューズ（一般図記号）
+JIS C 0617 / IEC 60617 07-21-01
 ヒューズの一般図記号。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

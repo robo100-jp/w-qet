@@ -3,10 +3,11 @@
             type="element" link_type="master" version="0.100.0">
     <uuid uuid="{cc01748f-744e-42a9-baef-4de6a231f2ad}"/>
     <names>
-        <name lang="ja">有極形継電器（自動復帰形）</name>
+        <name lang="ja">有極リレー（自動復帰）</name>
         <name lang="en">Polarized relay, self restoring</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-15-16
+    <informations>規格の名称: 有極形継電器（自動復帰形）
+JIS C 0617 / IEC 60617 07-15-16
 巻線を流れる電流の一方向にだけ動き、自動で復帰する有極継電器。
 規格票は形状分類に「点」を挙げており、コイルの下と接点の右上に黒丸が1つずつ描かれている。位置と大きさは規格票の実測による。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>

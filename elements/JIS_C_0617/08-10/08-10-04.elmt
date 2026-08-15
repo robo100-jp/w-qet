@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{cbb6125f-8ab5-4095-95f3-a0de0da295c2}"/>
     <names>
-        <name lang="ja">電気機械式位置表示器</name>
+        <name lang="ja">位置表示器</name>
         <name lang="en">Electromechanical position indicator</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 08-10-04
+    <informations>規格の名称: 電気機械式位置表示器
+JIS C 0617 / IEC 60617 08-10-04
 停止位置1つと動作位置2つを示した例。
 規格票には引出し線が描かれていない。作図に使えるよう、外形の縁に端子を足してある。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。

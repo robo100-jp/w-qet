@@ -3,10 +3,11 @@
             type="element" link_type="slave" version="0.100.0">
     <uuid uuid="{d081a05d-fcdb-4d39-9f12-be8a0ae4f828}"/>
     <names>
-        <name lang="ja">b接点（ブレーク接点）</name>
+        <name lang="ja">b接点</name>
         <name lang="en">Break contact</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-02-03
+    <informations>規格の名称: b接点（ブレーク接点）
+JIS C 0617 / IEC 60617 07-02-03
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"

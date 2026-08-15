@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{0df7652b-88e8-4aac-8dcf-c69f9a574363}"/>
     <names>
-        <name lang="ja">ヒューズ（電源側表示）</name>
+        <name lang="ja">ヒューズ（太線が電源側）</name>
         <name lang="en">Fuse</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-21-02
+    <informations>規格の名称: ヒューズ（電源側表示）
+JIS C 0617 / IEC 60617 07-21-02
 溶断したあとも電源がい（活）きたままの側を、太らせた辺で示すヒューズ。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>07-09-01 温度感知スイッチ（メーク接点） — w-qet</title><style>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>07-09-01 温度スイッチ（a接点） — w-qet</title><style>
 :root{--bg:#fff;--fg:#1a1a1a;--dim:#666;--line:#dcdcdc;--accent:#1c4f9c;
       --card:#fafafa;--code:#f2f3f5;--warn:#8a5a00}
 @media (prefers-color-scheme:dark){:root{
@@ -82,7 +82,7 @@ h3 + .rule{margin-top:.1em}
 .caution{border-left:3px solid var(--warn);background:var(--card);
   padding:10px 14px;font-size:.85rem;border-radius:0 6px 6px 0;margin:1em 0}
 </style></head><body><div class="wrap"><nav class="crumb"><a href="index.html">図記号の一覧</a> ／ <a href="notes.html">規格の注釈</a> ／ 07-09-01</nav>
-<h1><span class="num">07-09-01</span>温度感知スイッチ（メーク接点）</h1>
+<h1><span class="num">07-09-01</span>温度スイッチ（a接点）</h1>
 <div class="en">Temperature sensitive switch, make contact</div>
 <p class="src">JIS C 0617 / IEC 60617 07-09-01　—— 規格を参考に座標から描き起こしたもの</p>
 <div class="top"><div class="fig"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-21 -36 42 72" width="134.4" height="230.4" role="img"><defs><pattern id="g1" width="10" height="10" patternUnits="userSpaceOnUse" x="-15" y="-30"><path d="M10 0H0V10" fill="none" stroke="currentColor" stroke-width=".25" opacity=".22"/></pattern></defs><rect x="-21" y="-36" width="42" height="72" fill="url(#g1)"/><g stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" fill="none"><rect x="-15" y="-30" width="30" height="60" fill="none" stroke="#d8d8d8" stroke-width="0.4"/><line x1="0" y1="-30" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-11" y1="-12" x2="0" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="10" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="3.45" y="6.45" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="13.3333" fill="currentColor" font-style="italic">Θ</text><circle cx="0" cy="-30" r="1.6" fill="none" stroke="#c04040" stroke-width="0.5"/><circle cx="0" cy="30" r="1.6" fill="none" stroke="#c04040" stroke-width="0.5"/><text x="20" y="-23" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="9" fill="#3c5ac8">[label]</text></g></svg><div class="legend">格子 1目 = 1M。灰の枠が外形、赤丸が端子、青が名前の欄</div></div>
@@ -98,6 +98,9 @@ h3 + .rule{margin-top:.1em}
 <div class="an"><h3><span class="id"><a href="notes.html#A00060">A00060</a></span>動作の支点の小円</h3>接触片の支点を表す小円（白丸か黒丸）は、たいていの接点図記号に足してよい。<b>必ず描かなければならないものもある</b>（オフ位置付き切換え接点 07-02-05 がその例）。</div>
 <div class="an"><h3><span class="id"><a href="notes.html#A00061">A00061</a></span>複雑な電子式スイッチ</h3>電子式のスイッチには別の表し方がある。第12部（二値論理素子）と第13部（アナログ素子）を見ること。</div>
 <div class="an"><h3><span class="id"><a href="notes.html#A00085">A00085</a></span>Θ の置き換え</h3>文字 Θ は、実際の動作温度の条件に置き換えてよい。</div>
+<h2>図記号ファイルの覚え書き</h2>
+<p class="rule"><code>.elmt</code> の <code>&lt;informations&gt;</code> から。<b>ここは書き換えても次に作り直すと消える。</b>書くなら下の「手で書く欄」か <code>.elmt</code> 側に。</p>
+<div class="note">規格の名称: 温度感知スイッチ（メーク接点）</div>
 <h2>一般的な名称<span class="pencil">手で書く欄</span></h2>
 <p class="rule">この図記号が指す部品を、ふだん何と呼ぶか。現場・部品表・カタログでの言い方。<b>規格の名称とは別。</b>規格が「安全開離機能接点」でも、通じるのは「ミラー接点」。<b>探すときはこの言葉で探すので、目次の絞り込みもここを見る。</b><br><b>名前だけを書く。</b>どういう部品かの説明は次の欄へ。ここは <code>.elmt</code> の名称（QET の部品パネルに出る名前）の元になる。</p>
 <div class="hand"><!--hand:names--><p>温度スイッチ（a接点）／サーモスタット／サーモ</p><!--/hand:names--></div>
@@ -128,7 +131,7 @@ h3 + .rule{margin-top:.1em}
 <details><summary>開く</summary><pre id="data">{
  "id": "07-09-01",
  "name": {
-  "ja": "温度感知スイッチ（メーク接点）",
+  "ja": "温度スイッチ（a接点）",
   "en": "Temperature sensitive switch, make contact"
  },
  "standard": "07-09-01",

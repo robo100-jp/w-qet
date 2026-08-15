@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{36fe6c99-691a-4b95-a533-4affc245ce02}"/>
     <names>
-        <name lang="ja">自動引外し装置付き負荷開閉器</name>
+        <name lang="ja">自動引外し付き負荷開閉器</name>
         <name lang="en">Switch-disconnector, automatic release</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-13-09
+    <informations>規格の名称: 自動引外し装置付き負荷開閉器
+JIS C 0617 / IEC 60617 07-13-09
 自動引外し装置付きの負荷開閉器。継電器または開放機構を備える。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

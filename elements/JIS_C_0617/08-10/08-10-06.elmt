@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{4efd1464-96c6-4a18-863d-4286f104470b}"/>
     <names>
-        <name lang="ja">音響信号装置（一般図記号）</name>
+        <name lang="ja">音響信号装置（一般）</name>
         <name lang="en">Acoustic signalling device, general symbol</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 08-10-06
+    <informations>規格の名称: 音響信号装置（一般図記号）
+JIS C 0617 / IEC 60617 08-10-06
 弧が上、弦が下。脚は弦から出る。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。
 </informations>

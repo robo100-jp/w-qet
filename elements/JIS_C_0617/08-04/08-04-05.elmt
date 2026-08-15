@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{4bda4177-bb39-400a-86de-663e18056143}"/>
     <names>
-        <name lang="ja">電力量計（母線から流出）</name>
+        <name lang="ja">電力量計（送り側）</name>
         <name lang="en">Watt-hour meter, export</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 08-04-05
+    <informations>規格の名称: 電力量計（母線から流出）
+JIS C 0617 / IEC 60617 08-04-05
 上の区画の矢は測定するエネルギーの向き。
 規格票には引出し線が描かれていない。作図に使えるよう、外形の縁に端子を1つずつ足してある。
 母線から流出するエネルギーを測る。

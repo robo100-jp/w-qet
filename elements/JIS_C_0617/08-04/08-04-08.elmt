@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{bf966558-2f4d-4a60-a471-94b8640bef77}"/>
     <names>
-        <name lang="ja">多種料率電力量計</name>
+        <name lang="ja">多料金の電力量計</name>
         <name lang="en">Multi-rate watt-hour meter</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 08-04-08
+    <informations>規格の名称: 多種料率電力量計
+JIS C 0617 / IEC 60617 08-04-08
 区画が3つ。料率ごとの表示を書き分けるための例。
 規格票には引出し線が描かれていない。作図に使えるよう、外形の縁に端子を1つずつ足してある。
 2種類の料率で計量値を表示する例。

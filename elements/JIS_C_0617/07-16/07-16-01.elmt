@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{9c28bd38-30ad-44f8-9a6b-5ca3eae2232e}"/>
     <names>
-        <name lang="ja">保護継電器のブロック</name>
+        <name lang="ja">保護継電器の箱</name>
         <name lang="en">Protective relay; device related to a protective relay</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-16-01
+    <informations>規格の名称: 保護継電器のブロック
+JIS C 0617 / IEC 60617 07-16-01
 枠の中の * は、07-16-02 以降の限定図記号に置き換えて使う。
 規格票にはリード線が描かれていない。作図に使えるよう、外形の左右中央に端子を1つずつ足してある。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>

@@ -3,10 +3,11 @@
             type="element" link_type="slave" version="0.100.0">
     <uuid uuid="{3ba6a532-17a1-41e4-a46b-7041a04593fc}"/>
     <names>
-        <name lang="ja">電磁接触器，電磁接触器の主メーク接点</name>
+        <name lang="ja">電磁接触器の主接点</name>
         <name lang="en">Contactor; Main make contact of a contactor</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-13-02
+    <informations>規格の名称: 電磁接触器，電磁接触器の主メーク接点
+JIS C 0617 / IEC 60617 07-13-02
 休止状態で開いている接点。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{65a7a733-5383-4bfa-9937-85853a0e42b0}"/>
     <names>
-        <name lang="ja">リミットスイッチ（メーク接点）</name>
+        <name lang="ja">リミットスイッチ（a接点）</name>
         <name lang="en">Position switch, make contact</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-08-01
+    <informations>規格の名称: リミットスイッチ（メーク接点）
+JIS C 0617 / IEC 60617 07-08-01
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
