@@ -7,6 +7,7 @@
         <name lang="en">Passing make contact</name>
     </names>
     <informations>JIS C 0617 / IEC 60617 07-03-03
+作動装置が動くときも戻るときも、その瞬間に閉じる接点。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"

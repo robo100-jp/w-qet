@@ -7,6 +7,7 @@
         <name lang="en">Make contact, delayed opening</name>
     </names>
     <informations>JIS C 0617 / IEC 60617 07-05-02
+瞬時動作・限時復帰のメーク接点。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
@@ -22,9 +23,9 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <line x1="-20" y1="1.5" x2="-4.25" y2="1.5" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
-                  uuid="{1a224360-9721-4a81-84d3-abec1500149c}"/>
+                  uuid="{39f9af2d-bd82-4dbc-9289-d60c375b4c66}"/>
         <terminal x="0" y="30" orientation="s" name="2" type="Generic"
-                  uuid="{47a38e05-4428-49ce-94fb-c390b4b716fd}"/>
+                  uuid="{1a67cda7-7104-464e-a5f4-283cd44d7dc8}"/>
         <dynamic_text x="11" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"

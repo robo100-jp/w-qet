@@ -19,9 +19,9 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <line x1="5" y1="0" x2="30" y2="0" antialias="false"
               style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
-                  uuid="{ac1905b3-8001-4f09-8915-ec9d66eb6ee7}"/>
+                  uuid="{f8621588-4e23-4ab4-ba50-51deb84183d0}"/>
         <terminal x="0" y="30" orientation="s" name="2" type="Generic"
-                  uuid="{49b39258-cbed-4118-85a8-560c46e47371}"/>
+                  uuid="{80438060-15e0-4046-a07d-2fc39ae1bc46}"/>
         <dynamic_text x="35" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"

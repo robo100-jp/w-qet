@@ -7,6 +7,7 @@
         <name lang="en">Break contact, delayed opening</name>
     </names>
     <informations>JIS C 0617 / IEC 60617 07-05-03
+限時動作・瞬時復帰のブレーク接点。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
@@ -24,9 +25,9 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <line x1="-20" y1="1.5" x2="2.83" y2="1.5" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
-                  uuid="{a4af6507-8371-4d31-bd42-2ba9cf9b4588}"/>
+                  uuid="{54605dd5-38c4-4345-b94f-1b62af9b9043}"/>
         <terminal x="0" y="30" orientation="s" name="2" type="Generic"
-                  uuid="{f2c90da0-7bec-4920-8d16-c04b6c1f140e}"/>
+                  uuid="{a78a4175-1e27-4cfd-bb44-63000b848dad}"/>
         <dynamic_text x="20" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"

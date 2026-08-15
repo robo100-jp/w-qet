@@ -30,9 +30,9 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <line x1="-11.5" y1="0" x2="3.4" y2="0" antialias="false"
               style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
-                  uuid="{c0bff696-9419-4283-b046-08da4b6b7e59}"/>
+                  uuid="{68ace69f-9180-4dd7-80b0-c1381515a9c2}"/>
         <terminal x="0" y="30" orientation="s" name="2" type="Generic"
-                  uuid="{49f855a2-cdc3-4047-bf16-8ee7ea93ef8f}"/>
+                  uuid="{3ecea2ff-9d4c-4ce3-93c8-1d55bb6d2d7f}"/>
         <dynamic_text x="15" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"

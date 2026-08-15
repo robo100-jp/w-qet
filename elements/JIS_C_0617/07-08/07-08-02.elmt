@@ -20,9 +20,9 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <polygon x1="-0.7" y1="-3.6" x2="3.6" y2="-1.5" x3="1" y3="7" antialias="true"
                  style="line-style:normal;line-weight:normal;filling:none;color:black"/>
         <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
-                  uuid="{5267768b-eba6-46b1-bd5a-34159728652b}"/>
+                  uuid="{05796b39-5367-405e-8ea8-b788b8f42b1d}"/>
         <terminal x="0" y="30" orientation="s" name="2" type="Generic"
-                  uuid="{14a7317e-c66a-4874-a55e-14713c99798b}"/>
+                  uuid="{1ac1663d-09fc-4322-a172-771641c88c90}"/>
         <dynamic_text x="15" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"

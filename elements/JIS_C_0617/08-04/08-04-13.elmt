@@ -22,9 +22,9 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <text text="max" x="-6.58" y="23.27" rotation="0"
               font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <terminal x="-20" y="0" orientation="w" name="1" type="Generic"
-                  uuid="{dd6c1505-1a9a-4893-8a5d-a6cf78e60037}"/>
+                  uuid="{84414d6f-09a9-417f-8c9d-119d507ffd66}"/>
         <terminal x="20" y="0" orientation="e" name="2" type="Generic"
-                  uuid="{755a4b7f-ff8f-4b60-a9fa-2c8099529501}"/>
+                  uuid="{9deb4c31-5813-4ae2-8220-962c0fefc2a2}"/>
         <dynamic_text x="25" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"

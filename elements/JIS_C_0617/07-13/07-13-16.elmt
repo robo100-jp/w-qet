@@ -7,6 +7,7 @@
         <name lang="en">Combined disconnector and earthing switch</name>
     </names>
     <informations>JIS C 0617 / IEC 60617 07-13-16
+個別の作動装置を足してもよい。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"

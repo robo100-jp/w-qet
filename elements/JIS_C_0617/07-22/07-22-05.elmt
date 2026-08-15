@@ -27,9 +27,9 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <line x1="-30" y1="0" x2="6" y2="0" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
-                  uuid="{d6ffe83d-4702-4396-a0dd-548141975c2f}"/>
+                  uuid="{165cb148-50dc-4dd0-bc1c-6963d319e520}"/>
         <terminal x="0" y="30" orientation="s" name="2" type="Generic"
-                  uuid="{4509b19d-8d64-42d3-8835-bba3b733be0e}"/>
+                  uuid="{e6dca871-50d1-438a-9c5d-1f208097d4b4}"/>
         <terminal x="-30" y="0" orientation="w" name="3" type="Generic"
                   uuid="{34c60b06-a66a-489a-a201-e16c0d98981d}"/>
         <dynamic_text x="25" y="-30" z="1" text_width="-1"

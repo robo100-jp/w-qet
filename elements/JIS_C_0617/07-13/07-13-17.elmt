@@ -26,9 +26,9 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <line x1="-5" y1="-10" x2="5" y2="-10" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
-                  uuid="{5bf40b2a-bfd2-4479-b021-ef326dc2a88a}"/>
+                  uuid="{768c6616-ba9f-4d48-b553-5c96a6d521da}"/>
         <terminal x="0" y="30" orientation="s" name="2" type="Generic"
-                  uuid="{a7261e47-8f20-4577-85e6-ddb9394ad31c}"/>
+                  uuid="{ffa9fdde-707a-478a-99a8-395d532ddc41}"/>
         <dynamic_text x="20" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"

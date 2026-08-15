@@ -7,6 +7,7 @@
         <name lang="en">Contactor with automatic tripping</name>
     </names>
     <informations>JIS C 0617 / IEC 60617 07-13-03
+継電器または開放機構で動く。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
@@ -20,9 +21,9 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <polygon x1="-6.2" y1="-3.8" x2="-4.1" y2="0.3" x3="-11" y3="3.8" x4="-13.1" y4="-0.3" antialias="true"
                  style="line-style:normal;line-weight:normal;filling:black;color:black"/>
         <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
-                  uuid="{76ea1c17-1173-4f17-93e1-f65f1d28d32d}"/>
+                  uuid="{c55b4222-947d-4069-b9b6-99eac042c665}"/>
         <terminal x="0" y="30" orientation="s" name="2" type="Generic"
-                  uuid="{9b1a8d57-572a-4773-988c-d8795d5e9ba0}"/>
+                  uuid="{043afb4c-8757-4312-8763-5ce06c8612cd}"/>
         <dynamic_text x="20" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"

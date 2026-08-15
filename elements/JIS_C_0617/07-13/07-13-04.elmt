@@ -7,6 +7,7 @@
         <name lang="en">Main break contact of a contactor; Contactor</name>
     </names>
     <informations>JIS C 0617 / IEC 60617 07-13-04
+休止状態で閉じている接点。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
@@ -20,9 +21,9 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <arc x="-5" y="-20" width="10" height="10" start="-90" angle="180"
              antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
         <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
-                  uuid="{76ea1c17-1173-4f17-93e1-f65f1d28d32d}"/>
+                  uuid="{240b1966-1133-4efc-867f-d6966580662f}"/>
         <terminal x="0" y="30" orientation="s" name="2" type="Generic"
-                  uuid="{9b1a8d57-572a-4773-988c-d8795d5e9ba0}"/>
+                  uuid="{45aa823b-a8f7-40f7-9bc7-4f61ebb9e1b6}"/>
         <dynamic_text x="15" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"

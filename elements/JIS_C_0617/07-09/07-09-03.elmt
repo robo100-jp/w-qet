@@ -7,6 +7,7 @@
         <name lang="en">Thermal switch, self-operating, break contact</name>
     </names>
     <informations>JIS C 0617 / IEC 60617 07-09-03
+**熱動継電器とは区別する。**熱動継電器は第2部の 02-A13-25 のように分けて描く。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
@@ -20,9 +21,9 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <polygon x1="-30" y1="0" x2="-20" y2="0" x3="-20" y3="-10" x4="-10" y4="-10" x5="-10" y5="0" x6="3.33" y6="0" closed="false" antialias="true"
                  style="line-style:normal;line-weight:normal;filling:none;color:black"/>
         <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
-                  uuid="{6e8fb1ad-431d-40be-bebd-e182148bb205}"/>
+                  uuid="{65125245-4fb0-4f4b-b61a-b6a8f1b674d4}"/>
         <terminal x="0" y="30" orientation="s" name="2" type="Generic"
-                  uuid="{d783aadb-7b35-4abb-861e-52e7c84785e2}"/>
+                  uuid="{5d016db5-8efb-4630-9f5b-ec6a49f4a0d0}"/>
         <dynamic_text x="20" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"

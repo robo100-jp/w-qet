@@ -34,13 +34,13 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <line x1="60" y1="10" x2="60" y2="30" antialias="false"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <terminal x="0" y="-30" orientation="n" name="A1" type="Generic"
-                  uuid="{d73dbbf5-2462-4357-b396-e66faa0bce59}"/>
+                  uuid="{0f52a9d9-fdee-47ea-989b-d1b05508527a}"/>
         <terminal x="0" y="30" orientation="s" name="A2" type="Generic"
-                  uuid="{311a4cd9-e7f8-4e49-9067-6a4a909aaa0d}"/>
+                  uuid="{cfda4e99-afb2-4d3c-9763-98655019694b}"/>
         <terminal x="60" y="-30" orientation="n" name="1" type="Generic"
-                  uuid="{80152279-03cb-4127-83e9-4041fcca2a6a}"/>
+                  uuid="{efaacd9c-730d-4f10-a019-87a8a5675906}"/>
         <terminal x="60" y="30" orientation="s" name="2" type="Generic"
-                  uuid="{403e6d7f-2dc5-4815-a577-4a7c9b95765f}"/>
+                  uuid="{36ca2d42-dbf5-4bb4-bfc3-8702a8953f01}"/>
         <dynamic_text x="75" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"

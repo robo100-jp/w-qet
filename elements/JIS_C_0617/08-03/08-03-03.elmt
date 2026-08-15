@@ -16,9 +16,9 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <polygon x1="-15" y1="5" x2="-1" y2="-8" x3="-1" y3="5" x4="15" y4="-7" closed="false" antialias="true"
                  style="line-style:normal;line-weight:normal;filling:none;color:black"/>
         <terminal x="-20" y="0" orientation="w" name="1" type="Generic"
-                  uuid="{dd6c1505-1a9a-4893-8a5d-a6cf78e60037}"/>
+                  uuid="{f52af8b9-70fb-4f4e-9f98-b9d2040cbb5b}"/>
         <terminal x="20" y="0" orientation="e" name="2" type="Generic"
-                  uuid="{755a4b7f-ff8f-4b60-a9fa-2c8099529501}"/>
+                  uuid="{d7cccbbf-41c5-49d3-b932-dba649fb6c5f}"/>
         <dynamic_text x="25" y="-20" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"

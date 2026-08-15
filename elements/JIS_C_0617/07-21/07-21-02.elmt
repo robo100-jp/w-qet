@@ -17,9 +17,9 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <rect x="-5" y="-15" width="10" height="5.5" antialias="false"
               style="line-style:normal;line-weight:normal;filling:black;color:black"/>
         <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
-                  uuid="{ac1905b3-8001-4f09-8915-ec9d66eb6ee7}"/>
+                  uuid="{178975e3-31f9-45d8-81d3-c6ef87a0f384}"/>
         <terminal x="0" y="30" orientation="s" name="2" type="Generic"
-                  uuid="{49b39258-cbed-4118-85a8-560c46e47371}"/>
+                  uuid="{43b66675-4e10-48ce-98b8-0ff98a057e53}"/>
         <dynamic_text x="15" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"

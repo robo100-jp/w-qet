@@ -182,6 +182,20 @@ def check(path, seen_uuid):
     else:
         seen_uuid[u.get("uuid")] = path
 
+    # **端子の uuid も記号をまたいで重複させない。**
+    # 導体は出現順の id で結ぶので図面は壊れないが、端子台プラグインは
+    # uuid で端子を追うので、別々の記号が同じ uuid を持つと取り違えの元になる。
+    # 記号を**コピーして作る**と、中の uuid まで一緒に付いてくる（実際に38件あった）。
+    for tm in root.iter("terminal"):
+        tu = tm.get("uuid")
+        if not tu:
+            continue
+        if tu in seen_uuid and seen_uuid[tu] != path:
+            bad.append("端子の uuid が %s と重複"
+                       % os.path.basename(seen_uuid[tu]))
+        else:
+            seen_uuid[tu] = path
+
     langs = {n.get("lang") for n in root.iter("name")}
     for lang in ("ja", "en"):
         if lang not in langs:

@@ -20,9 +20,9 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <text text="Θ" x="13.45" y="6.45" rotation="0"
               font="Liberation Sans,10,-1,5,50,1,0,0,0,0,Italic" color="#000000"/>
         <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
-                  uuid="{6e8fb1ad-431d-40be-bebd-e182148bb205}"/>
+                  uuid="{e4d806a9-e552-4fc6-9f1b-2b26d25dfaed}"/>
         <terminal x="0" y="30" orientation="s" name="2" type="Generic"
-                  uuid="{d783aadb-7b35-4abb-861e-52e7c84785e2}"/>
+                  uuid="{1f732955-3cee-4a23-9f3d-7f75e10cecce}"/>
         <dynamic_text x="35" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"

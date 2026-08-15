@@ -23,9 +23,9 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <polygon x1="-5.05" y1="6.6" x2="0.31" y2="3.92" x3="-5.95" y3="-8.6" x4="-11.31" y4="-5.92" antialias="true"
                  style="line-style:normal;line-weight:normal;filling:none;color:black"/>
         <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
-                  uuid="{ac1905b3-8001-4f09-8915-ec9d66eb6ee7}"/>
+                  uuid="{ac6a0c1b-6181-477c-9ab7-5797df740e43}"/>
         <terminal x="0" y="30" orientation="s" name="2" type="Generic"
-                  uuid="{49b39258-cbed-4118-85a8-560c46e47371}"/>
+                  uuid="{1e6984b0-a639-4e38-bab6-e8c487e2ccca}"/>
         <dynamic_text x="20" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"

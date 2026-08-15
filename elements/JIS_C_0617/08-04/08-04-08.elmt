@@ -24,9 +24,9 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <text text="Wh" x="-8.68" y="23.9" rotation="0"
               font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular" color="#000000"/>
         <terminal x="-20" y="0" orientation="w" name="1" type="Generic"
-                  uuid="{dd6c1505-1a9a-4893-8a5d-a6cf78e60037}"/>
+                  uuid="{d9d32d09-b60e-4b67-a812-e4f25c1b91c8}"/>
         <terminal x="20" y="0" orientation="e" name="2" type="Generic"
-                  uuid="{755a4b7f-ff8f-4b60-a9fa-2c8099529501}"/>
+                  uuid="{143145d0-5178-4f68-8a4c-1c5de406f372}"/>
         <dynamic_text x="25" y="-40" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"

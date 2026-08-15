@@ -32,9 +32,9 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <line x1="-19" y1="-15" x2="-24" y2="-9.5" antialias="true"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
-                  uuid="{a4af6507-8371-4d31-bd42-2ba9cf9b4588}"/>
+                  uuid="{34f8e4cc-f9f8-48bf-90e6-96c9b6ddec77}"/>
         <terminal x="0" y="30" orientation="s" name="2" type="Generic"
-                  uuid="{f2c90da0-7bec-4920-8d16-c04b6c1f140e}"/>
+                  uuid="{bb149c30-170d-4955-a64f-44e4983fa291}"/>
         <dynamic_text x="10" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"

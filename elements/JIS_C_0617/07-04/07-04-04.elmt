@@ -7,6 +7,7 @@
         <name lang="en">Break contact, early opening</name>
     </names>
     <informations>JIS C 0617 / IEC 60617 07-04-04
+同じ器具の中の他のメーク接点より**先に**開く。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
@@ -20,9 +21,9 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <line x1="7.5" y1="-12.5" x2="12.72" y2="-10.76" antialias="true"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
-                  uuid="{a4af6507-8371-4d31-bd42-2ba9cf9b4588}"/>
+                  uuid="{b6ea5362-cdd0-48ab-8a9e-900b9d0c037b}"/>
         <terminal x="0" y="30" orientation="s" name="2" type="Generic"
-                  uuid="{f2c90da0-7bec-4920-8d16-c04b6c1f140e}"/>
+                  uuid="{129d80c8-bfa7-4256-9612-d7af0de3cc9c}"/>
         <dynamic_text x="20" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"

@@ -7,6 +7,7 @@
         <name lang="en">Position switch assembly</name>
     </names>
     <informations>JIS C 0617 / IEC 60617 07-08-03
+メーク接点とブレーク接点を機械的に連結したリミットスイッチ。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <line x1="-30" y1="-30" x2="-30" y2="-10" antialias="false"

@@ -7,6 +7,7 @@
         <name lang="en">Switch, emergency stop</name>
     </names>
     <informations>JIS C 0617 / IEC 60617 07-07-06
+きのこ形ヘッドで操作する。ブレーク接点を確実に開き、その位置を保つ。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
@@ -36,9 +37,9 @@ JIS C 0617 を参考に作成。規格の図版を複製したものではない
         <line x1="-9" y1="-15" x2="-14" y2="-9.5" antialias="true"
               style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
         <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
-                  uuid="{a4af6507-8371-4d31-bd42-2ba9cf9b4588}"/>
+                  uuid="{d7f4a44c-e5e2-4edf-b3f4-7de1104d72bb}"/>
         <terminal x="0" y="30" orientation="s" name="2" type="Generic"
-                  uuid="{f2c90da0-7bec-4920-8d16-c04b6c1f140e}"/>
+                  uuid="{86f5d26f-6db6-47d3-b156-bef2b8e4694f}"/>
         <dynamic_text x="20" y="-30" z="1" text_width="-1"
                       Halignment="AlignLeft" Valignment="AlignTop"
                       frame="false" rotation="0" keep_visual_rotation="true"

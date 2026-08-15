@@ -7,6 +7,7 @@
         <name lang="en">Break contact, late opening</name>
     </names>
     <informations>JIS C 0617 / IEC 60617 07-04-03
+同じ器具の中の他のメーク接点より**遅れて**開く。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
