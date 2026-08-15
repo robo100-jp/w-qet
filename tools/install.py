@@ -77,14 +77,23 @@ def main():
     print("登録先: %s" % dst)
     print()
 
-    n_elmt = n_dir = 0
+    # **「CAD用シンボルにしない」と決めたものは入れない。**
+    # 判断は docs/sym/<番号>.html の <!--hand:cad--> に書いてある。
+    # 図と頁はぜんぶ作るが、QET のパネルに並べるのは「する」ものだけ。
+    skip = {n for n, (j, _) in P.cad_policy().items() if j == "しない"}
+
+    n_elmt = n_dir = n_skip = 0
     plan = []
     for root, dirs, files in os.walk(src):
         rel = os.path.relpath(root, src)
         out = dst if rel == "." else os.path.join(dst, rel)
-        elmts = sorted(f for f in files if f.endswith(".elmt"))
+        elmts = sorted(f for f in files
+                       if f.endswith(".elmt") and f[:-5] not in skip)
+        n_skip += sum(1 for f in files
+                      if f.endswith(".elmt") and f[:-5] in skip)
         if not elmts and not any(
-                f.endswith(".elmt") for _, _, fs in os.walk(root) for f in fs):
+                f.endswith(".elmt") and f[:-5] not in skip
+                for _, _, fs in os.walk(root) for f in fs):
             continue
         plan.append((out, rel, elmts, os.path.join(root, "qet_directory")))
         n_dir += 1
@@ -113,6 +122,9 @@ def main():
 
     print()
     print("%s: フォルダ %d / 記号 %d" % ("予定" if a.dry_run else "登録した", n_dir, n_elmt))
+    if n_skip:
+        print("入れなかった記号 %d（CAD用シンボルにしないと決めたもの。"
+              "判断は docs/sym/<番号>.html）" % n_skip)
     if not a.dry_run:
         print()
         print("**QET を再起動すること。** 起動時にコレクションを読む。")
