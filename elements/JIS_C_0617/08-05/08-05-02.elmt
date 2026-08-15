@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="70" height="60" hotspot_x="30" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{c75d5730-08d3-4f45-a5a2-b887ed68eec9}"/>
+    <names>
+        <name lang="ja">パルス計数装置</name>
+        <name lang="en">Pulse counting device</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 08-05-02
+右の区画の丸が計数部。引出し線は左寄りを上下に貫く。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。
+</informations>
+    <description>
+        <rect x="-20" y="-10" width="60" height="20" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="20" y1="-10" x2="20" y2="10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <ellipse x="25.5" y="-4.5" width="9" height="9" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="10" x2="0" y2="30" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="0" y="-30" orientation="n" name="1" type="Generic"
+                  uuid="{aca0b901-f103-4cab-baf0-926b01f8345a}"/>
+        <terminal x="0" y="30" orientation="s" name="2" type="Generic"
+                  uuid="{e61e1fa1-59e1-432a-8c67-7478fd3c94ca}"/>
+        <dynamic_text x="45" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{f8566eeb-bca2-4b99-84db-6327f3010735}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

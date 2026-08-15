@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="90" height="30" hotspot_x="20" hotspot_y="15"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{035963af-cc89-4f73-a8fa-932785477c3a}"/>
+    <names>
+        <name lang="ja">事象数計数機能</name>
+        <name lang="en">Counting function of events</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 08-05-01
+機能を示す図記号。右の破線で、数える相手につなぐ。
+**端子も機器記号の欄も置かない**（限定図記号と同じ扱い）。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。
+</informations>
+    <description>
+        <rect x="-10" y="-10" width="20" height="20" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <ellipse x="-4" y="-4" width="8" height="8" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="10" y1="0" x2="61" y2="0" antialias="false"
+              style="line-style:dashed;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+    </description>
+</definition>
