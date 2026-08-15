@@ -193,7 +193,7 @@ def load_notes():
 # ---- 手で書き込む欄 ------------------------------------------------------
 #
 # **この頁は人も直接書き換える。**作り直しで消してはいけないので、
-# 印で挟んだところだけは既存のファイルから読み戻す（`checklist.py` と同じ考え）。
+# 印で挟んだところだけは既存のファイルから読み戻す。
 #
 #   <!--hand:memo-->  … 人が書く …  <!--/hand:memo-->
 #
@@ -612,7 +612,7 @@ def main():
         secname = P.dirname_ja(os.path.dirname(p))
         _, _, _, _, ja, _ = R.parse(p)
         part = PARTS.get(base[:2], "規格に基づかない部品")
-        # **姿だけの SVG も出す。**点検メモや README から `<img>` で貼るため
+        # **姿だけの SVG も出す。**README や外の文書から `<img>` で貼るため
         io.open(os.path.join(svgdir, base + ".svg"), "w", encoding="utf-8",
                 newline="\n").write(S.one(p))
         global _KEEP

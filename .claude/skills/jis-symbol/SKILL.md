@@ -485,7 +485,6 @@ py -3 tools/compare_page.py --num --all --part 6
 ```bash
 py -3 tools/status.py --part 6
 py -3 tools/sympage.py        # docs/sym/（1個1枚の頁＋目次＋注釈）
-py -3 tools/checklist.py
 ```
 
 `cheatsheet.py` は A4 に空きが無いので、載せるなら何かを落とす。

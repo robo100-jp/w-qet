@@ -114,8 +114,6 @@ py -3 tools/sympage.py                # 記号を足したり直したら docs/s
 - 生成の仕組みを変えるときは、**読み戻しが効いているか確かめてから**流す
   （`py -3 tools/sympage.py` を2回叩いて `手書きを引き継いだ頁` の数を見る）
 
-同じ考えのものが `docs/点検メモ.md`（`checklist.py` が書き込みを引き継ぐ）。
-
 ---
 
 ## 構成
@@ -138,7 +136,6 @@ tools/
   svg_elmt.py      .elmt を SVG に写す（人に見せる姿）
   sympage.py       図記号1個1枚の HTML と目次・注釈のページを作る（docs/sym/）
   cheatsheet.py    印刷用の早見表を作る（docs/チートシート.svg）
-  checklist.py     点検メモを作る（docs/点検メモ.md。--xlsx で Excel も。書き込みを引き継ぐ）
   install.py       QET のユーザーコレクションに登録する
 docs/            設計方針・採録状況・寸法基準・測定メモ・QETのXML
   sym/             図記号1個1枚の HTML＋目次＋注釈（公開用。sympage.py が作る）
