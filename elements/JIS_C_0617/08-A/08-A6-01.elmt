@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="30" height="50" hotspot_x="15" hotspot_y="45"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{e863b8b2-4d60-4e3b-ae35-80e872a3c950}"/>
+    <names>
+        <name lang="ja">熱電対（旧）</name>
+        <name lang="en">Thermocouple (obsolete)</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 08-A6-01
+**旧図記号。新しい図面には使わない。**規格票の附属書Aに参考として
+載っているもの。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。
+</informations>
+    <description>
+        <line x1="-10" y1="-40" x2="-10" y2="-16" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="10" y1="-40" x2="10" y2="-16" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-10" y1="-16" x2="0" y2="0" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="10" y1="-16" x2="0" y2="0" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="-10" y="-40" orientation="n" name="1" type="Generic"
+                  uuid="{fb0dabd4-e7bf-4131-b079-6d4972c5b831}"/>
+        <terminal x="10" y="-40" orientation="n" name="2" type="Generic"
+                  uuid="{b03585ff-212b-4ea0-a3be-91487fa0d6fe}"/>
+        <dynamic_text x="20" y="-25" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{4e26e88e-44f9-49c1-af44-926c3b5108b8}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

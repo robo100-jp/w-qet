@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="40" height="50" hotspot_x="20" hotspot_y="25"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{d907dfd1-001e-4b38-b680-144b6e426455}"/>
+    <names>
+        <name lang="ja">ベル（旧）</name>
+        <name lang="en">Bell (obsolete)</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 08-A10-02
+**旧図記号。新しい図面には使わない。**規格票の附属書Aに参考として
+載っているもの。
+**弦は引かない。**08-10-06（音響信号装置）は弦を引くので、そこが違う。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。
+</informations>
+    <description>
+        <arc x="-20" y="-20" width="40" height="40" start="0" angle="180"
+             antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="-10" y1="0" x2="-10" y2="21" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="10" y1="0" x2="10" y2="21" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="-10" y="20" orientation="s" name="1" type="Generic"
+                  uuid="{b7dfbd72-bd11-445c-92a4-e7e8fba1c33d}"/>
+        <terminal x="10" y="20" orientation="s" name="2" type="Generic"
+                  uuid="{10d4126a-85c6-4eec-8c07-1c9e2cebe3de}"/>
+        <dynamic_text x="25" y="-25" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{71b7f011-ee14-4dd1-9727-082b67624831}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

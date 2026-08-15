@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="40" height="40" hotspot_x="20" hotspot_y="20"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{ef6282cc-ff60-46c6-8f47-581b67b8916a}"/>
+    <names>
+        <name lang="ja">信号変換器（一般図記号）（旧）</name>
+        <name lang="en">Signal converter, general symbol (obsolete)</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 08-A7-01
+**旧図記号。新しい図面には使わない。**規格票の附属書Aに参考として
+載っているもの。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。
+</informations>
+    <description>
+        <rect x="-20" y="-20" width="40" height="40" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="-20" y1="20" x2="20" y2="-20" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="-20" y="0" orientation="w" name="1" type="Generic"
+                  uuid="{1e0ae03b-6dc2-4963-ba91-82f647e0f62a}"/>
+        <terminal x="20" y="0" orientation="e" name="2" type="Generic"
+                  uuid="{4d93667b-d369-4367-adbf-39ce69455df1}"/>
+        <dynamic_text x="25" y="-20" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{7465bd8c-0ec7-4e34-8293-53dc2115281a}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

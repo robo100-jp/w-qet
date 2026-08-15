@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="80" height="40" hotspot_x="20" hotspot_y="20"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{6760f9b9-b273-4525-bed1-97c75368be56}"/>
+    <names>
+        <name lang="ja">ホーン（旧）</name>
+        <name lang="en">Horn (obsolete)</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 08-A10-01
+**旧図記号。新しい図面には使わない。**規格票の附属書Aに参考として
+載っているもの。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。
+</informations>
+    <description>
+        <rect x="-10" y="-10" width="20" height="20" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line x1="0" y1="-20" x2="0" y2="-10" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="0" y1="10" x2="0" y2="20" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <polygon x1="10" y1="-0.5" x2="40.8" y2="-5.5" x3="50.3" y3="10.5" x4="10" y4="4.5" closed="false" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <terminal x="0" y="-20" orientation="n" name="1" type="Generic"
+                  uuid="{c04db0ac-423f-4c71-8e2b-f052ecccc5d0}"/>
+        <terminal x="0" y="20" orientation="s" name="2" type="Generic"
+                  uuid="{7454731f-df66-43aa-bc62-82698bb03475}"/>
+        <dynamic_text x="65" y="-20" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{99646b47-004f-462d-a93f-3de82f34f5bc}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>
