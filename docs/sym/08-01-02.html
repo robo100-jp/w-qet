@@ -90,12 +90,15 @@ footer{margin-top:3.5em;padding-top:1em;border-top:1px solid var(--line);
 <tr><th>端子</th><td>2</td></tr>
 <tr><th>図形</th><td>2</td></tr>
 </tbody></table></div></div>
+<h2>CAD用シンボルにするか<span class="pencil">手で書く欄</span></h2>
+<p class="rule">この図記号から CAD 用のシンボル（QET の <code>.elmt</code>、DXF のブロックなど）を作るかどうか。<b>「しない」と書いてあれば作らなくてよい。</b>図（SVG）とこの頁は、作らないものにも用意する。</p>
+<div class="hand"><!--hand:cad--><p><b>する。</b></p><!--/hand:cad--></div>
 <h2>規格の注釈</h2>
 <p class="rule">この図記号に付いている注釈。<b>要点はこちらの言葉でまとめたもの</b>で、原文ではない。<a href="notes.html">注釈の一覧</a>。</p>
-<div class="an"><h3><span class="id"><a href="notes.html#A00144">A00144</a></span>* の置き換え</h3>アスタリスクは次のどれかに置き換える —— 測定量の単位を表す文字記号（またはその倍数・約数）、測定する量を表す文字記号、化学式、図記号。<b></b>（測り方は問わない）。</div>
-<div class="an"><h3><span class="id"><a href="notes.html#A00145">A00145</a></span>単位と量の文字記号</h3>単位と測定量の文字記号は IEC 60027（電気技術で用いる文字記号）から選ぶ。合うものが無ければ他の文字記号でもよいが、<b></b>。</div>
-<div class="an"><h3><span class="id"><a href="notes.html#A00146">A00146</a></span>量の文字記号を下に添える</h3>単位の文字記号を使ったときは、測定する量の文字記号を補足として<b></b>書くとよい。測定量についての補足情報や限定図記号も、量の文字記号の下に示してよい。</div>
-<div class="an"><h3><span class="id"><a href="notes.html#A00147">A00147</a></span>2種類以上を測る計器</h3>1台で2種類以上の量を指示・記録する計器は、<b></b>描く。</div>
+<div class="an"><h3><span class="id"><a href="notes.html#A00144">A00144</a></span>* の置き換え</h3>アスタリスクは次のどれかに置き換える —— 測定量の単位を表す文字記号（またはその倍数・約数）、測定する量を表す文字記号、化学式、図記号。<b>使う記号は、計器が実際に表示する情報と結び付いていなければならない</b>（測り方は問わない）。</div>
+<div class="an"><h3><span class="id"><a href="notes.html#A00145">A00145</a></span>単位と量の文字記号</h3>単位と測定量の文字記号は IEC 60027（電気技術で用いる文字記号）から選ぶ。合うものが無ければ他の文字記号でもよいが、<b>その場合は図面か参照文書で説明を付ける</b>。</div>
+<div class="an"><h3><span class="id"><a href="notes.html#A00146">A00146</a></span>量の文字記号を下に添える</h3>単位の文字記号を使ったときは、測定する量の文字記号を補足として<b>その下に</b>書くとよい。測定量についての補足情報や限定図記号も、量の文字記号の下に示してよい。</div>
+<div class="an"><h3><span class="id"><a href="notes.html#A00147">A00147</a></span>2種類以上を測る計器</h3>1台で2種類以上の量を指示・記録する計器は、<b>それぞれの輪郭を縦か横に隣接させて</b>描く。</div>
 <div class="an"><h3><span class="id"><a href="notes.html#A00369">A00369</a></span>* を略称で置き換える</h3>この計器に合う図記号が無いときは、通用している略称（IEC/TR 62711 など）でアスタリスクを置き換えてよい。</div>
 <h2>図記号ファイルの覚え書き</h2>
 <p class="rule"><code>.elmt</code> の <code>&lt;informations&gt;</code> から。<b>ここは書き換えても次に作り直すと消える。</b>書くなら下の欄か <code>.elmt</code> 側に。</p>

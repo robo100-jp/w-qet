@@ -90,11 +90,14 @@ footer{margin-top:3.5em;padding-top:1em;border-top:1px solid var(--line);
 <tr><th>端子</th><td>0</td></tr>
 <tr><th>図形</th><td>1</td></tr>
 </tbody></table></div></div>
+<h2>CAD用シンボルにするか<span class="pencil">手で書く欄</span></h2>
+<p class="rule">この図記号から CAD 用のシンボル（QET の <code>.elmt</code>、DXF のブロックなど）を作るかどうか。<b>「しない」と書いてあれば作らなくてよい。</b>図（SVG）とこの頁は、作らないものにも用意する。</p>
+<div class="hand"><!--hand:cad--><p><b>する。</b></p><!--/hand:cad--></div>
 <h2>規格の注釈</h2>
 <p class="rule">この図記号に付いている注釈。<b>要点はこちらの言葉でまとめたもの</b>で、原文ではない。<a href="notes.html">注釈の一覧</a>。</p>
 <div class="an"><h3><span class="id"><a href="notes.html#A00061">A00061</a></span>複雑な電子式スイッチ</h3>電子式のスイッチには別の表し方がある。第12部（二値論理素子）と第13部（アナログ素子）を見ること。</div>
 <div class="an"><h3><span class="id"><a href="notes.html#A00062">A00062</a></span>位置スイッチの限定図記号</h3>操作の手段を示す必要が無いときは、単純な接点図記号に付けて位置スイッチであることを示せる。手段まで示したいときは第2部の 02-13-16〜02-13-19 を使う。</div>
-<div class="an"><h3><span class="id"><a href="notes.html#A00063">A00063</a></span>両方向に操作される接点</h3>両方向に機械的に操作されることを示すには、この図記号を<b></b>。</div>
+<div class="an"><h3><span class="id"><a href="notes.html#A00063">A00063</a></span>両方向に操作される接点</h3>両方向に機械的に操作されることを示すには、この図記号を<b>接点の両側に置く</b>。</div>
 <h2>図記号ファイルの覚え書き</h2>
 <p class="rule"><code>.elmt</code> の <code>&lt;informations&gt;</code> から。<b>ここは書き換えても次に作り直すと消える。</b>書くなら下の欄か <code>.elmt</code> 側に。</p>
 <div class="note">限定図記号。端子を持たない。ほかの図記号に重ねて使う。</div>

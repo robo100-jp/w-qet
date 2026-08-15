@@ -59,8 +59,26 @@ def scan(part):
         # 部品パネルでも一覧でも一目で分かるようにするため
         if m.group(2):
             name = "旧図記号・" + name
-        out.append((m.group(1), sec, name, i + 1))
+        out.append((m.group(1), sec, name, i + 1, title(d, i)))
     return out
+
+
+def title(d, i):
+    """その図記号の日本語の名称
+
+    **説明の表が次のページに回っていることがある。**図が大きくて1ページを
+    使い切る例（07-A11-01・07-A11-02）がそれで、同じページだけ見ると空になる。
+    """
+    for k in (i, i + 1):
+        if k >= len(d):
+            break
+        t = re.sub(r"\s+", " ", d[k].get_textpage().get_text_range())
+        m = re.search(r"名称 (.+?) 別の名称", t)
+        if not m:
+            continue
+        # 和名のうしろに英名が続く。**最初の ASCII 語から後ろを捨てる**
+        return re.split(r"\s(?=[A-Za-z][A-Za-z\-])", m.group(1))[0].strip()
+    return ""
 
 
 def load(part):
@@ -71,8 +89,9 @@ def load(part):
             line = line.rstrip("\n")
             if not line or line.startswith("#") or line.startswith("番号\t"):
                 continue
-            a, b, c, d = line.split("\t")
-            rows.append((a, b, c, int(d)))
+            f = line.split("\t")
+            rows.append((f[0], f[1], f[2], int(f[3]),
+                         f[4] if len(f) > 4 else ""))
     return p, rows
 
 
@@ -95,8 +114,8 @@ def main():
             print("  %s %d 個: %s" % (label, len(ns), " ".join(ns)))
     if a.write:
         io.open(p, "w", encoding="utf-8", newline="\n").write(
-            "番号\t節\t分類\tページ\n"
-            + "".join("%s\t%s\t%s\t%d\n" % r for r in got))
+            "番号\t節\t分類\tページ\t名称\n"
+            + "".join("%s\t%s\t%s\t%d\t%s\n" % r for r in got))
         print("書き出し:", os.path.relpath(p, P.REPO))
         return 0
     if miss or extra or page:

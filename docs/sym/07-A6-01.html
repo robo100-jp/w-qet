@@ -90,12 +90,15 @@ footer{margin-top:3.5em;padding-top:1em;border-top:1px solid var(--line);
 <tr><th>端子</th><td>2</td></tr>
 <tr><th>図形</th><td>4</td></tr>
 </tbody></table></div></div>
+<h2>CAD用シンボルにするか<span class="pencil">手で書く欄</span></h2>
+<p class="rule">この図記号から CAD 用のシンボル（QET の <code>.elmt</code>、DXF のブロックなど）を作るかどうか。<b>「しない」と書いてあれば作らなくてよい。</b>図（SVG）とこの頁は、作らないものにも用意する。</p>
+<div class="hand"><!--hand:cad--><p><b>する。</b></p><!--/hand:cad--></div>
 <h2>規格の注釈</h2>
 <p class="rule">この図記号に付いている注釈。<b>要点はこちらの言葉でまとめたもの</b>で、原文ではない。<a href="notes.html">注釈の一覧</a>。</p>
-<div class="an"><h3><span class="id"><a href="notes.html#A00060">A00060</a></span>動作の支点の小円</h3>接触片の支点を表す小円（白丸か黒丸）は、たいていの接点図記号に足してよい。<b></b>（オフ位置付き切換え接点 07-02-05 がその例）。</div>
+<div class="an"><h3><span class="id"><a href="notes.html#A00060">A00060</a></span>動作の支点の小円</h3>接触片の支点を表す小円（白丸か黒丸）は、たいていの接点図記号に足してよい。<b>必ず描かなければならないものもある</b>（オフ位置付き切換え接点 07-02-05 がその例）。</div>
 <div class="an"><h3><span class="id"><a href="notes.html#A00061">A00061</a></span>複雑な電子式スイッチ</h3>電子式のスイッチには別の表し方がある。第12部（二値論理素子）と第13部（アナログ素子）を見ること。</div>
 <div class="an"><h3><span class="id"><a href="notes.html#A00064">A00064</a></span>自動復帰にも使える</h3>自動復帰を表すのに使ってよい（07-A6-01 がその例）。</div>
-<div class="an"><h3><span class="id"><a href="notes.html#A00065">A00065</a></span>自動復帰記号との併用禁止</h3>限定図記号 07-01-01〜07-01-04 と<b></b>。多くの場合は第2部の 02-12-07（自動復帰）で足りる。</div>
+<div class="an"><h3><span class="id"><a href="notes.html#A00065">A00065</a></span>自動復帰記号との併用禁止</h3>限定図記号 07-01-01〜07-01-04 と<b>一緒に使ってはならない</b>。多くの場合は第2部の 02-12-07（自動復帰）で足りる。</div>
 <h2>図記号ファイルの覚え書き</h2>
 <p class="rule"><code>.elmt</code> の <code>&lt;informations&gt;</code> から。<b>ここは書き換えても次に作り直すと消える。</b>書くなら下の欄か <code>.elmt</code> 側に。</p>
 <div class="note">**接点なので link_type は slave。**ラベル（機器記号）は相互参照でマスタ側から

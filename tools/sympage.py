@@ -213,11 +213,19 @@ def read_hand(path):
 PH_RE = re.compile(r'<p class="ph">.*?</p>', re.S)
 
 
-def hand(key, placeholder):
+def hand(key, placeholder, default=None):
+    """手で書く欄。`default` を渡すと、空のときそれを焼く
+
+    **規格票から判断が付くものは `default` に載せて初回に焼き、以後は
+    頁に書いてあるほうを優先する。**人が直接書き換えたらそれが残る。
+    """
     # **前回の「（例：…）」は捨てる。**残すと書き足すたびに例文が溜まる
     got = PH_RE.sub("", _KEEP.get(key, "")).strip()
-    if got:
+    if got and default is None:
+        # 既定を焼く欄（CAD用シンボルの可否）は数えない。**人が書いた欄だけ**数える
         _KEEP["_written"] = "1"
+    elif not got and default:
+        got = default
     else:
         got = '<p class="ph">（%s）</p>' % escape(placeholder)
     return ('<div class="hand"><!--hand:%s-->%s<!--/hand:%s--></div>'
@@ -226,7 +234,7 @@ def hand(key, placeholder):
 
 def rich(s):
     """`**強調**` だけ太字にする。tsv に書いた要点をそのまま出すため"""
-    return re.sub(r"\*\*(.+?)\*\*", r"<b></b>", escape(s))
+    return re.sub("[*][*](.+?)[*][*]", lambda m: "<b>%s</b>" % m.group(1), escape(s))
 
 
 def num(v):
@@ -399,6 +407,20 @@ def page(path, notes):
     w("<tr><th>図形</th><td>%d</td></tr>" % len(sh))
     w("</tbody></table></div></div>")
 
+    # **CAD用シンボルにするかどうかは、この頁を見て分かるようにする。**
+    # 規格票から判断が付くものは `docs/第<N>部方針.tsv` に書いてあり、
+    # 初回の書き出しでここに焼かれる。以後は**頁に書いてあるほうが勝つ**ので、
+    # 人が直接書き換えればそれが残る。
+    judge, why = P.policy(
+        int(base[:2]) if base[:2].isdigit() else 0).get(base, ("", ""))
+    dflt = ("<p><b>%s。</b>%s</p>" % (escape(judge), escape(why)) if judge
+            else "<p><b>する。</b></p>")
+    w('<h2>CAD用シンボルにするか<span class="pencil">手で書く欄</span></h2>')
+    w('<p class="rule">この図記号から CAD 用のシンボル（QET の <code>.elmt</code>、'
+      "DXF のブロックなど）を作るかどうか。<b>「しない」と書いてあれば作らなくてよい。"
+      "</b>図（SVG）とこの頁は、作らないものにも用意する。</p>")
+    w(hand("cad", "する／しない と、その理由", dflt))
+
     if mine:
         w("<h2>規格の注釈</h2>")
         w('<p class="rule">この図記号に付いている注釈。'
@@ -498,7 +520,28 @@ def notes_page(notes, have):
     return "\n".join(o)
 
 
-def index_page(items):
+def skipped_rows():
+    """シンボルにしないと決めたもの → [(番号, 名称, 理由)]
+
+    **黙って落とさない。**規格に載っているのに一覧に無いと、
+    描き忘れたのか決めて外したのかが分からなくなる。
+    """
+    out = []
+    for part in (7, 8):
+        rows = {}
+        f = os.path.join(P.REPO, "docs", "第%d部索引.tsv" % part)
+        if os.path.isfile(f):
+            for line in io.open(f, encoding="utf-8"):
+                c = line.rstrip("\n").split("\t")
+                if len(c) >= 5:
+                    rows[c[0]] = c[4]
+        for n, (judge, why) in sorted(P.policy(part).items()):
+            if judge == "見送り":
+                out.append((n, rows.get(n, ""), why))
+    return out
+
+
+def index_page(items, skipped):
     o = []
     w = o.append
     w("<h1>JIS C 0617 図記号の一覧</h1>")
@@ -523,6 +566,17 @@ def index_page(items):
           % (base.replace("+", "%2B"), escape((base + " " + ja).lower()),
              th, escape(base), escape(ja)))
     w("</div></section>")
+    if skipped:
+        w('<h2 style="margin-top:2.6em">シンボルにしないもの</h2>')
+        w('<p class="en">規格には載っているが、この集まりでは図記号ファイルに'
+          "しないと決めたもの。旧図記号のうち、装置ではなく"
+          "<b>使い方の例</b>を示しているものが主です。</p>")
+        w('<div class="scroll"><table><thead><tr><th>図記号番号</th><th>名称</th>'
+          "<th>理由</th></tr></thead><tbody>")
+        for n, name, why in skipped:
+            w("<tr><td><code>%s</code></td><td>%s</td><td>%s</td></tr>"
+              % (escape(n), escape(name), escape(why)))
+        w("</tbody></table></div>")
     return "\n".join(o)
 
 
@@ -571,7 +625,8 @@ def main():
         items.append((part, sec, secname, base, ja, thumb(p)))
     io.open(os.path.join(dst, "index.html"), "w", encoding="utf-8",
             newline="\n").write(
-        html("JIS C 0617 図記号の一覧 — w-qet", index_page(items), JS_FILTER))
+        html("JIS C 0617 図記号の一覧 — w-qet",
+             index_page(items, skipped_rows()), JS_FILTER))
     io.open(os.path.join(dst, "notes.html"), "w", encoding="utf-8",
             newline="\n").write(
         html("規格の注釈 — w-qet", notes_page(notes, have)))

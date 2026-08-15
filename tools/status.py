@@ -52,8 +52,8 @@ def load_index(part=7):
         line = line.rstrip("\n")
         if not line or line.startswith("#") or line.startswith("番号\t"):
             continue
-        num, sec, label, page = line.split("\t")
-        rows.append((num, sec, label, int(page)))
+        f = line.split("\t")
+        rows.append((f[0], f[1], f[2], int(f[3]), f[4] if len(f) > 4 else ""))
     return rows
 
 
@@ -70,15 +70,17 @@ def scan_elements():
     return done
 
 
-def render(rows, done, part=7):
+def render(rows, done, pol, part=7):
     secs = []
-    for num, sec, label, page in rows:
+    for num, sec, label, page, name in rows:
         if not secs or secs[-1][0] != sec:
             secs.append((sec, label, []))
-        secs[-1][2].append((num, page))
+        secs[-1][2].append((num, page, name))
 
+    # **CADにしないものも図は作る。**分母から外さない
+    n_skip = sum(1 for r in rows if pol.get(r[0], ("", ""))[0] == "CADにしない")
     n_all = len(rows)
-    n_done = sum(1 for num, _, _, _ in rows if num in done)
+    n_done = sum(1 for r in rows if r[0] in done)
     out = []
     w = out.append
     w("# 採録状況")
@@ -90,6 +92,9 @@ def render(rows, done, part=7):
     w("|---|---|")
     w("| 採録済み | **%d / %d**（%.0f%%） |" % (n_done, n_all, 100.0 * n_done / n_all))
     w("| 残り | %d |" % (n_all - n_done))
+    if n_skip:
+        w("| うち **CAD用シンボルにしない**もの | %d"
+          "（[第%d部方針.tsv](第%d部方針.tsv)） |" % (n_skip, part, part))
     w("")
     w("> **この文書は手で書かない。** `py -3 tools/status.py` が"
       "`elements/` を走査して作り直す。")
@@ -114,18 +119,22 @@ def render(rows, done, part=7):
     w("---")
     w("")
     for sec, label, items in secs:
-        d = sum(1 for num, _ in items if num in done)
+        d = sum(1 for i in items if i[0] in done)
         mark = "✔" if d == len(items) else ("… " if d else "—")
         w("## %s %s  %s %d/%d" % (sec, label, mark, d, len(items)))
         w("")
         w("| | 図記号番号 | 名称 | ファイル | p. |")
         w("|---|---|---|---|---|")
-        for num, page in items:
+        for num, page, name in items:
+            judge, why = pol.get(num, ("", ""))
+            tail = ""
+            if judge == "CADにしない":
+                tail = "　**CAD用シンボルにしない** —— " + why
             if num in done:
                 fn, nm = done[num]
-                w("| ✔ | %s | %s | `%s` | %d |" % (num, nm, fn, page))
+                w("| ✔ | %s | %s | `%s`%s | %d |" % (num, nm, fn, tail, page))
             else:
-                w("| — | %s | | | %d |" % (num, page))
+                w("| — | %s | %s%s | | %d |" % (num, name, tail, page))
         w("")
     w("---")
     w("")
@@ -162,25 +171,28 @@ def main():
 
     rows = load_index(a.part)
     done = scan_elements()
-    n_done = sum(1 for num, _, _, _ in rows if num in done)
+    pol = P.policy(a.part)
+    n_done = sum(1 for r in rows if r[0] in done)
+    n_skip = sum(1 for r in rows if pol.get(r[0], ("", ""))[0] == "CADにしない")
 
     if a.next:
-        todo = [(n, s, l, p) for n, s, l, p in rows if n not in done][:a.next]
+        todo = [r for r in rows if r[0] not in done][:a.next]
         if not todo:
             print("すべて採録済み（%d 個）" % len(rows))
             return 0
         print("次に描くもの %d 件 —— 規格票のページを見て起こす" % len(todo))
-        for num, sec, label, page in todo:
-            print("  %-9s  %-16s  p.%d" % (num, label, page))
+        for num, sec, label, page, name in todo:
+            print("  %-10s  %-24s  p.%d" % (num, name or label, page))
         return 0
 
     if not a.check:
         op = out_path(a.part)
         io.open(op, "w", encoding="utf-8", newline="\n").write(
-            render(rows, done, a.part))
+            render(rows, done, pol, a.part))
         print("書き出し:", os.path.relpath(op, P.REPO))
 
-    print("採録 %d / %d （残り %d）" % (n_done, len(rows), len(rows) - n_done))
+    print("採録 %d / %d （残り %d。うち CAD用シンボルにしないもの %d）"
+          % (n_done, len(rows), len(rows) - n_done, n_skip))
     # 索引に無い番号を持つ .elmt があれば知らせる。
     # **別の部のものは正常**なので、その部の番号は黙って外す
     pre = "%02d-" % a.part

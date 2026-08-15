@@ -172,8 +172,31 @@ def index(part=7):
         return out
     for line in io.open(p, encoding="utf-8"):
         f = line.rstrip("\n").split("\t")
-        if len(f) == 4 and f[0].startswith("%02d-" % part) and f[3].isdigit():
+        if len(f) >= 4 and f[0].startswith("%02d-" % part) and f[3].isdigit():
             out[f[0]] = int(f[3])
+    return out
+
+
+def policy(part=7):
+    """図記号番号 → (判断, 理由)。docs/第<part>部方針.tsv
+
+    **索引と分けてある。**索引は `mkindex.py` が規格票から作り直すので、
+    手で書いた判断を索引に混ぜると作り直しで消える。
+
+    書いていないものは「作る」。書くのは見送るものだけ。
+    """
+    import io
+    p = os.path.join(REPO, "docs", "第%d部方針.tsv" % part)
+    out = {}
+    if not os.path.isfile(p):
+        return out
+    for line in io.open(p, encoding="utf-8"):
+        line = line.rstrip("\n")
+        if not line or line.startswith("#") or line.startswith("番号\t"):
+            continue
+        f = line.split("\t")
+        if len(f) >= 2:
+            out[f[0]] = (f[1], f[2] if len(f) > 2 else "")
     return out
 
 
