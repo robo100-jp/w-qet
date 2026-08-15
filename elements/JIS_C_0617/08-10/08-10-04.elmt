@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="40" height="70" hotspot_x="20" hotspot_y="45"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{cbb6125f-8ab5-4095-95f3-a0de0da295c2}"/>
+    <names>
+        <name lang="ja">電気機械式位置表示器</name>
+        <name lang="en">Electromechanical position indicator</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 08-10-04
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。
+</informations>
+    <description>
+        <line x1="-20" y1="-35" x2="-20" y2="-17" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="20" y1="-35" x2="20" y2="-17" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-20" y1="-17" x2="-8.1" y2="-8.1" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="20" y1="-17" x2="8.1" y2="-8.1" antialias="true"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <ellipse x="-11.5" y="-11.5" width="23" height="23" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <polygon x1="-10.1" y1="-5.9" x2="-5.9" y2="-10.1" x3="10.1" y3="5.9" x4="5.9" y4="10.1" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:black;color:black"/>
+        <line x1="0" y1="11.5" x2="0" y2="25" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="-20" y="-35" orientation="n" name="1" type="Generic"
+                  uuid="{fd0deefb-b327-4c83-b3d5-1fff030c9fd8}"/>
+        <terminal x="20" y="-35" orientation="n" name="2" type="Generic"
+                  uuid="{fe3a3f76-d7d6-479d-884a-1cc21f962337}"/>
+        <terminal x="0" y="25" orientation="s" name="3" type="Generic"
+                  uuid="{54a11835-5bf6-47f2-9b35-be8ca40dd9c7}"/>
+        <dynamic_text x="25" y="-35" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{c4eb8e36-e0a0-4aa5-9bd8-0c3f297ae300}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>

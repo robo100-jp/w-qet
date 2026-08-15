@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition width="60" height="60" hotspot_x="30" hotspot_y="30"
+            type="element" link_type="simple" version="0.100.0">
+    <uuid uuid="{33391bf9-fdf1-41bb-a950-024bae9fbd6c}"/>
+    <names>
+        <name lang="ja">ジャイロ（旧）</name>
+        <name lang="en">Gyro (obsolete)</name>
+    </names>
+    <informations>JIS C 0617 / IEC 60617 08-A9-03
+**旧図記号。新しい図面には使わない。**規格票の附属書Aに参考として
+載っているもの。
+JIS C 0617 を参考に作成。規格の図版を複製したものではない。
+</informations>
+    <description>
+        <rect x="-30" y="-30" width="60" height="60" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <ellipse x="-20.5" y="-20.5" width="41" height="41" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc x="-16" y="-16" width="32" height="32" start="-60" angle="300"
+             antialias="true" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <polygon x1="-2" y1="-18.5" x2="7" y2="-14" x3="-1.5" y3="-9.5" antialias="true"
+                 style="line-style:normal;line-weight:normal;filling:black;color:black"/>
+        <rect x="-30" y="-2" width="60" height="7" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:white;color:black"/>
+        <line x1="-30" y1="-2" x2="30" y2="-2" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <line x1="-30" y1="5" x2="30" y2="5" antialias="false"
+              style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" end2="none" length1="1.5" length2="1.5"/>
+        <terminal x="-30" y="0" orientation="w" name="1" type="Generic"
+                  uuid="{4520d697-25c1-4b98-8df4-dfeecfedee6d}"/>
+        <terminal x="30" y="0" orientation="e" name="2" type="Generic"
+                  uuid="{44441a93-614e-4432-9096-4284cfced3e7}"/>
+        <dynamic_text x="35" y="-30" z="1" text_width="-1"
+                      Halignment="AlignLeft" Valignment="AlignTop"
+                      frame="false" rotation="0" keep_visual_rotation="true"
+                      text_from="ElementInfo" uuid="{9d0f12ee-0452-402b-b08c-a923f180fb2b}"
+                      font="Liberation Sans,9,-1,5,50,0,0,0,0,0,Regular">
+            <text></text>
+            <info_name>label</info_name>
+        </dynamic_text>
+    </description>
+</definition>
