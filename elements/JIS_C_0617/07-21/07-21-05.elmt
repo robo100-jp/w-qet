@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{189d7930-9e02-455d-989c-af9b78f7be2b}"/>
     <names>
-        <name lang="ja">別個の警報接点付きヒューズ</name>
+        <name lang="ja">警報接点付きヒューズ（接点が別に出ている形）</name>
         <name lang="en">Fuse with separate alarm</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-21-05
+    <informations>規格の名称: 別個の警報接点付きヒューズ
+JIS C 0617 / IEC 60617 07-21-05
 溶断すると閉じる警報接点を持つヒューズ。警報回路は本体と別で、端子は4つ。
 破線は機械的連結。ストライカが接点を動かすことを表す。
 

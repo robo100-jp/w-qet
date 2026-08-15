@@ -3,10 +3,11 @@
             type="element" link_type="slave" version="0.100.0">
     <uuid uuid="{57d43ed0-04d7-4711-be3a-36edafbf9a11}"/>
     <names>
-        <name lang="ja">メーク接点（限時）</name>
+        <name lang="ja">タイマの a接点（オンオフ両方ディレー）</name>
         <name lang="en">Make contact, delayed</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-05-05
+    <informations>規格の名称: メーク接点（限時）
+JIS C 0617 / IEC 60617 07-05-05
 限時動作・限時復帰のメーク接点。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

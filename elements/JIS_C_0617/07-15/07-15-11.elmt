@@ -3,10 +3,11 @@
             type="element" link_type="master" version="0.100.0">
     <uuid uuid="{622b8ca0-0481-43c1-8bfc-130f755ba838}"/>
     <names>
-        <name lang="ja">交流不感動形継電器コイル</name>
+        <name lang="ja">直流専用のリレーコイル（交流では動かない）</name>
         <name lang="en">Relay coil of a relay unaffected by alternating current</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-15-11
+    <informations>規格の名称: 交流不感動形継電器コイル
+JIS C 0617 / IEC 60617 07-15-11
 交流では動作しない継電器。上下の帯を塗りつぶす。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

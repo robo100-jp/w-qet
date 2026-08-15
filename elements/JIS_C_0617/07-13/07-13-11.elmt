@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{26a18531-c6f4-426f-a6de-7390d0ae7bb0}"/>
     <names>
-        <name lang="ja">引外し自由機構（トリップフリー）</name>
+        <name lang="ja">トリップフリー（引外し自由機構）</name>
         <name lang="en">Trip-free mechanism</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-13-11
+    <informations>規格の名称: 引外し自由機構（トリップフリー）
+JIS C 0617 / IEC 60617 07-13-11
 限定図記号。端子を持たない。ほかの図記号に重ねて使う。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{1d6b6218-5d7e-452e-9a82-63c00cdcca8e}"/>
     <names>
-        <name lang="ja">多段スイッチ（位置図を添えて示す場合・4位置）</name>
+        <name lang="ja">セレクタスイッチ（位置図付き）</name>
         <name lang="en">Multi-position switch with position diagram, 4 positions</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-11-06
+    <informations>規格の名称: 多段スイッチ（位置図を添えて示す場合・4位置）
+JIS C 0617 / IEC 60617 07-11-06
 位置図の付け方を示す例。**規格票が載せているのはこの4位置だけ。**
 番号と破線は書き方の説明で、実際の図面では位置に合わせて描き直す。
 段数ちがいは 07-11-06__2 と __3 に置いてある。**位置数に上限は無い**ので、要るなら足せる。

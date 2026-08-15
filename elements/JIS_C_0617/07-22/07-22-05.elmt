@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{9093b068-2b8e-448a-92bd-584e2ed63e2f}"/>
     <names>
-        <name lang="ja">保護ガス封入対称形放電管</name>
+        <name lang="ja">GDT（対称形のガス入り放電管）</name>
         <name lang="en">Protective gas discharge tube, symmetric</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-22-05
+    <informations>規格の名称: 保護ガス封入対称形放電管
+JIS C 0617 / IEC 60617 07-22-05
 中央電極を持つ、ガス封入の放電管。
 規格票では中央電極に線が出ていない。作図に使えるよう、横棒の左端を端子にした。
 

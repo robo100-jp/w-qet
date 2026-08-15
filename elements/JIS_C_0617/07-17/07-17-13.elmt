@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{0898a4da-ac7f-41c6-8780-57235c356805}"/>
     <names>
-        <name lang="ja">回転子の拘束検出継電器</name>
+        <name lang="ja">拘束検出継電器（モーターが回らないのを見る）</name>
         <name lang="en">Locked-rotor detection relay</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-17-13
+    <informations>規格の名称: 回転子の拘束検出継電器
+JIS C 0617 / IEC 60617 07-17-13
 回転子が回らなくなったことを検出する継電器。回転速度がほぼ0で、かつ電流が大きい状態を見る。
 規格票にはリード線が描かれていない。作図に使えるよう、外形の左右中央に端子を1つずつ足してある。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>

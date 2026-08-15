@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{d430287c-60f0-437f-b915-52f042ed2bde}"/>
     <names>
-        <name lang="ja">過電力量計</name>
+        <name lang="ja">過電力量計（決めた値を超えたぶんだけ数える）</name>
         <name lang="en">Excess watt-hour meter</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 08-04-09
+    <informations>規格の名称: 過電力量計
+JIS C 0617 / IEC 60617 08-04-09
 規格票には引出し線が描かれていない。作図に使えるよう、外形の縁に端子を1つずつ足してある。
 上に載る長方形の数が、指示する積算値の種類の数を表す（注釈 A00148）。
 **数を変えるときは別ファイルにする。**編集では変えられない。

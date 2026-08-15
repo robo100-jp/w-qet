@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{e572f1e0-1852-4dcf-ac23-3adc0c314394}"/>
     <names>
-        <name lang="ja">リミットスイッチ（機械的に連結される個別のメーク接点とブレーク接点）</name>
+        <name lang="ja">リミットスイッチ（a接点・b接点を1つに持つ）</name>
         <name lang="en">Position switch assembly</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-08-03
+    <informations>規格の名称: リミットスイッチ（機械的に連結される個別のメーク接点とブレーク接点）
+JIS C 0617 / IEC 60617 07-08-03
 メーク接点とブレーク接点を機械的に連結したリミットスイッチ。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

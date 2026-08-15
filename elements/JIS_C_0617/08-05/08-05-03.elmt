@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{1217c4cc-3af2-457d-8e2a-e5be91539855}"/>
     <names>
-        <name lang="ja">パルス計数装置（手動プリセット）</name>
+        <name lang="ja">プリセットカウンタ（手動で数を合わせる）</name>
         <name lang="en">Pulse counting device, manually pre-set to n</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 08-05-03
+    <informations>規格の名称: パルス計数装置（手動プリセット）
+JIS C 0617 / IEC 60617 08-05-03
 n は手動で設定する計数の初期値。0 を入れればリセットになる。
 上の横棒は手動操作、そこから本体への破線は機械的な結合。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>

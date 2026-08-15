@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{f129df31-c608-4c17-af46-f2fd6c75f2e8}"/>
     <names>
-        <name lang="ja">リミットスイッチ（確実な開放ブレーク接点）</name>
+        <name lang="ja">リミットスイッチ（確実開放の b接点）</name>
         <name lang="en">Position switch, break contact, positive operation</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-08-04
+    <informations>規格の名称: リミットスイッチ（確実な開放ブレーク接点）
+JIS C 0617 / IEC 60617 07-08-04
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <line x1="0" y1="-30" x2="0" y2="-10" antialias="false"

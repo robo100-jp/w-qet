@@ -3,10 +3,11 @@
             type="element" link_type="previous_report" version="0.100.0">
     <uuid uuid="{1d96d9b0-f769-4910-838f-2089e1d4394a}"/>
     <names>
-        <name lang="ja">フォリオ参照 入（前ページより）</name>
+        <name lang="ja">フォリオ参照 入（他ページから来る線の受け）</name>
         <name lang="en">Folio reference, in (from previous page)</name>
     </names>
-    <informations>**規格に基づく図記号ではない。**フォリオ参照は図面作成の規約で、IEC 60617（図記号）ではなく IEC 61082（図面の作成）の領域。
+    <informations>規格の名称: フォリオ参照 入（前ページより）
+**規格に基づく図記号ではない。**フォリオ参照は図面作成の規約で、IEC 60617（図記号）ではなく IEC 61082（図面の作成）の領域。
 作図の都合で置いている部品。
 前のページから来た導体の続きを示す。参照先は QET が札の中に書き込む。
 使う前に**プロジェクトの属性 →「新しいフォリオ」→「フォリオ参照のラベル」を

@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{33e4c8b6-f40f-45db-84e9-de60a260fd80}"/>
     <names>
-        <name lang="ja">端子表示付き計器用多段選択スイッチ（電流回路用）</name>
+        <name lang="ja">AS（電流計切換スイッチ・端子表示付き）</name>
         <name lang="en">Instrument multi-position selector switch for current circuit with shown terminals</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-12-08
+    <informations>規格の名称: 端子表示付き計器用多段選択スイッチ（電流回路用）
+JIS C 0617 / IEC 60617 07-12-08
 端子表示の書き方を示す例。実際の図面では回路に合わせて書き直す。
 規格票は入力側と出力側の両方に N を書いている。図の文字はそのままにし、QET の端子名だけ出力側を「L(出力)」「N(出力)」にして区別できるようにした。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>

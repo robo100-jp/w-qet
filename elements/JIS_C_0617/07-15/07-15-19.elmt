@@ -3,10 +3,11 @@
             type="element" link_type="master" version="0.100.0">
     <uuid uuid="{1500b7fc-4c9a-4830-b28c-059489c1b6cf}"/>
     <names>
-        <name lang="ja">レマネント形継電器コイル</name>
+        <name lang="ja">レマネントリレー（残留磁気を使う）</name>
         <name lang="en">Relay coil of a remanent relay</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-15-19
+    <informations>規格の名称: レマネント形継電器コイル
+JIS C 0617 / IEC 60617 07-15-19
 残留磁気で保持する継電器。斜線の枡で示す。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

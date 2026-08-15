@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{b7cc2155-f834-4a77-b181-4d9bf32dd1c5}"/>
     <names>
-        <name lang="ja">記録電力計（記録無効電力計付き）</name>
+        <name lang="ja">記録電力計（無効電力の記録も付いたもの）</name>
         <name lang="en">Recording wattmeter with recording varmeter</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 08-03-02
+    <informations>規格の名称: 記録電力計（記録無効電力計付き）
+JIS C 0617 / IEC 60617 08-03-02
 規格票には引出し線が描かれていない。作図に使えるよう、外形の縁に端子を1つずつ足してある。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。
 </informations>

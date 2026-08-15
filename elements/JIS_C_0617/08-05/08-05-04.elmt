@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{338a671c-0ad6-428f-9b48-c667707937e1}"/>
     <names>
-        <name lang="ja">パルス計数装置（電気リセット）</name>
+        <name lang="ja">リセット付きカウンタ（外から0に戻す）</name>
         <name lang="en">Pulse counting device, electrically reset to 0</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 08-05-04
+    <informations>規格の名称: パルス計数装置（電気リセット）
+JIS C 0617 / IEC 60617 08-05-04
 右の引出し線に信号を与えると計数値が 0 に戻る。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{46d9d9f1-b2b6-4807-a84b-8b7d38b5d3ef}"/>
     <names>
-        <name lang="ja">過電流継電器（反限時）</name>
+        <name lang="ja">OCR（反限時の過電流継電器）</name>
         <name lang="en">Overcurrent relay</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-17-14
+    <informations>規格の名称: 過電流継電器（反限時）
+JIS C 0617 / IEC 60617 07-17-14
 反限時特性をもつ過電流継電器。動作値の倍率（5倍）を添えた例。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

@@ -3,10 +3,11 @@
             type="element" link_type="slave" version="0.100.0">
     <uuid uuid="{81ca1212-8e2b-4d09-8248-9a1bad9e2370}"/>
     <names>
-        <name lang="ja">ブレーク接点（遅延開路）</name>
+        <name lang="ja">遅延接点（他の a接点より遅れて切れる）</name>
         <name lang="en">Break contact, late opening</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-04-03
+    <informations>規格の名称: ブレーク接点（遅延開路）
+JIS C 0617 / IEC 60617 07-04-03
 同じ器具の中の他のメーク接点より**遅れて**開く。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

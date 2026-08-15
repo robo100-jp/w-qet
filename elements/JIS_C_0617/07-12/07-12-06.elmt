@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{fa7f8af4-6efc-4c8c-a30f-e60da1798110}"/>
     <names>
-        <name lang="ja">端子表示付き計器用多段選択スイッチ（電圧回路用）</name>
+        <name lang="ja">VS（電圧計切換スイッチ・端子表示付き）</name>
         <name lang="en">Instrument multi-position selector switch with terminal marking</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-12-06
+    <informations>規格の名称: 端子表示付き計器用多段選択スイッチ（電圧回路用）
+JIS C 0617 / IEC 60617 07-12-06
 端子表示と切換位置の書き方を示す例。実際の図面では回路に合わせて書き直す。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

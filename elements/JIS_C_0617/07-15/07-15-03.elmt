@@ -3,10 +3,11 @@
             type="element" link_type="master" version="0.100.0">
     <uuid uuid="{8197cd43-ef48-4a21-a8e1-a203e8149a76}"/>
     <names>
-        <name lang="ja">作動装置，継電器コイル（結合表示）</name>
+        <name lang="ja">リレーコイル（接点と1つに描く形）</name>
         <name lang="en">Operating device; Relay coil (attached representation)</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-15-03
+    <informations>規格の名称: 作動装置，継電器コイル（結合表示）
+JIS C 0617 / IEC 60617 07-15-03
 二つの巻線を並べて示す。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

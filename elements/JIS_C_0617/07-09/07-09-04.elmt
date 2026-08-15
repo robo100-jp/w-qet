@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{98ff9a12-4232-41f7-8bff-372db7d4b804}"/>
     <names>
-        <name lang="ja">感温体付き気体放電管</name>
+        <name lang="ja">感温体付きの放電管（温度で放電する保護素子）</name>
         <name lang="en">Gas discharge tube with thermal element</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-09-04
+    <informations>規格の名称: 感温体付き気体放電管
+JIS C 0617 / IEC 60617 07-09-04
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>
         <ellipse x="-20" y="-20" width="40" height="40" antialias="true"

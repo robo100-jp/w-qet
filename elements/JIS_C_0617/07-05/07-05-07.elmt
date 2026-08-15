@@ -3,10 +3,11 @@
             type="element" link_type="slave" version="0.100.0">
     <uuid uuid="{12ecf575-a8c4-4c68-8688-2669c77d5e64}"/>
     <names>
-        <name lang="ja">ブレーク接点（限時）</name>
+        <name lang="ja">タイマの b接点（オンオフ両方ディレー）</name>
         <name lang="en">Break contact, delayed</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-05-07
+    <informations>規格の名称: ブレーク接点（限時）
+JIS C 0617 / IEC 60617 07-05-07
 限時動作・限時復帰のブレーク接点。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

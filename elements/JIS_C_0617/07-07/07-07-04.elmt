@@ -3,7 +3,7 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{bce29ab7-1b21-4878-b2b2-a30942fa31f8}"/>
     <names>
-        <name lang="ja">ひねりスイッチ</name>
+        <name lang="ja">ひねりスイッチ（オルタネート）</name>
         <name lang="en">Switch, manually operated, turning, stay-put</name>
     </names>
     <informations>規格の名称: 手動操作のひねりスイッチ（非自動復帰）

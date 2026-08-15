@@ -3,10 +3,11 @@
             type="element" link_type="master" version="0.100.0">
     <uuid uuid="{8453216c-473d-4aec-92d6-5efe145dfe96}"/>
     <names>
-        <name lang="ja">機械的共振形継電器コイル</name>
+        <name lang="ja">共振形リレー（決まった周波数でだけ動く）</name>
         <name lang="en">Relay coil of a mechanically resonant relay</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-15-13
+    <informations>規格の名称: 機械的共振形継電器コイル
+JIS C 0617 / IEC 60617 07-15-13
 機械的に共振させる継電器。ばねの図記号を機械的連結の先に置く。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

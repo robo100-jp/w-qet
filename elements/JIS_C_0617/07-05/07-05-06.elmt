@@ -3,10 +3,11 @@
             type="element" link_type="slave" version="0.100.0">
     <uuid uuid="{0a68f246-3ba2-40f0-940c-4be6cc65018f}"/>
     <names>
-        <name lang="ja">接点の組合せ</name>
+        <name lang="ja">限時接点の組合せ（1つの器具に何種類か入っている例）</name>
         <name lang="en">Contact assembly</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-05-06
+    <informations>規格の名称: 接点の組合せ
+JIS C 0617 / IEC 60617 07-05-06
 規格が示す組合せの例。単独の機器ではない。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

@@ -3,10 +3,11 @@
             type="element" link_type="slave" version="0.100.0">
     <uuid uuid="{1ba38c84-002d-44db-a68d-4a761b75c2ae}"/>
     <names>
-        <name lang="ja">メーク接点（先行閉路）</name>
+        <name lang="ja">先行接点（他の a接点より先に入る）</name>
         <name lang="en">Make contact, early closing</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-04-01
+    <informations>規格の名称: メーク接点（先行閉路）
+JIS C 0617 / IEC 60617 07-04-01
 同じ器具の中の他のメーク接点より**先に**閉じる。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

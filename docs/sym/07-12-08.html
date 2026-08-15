@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>07-12-08 端子表示付き計器用多段選択スイッチ（電流回路用） — w-qet</title><style>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>07-12-08 AS（電流計切換スイッチ・端子表示付き） — w-qet</title><style>
 :root{--bg:#fff;--fg:#1a1a1a;--dim:#666;--line:#dcdcdc;--accent:#1c4f9c;
       --card:#fafafa;--code:#f2f3f5;--warn:#8a5a00}
 @media (prefers-color-scheme:dark){:root{
@@ -82,7 +82,7 @@ h3 + .rule{margin-top:.1em}
 .caution{border-left:3px solid var(--warn);background:var(--card);
   padding:10px 14px;font-size:.85rem;border-radius:0 6px 6px 0;margin:1em 0}
 </style></head><body><div class="wrap"><nav class="crumb"><a href="index.html">図記号の一覧</a> ／ <a href="notes.html">規格の注釈</a> ／ 07-12-08</nav>
-<h1><span class="num">07-12-08</span>端子表示付き計器用多段選択スイッチ（電流回路用）</h1>
+<h1><span class="num">07-12-08</span>AS（電流計切換スイッチ・端子表示付き）</h1>
 <div class="en">Instrument multi-position selector switch for current circuit with shown terminals</div>
 <p class="src">JIS C 0617 / IEC 60617 07-12-08　—— 規格を参考に座標から描き起こしたもの</p>
 <div class="top"><div class="fig"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-61 -56 122 112" width="390.4" height="358.4" role="img"><defs><pattern id="g1" width="10" height="10" patternUnits="userSpaceOnUse" x="-55" y="-50"><path d="M10 0H0V10" fill="none" stroke="currentColor" stroke-width=".25" opacity=".22"/></pattern></defs><rect x="-61" y="-56" width="122" height="112" fill="url(#g1)"/><g stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" fill="none"><rect x="-55" y="-50" width="110" height="100" fill="none" stroke="#d8d8d8" stroke-width="0.4"/><rect x="-45" y="-50" width="90" height="100" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-55" y1="-30" x2="-45" y2="-30" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-44.2" y="-24.57" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">L1</text><line x1="-55" y1="-10" x2="-45" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-44.2" y="-4.58" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">L2</text><line x1="-55" y1="10" x2="-45" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-44.2" y="15.4" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">L3</text><line x1="-55" y1="30" x2="-45" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-43.43" y="35.42" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">N</text><line x1="45" y1="-10" x2="55" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="34.9" y="-4.58" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">L</text><line x1="45" y1="10" x2="55" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="34.57" y="15.43" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">N</text><text x="-7.65" y="-23.57" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">AS</text><line x1="-17.5" y1="-10" x2="-7.5" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-12.5" y1="-12" x2="-12.5" y2="0" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-17.5" y1="0" x2="-12.5" y2="0" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="15" y1="-10" x2="25" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="15" y1="-10" x2="-5" y2="0" fill="none" stroke="currentColor" stroke-width="0.5"/><circle cx="-55" cy="-30" r="1.6" fill="none" stroke="#c04040" stroke-width="0.5"/><circle cx="-55" cy="-10" r="1.6" fill="none" stroke="#c04040" stroke-width="0.5"/><circle cx="-55" cy="10" r="1.6" fill="none" stroke="#c04040" stroke-width="0.5"/><circle cx="-55" cy="30" r="1.6" fill="none" stroke="#c04040" stroke-width="0.5"/><circle cx="55" cy="-10" r="1.6" fill="none" stroke="#c04040" stroke-width="0.5"/><circle cx="55" cy="10" r="1.6" fill="none" stroke="#c04040" stroke-width="0.5"/><text x="60" y="-43" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="9" fill="#3c5ac8">[label]</text></g></svg><div class="legend">格子 1目 = 1M。灰の枠が外形、赤丸が端子、青が名前の欄</div></div>
@@ -95,7 +95,8 @@ h3 + .rule{margin-top:.1em}
 </tbody></table></div></div>
 <h2>図記号ファイルの覚え書き</h2>
 <p class="rule"><code>.elmt</code> の <code>&lt;informations&gt;</code> から。<b>ここは書き換えても次に作り直すと消える。</b>書くなら下の「手で書く欄」か <code>.elmt</code> 側に。</p>
-<div class="note">端子表示の書き方を示す例。実際の図面では回路に合わせて書き直す。
+<div class="note">規格の名称: 端子表示付き計器用多段選択スイッチ（電流回路用）
+端子表示の書き方を示す例。実際の図面では回路に合わせて書き直す。
 規格票は入力側と出力側の両方に N を書いている。図の文字はそのままにし、QET の端子名だけ出力側を「L(出力)」「N(出力)」にして区別できるようにした。</div>
 <h2>一般的な名称<span class="pencil">手で書く欄</span></h2>
 <p class="rule">この図記号が指す部品を、ふだん何と呼ぶか。現場・部品表・カタログでの言い方。<b>規格の名称とは別。</b>規格が「安全開離機能接点」でも、通じるのは「ミラー接点」。<b>探すときはこの言葉で探すので、目次の絞り込みもここを見る。</b><br><b>名前だけを書く。</b>どういう部品かの説明は次の欄へ。ここは <code>.elmt</code> の名称（QET の部品パネルに出る名前）の元になる。</p>
@@ -127,7 +128,7 @@ h3 + .rule{margin-top:.1em}
 <details><summary>開く</summary><pre id="data">{
  "id": "07-12-08",
  "name": {
-  "ja": "端子表示付き計器用多段選択スイッチ（電流回路用）",
+  "ja": "AS（電流計切換スイッチ・端子表示付き）",
   "en": "Instrument multi-position selector switch for current circuit with shown terminals"
  },
  "standard": "07-12-08",

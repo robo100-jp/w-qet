@@ -3,10 +3,11 @@
             type="element" link_type="master" version="0.100.0">
     <uuid uuid="{76074d55-dccb-4a99-b737-33dfbd12269c}"/>
     <names>
-        <name lang="ja">レマネント形継電器コイル（ヒステリシス表示）</name>
+        <name lang="ja">レマネントリレー（ヒステリシスを描いた形）</name>
         <name lang="en">Relay coil of a remanent relay</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-15-20
+    <informations>規格の名称: レマネント形継電器コイル（ヒステリシス表示）
+JIS C 0617 / IEC 60617 07-15-20
 残留磁気で保持する継電器。ヒステリシスの枡で示す。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

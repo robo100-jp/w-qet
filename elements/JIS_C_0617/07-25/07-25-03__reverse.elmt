@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{06c62cbe-46d0-4ffe-aed6-aa4ecc6907f0}"/>
     <names>
-        <name lang="ja">単一方向性静止形スイッチ（電流の向きが逆）</name>
+        <name lang="ja">単方向の半導体スイッチ（ダイオードの向きが逆）</name>
         <name lang="en">Static switch, unidirectional, reversed</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-25-03
+    <informations>規格の名称: 単一方向性静止形スイッチ（電流の向きが逆）
+JIS C 0617 / IEC 60617 07-25-03
 一方向にだけ電流を流す静止形スイッチ。下の三角と横棒がダイオード。
 **07-25-03 と対で、規格票が併記している2つの図の片方。**
 刃の向きは同じで、ダイオードだけが反転している。

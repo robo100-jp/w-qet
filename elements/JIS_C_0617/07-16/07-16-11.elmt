@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{5ea72801-5d40-487e-b82f-9b8bb868fa5c}"/>
     <names>
-        <name lang="ja">反限時特性</name>
+        <name lang="ja">反限時特性を表す印（電流が大きいほど早く動く）</name>
         <name lang="en">Inverse time-lag characteristic</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-16-11
+    <informations>規格の名称: 反限時特性
+JIS C 0617 / IEC 60617 07-16-11
 反限時（電流が大きいほど早く動作する）特性。
 限定図記号。端子を持たない。ほかの図記号に重ねて使う。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>

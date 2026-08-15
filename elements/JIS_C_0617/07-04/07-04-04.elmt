@@ -3,10 +3,11 @@
             type="element" link_type="slave" version="0.100.0">
     <uuid uuid="{7bbc34ef-7cfa-424c-a42c-8442c61a31c0}"/>
     <names>
-        <name lang="ja">ブレーク接点（先行開路）</name>
+        <name lang="ja">先行接点（他の a接点より先に切れる）</name>
         <name lang="en">Break contact, early opening</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-04-04
+    <informations>規格の名称: ブレーク接点（先行開路）
+JIS C 0617 / IEC 60617 07-04-04
 同じ器具の中の他のメーク接点より**先に**開く。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

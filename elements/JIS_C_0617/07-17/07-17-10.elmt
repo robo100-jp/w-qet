@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{401e6df6-8fd1-4903-879b-f2bc0a58c6c8}"/>
     <names>
-        <name lang="ja">巻線層間短絡検出継電器</name>
+        <name lang="ja">層間短絡検出継電器（巻線の中の短絡を見る）</name>
         <name lang="en">Relay detecting short-circuits between windings</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-17-10
+    <informations>規格の名称: 巻線層間短絡検出継電器
+JIS C 0617 / IEC 60617 07-17-10
 巻線の層間短絡を検出する継電器。
 規格票にはリード線が描かれていない。作図に使えるよう、外形の左右中央に端子を1つずつ足してある。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>

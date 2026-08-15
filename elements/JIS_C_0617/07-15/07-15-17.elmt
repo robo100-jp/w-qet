@@ -3,10 +3,11 @@
             type="element" link_type="master" version="0.100.0">
     <uuid uuid="{7fd1017c-9f70-4de7-bd56-8426e63d2674}"/>
     <names>
-        <name lang="ja">中立点付き自動復帰形の有極形継電器</name>
+        <name lang="ja">有極リレー（中立位置付き・自動復帰）</name>
         <name lang="en">Polarized relay with neutral position</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-15-17
+    <informations>規格の名称: 中立点付き自動復帰形の有極形継電器
+JIS C 0617 / IEC 60617 07-15-17
 中立位置をもつ有極継電器。可動接片は無励磁でどちらにも触れない。
 規格票は形状分類に「点」を挙げており、コイルの下と接点の右上に黒丸が1つずつ描かれている。位置と大きさは規格票の実測による。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>

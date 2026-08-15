@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{9f01736b-b240-4689-acac-796666fe6466}"/>
     <names>
-        <name lang="ja">静止形（半導体使用）接触器</name>
+        <name lang="ja">SSR（ソリッドステートリレー）</name>
         <name lang="en">Static (semiconductor) contactor</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-25-02
+    <informations>規格の名称: 静止形（半導体使用）接触器
+JIS C 0617 / IEC 60617 07-25-02
 半導体で開閉する接触器。上の半円が接触器を表す。
 接点を横切る横棒が、半導体で開閉する（静止形である）ことを表す。
 

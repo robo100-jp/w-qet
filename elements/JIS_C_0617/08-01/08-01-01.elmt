@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{9930b061-31ee-4db9-b231-75cd840a9f34}"/>
     <names>
-        <name lang="ja">指示計器（一般図記号）</name>
+        <name lang="ja">指示計器（中に V・A・Hz などを書く）</name>
         <name lang="en">Indicating instrument, general symbol</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 08-01-01
+    <informations>規格の名称: 指示計器（一般図記号）
+JIS C 0617 / IEC 60617 08-01-01
 規格票には引出し線が描かれていない。作図に使えるよう、外形の縁に端子を1つずつ足してある。
 `*` は測る量に置き換える —— 単位の文字記号（V・A・Hz…）／量の文字記号／
 化学式／図記号のいずれか。文字記号は IEC 60027 から採り、適当な図記号が無ければ

@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{d5d9b2fe-0fa2-45db-b12c-9670b91eb2b9}"/>
     <names>
-        <name lang="ja">多段スイッチ（位置図を添えて示す場合・2位置）</name>
+        <name lang="ja">セレクタスイッチ（位置図付き）（2位置）</name>
         <name lang="en">Multi-position switch with position diagram, 2 positions</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-11-06
+    <informations>規格の名称: 多段スイッチ（位置図を添えて示す場合・2位置）
+JIS C 0617 / IEC 60617 07-11-06
 **規格票に載っているのは4位置の例だけ。**位置の数は形なので編集では変えられず、
 2位置と3位置をこちらで起こした。一番外の光線を ±40 度に置き、残りを等間隔に割る規則で、
 4位置のときに規格票と一致する。

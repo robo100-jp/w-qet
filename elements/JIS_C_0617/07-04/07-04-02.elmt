@@ -3,10 +3,11 @@
             type="element" link_type="slave" version="0.100.0">
     <uuid uuid="{85525564-c6f8-4532-85be-e0105d921eac}"/>
     <names>
-        <name lang="ja">メーク接点（遅延閉路）</name>
+        <name lang="ja">遅延接点（他の a接点より遅れて入る）</name>
         <name lang="en">Make contact, late closing</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-04-02
+    <informations>規格の名称: メーク接点（遅延閉路）
+JIS C 0617 / IEC 60617 07-04-02
 同じ器具の中の他のメーク接点より**遅れて**閉じる。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

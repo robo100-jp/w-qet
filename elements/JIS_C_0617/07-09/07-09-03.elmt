@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{d606af2f-f005-47cb-9b5d-c23583d37f0b}"/>
     <names>
-        <name lang="ja">ブレーク接点の自己動作温度スイッチ</name>
+        <name lang="ja">温度スイッチ（b接点・自己動作）</name>
         <name lang="en">Thermal switch, self-operating, break contact</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-09-03
+    <informations>規格の名称: ブレーク接点の自己動作温度スイッチ
+JIS C 0617 / IEC 60617 07-09-03
 **熱動継電器とは区別する。**熱動継電器は第2部の 02-A13-25 のように分けて描く。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
     <description>

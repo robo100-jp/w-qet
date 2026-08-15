@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{c63429e9-e3c2-4a01-ba6a-a0a28015d939}"/>
     <names>
-        <name lang="ja">限時形過電流継電器</name>
+        <name lang="ja">OCR（限時形の過電流継電器）</name>
         <name lang="en">Delayed overcurrent relay</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-17-04
+    <informations>規格の名称: 限時形過電流継電器
+JIS C 0617 / IEC 60617 07-17-04
 限時（動作を遅らせる）付きの過電流継電器。
 規格票にはリード線が描かれていない。作図に使えるよう、外形の左右中央に端子を1つずつ足してある。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>

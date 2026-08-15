@@ -3,10 +3,11 @@
             type="element" link_type="simple" version="0.100.0">
     <uuid uuid="{08860b34-1082-4ec0-a053-3e97fdb8f970}"/>
     <names>
-        <name lang="ja">地絡電流</name>
+        <name lang="ja">地絡（GR・ZCT で測る零相電流）を表す印</name>
         <name lang="en">Earth fault current</name>
     </names>
-    <informations>JIS C 0617 / IEC 60617 07-16-07
+    <informations>規格の名称: 地絡電流
+JIS C 0617 / IEC 60617 07-16-07
 地絡電流。
 限定図記号。端子を持たない。ほかの図記号に重ねて使う。
 JIS C 0617 を参考に作成。規格の図版を複製したものではない。</informations>
