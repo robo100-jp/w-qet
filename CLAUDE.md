@@ -30,7 +30,10 @@ QElectroTech 用の、日本の制御盤向け図記号ライブラリと作図�
 
 ### 1. 上流コレクションから派生させない
 
-QElectroTech 同梱の `91_en_60617`（IEC 60617 規格記号 約900種）から記号をコピー・変換して使わない。
+QElectroTech 同梱のコレクションから記号をコピー・変換して使わない。
+**一部のフォルダだけの話ではない。**0.100.0 の同梱は
+`10_electric` `20_logic` `30_hydraulic` `50_pneumatic` `60_energy` の 8597個で、
+`ELEMENTS.LICENSE` は**コレクション全体**を対象にしている。
 
 理由は `C:\Program Files\QElectroTech\ELEMENTS.LICENSE`。
 
