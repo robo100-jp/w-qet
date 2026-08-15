@@ -3,109 +3,113 @@
 <rect width="210" height="297" fill="white"/>
 <g stroke-linecap="round" stroke-linejoin="round">
 <text x="9" y="12.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="4.4" font-weight="bold" fill="black">図記号 点検メモ</text>
-<text x="201" y="12.4" text-anchor="end" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.8" fill="#555">9 / 11</text>
+<text x="201" y="12.4" text-anchor="end" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.8" fill="#555">9 / 16</text>
 <text x="9" y="16.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.3" fill="#666">気づいたことをその場で書く。直したら docs/点検メモ.md に写す</text>
 <line x1="9" y1="18.6" x2="201" y2="18.6" stroke="#333" stroke-width="0.4"/>
 <text x="46" y="21.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#666">番号・名称</text>
 <text x="96" y="21.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#666">気づいたこと</text>
 <rect x="9" y="22.4" width="192" height="5" fill="#eee"/>
 <text x="10.5" y="26" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.9" font-weight="bold" fill="black">07-17 保護継電器（つづき）</text>
-<g transform="translate(29 39.3) scale(0.21) translate(-0 -0)" stroke="black" fill="none"><rect x="-30" y="-50" width="60" height="100" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-8.74" y="-25.52" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor" font-style="italic">I  </text><text x="1.31" y="-25.52" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">&gt;</text><line x1="-50" y1="-10" x2="-30" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="30" y1="10" x2="50" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="30" y1="30" x2="50" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-15" y1="30" x2="25" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-15" y1="27" x2="-15" y2="33" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="25" y1="27" x2="25" y2="33" fill="none" stroke="currentColor" stroke-width="0.5"/><path d="M -1.04545 24.8143 A 20.4 20.4 0 0 0 9.06187 34.0922" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="8.23" y="14.0033" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="10.6667" fill="currentColor">5x</text></g>
-<rect x="9.6" y="37.6" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
-<text x="46" y="39" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-17-14</text>
-<text x="46" y="42.5" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">過電流継電器（反限時）</text>
-<line x1="94" y1="28.3" x2="94" y2="50.3" stroke="#ccc" stroke-width="0.15"/>
-<line x1="9" y1="50.8" x2="201" y2="50.8" stroke="#999" stroke-width="0.2"/>
-<rect x="9" y="50.8" width="192" height="5" fill="#eee"/>
-<text x="10.5" y="54.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.9" font-weight="bold" fill="black">07-18 その他の装置</text>
-<g transform="translate(29 65.7) scale(0.2125) translate(-0 -0)" stroke="black" fill="none"><rect x="-30" y="-40" width="60" height="80" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-30" y1="0" x2="30" y2="0" fill="none" stroke="currentColor" stroke-width="0.5"/><path d="M 9.99606 -20.0053 A 12.5 12.5 0 0 0 -10.0091 -19.9878" fill="none" stroke="currentColor" stroke-width="0.5"/><path d="M -9.99606 -19.9947 A 12.5 12.5 0 0 0 9.99606 -19.9947" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="-30" x2="0" y2="-25" fill="none" stroke="currentColor" stroke-width="0.5"/><rect x="-8" y="13" width="16" height="16" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="8" y1="13" x2="14" y2="13" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
-<rect x="9.6" y="64" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
-<text x="46" y="65.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-18-01</text>
-<text x="46" y="68.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">ブッフホルツ保護装置，気体継電器</text>
-<line x1="94" y1="56.7" x2="94" y2="74.7" stroke="#ccc" stroke-width="0.15"/>
-<line x1="9" y1="75.2" x2="201" y2="75.2" stroke="#999" stroke-width="0.2"/>
-<g transform="translate(29 80.7) scale(0.225) translate(-0 -0)" stroke="black" fill="none"><rect x="-20" y="-20" width="40" height="40" fill="none" stroke="currentColor" stroke-width="0.5"/><ellipse cx="-11.5" cy="-10" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-5.2" y1="-10" x2="10" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="10,-10 2.2,-12.2 2.2,-7.8" fill="black" stroke="currentColor" stroke-width="0.5"/><line x1="15" y1="-15" x2="15" y2="-5" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-15" y1="10" x2="15" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-15" y1="5" x2="-15" y2="15" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="15" y1="5" x2="15" y2="15" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
-<rect x="9.6" y="79" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
-<text x="46" y="80.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-18-02</text>
-<text x="46" y="83.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">自動再閉路用装置，自動再閉路継電器</text>
-<line x1="94" y1="75.7" x2="94" y2="85.7" stroke="#ccc" stroke-width="0.15"/>
-<line x1="9" y1="86.2" x2="201" y2="86.2" stroke="#999" stroke-width="0.2"/>
-<g transform="translate(29 93.7) scale(0.216667) translate(-30 -0)" stroke="black" fill="none"><line x1="0" y1="-30" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="5" y1="-10" x2="5" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="5" y1="0" x2="20" y2="0" fill="none" stroke="currentColor" stroke-width="0.5"/><ellipse cx="40" cy="0" rx="20" ry="20" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="35.84" y="4.5" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">V</text></g>
-<rect x="9.6" y="92" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
-<text x="46" y="93.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-18-03</text>
-<text x="46" y="96.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">簡易検圧（検電）装置</text>
-<line x1="94" y1="86.7" x2="94" y2="100.7" stroke="#ccc" stroke-width="0.15"/>
-<line x1="9" y1="101.2" x2="201" y2="101.2" stroke="#999" stroke-width="0.2"/>
-<rect x="9" y="101.2" width="192" height="5" fill="#eee"/>
-<text x="10.5" y="104.8" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.9" font-weight="bold" fill="black">07-19 センサ及び検出器</text>
-<g transform="translate(29 112.1) scale(0.225) translate(-0 -0)" stroke="black" fill="none"><line x1="0" y1="-20" x2="0" y2="-8.5" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="8.5" x2="0" y2="20" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="0,-8.5 8.5,0 0,8.5 -8.5,0" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-2.2" y1="-6.3" x2="-2.2" y2="6.3" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="2.2" y1="-6.3" x2="2.2" y2="6.3" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
-<rect x="9.6" y="110.4" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
-<text x="46" y="111.8" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-19-01</text>
-<text x="46" y="115.3" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">近接センサ</text>
-<line x1="94" y1="107.1" x2="94" y2="117.1" stroke="#ccc" stroke-width="0.15"/>
-<line x1="9" y1="117.6" x2="201" y2="117.6" stroke="#999" stroke-width="0.2"/>
-<g transform="translate(29 125.1) scale(0.216667) translate(-10 -0)" stroke="black" fill="none"><rect x="-30" y="-30" width="60" height="60" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="0,-18.5 8.5,-10 0,-1.5 -8.5,-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-2.2" y1="-16.3" x2="-2.2" y2="-3.7" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="2.2" y1="-16.3" x2="2.2" y2="-3.7" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="30" y1="0" x2="50" y2="0" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
-<rect x="9.6" y="123.4" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
-<text x="46" y="124.8" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-19-02</text>
-<text x="46" y="128.3" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">近接検出装置</text>
-<line x1="94" y1="118.1" x2="94" y2="132.1" stroke="#ccc" stroke-width="0.15"/>
-<line x1="9" y1="132.6" x2="201" y2="132.6" stroke="#999" stroke-width="0.2"/>
-<g transform="translate(29 140.1) scale(0.216667) translate(-0 -0)" stroke="black" fill="none"><rect x="-30" y="-30" width="60" height="60" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="0,-18.5 8.5,-10 0,-1.5 -8.5,-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-2.2" y1="-16.3" x2="-2.2" y2="-3.7" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="2.2" y1="-16.3" x2="2.2" y2="-3.7" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-2.2" y1="8" x2="-2.2" y2="18" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="2.2" y1="8" x2="2.2" y2="18" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-8.5" y1="13" x2="-2.2" y2="13" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="2.2" y1="13" x2="8.5" y2="13" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="30" y1="0" x2="50" y2="0" fill="none" stroke="currentColor" stroke-width="0.5"/><rect x="-50" y="-10" width="10" height="20" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-50" y1="-10" x2="-40" y2="-4" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-50" y1="-3" x2="-40" y2="3" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-50" y1="4" x2="-40" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
-<rect x="9.6" y="138.4" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
-<text x="46" y="139.8" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-19-03</text>
-<text x="46" y="143.3" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">近接検出装置（静電容量形）</text>
-<line x1="94" y1="133.1" x2="94" y2="147.1" stroke="#ccc" stroke-width="0.15"/>
-<line x1="9" y1="147.6" x2="201" y2="147.6" stroke="#999" stroke-width="0.2"/>
-<g transform="translate(29 153.1) scale(0.225) translate(-5.75 -0)" stroke="black" fill="none"><line x1="0" y1="-20" x2="0" y2="-8.5" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="8.5" x2="0" y2="20" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="0,-8.5 8.5,0 0,8.5 -8.5,0" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-2.2" y1="-6.3" x2="-2.2" y2="6.3" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="2.2" y1="-6.3" x2="2.2" y2="6.3" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-8.5" y1="-6" x2="-8.5" y2="6" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="8.5" y1="0" x2="20" y2="0" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="4,2"/></g>
-<rect x="9.6" y="151.4" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
-<text x="46" y="152.8" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-19-04</text>
-<text x="46" y="156.3" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">接触センサ</text>
-<line x1="94" y1="148.1" x2="94" y2="158.1" stroke="#ccc" stroke-width="0.15"/>
-<line x1="9" y1="158.6" x2="201" y2="158.6" stroke="#999" stroke-width="0.2"/>
-<rect x="9" y="158.6" width="192" height="5" fill="#eee"/>
-<text x="10.5" y="162.2" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.9" font-weight="bold" fill="black">07-20 スイッチ</text>
-<g transform="translate(29 171.5) scale(0.216667) translate(19.25 -0)" stroke="black" fill="none"><line x1="0" y1="-30" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-10" y1="-10" x2="0" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="10" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="-30,-8.5 -21.5,0 -30,8.5 -38.5,0" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-32.2" y1="-6.3" x2="-32.2" y2="6.3" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-27.8" y1="-6.3" x2="-27.8" y2="6.3" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-38.5" y1="-6" x2="-38.5" y2="6" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-21.5" y1="0" x2="-5" y2="0" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="4,2"/></g>
-<rect x="9.6" y="169.8" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
-<text x="46" y="171.2" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-20-01</text>
-<text x="46" y="174.7" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">触れ感応スイッチ</text>
-<line x1="94" y1="164.5" x2="94" y2="178.5" stroke="#ccc" stroke-width="0.15"/>
-<line x1="9" y1="179" x2="201" y2="179" stroke="#999" stroke-width="0.2"/>
-<g transform="translate(29 186.5) scale(0.216667) translate(19.25 -0)" stroke="black" fill="none"><line x1="0" y1="-30" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-10" y1="-10" x2="0" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="10" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="-30,-8.5 -21.5,0 -30,8.5 -38.5,0" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-32.2" y1="-6.3" x2="-32.2" y2="6.3" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-27.8" y1="-6.3" x2="-27.8" y2="6.3" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-21.5" y1="0" x2="-5" y2="0" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="4,2"/></g>
-<rect x="9.6" y="184.8" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
-<text x="46" y="186.2" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-20-02</text>
-<text x="46" y="189.7" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">近接スイッチ</text>
-<line x1="94" y1="179.5" x2="94" y2="193.5" stroke="#ccc" stroke-width="0.15"/>
-<line x1="9" y1="194" x2="201" y2="194" stroke="#999" stroke-width="0.2"/>
-<g transform="translate(29 201.5) scale(0.216667) translate(25 -0)" stroke="black" fill="none"><line x1="0" y1="-30" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-10" y1="-10" x2="0" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="10" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="-30,-8.5 -21.5,0 -30,8.5 -38.5,0" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-32.2" y1="-6.3" x2="-32.2" y2="6.3" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-27.8" y1="-6.3" x2="-27.8" y2="6.3" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="-50,-10 -40,-10 -40,-5 -45,-5 -45,5 -40,5 -40,10 -50,10" fill="black" stroke="currentColor" stroke-width="0.5"/><line x1="-21.5" y1="0" x2="-5" y2="0" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="4,2"/></g>
-<rect x="9.6" y="199.8" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
-<text x="46" y="201.2" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-20-03</text>
-<text x="46" y="204.7" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">近接スイッチ（磁石の接近で作動）</text>
-<line x1="94" y1="194.5" x2="94" y2="208.5" stroke="#ccc" stroke-width="0.15"/>
-<line x1="9" y1="209" x2="201" y2="209" stroke="#999" stroke-width="0.2"/>
-<g transform="translate(29 216.5) scale(0.216667) translate(18.75 -0)" stroke="black" fill="none"><line x1="0" y1="-30" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="-10" x2="10" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="7.5" y1="-12" x2="0" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="10" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="-20,-8.5 -11.5,0 -20,8.5 -28.5,0" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-22.2" y1="-6.3" x2="-22.2" y2="6.3" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-17.8" y1="-6.3" x2="-17.8" y2="6.3" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-47.5" y="4.5" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">Fe</text><line x1="-11.5" y1="0" x2="3.4" y2="0" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="4,2"/></g>
-<rect x="9.6" y="214.8" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
-<text x="46" y="216.2" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-20-04</text>
-<text x="46" y="219.7" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">近接スイッチ（鉄の接近で作動）</text>
-<line x1="94" y1="209.5" x2="94" y2="223.5" stroke="#ccc" stroke-width="0.15"/>
-<line x1="9" y1="224" x2="201" y2="224" stroke="#999" stroke-width="0.2"/>
-<rect x="9" y="224" width="192" height="5" fill="#eee"/>
-<text x="10.5" y="227.6" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.9" font-weight="bold" fill="black">07-21 ヒューズ</text>
-<g transform="translate(29 236.9) scale(0.216667) translate(-0 -0)" stroke="black" fill="none"><line x1="0" y1="-30" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><rect x="-5" y="-15" width="10" height="30" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
-<rect x="9.6" y="235.2" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
-<text x="46" y="236.6" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-21-01</text>
-<text x="46" y="240.1" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">ヒューズ（一般図記号）</text>
-<line x1="94" y1="229.9" x2="94" y2="243.9" stroke="#ccc" stroke-width="0.15"/>
-<line x1="9" y1="244.4" x2="201" y2="244.4" stroke="#999" stroke-width="0.2"/>
-<g transform="translate(29 251.9) scale(0.216667) translate(-0 -0)" stroke="black" fill="none"><line x1="0" y1="-30" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><rect x="-5" y="-15" width="10" height="30" fill="none" stroke="currentColor" stroke-width="0.5"/><rect x="-5" y="-15" width="10" height="5.5" fill="black" stroke="currentColor" stroke-width="0.5"/></g>
-<rect x="9.6" y="250.2" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
-<text x="46" y="251.6" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-21-02</text>
-<text x="46" y="255.1" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">ヒューズ（電源側表示）</text>
-<line x1="94" y1="244.9" x2="94" y2="258.9" stroke="#ccc" stroke-width="0.15"/>
-<line x1="9" y1="259.4" x2="201" y2="259.4" stroke="#999" stroke-width="0.2"/>
-<g transform="translate(29 266.9) scale(0.216667) translate(-12.5 -0)" stroke="black" fill="none"><line x1="0" y1="-30" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><rect x="-5" y="-15" width="10" height="30" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="5" y1="0" x2="30" y2="0" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="4,2"/></g>
-<rect x="9.6" y="265.2" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
-<text x="46" y="266.6" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-21-03</text>
-<text x="46" y="270.1" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">ストライカ付きヒューズ</text>
-<line x1="94" y1="259.9" x2="94" y2="273.9" stroke="#ccc" stroke-width="0.15"/>
-<line x1="9" y1="274.4" x2="201" y2="274.4" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 35.3) scale(0.216667) translate(-0 -0)" stroke="black" fill="none"><rect x="-30" y="-30" width="60" height="60" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-9.72" y="-5.52" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor" font-style="italic">N </text><text x="2.28" y="-5.52" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">&lt;</text><path d="M -5 15 A 5 5 0 0 0 -15 15" fill="none" stroke="currentColor" stroke-width="0.5"/><path d="M 5 15 A 5 5 0 0 0 -5 15" fill="none" stroke="currentColor" stroke-width="0.5"/><path d="M 15 15 A 5 5 0 0 0 5 15" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
+<rect x="9.6" y="33.6" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="35" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-17-10</text>
+<text x="46" y="38.5" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">巻線層間短絡検出継電器</text>
+<line x1="94" y1="28.3" x2="94" y2="42.3" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="42.8" x2="201" y2="42.8" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 48.3) scale(0.225) translate(-0 -0)" stroke="black" fill="none"><rect x="-30" y="-20" width="60" height="40" fill="none" stroke="currentColor" stroke-width="0.5"/><path d="M -5 2 A 5 5 0 0 0 -15 2" fill="none" stroke="currentColor" stroke-width="0.5"/><path d="M 5 2 A 5 5 0 0 0 -5 2" fill="none" stroke="currentColor" stroke-width="0.5"/><path d="M 15 2 A 5 5 0 0 0 5 2" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="2.5" y1="-7" x2="-4.5" y2="7" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="5.9" y1="-7" x2="-1.1" y2="7" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
+<rect x="9.6" y="46.6" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="48" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-17-11</text>
+<text x="46" y="51.5" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">導体断線検出継電器</text>
+<line x1="94" y1="43.3" x2="94" y2="53.3" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="53.8" x2="201" y2="53.8" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 59.3) scale(0.225) translate(-0 -0)" stroke="black" fill="none"><rect x="-30" y="-20" width="60" height="40" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-15.56" y="4.47" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor" font-style="italic">m</text><text x="-5.56" y="4.47" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor"> &lt; 3</text></g>
+<rect x="9.6" y="57.6" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="59" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-17-12</text>
+<text x="46" y="62.5" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">欠相検出継電器</text>
+<line x1="94" y1="54.3" x2="94" y2="64.3" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="64.8" x2="201" y2="64.8" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 72.3) scale(0.216667) translate(-0 -0)" stroke="black" fill="none"><rect x="-30" y="-30" width="60" height="60" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-13.83" y="-5.53" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor" font-style="italic">n</text><text x="-7.18" y="-5.53" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor"> ≈ 0</text><text x="-8.74" y="19.48" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor" font-style="italic">I  </text><text x="1.31" y="19.48" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">&gt;</text></g>
+<rect x="9.6" y="70.6" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="72" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-17-13</text>
+<text x="46" y="75.5" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">回転子の拘束検出継電器</text>
+<line x1="94" y1="65.3" x2="94" y2="79.3" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="79.8" x2="201" y2="79.8" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 91.3) scale(0.21) translate(-0 -0)" stroke="black" fill="none"><rect x="-30" y="-50" width="60" height="100" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-8.74" y="-25.52" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor" font-style="italic">I  </text><text x="1.31" y="-25.52" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">&gt;</text><line x1="-50" y1="-10" x2="-30" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="30" y1="10" x2="50" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="30" y1="30" x2="50" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-15" y1="30" x2="25" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-15" y1="27" x2="-15" y2="33" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="25" y1="27" x2="25" y2="33" fill="none" stroke="currentColor" stroke-width="0.5"/><path d="M -1.04545 24.8143 A 20.4 20.4 0 0 0 9.06187 34.0922" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="8.23" y="14.0033" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="10.6667" fill="currentColor">5x</text></g>
+<rect x="9.6" y="89.6" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="91" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-17-14</text>
+<text x="46" y="94.5" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">過電流継電器（反限時）</text>
+<line x1="94" y1="80.3" x2="94" y2="102.3" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="102.8" x2="201" y2="102.8" stroke="#999" stroke-width="0.2"/>
+<rect x="9" y="102.8" width="192" height="5" fill="#eee"/>
+<text x="10.5" y="106.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.9" font-weight="bold" fill="black">07-18 その他の装置</text>
+<g transform="translate(29 117.7) scale(0.2125) translate(-0 -0)" stroke="black" fill="none"><rect x="-30" y="-40" width="60" height="80" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-30" y1="0" x2="30" y2="0" fill="none" stroke="currentColor" stroke-width="0.5"/><path d="M 9.99606 -20.0053 A 12.5 12.5 0 0 0 -10.0091 -19.9878" fill="none" stroke="currentColor" stroke-width="0.5"/><path d="M -9.99606 -19.9947 A 12.5 12.5 0 0 0 9.99606 -19.9947" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="-30" x2="0" y2="-25" fill="none" stroke="currentColor" stroke-width="0.5"/><rect x="-8" y="13" width="16" height="16" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="8" y1="13" x2="14" y2="13" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
+<rect x="9.6" y="116" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="117.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-18-01</text>
+<text x="46" y="120.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">ブッフホルツ保護装置，気体継電器</text>
+<line x1="94" y1="108.7" x2="94" y2="126.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="127.2" x2="201" y2="127.2" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 132.7) scale(0.225) translate(-0 -0)" stroke="black" fill="none"><rect x="-20" y="-20" width="40" height="40" fill="none" stroke="currentColor" stroke-width="0.5"/><ellipse cx="-11.5" cy="-10" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-5.2" y1="-10" x2="10" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="10,-10 2.2,-12.2 2.2,-7.8" fill="black" stroke="currentColor" stroke-width="0.5"/><line x1="15" y1="-15" x2="15" y2="-5" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-15" y1="10" x2="15" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-15" y1="5" x2="-15" y2="15" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="15" y1="5" x2="15" y2="15" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
+<rect x="9.6" y="131" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="132.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-18-02</text>
+<text x="46" y="135.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">自動再閉路用装置，自動再閉路継電器</text>
+<line x1="94" y1="127.7" x2="94" y2="137.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="138.2" x2="201" y2="138.2" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 145.7) scale(0.216667) translate(-30 -0)" stroke="black" fill="none"><line x1="0" y1="-30" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="5" y1="-10" x2="5" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="5" y1="0" x2="20" y2="0" fill="none" stroke="currentColor" stroke-width="0.5"/><ellipse cx="40" cy="0" rx="20" ry="20" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="35.84" y="4.5" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">V</text></g>
+<rect x="9.6" y="144" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="145.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-18-03</text>
+<text x="46" y="148.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">簡易検圧（検電）装置</text>
+<line x1="94" y1="138.7" x2="94" y2="152.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="153.2" x2="201" y2="153.2" stroke="#999" stroke-width="0.2"/>
+<rect x="9" y="153.2" width="192" height="5" fill="#eee"/>
+<text x="10.5" y="156.8" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.9" font-weight="bold" fill="black">07-19 センサ及び検出器</text>
+<g transform="translate(29 164.1) scale(0.225) translate(-0 -0)" stroke="black" fill="none"><line x1="0" y1="-20" x2="0" y2="-8.5" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="8.5" x2="0" y2="20" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="0,-8.5 8.5,0 0,8.5 -8.5,0" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-2.2" y1="-6.3" x2="-2.2" y2="6.3" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="2.2" y1="-6.3" x2="2.2" y2="6.3" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
+<rect x="9.6" y="162.4" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="163.8" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-19-01</text>
+<text x="46" y="167.3" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">近接センサ</text>
+<line x1="94" y1="159.1" x2="94" y2="169.1" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="169.6" x2="201" y2="169.6" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 177.1) scale(0.216667) translate(-10 -0)" stroke="black" fill="none"><rect x="-30" y="-30" width="60" height="60" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="0,-18.5 8.5,-10 0,-1.5 -8.5,-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-2.2" y1="-16.3" x2="-2.2" y2="-3.7" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="2.2" y1="-16.3" x2="2.2" y2="-3.7" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="30" y1="0" x2="50" y2="0" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
+<rect x="9.6" y="175.4" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="176.8" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-19-02</text>
+<text x="46" y="180.3" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">近接検出装置</text>
+<line x1="94" y1="170.1" x2="94" y2="184.1" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="184.6" x2="201" y2="184.6" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 192.1) scale(0.216667) translate(-0 -0)" stroke="black" fill="none"><rect x="-30" y="-30" width="60" height="60" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="0,-18.5 8.5,-10 0,-1.5 -8.5,-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-2.2" y1="-16.3" x2="-2.2" y2="-3.7" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="2.2" y1="-16.3" x2="2.2" y2="-3.7" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-2.2" y1="8" x2="-2.2" y2="18" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="2.2" y1="8" x2="2.2" y2="18" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-8.5" y1="13" x2="-2.2" y2="13" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="2.2" y1="13" x2="8.5" y2="13" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="30" y1="0" x2="50" y2="0" fill="none" stroke="currentColor" stroke-width="0.5"/><rect x="-50" y="-10" width="10" height="20" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-50" y1="-10" x2="-40" y2="-4" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-50" y1="-3" x2="-40" y2="3" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-50" y1="4" x2="-40" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
+<rect x="9.6" y="190.4" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="191.8" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-19-03</text>
+<text x="46" y="195.3" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">近接検出装置（静電容量形）</text>
+<line x1="94" y1="185.1" x2="94" y2="199.1" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="199.6" x2="201" y2="199.6" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 205.1) scale(0.225) translate(-5.75 -0)" stroke="black" fill="none"><line x1="0" y1="-20" x2="0" y2="-8.5" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="8.5" x2="0" y2="20" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="0,-8.5 8.5,0 0,8.5 -8.5,0" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-2.2" y1="-6.3" x2="-2.2" y2="6.3" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="2.2" y1="-6.3" x2="2.2" y2="6.3" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-8.5" y1="-6" x2="-8.5" y2="6" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="8.5" y1="0" x2="20" y2="0" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="4,2"/></g>
+<rect x="9.6" y="203.4" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="204.8" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-19-04</text>
+<text x="46" y="208.3" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">接触センサ</text>
+<line x1="94" y1="200.1" x2="94" y2="210.1" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="210.6" x2="201" y2="210.6" stroke="#999" stroke-width="0.2"/>
+<rect x="9" y="210.6" width="192" height="5" fill="#eee"/>
+<text x="10.5" y="214.2" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.9" font-weight="bold" fill="black">07-20 スイッチ</text>
+<g transform="translate(29 223.5) scale(0.216667) translate(19.25 -0)" stroke="black" fill="none"><line x1="0" y1="-30" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-10" y1="-10" x2="0" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="10" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="-30,-8.5 -21.5,0 -30,8.5 -38.5,0" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-32.2" y1="-6.3" x2="-32.2" y2="6.3" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-27.8" y1="-6.3" x2="-27.8" y2="6.3" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-38.5" y1="-6" x2="-38.5" y2="6" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-21.5" y1="0" x2="-5" y2="0" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="4,2"/></g>
+<rect x="9.6" y="221.8" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="223.2" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-20-01</text>
+<text x="46" y="226.7" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">触れ感応スイッチ</text>
+<line x1="94" y1="216.5" x2="94" y2="230.5" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="231" x2="201" y2="231" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 238.5) scale(0.216667) translate(19.25 -0)" stroke="black" fill="none"><line x1="0" y1="-30" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-10" y1="-10" x2="0" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="10" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="-30,-8.5 -21.5,0 -30,8.5 -38.5,0" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-32.2" y1="-6.3" x2="-32.2" y2="6.3" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-27.8" y1="-6.3" x2="-27.8" y2="6.3" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-21.5" y1="0" x2="-5" y2="0" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="4,2"/></g>
+<rect x="9.6" y="236.8" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="238.2" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-20-02</text>
+<text x="46" y="241.7" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">近接スイッチ</text>
+<line x1="94" y1="231.5" x2="94" y2="245.5" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="246" x2="201" y2="246" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 253.5) scale(0.216667) translate(25 -0)" stroke="black" fill="none"><line x1="0" y1="-30" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-10" y1="-10" x2="0" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="10" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="-30,-8.5 -21.5,0 -30,8.5 -38.5,0" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-32.2" y1="-6.3" x2="-32.2" y2="6.3" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-27.8" y1="-6.3" x2="-27.8" y2="6.3" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="-50,-10 -40,-10 -40,-5 -45,-5 -45,5 -40,5 -40,10 -50,10" fill="black" stroke="currentColor" stroke-width="0.5"/><line x1="-21.5" y1="0" x2="-5" y2="0" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="4,2"/></g>
+<rect x="9.6" y="251.8" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="253.2" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-20-03</text>
+<text x="46" y="256.7" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">近接スイッチ（磁石の接近で作動）</text>
+<line x1="94" y1="246.5" x2="94" y2="260.5" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="261" x2="201" y2="261" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 268.5) scale(0.216667) translate(18.75 -0)" stroke="black" fill="none"><line x1="0" y1="-30" x2="0" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="-10" x2="10" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="7.5" y1="-12" x2="0" y2="10" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="10" x2="0" y2="30" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="-20,-8.5 -11.5,0 -20,8.5 -28.5,0" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-22.2" y1="-6.3" x2="-22.2" y2="6.3" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-17.8" y1="-6.3" x2="-17.8" y2="6.3" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-47.5" y="4.5" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">Fe</text><line x1="-11.5" y1="0" x2="3.4" y2="0" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="4,2"/></g>
+<rect x="9.6" y="266.8" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="268.2" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">07-20-04</text>
+<text x="46" y="271.7" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">近接スイッチ（鉄の接近で作動）</text>
+<line x1="94" y1="261.5" x2="94" y2="275.5" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="276" x2="201" y2="276" stroke="#999" stroke-width="0.2"/>
 </g></svg>

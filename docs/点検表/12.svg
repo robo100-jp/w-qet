@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="297mm" viewBox="0 0 210 297">
+<rect width="210" height="297" fill="white"/>
+<g stroke-linecap="round" stroke-linejoin="round">
+<text x="9" y="12.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="4.4" font-weight="bold" fill="black">図記号 点検メモ</text>
+<text x="201" y="12.4" text-anchor="end" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.8" fill="#555">12 / 16</text>
+<text x="9" y="16.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.3" fill="#666">気づいたことをその場で書く。直したら docs/点検メモ.md に写す</text>
+<line x1="9" y1="18.6" x2="201" y2="18.6" stroke="#333" stroke-width="0.4"/>
+<text x="46" y="21.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#666">番号・名称</text>
+<text x="96" y="21.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#666">気づいたこと</text>
+<rect x="9" y="22.4" width="192" height="5" fill="#eee"/>
+<text x="10.5" y="26" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.9" font-weight="bold" fill="black">08-01 計器（一般図記号）</text>
+<g transform="translate(29 33.3) scale(0.225) translate(-0 -0)" stroke="black" fill="none"><ellipse cx="0" cy="0" rx="20" ry="20" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-3.56" y="10.7" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="18.6667" fill="currentColor">*</text></g>
+<rect x="9.6" y="31.6" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="33" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">08-01-01</text>
+<text x="46" y="36.5" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">指示計器（一般図記号）</text>
+<line x1="94" y1="28.3" x2="94" y2="38.3" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="38.8" x2="201" y2="38.8" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 44.3) scale(0.225) translate(-0 -0)" stroke="black" fill="none"><rect x="-20" y="-20" width="40" height="40" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-3.56" y="10.7" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="18.6667" fill="currentColor">*</text></g>
+<rect x="9.6" y="42.6" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="44" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">08-01-02</text>
+<text x="46" y="47.5" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">記録計（一般図記号）</text>
+<line x1="94" y1="39.3" x2="94" y2="49.3" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="49.8" x2="201" y2="49.8" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 57.3) scale(0.216667) translate(-0 -0)" stroke="black" fill="none"><rect x="-20" y="-30" width="40" height="60" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-20" y1="-10" x2="20" y2="-10" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-3.56" y="20.7" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="18.6667" fill="currentColor">*</text></g>
+<rect x="9.6" y="55.6" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="57" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">08-01-03</text>
+<text x="46" y="60.5" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">積算計（一般図記号）</text>
+<line x1="94" y1="50.3" x2="94" y2="64.3" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="64.8" x2="201" y2="64.8" stroke="#999" stroke-width="0.2"/>
+<rect x="9" y="64.8" width="192" height="5" fill="#eee"/>
+<text x="10.5" y="68.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.9" font-weight="bold" fill="black">08-02 指示計器</text>
+<g transform="translate(29 75.7) scale(0.225) translate(-0 -0)" stroke="black" fill="none"><ellipse cx="0" cy="0" rx="20" ry="20" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-4" y="4.3" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">V</text></g>
+<rect x="9.6" y="74" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="75.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">08-02-01</text>
+<text x="46" y="78.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">電圧計</text>
+<line x1="94" y1="70.7" x2="94" y2="80.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="81.2" x2="201" y2="81.2" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 86.7) scale(0.225) translate(-0.24 -0)" stroke="black" fill="none"><ellipse cx="0" cy="0" rx="20" ry="20" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-3.7" y="-2.8" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">A</text><text x="-13.45" y="9.6" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor" font-style="italic">I</text><text x="-8.32" y="10.8" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">sinφ</text></g>
+<rect x="9.6" y="85" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="86.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">08-02-02</text>
+<text x="46" y="89.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">無効電流計</text>
+<line x1="94" y1="81.7" x2="94" y2="91.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="92.2" x2="201" y2="92.2" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 97.7) scale(0.225) translate(15 -0)" stroke="black" fill="none"><ellipse cx="0" cy="0" rx="20" ry="20" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="-50" y1="0" x2="-20" y2="0" fill="none" stroke="currentColor" stroke-width="0.5"/><polyline points="-23,-3 -20,0 -23,3" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-5.4" y="-4.25" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">W</text><text x="-16.7" y="6.85" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor" font-style="italic">P</text><text x="-7.88" y="9.47" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">max</text></g>
+<rect x="9.6" y="96" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="97.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">08-02-03</text>
+<text x="46" y="100.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">最大需要電力計</text>
+<line x1="94" y1="92.7" x2="94" y2="102.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="103.2" x2="201" y2="103.2" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 108.7) scale(0.225) translate(-0 -0)" stroke="black" fill="none"><ellipse cx="0" cy="0" rx="20" ry="20" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-8.5" y="3.12" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">var</text></g>
+<rect x="9.6" y="107" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="108.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">08-02-04</text>
+<text x="46" y="111.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">無効電力計</text>
+<line x1="94" y1="103.7" x2="94" y2="113.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="114.2" x2="201" y2="114.2" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 119.7) scale(0.225) translate(-0.54 -0)" stroke="black" fill="none"><ellipse cx="0" cy="0" rx="20" ry="20" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-14.92" y="2" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">cos φ</text></g>
+<rect x="9.6" y="118" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="119.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">08-02-05</text>
+<text x="46" y="122.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">力率計</text>
+<line x1="94" y1="114.7" x2="94" y2="124.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="125.2" x2="201" y2="125.2" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 130.7) scale(0.225) translate(-0 -0)" stroke="black" fill="none"><ellipse cx="0" cy="0" rx="20" ry="20" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-3.9" y="2" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">φ</text></g>
+<rect x="9.6" y="129" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="130.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">08-02-06</text>
+<text x="46" y="133.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">位相計</text>
+<line x1="94" y1="125.7" x2="94" y2="135.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="136.2" x2="201" y2="136.2" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 141.7) scale(0.225) translate(-0 -0)" stroke="black" fill="none"><ellipse cx="0" cy="0" rx="20" ry="20" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-7.67" y="4.3" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">Hz</text></g>
+<rect x="9.6" y="140" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="141.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">08-02-07</text>
+<text x="46" y="144.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">周波数計</text>
+<line x1="94" y1="136.7" x2="94" y2="146.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="147.2" x2="201" y2="147.2" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 152.7) scale(0.225) translate(-0 -0)" stroke="black" fill="none"><ellipse cx="0" cy="0" rx="20" ry="20" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="-14" x2="0" y2="11" fill="none" stroke="currentColor" stroke-width="0.5"/><path d="M 15.9378 -4.84701 A 16.5 11 0 0 0 -15.9378 -4.84701" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="-16.5,-1.5 -16,-8 -10.5,-5" fill="black" stroke="currentColor" stroke-width="0.5"/><polygon points="16.5,-1.5 16,-8 10.5,-5" fill="black" stroke="currentColor" stroke-width="0.5"/></g>
+<rect x="9.6" y="151" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="152.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">08-02-08</text>
+<text x="46" y="155.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">同期検定器</text>
+<line x1="94" y1="147.7" x2="94" y2="157.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="158.2" x2="201" y2="158.2" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 163.7) scale(0.225) translate(-0 -0)" stroke="black" fill="none"><ellipse cx="0" cy="0" rx="20" ry="20" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-2.97" y="4.3" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">λ</text></g>
+<rect x="9.6" y="162" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="163.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">08-02-09</text>
+<text x="46" y="166.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">波長計</text>
+<line x1="94" y1="158.7" x2="94" y2="168.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="169.2" x2="201" y2="169.2" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 174.7) scale(0.225) translate(-0 -0)" stroke="black" fill="none"><ellipse cx="0" cy="0" rx="20" ry="20" fill="none" stroke="currentColor" stroke-width="0.5"/><polyline points="-15,5 -1,-9 -1,5 15,-8" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
+<rect x="9.6" y="173" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="174.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">08-02-10</text>
+<text x="46" y="177.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">オシロスコープ</text>
+<line x1="94" y1="169.7" x2="94" y2="179.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="180.2" x2="201" y2="180.2" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 185.7) scale(0.225) translate(-0 -0)" stroke="black" fill="none"><ellipse cx="0" cy="0" rx="20" ry="20" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-4.05" y="-3.8" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">V</text><text x="-7.92" y="10.02" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor" font-style="italic">U</text><text x="1.08" y="12.53" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">d</text></g>
+<rect x="9.6" y="184" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="185.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">08-02-11</text>
+<text x="46" y="188.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">差動形電圧計</text>
+<line x1="94" y1="180.7" x2="94" y2="190.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="191.2" x2="201" y2="191.2" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 196.7) scale(0.225) translate(-0 -0)" stroke="black" fill="none"><ellipse cx="0" cy="0" rx="20" ry="20" fill="none" stroke="currentColor" stroke-width="0.5"/><line x1="0" y1="13" x2="0" y2="-13" fill="none" stroke="currentColor" stroke-width="0.5"/><polygon points="2.2,-10.8 0,-13 -2.2,-10.8" fill="currentColor" stroke="currentColor" stroke-width="0.5"/></g>
+<rect x="9.6" y="195" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="196.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">08-02-12</text>
+<text x="46" y="199.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">検流計</text>
+<line x1="94" y1="191.7" x2="94" y2="201.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="202.2" x2="201" y2="202.2" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 207.7) scale(0.225) translate(-0 -0)" stroke="black" fill="none"><ellipse cx="0" cy="0" rx="20" ry="20" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-13.35" y="4.3" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">NaCl</text></g>
+<rect x="9.6" y="206" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="207.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">08-02-13</text>
+<text x="46" y="210.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">塩分計</text>
+<line x1="94" y1="202.7" x2="94" y2="212.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="213.2" x2="201" y2="213.2" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 218.7) scale(0.225) translate(-0 -0)" stroke="black" fill="none"><ellipse cx="0" cy="0" rx="20" ry="20" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-5.18" y="4.3" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor" font-style="italic">Θ</text></g>
+<rect x="9.6" y="217" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="218.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">08-02-14</text>
+<text x="46" y="221.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">温度計，高温計</text>
+<line x1="94" y1="213.7" x2="94" y2="223.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="224.2" x2="201" y2="224.2" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 229.7) scale(0.225) translate(-0 -0)" stroke="black" fill="none"><ellipse cx="0" cy="0" rx="20" ry="20" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-3.38" y="3.2" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor" font-style="italic">n</text></g>
+<rect x="9.6" y="228" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="229.4" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">08-02-15</text>
+<text x="46" y="232.9" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">回転計</text>
+<line x1="94" y1="224.7" x2="94" y2="234.7" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="235.2" x2="201" y2="235.2" stroke="#999" stroke-width="0.2"/>
+<rect x="9" y="235.2" width="192" height="5" fill="#eee"/>
+<text x="10.5" y="238.8" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.9" font-weight="bold" fill="black">08-03 記録計</text>
+<g transform="translate(29 246.1) scale(0.225) translate(-0 -0)" stroke="black" fill="none"><rect x="-20" y="-20" width="40" height="40" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-5.6" y="4.1" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">W</text></g>
+<rect x="9.6" y="244.4" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="245.8" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">08-03-01</text>
+<text x="46" y="249.3" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">記録電力計</text>
+<line x1="94" y1="241.1" x2="94" y2="251.1" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="251.6" x2="201" y2="251.6" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 257.1) scale(0.225) translate(-0 -0)" stroke="black" fill="none"><rect x="-40" y="-20" width="40" height="40" fill="none" stroke="currentColor" stroke-width="0.5"/><rect x="0" y="-20" width="40" height="40" fill="none" stroke="currentColor" stroke-width="0.5"/><text x="-25" y="4" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">W</text><text x="12.15" y="3.17" font-family="Liberation Sans,Arial,Helvetica,sans-serif" font-size="12" fill="currentColor">var</text></g>
+<rect x="9.6" y="255.4" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="256.8" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">08-03-02</text>
+<text x="46" y="260.3" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">記録電力計（記録無効電力計付き）</text>
+<line x1="94" y1="252.1" x2="94" y2="262.1" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="262.6" x2="201" y2="262.6" stroke="#999" stroke-width="0.2"/>
+<g transform="translate(29 268.1) scale(0.225) translate(-0 -0)" stroke="black" fill="none"><rect x="-20" y="-20" width="40" height="40" fill="none" stroke="currentColor" stroke-width="0.5"/><polyline points="-15,5 -1,-8 -1,5 15,-7" fill="none" stroke="currentColor" stroke-width="0.5"/></g>
+<rect x="9.6" y="266.4" width="3.4" height="3.4" fill="none" stroke="#666" stroke-width="0.25"/>
+<text x="46" y="267.8" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.6" fill="black">08-03-03</text>
+<text x="46" y="271.3" font-family="Meiryo,'Yu Gothic',sans-serif" font-size="2.2" fill="#333">オシログラフ</text>
+<line x1="94" y1="263.1" x2="94" y2="273.1" stroke="#ccc" stroke-width="0.15"/>
+<line x1="9" y1="273.6" x2="201" y2="273.6" stroke="#999" stroke-width="0.2"/>
+</g></svg>
