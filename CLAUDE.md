@@ -35,6 +35,10 @@ QElectroTech 同梱のコレクションから記号をコピー・変換して�
 `10_electric` `20_logic` `30_hydraulic` `50_pneumatic` `60_energy` の 8597個で、
 `ELEMENTS.LICENSE` は**コレクション全体**を対象にしている。
 
+**IEC 60617 の番号で並べた `91_en_60617`（912個）も、その中に入っている。**
+`10_electric` の下にあるので上の階層だけ見ると見落とすが、**同じ扱い。**
+番号が実在するかの当たりを付けるのに読むのはよいが、**図は写さない。**
+
 理由は `C:\Program Files\QElectroTech\ELEMENTS.LICENSE`。
 
 > 回路図の**中**で使う・改変する・組み込む → 無条件
